@@ -1,0 +1,34 @@
+# SITE CONFIGURATION
+# domain: ""
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://fhightower.github.io/" # the base hostname & protocol for your site
+avatar: https://avatars3.githubusercontent.com/u/3599813
+favicon: https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg
+basecss: 
+# Theme specific configuration
+title: Torre Alta
+description: >
+  Programmer.
+
+# BUILD SETTINGS
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+exclude: ['node_modules', 'gulpfile.js', 'package.json']
+kramdown:
+  input: GFM
+
+# CONTACT AND SOCIAL MEDIA LINKS
+twitter_username: hightowerfloyd
+github_username: fhightower
+500px_username: fhightower
+
+# If U enable the comment, edit disqus or duoshuo account
+# before deploy your webpage
+# enable_comment: true
+# disqus_account: songroger
+
+# PAGINATION
+gems: ['jekyll-paginate']
+paginate: 5
+paginate_path: /archive/page:num
