@@ -1,5 +1,3 @@
-# songroger.github.io
-This is another simple theme for [jekyll](http://jekyllrb.com/)
+# fhightower.github.io
 
-Try to edit `_config.yml` first before use it.
-Replace all the blabla configurations(like "avatar", "about", "title", etc.) to your owns.
+This page is based on the [murmur](https://github.com/songroger/murmur) template.
