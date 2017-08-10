@@ -6,9 +6,9 @@ avatar: https://avatars3.githubusercontent.com/u/3599813
 favicon: https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg
 basecss: 
 # Theme specific configuration
-title: Torre Alta
+title: Floyd Hightower
 description: >
-  Programmer.
+  I'm a programmer who loves writing code and is passionate about using programming for good.
 
 # BUILD SETTINGS
 permalink: /:year/:title/
@@ -31,4 +31,4 @@ github_username: fhightower
 # PAGINATION
 gems: ['jekyll-paginate']
 paginate: 5
-paginate_path: /archive/page:num
+paginate_path: /programming_blog/page:num
