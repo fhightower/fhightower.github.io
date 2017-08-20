@@ -3,7 +3,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://fhightower.github.io/" # the base hostname & protocol for your site
 avatar: https://avatars3.githubusercontent.com/u/3599813
-favicon: https://upload.wikimedia.org/wikipedia/commons/c/c1/Penrose-dreieck.svg
+favicon: favicon.png
 basecss: 
 # Theme specific configuration
 title: Floyd Hightower
