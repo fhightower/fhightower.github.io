@@ -3,6 +3,7 @@ layout: post
 title: "JS Puzzles: How Well do you Know Javascript?"
 description: "Javascript puzzles to test your understanding of Javascript"
 tail: Give these puzzles to your friends and enjoy as they over-think them and second-guess themselves!
+category: programming
 ---
 
 Here are a couple of fun Javascript puzzles I've created/found that demonstrate important Javascript gotchas. There are answers/explainations near the bottom of the page.

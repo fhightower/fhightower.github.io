@@ -5,13 +5,15 @@ title: Programming Blog
 
 <ul>
   {%for post in paginator.posts %}
-    <div class="arch-item">
-      <li>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="arch-title">{{ post.title }}</a>
-        <time>{{ post.date | date:"%b.%d, %Y" }}</time>
-      </li>
-      {% if post.description %}<div class="arch-desc">{{ post.description }}</div>{% endif %}
-    </div>
+    {% if post.categories contains 'programming' %}
+      <div class="arch-item">
+        <li>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="arch-title">{{ post.title }}</a>
+          <time>{{ post.date | date:"%b.%d, %Y" }}</time>
+        </li>
+        {% if post.description %}<div class="arch-desc">{{ post.description }}</div>{% endif %}
+      </div>
+    {% endif %}
   {% endfor %}
 </ul>
 

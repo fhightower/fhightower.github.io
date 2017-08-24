@@ -2,6 +2,7 @@
 layout: post
 title: "Software Development Principles 1: Snippets"
 description: "Why you should use and write snippets."
+category: programming
 ---
 
 If the titles of my [git repositories](https://github.com/fhightower?utf8=%E2%9C%93&tab=repositories&q=snippet&type=&language=) didn't give it away, I use [Sublime Text](https://www.sublimetext.com/) and write a lot of [snippets](http://docs.sublimetext.info/en/latest/extensibility/snippets.html). My goal in this blog post is to discuss *why* I write so many snippets and encourage others to do the same. There are plenty of good resources out there on [how to create snippets for Sublime Text](http://www.hongkiat.com/blog/sublime-code-snippets/), but very little discussion about *why* snippets are useful... and whether there are any dangers that come with using snippets.
