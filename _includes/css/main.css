@@ -163,6 +163,23 @@ blockquote p {
     margin: 0
 }
 
+/* STYLINGS FOR THE CATEGORIES. */
+.miscellaneous {
+    background: #CDEF9C;
+    /*a7c762*/
+}
+
+.programming {
+    /*background: #ee8877;*/
+    background: #FFB2A6;
+}
+
+.threat-intelligence {
+    background: #abcdef;
+    /*background: #AFCFD8;*/
+}
+/* END STYLINGS FOR THE CATEGORIES. */
+
 .col {
     max-width: calc(700px + 1.6rem);
     margin: 0 auto;

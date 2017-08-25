@@ -10,6 +10,7 @@ layout: default
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}" class="arch-title">{{ post.title }}</a>
         <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+        <span class="{{post.category}}">{{post.category}}</span>
       </li>
       {% if post.description %}<div class="arch-desc">{{ post.description }}</div>{% endif %}
     </div>
