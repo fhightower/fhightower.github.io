@@ -29,13 +29,10 @@ github_username: fhightower
 # disqus_account: songroger
 
 # PAGINATION
-# gems: ['jekyll-paginate', 'jekyll-paginate-multiple']
-gems :
+plugins :
   - jekyll-paginate
   - jekyll-paginate-multiple
-# paginate: 5
-# paginate_path: /programming/page:num
-# paginate_path: /threat-intelligence/page:num
+
 paginate_multiple:
   - paginate: 5
     paginate_path: '/programming/page:num'
