@@ -7,19 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="songroger">
 
-  <title>Floyd Hightower</title>
+  <title>Software Development Principles 1: Snippets</title>
 
-  <meta name="description" content="I'm a programmer who loves writing code and is passionate about using programming for good.">
+  <meta name="description" content="&lt;p&gt;If the titles of my &lt;a href=&quot;https://github.com/fhightower?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=snippet&amp;amp;type=&amp;amp;l...">
 
   <!-- Open graph data -->
   <meta property="og:site_name" content="Floyd Hightower">
-  <meta property="og:title" content="Floyd Hightower">
-  <meta property="og:url" content="http://0.0.0.0:4000/404.html">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="I'm a programmer who loves writing code and is passionate about using programming for good.">
+  <meta property="og:title" content="Software Development Principles 1: Snippets">
+  <meta property="og:url" content="http://0.0.0.0:4000/2017/08/software-development-principles-one/">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="&lt;p&gt;If the titles of my &lt;a href=&quot;https://github.com/fhightower?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=snippet&amp;amp;type=&amp;amp;l...">
 
   <!-- Standard Stuff -->
-  <link rel="canonical" href="http://0.0.0.0:4000/404.html"/>
+  <link rel="canonical" href="http://0.0.0.0:4000/2017/08/software-development-principles-one/"/>
   <link rel="alternate" type="application/rss+xml" title="Floyd Hightower" href="http://0.0.0.0:4000/feed.xml"/>
 
   <!-- Favicons -->
@@ -739,7 +739,56 @@ pre {
   <main class="col">
 
 
-<h2>Sorry, the page may have been removed.</h2>
+<article class="article">
+  <h2 class="article__title article__title--single">Software Development Principles 1: Snippets</h2>
+  <time class="article__date" datetime="2017-08-14">August 14, 2017</time>
+  
+  <p>If the titles of my <a href="https://github.com/fhightower?utf8=%E2%9C%93&amp;tab=repositories&amp;q=snippet&amp;type=&amp;language=">git repositories</a> didn’t give it away, I use <a href="https://www.sublimetext.com/">Sublime Text</a> and write a lot of <a href="http://docs.sublimetext.info/en/latest/extensibility/snippets.html">snippets</a>. My goal in this blog post is to discuss <em>why</em> I write so many snippets and encourage others to do the same. There are plenty of good resources out there on <a href="http://www.hongkiat.com/blog/sublime-code-snippets/">how to create snippets for Sublime Text</a>, but very little discussion about <em>why</em> snippets are useful… and whether there are any dangers that come with using snippets.</p>
+
+<p>First, what is a snippet? In one sentence, a snippet (in Sublime Text) is a saved piece of code that you easily add to other code by typing a certain phrase and hitting <code class="highlighter-rouge">TAB</code>.</p>
+
+<p>So why do I advocate (and practice) the use of snippets? There are a few obvious reasons for using snippets:</p>
+
+<ol>
+  <li>It allows one to write code more quickly. Pretty obvious… and boy does it work!</li>
+  <li>It makes coding more enjoyable because you don’t have to spend time typing configurations that you are familiar with. You can get to the fun parts of an algorithm more quickly and make the busy-work a breeze.</li>
+  <li>When shared, snippets will help as many people as you share it with become more effective.</li>
+</ol>
+
+<p>In addition the these advantages, I think there is another, often overlooked, benefit of using snippets:</p>
+
+<ul>
+  <li>Using snippets across a team or community allows you to more easily standardize your code. Want to standardize how your team imports a configuration file? Snippets will do the trick. Want to make sure your team is using the <code class="highlighter-rouge">with open('file.txt', 'r') as f:</code> paradigm in python? Make it easy by creating a <a href="https://github.com/fhightower/public-sublime-snippets/blob/master/python/withopenas.sublime-snippet">snippet</a>. When used tactfully, snippets make it easy to do things the right way.</li>
+</ul>
+
+<p>But are there any dangers of using snippets? I believe there are. I do not think they outweigh the benefits, but a few things to be aware of when it comes to using snippets:</p>
+
+<ol>
+  <li>Snippets can become a crutch. Especially for users that are new to a programming language, SDK, or other paradigm and who haven’t ‘struggled’ doing things the hard way (without snippets), snippets can provide them with a easy way forward, but may prevent them from actually learning the new system. This is why I recommend that people do things the hard way (again, without snippets) for a while before they start relying heavily on snippets. Given enough time, this can even be a danger for a seasoned veteran. Every now and then (ok, more often than that) I find myself writing python on a server using vi and draw a complete blank on how to using <a href="https://docs.python.org/3.6/library/configparser.html">configparser</a> or something of that nature. Snippets are helpful, but they can become a crutch.</li>
+  <li>Snippets can encourage poor code structure by making it easier to add duplicate code in the same file/project. I have seen instances (and have found myself doing this too) where programmers have used snippets to add the same code in two, three, or even four places in the same file. It’s just so easy!</li>
+</ol>
+
+<p>As I said, I don’t feel any of these dangers trump the, many, benefits of snippets. I’ll discuss these in future blog posts as well, but here are some tools for creating and documenting snippets that you may find helpful:</p>
+
+<ul>
+  <li><a href="https://github.com/fhightower/sublime-snippet-creator">Snippet Creator</a> - Automatically create Sublime Text snippets from code.</li>
+  <li><a href="https://github.com/fhightower/sublime_snippet_documenter">Snippet Documenter</a> - Script to pull descriptions from Sublime snippets and add them to a repository’s readme.</li>
+</ul>
+
+  
+</article>
+
+<!-- <div class="blocks">
+  <div class="block__item block__item--mr">
+    <a href="https://twitter.com/intent/tweet?text=Software Development Principles 1: Snippets&amp;url=http://0.0.0.0:4000/2017/08/software-development-principles-one/&amp;via=hightowerfloyd">
+      <svg class="btn__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Twitter Icon</title>
+        <path d="M14.4 4.2C14.4 4.4 14.4 4.5 14.4 4.7 14.4 9 11.1 14 5 14 3.2 14 1.5 13.5 0 12.5 0.3 12.6 0.5 12.6 0.8 12.6 2.3 12.6 3.7 12 4.9 11.2 3.4 11.1 2.2 10.2 1.8 8.9 2 8.9 2.2 8.9 2.4 8.9 2.7 8.9 3 8.9 3.3 8.8 1.8 8.5 0.6 7.2 0.6 5.6L0.6 5.6C1.1 5.8 1.6 6 2.1 6 1.2 5.4 0.7 4.4 0.7 3.2 0.7 2.6 0.8 2.1 1.1 1.6 2.7 3.6 5.2 4.9 7.9 5 7.8 4.8 7.8 4.5 7.8 4.3 7.8 2.5 9.3 1 11.1 1 12 1 12.9 1.4 13.5 2 14.2 1.9 14.9 1.6 15.6 1.2 15.3 2 14.8 2.6 14.1 3.1 14.8 3 15.4 2.8 16 2.5 15.6 3.2 15 3.8 14.4 4.2L14.4 4.2Z"/>
+      </svg>
+    </a>
+  </div>
+</div> -->
+
 
 
 <footer class="footer">

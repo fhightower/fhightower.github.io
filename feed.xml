@@ -1,30 +1,208 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Floyd Hightower</title>
+    <description>I'm a programmer who loves writing code and is passionate about using programming for good.
+</description>
+    <link>http://0.0.0.0:4000/</link>
+    <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 31 Aug 2017 22:59:40 +0000</pubDate>
+    <lastBuildDate>Thu, 31 Aug 2017 22:59:40 +0000</lastBuildDate>
+    <generator>Jekyll v3.5.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Software Development Principles 1: Snippets</title>
+        <description>&lt;p&gt;If the titles of my &lt;a href=&quot;https://github.com/fhightower?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=snippet&amp;amp;type=&amp;amp;language=&quot;&gt;git repositories&lt;/a&gt; didn’t give it away, I use &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt; and write a lot of &lt;a href=&quot;http://docs.sublimetext.info/en/latest/extensibility/snippets.html&quot;&gt;snippets&lt;/a&gt;. My goal in this blog post is to discuss &lt;em&gt;why&lt;/em&gt; I write so many snippets and encourage others to do the same. There are plenty of good resources out there on &lt;a href=&quot;http://www.hongkiat.com/blog/sublime-code-snippets/&quot;&gt;how to create snippets for Sublime Text&lt;/a&gt;, but very little discussion about &lt;em&gt;why&lt;/em&gt; snippets are useful… and whether there are any dangers that come with using snippets.&lt;/p&gt;
+
+&lt;p&gt;First, what is a snippet? In one sentence, a snippet (in Sublime Text) is a saved piece of code that you easily add to other code by typing a certain phrase and hitting &lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So why do I advocate (and practice) the use of snippets? There are a few obvious reasons for using snippets:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It allows one to write code more quickly. Pretty obvious… and boy does it work!&lt;/li&gt;
+  &lt;li&gt;It makes coding more enjoyable because you don’t have to spend time typing configurations that you are familiar with. You can get to the fun parts of an algorithm more quickly and make the busy-work a breeze.&lt;/li&gt;
+  &lt;li&gt;When shared, snippets will help as many people as you share it with become more effective.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In addition the these advantages, I think there is another, often overlooked, benefit of using snippets:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using snippets across a team or community allows you to more easily standardize your code. Want to standardize how your team imports a configuration file? Snippets will do the trick. Want to make sure your team is using the &lt;code class=&quot;highlighter-rouge&quot;&gt;with open('file.txt', 'r') as f:&lt;/code&gt; paradigm in python? Make it easy by creating a &lt;a href=&quot;https://github.com/fhightower/public-sublime-snippets/blob/master/python/withopenas.sublime-snippet&quot;&gt;snippet&lt;/a&gt;. When used tactfully, snippets make it easy to do things the right way.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But are there any dangers of using snippets? I believe there are. I do not think they outweigh the benefits, but a few things to be aware of when it comes to using snippets:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Snippets can become a crutch. Especially for users that are new to a programming language, SDK, or other paradigm and who haven’t ‘struggled’ doing things the hard way (without snippets), snippets can provide them with a easy way forward, but may prevent them from actually learning the new system. This is why I recommend that people do things the hard way (again, without snippets) for a while before they start relying heavily on snippets. Given enough time, this can even be a danger for a seasoned veteran. Every now and then (ok, more often than that) I find myself writing python on a server using vi and draw a complete blank on how to using &lt;a href=&quot;https://docs.python.org/3.6/library/configparser.html&quot;&gt;configparser&lt;/a&gt; or something of that nature. Snippets are helpful, but they can become a crutch.&lt;/li&gt;
+  &lt;li&gt;Snippets can encourage poor code structure by making it easier to add duplicate code in the same file/project. I have seen instances (and have found myself doing this too) where programmers have used snippets to add the same code in two, three, or even four places in the same file. It’s just so easy!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As I said, I don’t feel any of these dangers trump the, many, benefits of snippets. I’ll discuss these in future blog posts as well, but here are some tools for creating and documenting snippets that you may find helpful:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fhightower/sublime-snippet-creator&quot;&gt;Snippet Creator&lt;/a&gt; - Automatically create Sublime Text snippets from code.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fhightower/sublime_snippet_documenter&quot;&gt;Snippet Documenter&lt;/a&gt; - Script to pull descriptions from Sublime snippets and add them to a repository’s readme.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/08/software-development-principles-one/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/08/software-development-principles-one/</guid>
+        
+        
+        <category>programming</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>JS Puzzles: How Well do you Know Javascript?</title>
+        <description>&lt;p&gt;Here are a couple of fun Javascript puzzles I’ve created/found that demonstrate important Javascript gotchas. There are answers/explainations near the bottom of the page.&lt;/p&gt;
+
+&lt;h3 id=&quot;puzzles&quot;&gt;Puzzles&lt;/h3&gt;
+
+&lt;h4 id=&quot;variable-scoping&quot;&gt;Variable Scoping&lt;/h4&gt;
+
+&lt;p&gt;As I’m learning &lt;a href=&quot;https://www.typescriptlang.org/index.html&quot;&gt;Typescript&lt;/a&gt;, I was reading through the docs and ran across a fascinating little code snippet demonstrating &lt;a href=&quot;https://www.typescriptlang.org/docs/handbook/variable-declarations.html#variable-capturing-quirks&quot;&gt;variable scoping gotchas&lt;/a&gt; in javascript. The question was:&lt;/p&gt;
+
+&lt;p&gt;What is the output of the code below?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;indexing-an-objects-properties&quot;&gt;Indexing an Object’s Properties&lt;/h4&gt;
+
+&lt;p&gt;I came up with this puzzle to demonstrate the difference between accessing the value of an Object using a dot versus using brackets (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;data[&quot;test&quot;]&lt;/code&gt; vs. &lt;code class=&quot;highlighter-rouge&quot;&gt;data.test&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;What is the output of the code block below?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;zero&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;eye&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;answers&quot;&gt;Answers&lt;/h3&gt;
+
+&lt;h4 id=&quot;variable-scoping---answerexplaination&quot;&gt;Variable Scoping - Answer/Explaination&lt;/h4&gt;
+
+&lt;p&gt;Most people expect, as did I, that this code would output:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;when in fact, the output is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This occurs because the &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt; function will not run until the for loop has finished. By the time the for loop has finished, the value of variable &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; is 10. Each of the functions called by the &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt; function is looking at the same &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; from the same scope, so they all log &lt;code class=&quot;highlighter-rouge&quot;&gt;10&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;indexing-an-objects-properties---answerexplaination&quot;&gt;Indexing an Object’s Properties - Answer/Explaination&lt;/h4&gt;
+
+&lt;p&gt;The output of this code puzzle is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zero
+eye
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This occurs because the first, and only, time through the for loop the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; is 0 (zero). When I call &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(data[i]);&lt;/code&gt;, javascript starts inside the brackets by getting the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; (which is 0). Thus, the first logging is equivalent to saying &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(data.0);&lt;/code&gt; and outputs ‘zero’.&lt;/p&gt;
+
+&lt;p&gt;In the second logging (&lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(data.i);&lt;/code&gt;), javascript does not get the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;, but instead treats “i” as a literal key. Thus, this is equivalent to saying &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log(data[&quot;i&quot;]);&lt;/code&gt; which outputs ‘eye’.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/08/javascript-puzzles/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/08/javascript-puzzles/</guid>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Software Development Principles, Part Zero</title>
+        <description>&lt;p&gt;My programming philosophy: Be impatient. Be patient. Write lots and lots of snippets.&lt;/p&gt;
+
+&lt;p&gt;I’m going to begin a series detailing some of the principles I use in the process of writing code. I am sure that some of what follows has already been said, but I shamelessly repeat it for my own good and for the good of my readers. Here are some of the topics I plan to cover (in no particular order):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The importance of being impatient: why and when impatience is a virtue.&lt;/li&gt;
+  &lt;li&gt;The importance of being patient: why and when patience is a virtue.&lt;/li&gt;
+  &lt;li&gt;The power of snippets.&lt;/li&gt;
+  &lt;li&gt;Shedding: solving a problem in it’s generic form so that solutions can be reused.&lt;/li&gt;
+  &lt;li&gt;Code review: opening up your code to the light of day.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These topics, among others, will be the subject of discussion in the weeks to come, so stay tuned!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/07/software-development-principles-zero/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/software-development-principles-zero/</guid>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Why?</title>
+        <description>&lt;p&gt;Why am I starting a blog?&lt;/p&gt;
+
+&lt;p&gt;From the start, I want to outline my initial goals for this blog. What I want it to become and what I don’t want it to become.&lt;/p&gt;
+
+&lt;p&gt;One of the guiding principles behind this blog is captured by the quote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Great minds discuss ideas. Average minds discuss events. Small minds discuss people.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;This blog is designed to discuss ideas.&lt;/strong&gt; In as much as I do mention people or events, I want to work backwards to the underlying worldviews and philosophies driving that person or event. I fully expect that this blog will cover numerous topics including computer science, software development, philosophy, and religion. In all of these, I want to dwell in the realm of ideas &lt;em&gt;and&lt;/em&gt; their implications. The reason for my focus on ideas is three-fold. First, there is nothing like the articulation and communication of an idea to help my own understanding of said idea. For example, in the process of articulating my development process, I will likely find areas I could improve and streamline. Second, I would like to let my ideas see the light of public scrutiny so I can get feedback and improve over time based on the input of others. Third, ideas and thoughtful discussion is going to be most beneficial for visitors to my blog. In my mind, this is one of the biggest differences between a well-written blog and a social media account (which is of very little value in my opinion). It’s hard interact with Ralph Waldo Emerson’s view of history in 140 or less characters, but it is possible with a blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This blog is designed to ask probing and difficult questions.&lt;/strong&gt; Is there any meaning to life? Why should I invest my life honing my programming skills and improving my understanding of the computer science discipline? It’s fun, I know, but is this enough to justify a lifetime spent on it? In this blog, I may hold back on a few topics and some answers, but I won’t hold back on hard questions. Existential crises are welcomed here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This blog is designed to be a honest forum for my thoughts and struggles without being narrowly focused on my own experiences.&lt;/strong&gt; How is this possible? I will voice some of my struggles as I grow as a software developer, wrestle with the ethical questions that can come with threat intelligence, and wade through philosophical and theological debates… and I will do all of things because I doubt I am the only one who has ever felt like a fraud of a programmer (although this feeling may be quite true in my case) or wondered why I should spend all of this time programming and hacking. What’s the point of all this work? What is the potential of technology? In addressing some of my personal thoughts and struggles, I hope to broaden them out and address the larger problems that many neglect (or, as I suspect, suppress).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DISCLAIMER: You will likely disagree with at least some of what I write in this blog.&lt;/strong&gt; And… that’s good for both you and me! One of the, many, unfortunate things that changed with the candidacy and victory of Donald Trump as president of the United States is that it seems many Americans have forgotten how to properly interact with ideas with which we disagree. Donald Trump’s response to ideas with which he doesn’t agree is to either tweet about it (and again: how much can you really interact with an idea in 140 characters?), discount the idea as ‘fake’ or ‘false’ based solely on the motives of the one espousing the idea (this is an under-diagnosed fallacy named &lt;a href=&quot;https://wikipedia.org/wiki/Bulverism&quot;&gt;Bulverism&lt;/a&gt;), or, perhaps most dangerously, ignore the idea altogether and insult the person or organization that is discussing the idea. What is being forgotten, or so it appears, is the ability to thoughtfully and politely engage with those with whom we disagree. My challenge to you, my kind reader, is that you do not fall into any of these traps and that you are willing to engage thoughtfully in the world of ideas without insulting the person behind them. Additionally, help me to do the same and call me out if I ever attack a person rather than an idea. All ideas are not created equal, but all humans beings are.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/07/why/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/why/</guid>
+        
+        
+        <category>miscellaneous</category>
+        
+      </item>
+    
   </channel>
 </rss>
