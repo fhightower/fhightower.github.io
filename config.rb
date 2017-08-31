@@ -23,3 +23,9 @@ output_style = :expanded
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+group :jekyll_plugins do
+   gem "jekyll-paginate", "~> 1.1.0"
+   gem "jekyll-paginate-multiple", "~> 0.1.0"
+end
+
