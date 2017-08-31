@@ -35,7 +35,7 @@ html {
 
 body {
     color: #444;
-    font-family: -apple-system, Georgia, Source Sans Pro, sans-serif;
+    font-family: 'Lora', serif;
     font-size: .9rem;
     line-height: 1.5rem;
 }
@@ -95,7 +95,7 @@ h5,
 h6 {
     color: #000;
     font-weight: 700;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 h1:not(:first-child),
