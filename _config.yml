@@ -11,7 +11,7 @@ description: >
   I'm a programmer who loves writing code and is passionate about using programming for good.
 
 # BUILD SETTINGS
-permalink: /:year/:title/
+permalink: /:year/:month/:title/
 markdown: kramdown
 highlighter: rouge
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
@@ -29,7 +29,7 @@ github_username: fhightower
 # disqus_account: songroger
 
 # PAGINATION
-plugins :
+plugins:
   - jekyll-paginate
   - jekyll-paginate-multiple
 

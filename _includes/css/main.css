@@ -1,5 +1,5 @@
 ::selection {
-    background: #1565c0;
+    background: #437FC3;
     color: #fff;
     text-shadow: none
 }
@@ -50,7 +50,7 @@ img {
 a:active,
 a:hover,
 a:visited {
-    color: #444;
+    color: #073C78;
     text-decoration: none
 }
 
@@ -64,8 +64,8 @@ em {
 
 a {
     background: transparent;
-    color: #1565c0;
-    text-decoration: none;
+    color: #437FC3;
+    /*text-decoration: none;*/
     cursor: pointer;
     word-wrap: break-word
 }
@@ -327,7 +327,7 @@ blockquote p {
 }
 
 .blocks__item .btn {
-    box-shadow: inset 0 0 0 0 #1565c0
+    box-shadow: inset 0 0 0 0 #437FC3
 }
 
 .article {
@@ -442,7 +442,14 @@ blockquote p {
     font-size: 20px;
     font-family: Georgia, Hiragino Sans GB, Microsoft YaHei, sans-serif;
     font-weight: 700;
-    padding-right: 10px
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.arch-title:active,
+.arch-title:visited {
+    color: #444;
+    text-decoration: none;
 }
 
 .arch-title:hover {
