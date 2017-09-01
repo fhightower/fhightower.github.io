@@ -6,8 +6,8 @@
 </description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Aug 2017 22:59:40 +0000</pubDate>
-    <lastBuildDate>Thu, 31 Aug 2017 22:59:40 +0000</lastBuildDate>
+    <pubDate>Fri, 01 Sep 2017 00:10:53 +0000</pubDate>
+    <lastBuildDate>Fri, 01 Sep 2017 00:10:53 +0000</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -147,6 +147,37 @@ eye
         
         
         <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Why You Should Stop Sharing IOCs on Twitter</title>
+        <description>&lt;p&gt;If you regularly share IOCs (&lt;a href=&quot;https://en.wikipedia.org/wiki/Indicator_of_compromise&quot;&gt;Indicators of Compromise&lt;/a&gt;) on twitter and don’t share those  IOCs in any other location, you need to find a more effective place to share your data; for your own good, for the good of others in the computer security space, and for the good of every human being that uses the internet.&lt;/p&gt;
+
+&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+
+&lt;p&gt;If you only share IOCs and/or threat intelligence on Twitter, you are depriving yourself of a résumé you can show off and a data source you can build out and enrich over time. You are also making it hard for your friends in the computer security industry to access and use your data which, in turn, means that less people benefit from the information you share. Consider starting a blog (&lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt; are quick, easy, and free!) or getting a free &lt;a href=&quot;https://app.threatconnect.com/auth/index.xhtml&quot;&gt;ThreatConnect&lt;/a&gt; account to produce, share, and enrich you data more effectively. In the same way that not all data of equal value, it is also true that not all methods of sharing data are equally effective. Find somewhere to share your data in a way that is most effective.&lt;/p&gt;
+
+&lt;h3 id=&quot;full-argument&quot;&gt;Full Argument&lt;/h3&gt;
+
+&lt;p&gt;In 2014, David Bianco introduced the idea of the &lt;a href=&quot;https://www.youtube.com/watch?v=zlAWbdSlhaQ&quot;&gt;pyramid of pain&lt;/a&gt;. Far from being a grueling fitness regimen, the computer security pyramid of pain describes the increasing levels of ‘pain’ that can be inflicted upon an adversary by understanding and acting on different forms of data or intelligence. For example, near the bottom of the pyramid (describing things that inflict very little pain on an adversary) are things like file hashes and IP Addresses. If I find, share, and block the sha256 hash of a malicious file, it is a trivial matter for most adversaries (those with the capability to at least edit a piece of malware) to quickly change the hash. Adding a character will change the hash. Identifying and blocking a hash is nice, but is of very little impact on the adversary in the long run. Identifying fuzzy hashes (like an ssdeep hash) or better yet a unique string used in the malware will be more effective and let me be more effective in identifying the adversary’s activities. Better yet is understanding an adversary’s operating procedures and common behavior patterns. At this point, you can begin to monitor, track, and stop the adversary much more effectively than simply blocking hashes that come in from some feed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/photos/Pyramid of Pain.png&quot; alt=&quot;Computer Security Pyramid of Pain&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If the pyramid of pain teaches us anything, it is that not all data or intelligence is created equally. That is to say that it is not equally effective. I posit that the same is true of how you distribute your data and intelligence…. it’s not just what you have to share, but also how (and why).&lt;/p&gt;
+
+&lt;p&gt;And this brings me back to my primary thesis: you should find a place to share IOCs and intelligence in a way that is more impactful than Twitter. Doing so has many benefits both to you and others in the computer security industry. First, it benefits you by providing you with one place where you can search, enrich, and show off your data. Ideally, you should try to find something that can be both a résumé and an analytical playground (some system that provides you with the tools you need to do analysis). Second, it’s better for everyone in the computer security industry because your data is more accessible and usable. Assuming you find a good place to share your data, more people can get at it, enrich it, and build off of what you have done. This, in turn, enhances the security of organizations and users around the world and makes the internet a safer place.&lt;/p&gt;
+
+&lt;p&gt;“So if I don’t use Twitter, what should I use?” Great question! Personally, I use &lt;a href=&quot;https://app.threatconnect.com/auth/index.xhtml&quot;&gt;ThreatConnect&lt;/a&gt;. I find it has a lot of tools for enriching indicators and it allows users to share intelligence and work together to develop intelligence. I know blogs are another very popular way to share IOCs and I think this can be effective (certainly more than Twitter). The downside of blogs is that is is harder to update data and a blog doesn’t have built-in enrichment tools like whois and dns data; that being said, a blog can be a great place to start. Starting a &lt;a href=&quot;https://pages.github.com/&quot;&gt;github page&lt;/a&gt; is free and easy.&lt;/p&gt;
+
+&lt;p&gt;Changing the way you share IOCs and intelligence will be hard, but well worth it once you begin to develop a résumé of content you can share with others and use as a starting point for future investigations. Find a rabbit hole and enjoy it!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/07/indicators-on-twitter/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/indicators-on-twitter/</guid>
+        
+        
+        <category>threat-intelligence</category>
         
       </item>
     
