@@ -2,7 +2,6 @@
 layout: post
 title: "JS Puzzles: How Well do you Know Javascript?"
 description: "Javascript puzzles to test your understanding of Javascript"
-tail: Give these puzzles to your friends and enjoy as they over-think them and second-guess themselves!
 category: programming
 ---
 
@@ -91,3 +90,5 @@ eye
 This occurs because the first, and only, time through the for loop the value of `i` is 0 (zero). When I call `console.log(data[i]);`, javascript starts inside the brackets by getting the value of `i` (which is 0). Thus, the first logging is equivalent to saying `console.log(data.0);` and outputs 'zero'.
 
 In the second logging (`console.log(data.i);`), javascript does not get the value of `i`, but instead treats "i" as a literal key. Thus, this is equivalent to saying `console.log(data["i"]);` which outputs 'eye'.
+
+Give these puzzles to your friends and enjoy as they over-think them and second-guess themselves!

@@ -3,6 +3,11 @@ layout: post
 title: Why You Should Stop Sharing IOCs on Twitter
 description: "If you only share indicators on twitter, you can do better for yourself and for others in the industry."
 category: threat-intelligence
+tags:
+    - threat intelligence
+    - pyramid of pain
+    - twitter
+    - IOCs
 ---
 
 If you regularly share IOCs ([Indicators of Compromise](https://en.wikipedia.org/wiki/Indicator_of_compromise)) on twitter and don't share those  IOCs in any other location, you need to find a more effective place to share your data; for your own good, for the good of others in the computer security space, and for the good of every human being that uses the internet.

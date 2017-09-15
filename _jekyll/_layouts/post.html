@@ -11,8 +11,12 @@ layout: default
     </div>
   {% endif %}
   {{ content }}
-  {% if page.tail %}
-    <div class="post-tags">{{ page.tail }}</div>
+  {% if page.tags %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+        <div class="tag">{{ tag }}</div> 
+      {% endfor %}
+    </div>
   {% endif %}
 </article>
 
