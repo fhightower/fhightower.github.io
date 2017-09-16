@@ -6,8 +6,8 @@
 </description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Sep 2017 10:26:03 +0000</pubDate>
-    <lastBuildDate>Fri, 15 Sep 2017 10:26:03 +0000</lastBuildDate>
+    <pubDate>Sat, 16 Sep 2017 00:39:51 +0000</pubDate>
+    <lastBuildDate>Sat, 16 Sep 2017 00:39:51 +0000</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -64,6 +64,12 @@
         <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
         <link>http://0.0.0.0:4000/2017/08/software-development-principles-one/</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2017/08/software-development-principles-one/</guid>
+        
+        <category>Sublime Text</category>
+        
+        <category>Snippets</category>
+        
+        <category>Programming</category>
         
         
         <category>programming</category>
@@ -164,6 +170,12 @@ eye
         <link>http://0.0.0.0:4000/2017/08/javascript-puzzles/</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2017/08/javascript-puzzles/</guid>
         
+        <category>Javascript</category>
+        
+        <category>Puzzles</category>
+        
+        <category>Programming</category>
+        
         
         <category>programming</category>
         
@@ -195,11 +207,11 @@ eye
         <link>http://0.0.0.0:4000/2017/07/indicators-on-twitter/</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/indicators-on-twitter/</guid>
         
-        <category>threat intelligence</category>
+        <category>Threat Intelligence</category>
         
-        <category>pyramid of pain</category>
+        <category>Pyramid of Pain</category>
         
-        <category>twitter</category>
+        <category>Twitter</category>
         
         <category>IOCs</category>
         
@@ -227,6 +239,8 @@ eye
         <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
         <link>http://0.0.0.0:4000/2017/07/software-development-principles-zero/</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/software-development-principles-zero/</guid>
+        
+        <category>Programming</category>
         
         
         <category>programming</category>
@@ -256,6 +270,10 @@ eye
         <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
         <link>http://0.0.0.0:4000/2017/07/why/</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/2017/07/why/</guid>
+        
+        <category>Why</category>
+        
+        <category>Purpose</category>
         
         
         <category>miscellaneous</category>
