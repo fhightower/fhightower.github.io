@@ -3,6 +3,8 @@ layout: post
 title: Software Development Principles, Part Zero
 description: "My programming philosophy: Be impatient. Be patient. Write lots and lots of snippets."
 category: programming
+tags:
+    - Programming
 ---
 
 My programming philosophy: Be impatient. Be patient. Write lots and lots of snippets.

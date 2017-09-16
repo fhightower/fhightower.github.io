@@ -4,9 +4,9 @@ title: Why You Should Stop Sharing IOCs on Twitter
 description: "If you only share indicators on twitter, you can do better for yourself and for others in the industry."
 category: threat-intelligence
 tags:
-    - threat intelligence
-    - pyramid of pain
-    - twitter
+    - Threat Intelligence
+    - Pyramid of Pain
+    - Twitter
     - IOCs
 ---
 
