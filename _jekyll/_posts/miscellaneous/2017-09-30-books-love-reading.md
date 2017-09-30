@@ -16,4 +16,4 @@ Recommended reading list for those looking to learn how to read again:
 - [Fahrenheit 451](https://en.wikipedia.org/wiki/Fahrenheit_451) - if you have never read this, or if it has been a while since you read it (probably in middle school), you should revisit this classic. It is well-written and will make you want to value books more (which *hopefully* leads to you reading them more).
 - [A Guide to Civilized Loafing](https://openlibrary.org/books/OL6309832M/A_guide_to_civilized_loafing) - Published in 1934, this delightful book challenges readers to make the most of their free time by investing in things which profit and grow the body, mind, and soul.
 
-![Turn Off the TV and Walk Away!](/photos/kill_tv.png)
+![Turn Off the TV and Walk Away!](/photos/kill_tv.jpg)
