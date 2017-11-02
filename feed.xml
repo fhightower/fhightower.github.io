@@ -6,9 +6,110 @@
 </description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Oct 2017 01:24:53 +0000</pubDate>
-    <lastBuildDate>Mon, 30 Oct 2017 01:24:53 +0000</lastBuildDate>
+    <pubDate>Thu, 02 Nov 2017 23:10:57 +0000</pubDate>
+    <lastBuildDate>Thu, 02 Nov 2017 23:10:57 +0000</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Creating a Testing Environment for Jekyll Websites</title>
+        <description>&lt;p&gt;If you are using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create a website, here are instructions to setup a &lt;a href=&quot;https://app.vagrantup.com/boxes/search&quot;&gt;Vagrant&lt;/a&gt; virtual machine for testing your Jekyll site locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-0-create-the-vagrant-vm&quot;&gt;Step 0: Create the Vagrant VM&lt;/h3&gt;
+
+&lt;h4 id=&quot;part-a-downloading-the-vm&quot;&gt;Part A: Downloading the VM&lt;/h4&gt;
+
+&lt;p&gt;To create an &lt;a href=&quot;https://app.vagrantup.com/ubuntu/boxes/trusty64&quot;&gt;Ubuntu&lt;/a&gt; VM, do:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant init ubuntu/trusty64
+vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;part-b-configuring-the-vm&quot;&gt;Part B: Configuring the VM&lt;/h4&gt;
+
+&lt;p&gt;We need to forward a port from the VM to the host machine so that you can open the browser on your host machine and see the Jekyll site. To do this, paste the code below into the &lt;code class=&quot;highlighter-rouge&quot;&gt;Vagrantfile&lt;/code&gt; in the current directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# -*- mode: ruby -*-&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# vi: set ft=ruby :&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;Vagrant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ubuntu/trusty64&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;network&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;forwarded_port&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;guest: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;host: &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4000&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After you have done this, reload the VM and ssh into it:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant reload
+vagrant ssh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-1-install-necessary-packages&quot;&gt;Step 1: Install Necessary Packages&lt;/h3&gt;
+
+&lt;p&gt;To install the packages required for running Jekyll locally, run:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update;
+sudo apt-get -y install git;
+sudo apt-add-repository ppa:brightbox/ruby-ng;
+sudo apt-get update;
+sudo apt-get install -y ruby2.3 ruby2.3-dev;
+&lt;span class=&quot;c&quot;&gt;# this is required for nokogiri&lt;/span&gt;
+sudo apt-get install -y libxslt-dev libxml2-dev zlib1g-dev
+ruby --version
+sudo gem install bundler
+
+&lt;span class=&quot;c&quot;&gt;# install nodejs as the javascript runtime environment&lt;/span&gt;
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -;
+sudo apt-get install -y nodejs;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-2-clone-your-project&quot;&gt;Step 2: Clone Your Project&lt;/h3&gt;
+
+&lt;p&gt;Clone the repository with the Jekyll site you would like to test:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /vagrant/
+&lt;span class=&quot;c&quot;&gt;# clone your own project below&lt;/span&gt;
+git clone https://github.com/fhightower/fhightower.github.io.git
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;fhightower.github.io/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3-run-jekyll&quot;&gt;Step 3: Run Jekyll!&lt;/h3&gt;
+
+&lt;p&gt;Before you do this, you should make sure your repository has a &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; as Github &lt;a href=&quot;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler&quot;&gt;recommends&lt;/a&gt;. Once this is done, you can run the following to run Jekyll:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# start with instructions here: https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler&lt;/span&gt;
+bundle install
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve --host 0.0.0.0
+&lt;span class=&quot;c&quot;&gt;# to have the site update every time you save a file, run: bundle exec jekyll serve --force_polling --host 0.0.0.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Congratulations! You now have a testing environment for your Jekyll sites. Simple &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant up &amp;amp;&amp;amp; vagrant ssh&lt;/code&gt; to start the VM where you can test the sites.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/11/github-pages-jekyll-testing-virtual-machine/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/11/github-pages-jekyll-testing-virtual-machine/</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>Github Pages</category>
+        
+        <category>Vagrant</category>
+        
+        <category>Virtual Machine</category>
+        
+        <category>Github</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Books to Help You Fall in Love with Reading</title>
