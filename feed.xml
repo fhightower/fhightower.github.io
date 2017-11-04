@@ -6,9 +6,48 @@
 </description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Nov 2017 23:10:57 +0000</pubDate>
-    <lastBuildDate>Thu, 02 Nov 2017 23:10:57 +0000</lastBuildDate>
+    <pubDate>Sat, 04 Nov 2017 17:35:07 +0000</pubDate>
+    <lastBuildDate>Sat, 04 Nov 2017 17:35:07 +0000</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Software Development Principles 2: A Decent Workflow</title>
+        <description>&lt;p&gt;When working on a decently large project (anything that is more than a quick script or POC), my software development process is made up of three steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moving Forward&lt;/li&gt;
+  &lt;li&gt;UI/UX Improvements&lt;/li&gt;
+  &lt;li&gt;Review/Cleaning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I don’t have a catchy acronym for this (yet), but it is a helpful way to break down a project. My projects are a continuous cycle through these three steps. So what does each step consist of?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Moving Forward&lt;/strong&gt; - This step involves any action that moves you toward the end goal of the project. This often means adding a new feature, but it may involve removing a feature. It is a significant change to code that is not a UI/UX change.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;UI/UX Improvements&lt;/strong&gt; - This step involves making improvements (not to be confused with changes) that enhance both a human’s &lt;em&gt;ability&lt;/em&gt; to use the system and the &lt;em&gt;joy&lt;/em&gt; he/she experiences while doing so.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Review/Cleaning&lt;/strong&gt; - This step involves improving code quality (not adding any new features, but cleaning up what you already have), writing scripts/tools/&lt;a href=&quot;http://hightower.tk/2017/08/software-development-principles-one/&quot;&gt;snippets&lt;/a&gt; to make it easier to write better code moving forward, writing tests, and planning out the next “Moving Forward” phase.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For example, in a simple app that gives every user a profile to which they can upload photos, a &lt;strong&gt;Moving Forward&lt;/strong&gt; step might include adding the ability for one user to ‘like’ another user’s photo. To add this feature, the creator(s) of the app would add everything from the database up to the UI that is required to ‘like’ a photo. The UI and UX of this new feature may not be perfect or ideal, but it is present and usable. The next step of &lt;strong&gt;UI/UX Improvements&lt;/strong&gt; would entail improving the UI and UX of the UI elements involved in ‘liking’ a photo. Should the button for liking a photo be thumbs up? A star? A heart? What happens when the user clicks the button? Questions like this should be answered and implemented in a way that improves the UI and UX of the feature that was just added. Next, the &lt;strong&gt;Review/Cleaning&lt;/strong&gt; step might include writing more robust tests for the new ‘like’ feature. Writing broad, robust tests are hard. Hopefully when a new feature has tests associated with it when it ships, but those tests may need to be expanded to check for edge cases. This review/cleaning step would also look back at the last two steps to identify what went well and what went poorly (and how to keep doing things well and stop doing things poorly). Lastly, the creator(s) of the app would take some time during this step to think about what the next improvement will be.&lt;/p&gt;
+
+&lt;p&gt;This three-step process has worked well for me and is flexible enough that it can be applied to many different projects and use-cases.&lt;/p&gt;
+
+&lt;p&gt;Enjoy and happy coding!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
+        <link>http://0.0.0.0:4000/2017/11/software-development-principles-two/</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/2017/11/software-development-principles-two/</guid>
+        
+        <category>Workflow</category>
+        
+        <category>Process</category>
+        
+        <category>Programming</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Creating a Testing Environment for Jekyll Websites</title>

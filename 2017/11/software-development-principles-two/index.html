@@ -7,19 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="songroger">
 
-  <title>Tags</title>
+  <title>Software Development Principles 2: A Decent Workflow</title>
 
-  <meta name="description" content="I'm a programmer who loves writing code and is passionate about using programming for good.">
+  <meta name="description" content="&lt;p&gt;When working on a decently large project (anything that is more than a quick script or POC), my software development process is made up of three ste...">
 
   <!-- Open graph data -->
   <meta property="og:site_name" content="Floyd Hightower">
-  <meta property="og:title" content="Tags">
-  <meta property="og:url" content="http://0.0.0.0:4000/tags/">
+  <meta property="og:title" content="Software Development Principles 2: A Decent Workflow">
+  <meta property="og:url" content="http://0.0.0.0:4000/2017/11/software-development-principles-two/">
   <meta property="og:type" content="article">
-  <meta property="og:description" content="I'm a programmer who loves writing code and is passionate about using programming for good.">
+  <meta property="og:description" content="&lt;p&gt;When working on a decently large project (anything that is more than a quick script or POC), my software development process is made up of three ste...">
 
   <!-- Standard Stuff -->
-  <link rel="canonical" href="http://0.0.0.0:4000/tags/"/>
+  <link rel="canonical" href="http://0.0.0.0:4000/2017/11/software-development-principles-two/"/>
   <link rel="alternate" type="application/rss+xml" title="Floyd Hightower" href="http://0.0.0.0:4000/feed.xml"/>
 
   <!-- Favicons -->
@@ -752,526 +752,55 @@ pre {
   <main class="col">
 
 
-<h2 class="article__title article__title--single">Tags</h2>
-<div class='list-group'>
+<article class="article">
+  <h2 class="article__title article__title--single">Software Development Principles 2: A Decent Workflow</h2>
+  <time class="article__date" datetime="2017-11-03">November 3, 2017</time>
   
+  <p>When working on a decently large project (anything that is more than a quick script or POC), my software development process is made up of three steps:</p>
 
-  
-    
-      <a href="/tags#Why-ref" class='list-group-item'>
-        Why <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Purpose-ref" class='list-group-item'>
-        Purpose <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Programming-ref" class='list-group-item'>
-        Programming <span class='badge'>4</span>
-      </a>
-    
-      <a href="/tags#Threat Intelligence-ref" class='list-group-item'>
-        Threat Intelligence <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Pyramid of Pain-ref" class='list-group-item'>
-        Pyramid of Pain <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Twitter-ref" class='list-group-item'>
-        Twitter <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#IOCs-ref" class='list-group-item'>
-        IOCs <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Javascript-ref" class='list-group-item'>
-        Javascript <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Puzzles-ref" class='list-group-item'>
-        Puzzles <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Sublime Text-ref" class='list-group-item'>
-        Sublime Text <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Snippets-ref" class='list-group-item'>
-        Snippets <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#English-ref" class='list-group-item'>
-        English <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Linguistics-ref" class='list-group-item'>
-        Linguistics <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Reading-ref" class='list-group-item'>
-        Reading <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Culture-ref" class='list-group-item'>
-        Culture <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Jekyll-ref" class='list-group-item'>
-        Jekyll <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Github Pages-ref" class='list-group-item'>
-        Github Pages <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Vagrant-ref" class='list-group-item'>
-        Vagrant <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Virtual Machine-ref" class='list-group-item'>
-        Virtual Machine <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Github-ref" class='list-group-item'>
-        Github <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Workflow-ref" class='list-group-item'>
-        Workflow <span class='badge'>1</span>
-      </a>
-    
-      <a href="/tags#Process-ref" class='list-group-item'>
-        Process <span class='badge'>1</span>
-      </a>
-    
-  
+<ul>
+  <li>Moving Forward</li>
+  <li>UI/UX Improvements</li>
+  <li>Review/Cleaning</li>
+</ul>
+
+<p>I don’t have a catchy acronym for this (yet), but it is a helpful way to break down a project. My projects are a continuous cycle through these three steps. So what does each step consist of?</p>
+
+<ol>
+  <li><strong>Moving Forward</strong> - This step involves any action that moves you toward the end goal of the project. This often means adding a new feature, but it may involve removing a feature. It is a significant change to code that is not a UI/UX change.</li>
+  <li><strong>UI/UX Improvements</strong> - This step involves making improvements (not to be confused with changes) that enhance both a human’s <em>ability</em> to use the system and the <em>joy</em> he/she experiences while doing so.</li>
+  <li><strong>Review/Cleaning</strong> - This step involves improving code quality (not adding any new features, but cleaning up what you already have), writing scripts/tools/<a href="http://hightower.tk/2017/08/software-development-principles-one/">snippets</a> to make it easier to write better code moving forward, writing tests, and planning out the next “Moving Forward” phase.</li>
+</ol>
+
+<p>For example, in a simple app that gives every user a profile to which they can upload photos, a <strong>Moving Forward</strong> step might include adding the ability for one user to ‘like’ another user’s photo. To add this feature, the creator(s) of the app would add everything from the database up to the UI that is required to ‘like’ a photo. The UI and UX of this new feature may not be perfect or ideal, but it is present and usable. The next step of <strong>UI/UX Improvements</strong> would entail improving the UI and UX of the UI elements involved in ‘liking’ a photo. Should the button for liking a photo be thumbs up? A star? A heart? What happens when the user clicks the button? Questions like this should be answered and implemented in a way that improves the UI and UX of the feature that was just added. Next, the <strong>Review/Cleaning</strong> step might include writing more robust tests for the new ‘like’ feature. Writing broad, robust tests are hard. Hopefully when a new feature has tests associated with it when it ships, but those tests may need to be expanded to check for edge cases. This review/cleaning step would also look back at the last two steps to identify what went well and what went poorly (and how to keep doing things well and stop doing things poorly). Lastly, the creator(s) of the app would take some time during this step to think about what the next improvement will be.</p>
+
+<p>This three-step process has worked well for me and is flexible enough that it can be applied to many different projects and use-cases.</p>
+
+<p>Enjoy and happy coding!</p>
 
   
-</div>
-
-
-
-  <h2 class='tag-header' id="Why-ref">Why</h2>
-  <ul>
-    
-
-    
+    <div class="post-tags">
       
-        
-          
-          <li><a href="/2017/07/why/">Why?</a></li>
-          
-        
+        <div class="tag">Workflow</div> 
       
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Purpose-ref">Purpose</h2>
-  <ul>
-    
-
-    
+        <div class="tag">Process</div> 
       
-        
-          
-          <li><a href="/2017/07/why/">Why?</a></li>
-          
-        
+        <div class="tag">Programming</div> 
       
-    
+    </div>
+  
+</article>
 
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Programming-ref">Programming</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/software-development-principles-two/">Software Development Principles 2: A Decent Workflow</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2017/08/software-development-principles-one/">Software Development Principles 1: Snippets</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2017/08/javascript-puzzles/">JS Puzzles: How Well do you Know Javascript?</a></li>
-          
-        
-      
-    
-      
-        
-          
-          <li><a href="/2017/07/software-development-principles-zero/">Software Development Principles, Part Zero</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Threat Intelligence-ref">Threat Intelligence</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/07/indicators-on-twitter/">Why You Should Stop Sharing IOCs on Twitter</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Pyramid of Pain-ref">Pyramid of Pain</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/07/indicators-on-twitter/">Why You Should Stop Sharing IOCs on Twitter</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Twitter-ref">Twitter</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/07/indicators-on-twitter/">Why You Should Stop Sharing IOCs on Twitter</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="IOCs-ref">IOCs</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/07/indicators-on-twitter/">Why You Should Stop Sharing IOCs on Twitter</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Javascript-ref">Javascript</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/08/javascript-puzzles/">JS Puzzles: How Well do you Know Javascript?</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Puzzles-ref">Puzzles</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/08/javascript-puzzles/">JS Puzzles: How Well do you Know Javascript?</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Sublime Text-ref">Sublime Text</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/08/software-development-principles-one/">Software Development Principles 1: Snippets</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Snippets-ref">Snippets</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/08/software-development-principles-one/">Software Development Principles 1: Snippets</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="English-ref">English</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/09/english/">ESL: English as a Silly Language</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Linguistics-ref">Linguistics</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/09/english/">ESL: English as a Silly Language</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Reading-ref">Reading</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/09/books-love-reading/">Books to Help You Fall in Love with Reading</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Culture-ref">Culture</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/09/books-love-reading/">Books to Help You Fall in Love with Reading</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Jekyll-ref">Jekyll</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/github-pages-jekyll-testing-virtual-machine/">Creating a Testing Environment for Jekyll Websites</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Github Pages-ref">Github Pages</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/github-pages-jekyll-testing-virtual-machine/">Creating a Testing Environment for Jekyll Websites</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Vagrant-ref">Vagrant</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/github-pages-jekyll-testing-virtual-machine/">Creating a Testing Environment for Jekyll Websites</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Virtual Machine-ref">Virtual Machine</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/github-pages-jekyll-testing-virtual-machine/">Creating a Testing Environment for Jekyll Websites</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Github-ref">Github</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/github-pages-jekyll-testing-virtual-machine/">Creating a Testing Environment for Jekyll Websites</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Workflow-ref">Workflow</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/software-development-principles-two/">Software Development Principles 2: A Decent Workflow</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
-
-  <h2 class='tag-header' id="Process-ref">Process</h2>
-  <ul>
-    
-
-    
-      
-        
-          
-          <li><a href="/2017/11/software-development-principles-two/">Software Development Principles 2: A Decent Workflow</a></li>
-          
-        
-      
-    
-
-    
-    
-  </ul>
+<!-- <div class="blocks">
+  <div class="block__item block__item--mr">
+    <a href="https://twitter.com/intent/tweet?text=Software Development Principles 2: A Decent Workflow&amp;url=http://0.0.0.0:4000/2017/11/software-development-principles-two/&amp;via=hightowerfloyd">
+      <svg class="btn__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Twitter Icon</title>
+        <path d="M14.4 4.2C14.4 4.4 14.4 4.5 14.4 4.7 14.4 9 11.1 14 5 14 3.2 14 1.5 13.5 0 12.5 0.3 12.6 0.5 12.6 0.8 12.6 2.3 12.6 3.7 12 4.9 11.2 3.4 11.1 2.2 10.2 1.8 8.9 2 8.9 2.2 8.9 2.4 8.9 2.7 8.9 3 8.9 3.3 8.8 1.8 8.5 0.6 7.2 0.6 5.6L0.6 5.6C1.1 5.8 1.6 6 2.1 6 1.2 5.4 0.7 4.4 0.7 3.2 0.7 2.6 0.8 2.1 1.1 1.6 2.7 3.6 5.2 4.9 7.9 5 7.8 4.8 7.8 4.5 7.8 4.3 7.8 2.5 9.3 1 11.1 1 12 1 12.9 1.4 13.5 2 14.2 1.9 14.9 1.6 15.6 1.2 15.3 2 14.8 2.6 14.1 3.1 14.8 3 15.4 2.8 16 2.5 15.6 3.2 15 3.8 14.4 4.2L14.4 4.2Z"/>
+      </svg>
+    </a>
+  </div>
+</div> -->
 
 
 
