@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Floyd Hightower</title>
+    <title>Floyd Hightower's Website</title>
     <description>I'm a programmer who loves writing code and is passionate about using programming for good.
 </description>
     <link>http://0.0.0.0:4000/</link>
     <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Nov 2017 17:48:57 +0000</pubDate>
-    <lastBuildDate>Sat, 04 Nov 2017 17:48:57 +0000</lastBuildDate>
+    <pubDate>Fri, 08 Dec 2017 23:58:42 +0000</pubDate>
+    <lastBuildDate>Fri, 08 Dec 2017 23:58:42 +0000</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
