@@ -1,0 +1,25 @@
+  <header class="header">
+
+    {% if site.avatar %}
+      <div class="header__logo">
+        <a href="{{ site.baseurl }}/" class="header__link--logo">
+        <!-- <div class="spinner"></div> -->
+        <img src="{{ site.avatar }}"></a>
+      </div>
+    {% else %}
+      <h1 class="header__logo">
+        <a href="{{ site.baseurl }}/" class="header__link--logo">{{ site.title }}</a>
+      </h1>
+    {% endif %}
+
+    <nav class="header__nav" role="navigation">
+      <!-- <a href="{{ site.baseurl }}/programming/" class="header__link">Programming</a>
+      <a href="{{ site.baseurl }}/threat-intelligence/" class="header__link">Threat Intelligence</a>
+      <a href="{{ site.baseurl }}/miscellaneous/" class="header__link">Miscellaneous Thoughts</a> -->
+      <a href="{{ site.baseurl }}/" class="header__link">Projects</a>
+      <a href="{{ site.baseurl }}/blog/" class="header__link">Blog</a>
+      <a href="{{ site.baseurl }}/about/" class="header__link">About Me</a>
+    </nav>
+  </header>
+
+  <main class="col">

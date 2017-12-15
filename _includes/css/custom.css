@@ -1,0 +1,57 @@
+.shineThrough:hover a {
+    font-weight: bold;
+}
+
+.shineThrough:hover span {
+    font-weight: bold;
+}
+
+.projectListItem {
+    margin-top: 0.65em;
+    list-style: none;
+    padding-left: 0.8em;
+    border-left: solid 0.3em;
+}
+
+.projectListItem:hover {
+    padding-left: 0.6em;
+    border-left: solid 0.5em;
+}
+
+.threatIntelListItem {
+    border-left-color: #EE8777;
+}
+
+.threatIntelListItem:hover {
+    border-left-color: #EE8777;
+}
+
+.programmingListItem {
+    border-left-color: #4C8494;
+}
+
+.programmingListItem:hover {
+    border-left-color: #4C8494;
+}
+
+.miscListItem {
+    border-left-color: #87B742;
+}
+
+.miscListItem:hover {
+    border-left-color: #87B742;
+}
+
+/* STYLINGS FOR THE CATEGORIES. */
+.miscellaneous {
+    background: #87B742;
+}
+
+.programming {
+    background: #EE8777;
+}
+
+.threat-intelligence {
+    background: #4C8494;
+}
+/* END STYLINGS FOR THE CATEGORIES. */
