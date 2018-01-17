@@ -19,39 +19,39 @@
 }
 
 .threatIntelListItem {
-    border-left-color: #EE8777;
+    border-left-color: #737373;
 }
 
 .threatIntelListItem:hover {
-    border-left-color: #EE8777;
+    border-left-color: #737373;
 }
 
 .programmingListItem {
-    border-left-color: #4C8494;
+    border-left-color: #5C5C5C;
 }
 
 .programmingListItem:hover {
-    border-left-color: #4C8494;
+    border-left-color: #5C5C5C;
 }
 
 .miscListItem {
-    border-left-color: #87B742;
+    border-left-color: #454545;
 }
 
 .miscListItem:hover {
-    border-left-color: #87B742;
+    border-left-color: #454545;
 }
 
 /* STYLINGS FOR THE CATEGORIES. */
-.miscellaneous {
-    background: #87B742;
+.threat-intelligence {
+    background: #737373;
 }
 
 .programming {
-    background: #EE8777;
+    background: #5C5C5C;
 }
 
-.threat-intelligence {
-    background: #4C8494;
+.miscellaneous {
+    background: #454545;
 }
 /* END STYLINGS FOR THE CATEGORIES. */

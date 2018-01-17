@@ -38,6 +38,7 @@ body {
     font-family: 'Lora', serif;
     font-size: .9rem;
     line-height: 1.5rem;
+    background-color: #f5f4ef;
 }
 
 img {
@@ -162,7 +163,7 @@ blockquote {
     margin-bottom: 1.6rem;
     padding: 1.6rem;
     border-left: 4px solid #e6e6e6;
-    background: #f7f7f7
+    background: #f7f7f7;
 }
 
 blockquote p {
@@ -172,7 +173,7 @@ blockquote p {
 .col {
     max-width: calc(600px + 1.6rem);
     margin: 0 auto;
-    padding: 0 .8rem
+    padding: 0 .8rem;
 }
 
 @media screen and (min-width:1440px) {
@@ -186,7 +187,8 @@ blockquote p {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 2rem;
-    box-shadow: 0 1px 0 0 #eee
+    box-shadow: 0 1px 0 0 #eee;
+    /*background-color: #fefefe;*/
 }
 
 @media screen and (min-width:734px) {
