@@ -1,11 +1,9 @@
 .shineThrough:hover a {
-    /*font-weight: bold;*/
-    text-decoration: underline dotted;
+    font-weight: bold;
 }
 
 .shineThrough:hover span {
-    /*font-weight: bold;*/
-    text-decoration: underline dotted;
+    font-weight: bold;
 }
 
 .projectListItem {
@@ -21,39 +19,39 @@
 }
 
 .threatIntelListItem {
-    border-left-color: #888888;
+    border-left-color: #444444;
 }
 
 .threatIntelListItem:hover {
-    border-left-color: #888888;
+    border-left-color: #444444;
 }
 
 .programmingListItem {
-    border-left-color: #515151;
+    border-left-color: #bf0000;
 }
 
 .programmingListItem:hover {
-    border-left-color: #515151;
+    border-left-color: #bf0000;
 }
 
 .miscListItem {
-    border-left-color: #1B1B1B;
+    border-left-color: #777777;
 }
 
 .miscListItem:hover {
-    border-left-color: #1B1B1B;
+    border-left-color: #777777;
 }
 
 /* STYLINGS FOR THE CATEGORIES. */
 /*.threat-intelligence {
-    background: #888888;
+    background: #444444;
 }
 
 .programming {
-    background: #515151;
+    background: #bf0000;
 }
 
 .miscellaneous {
-    background: #1B1B1B;
+    background: #777777;
 }*/
 /* END STYLINGS FOR THE CATEGORIES. */
