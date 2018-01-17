@@ -7,8 +7,6 @@ favicon: favicon.png
 # basecss: 
 # Theme specific configuration
 title: Floyd Hightower's Website
-description: >
-  I'm passionate about programming and using it to bring about good in the world.
 
 # BUILD SETTINGS
 permalink: /:year/:title/

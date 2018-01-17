@@ -11,3 +11,5 @@ Here are some of the principles I (try to) live by:
 - Talk less; listen more
 - Use more semi-colons
 - Use oxford commas
+- Always be will to accept feedback and criticism
+- Don't be too proud to follow a good example
