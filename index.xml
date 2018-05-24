@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Floyd Hightower</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Floyd Hightower</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Indicator of Compromise Finder</title>
+      <link>https://example.org/projects/ioc-finder/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/ioc-finder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ThreatConnect Resources</title>
+      <link>https://example.org/projects/threatconnect/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/threatconnect/</guid>
+      <description>Disclaimer: None of the resources listed below are managed by ThreatConnect. Almost all (if not all) of the projects below are licensed under the MIT license. You are encouraged to use the resources below, but realize that the author is not responsible for any damages caused by these resources or the use of these resources. Enjoy!
+ TCEX App Template: Template for creating a quality TCEX app (either a playbook app or python job app) quickly (once everything is installed, it take about 30 seconds to get a working app).</description>
+    </item>
+    
+    <item>
+      <title>XN-Twist</title>
+      <link>https://example.org/projects/xntwist/</link>
+      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/xntwist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indicator of Compromise Fanging/Defanging Library</title>
+      <link>https://example.org/projects/ioc-fang/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/ioc-fang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robtex Python SDK</title>
+      <link>https://example.org/projects/robtex-sdk/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/robtex-sdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bible Research Blog</title>
+      <link>https://example.org/projects/bible-blog/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/bible-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OneMillion</title>
+      <link>https://example.org/projects/one-million/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/one-million/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bible Notes</title>
+      <link>https://example.org/projects/bible-notes/</link>
+      <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/projects/bible-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impactful quotes</title>
+      <link>https://example.org/about/quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/about/quotes/</guid>
+      <description>Here are some quotes that are particularly impactful to me:
+ &amp;ldquo;Adopt the pace of nature: her secret is patience.&amp;rdquo;
+~ Ralph Waldo Emerson
+&amp;ldquo;In every walk with nature one receives far more than he seeks.&amp;rdquo;
+~ John Muir
+&amp;ldquo;Only by going alone in silence, without baggage, can one truly get into the heart of the wilderness. All other travel is mere dust and hotels and baggage and chatter.&amp;rdquo;
+~ John Muir</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About me on Floyd Hightower</title>
+    <link>https://example.org/about/</link>
+    <description>Recent content in About me on Floyd Hightower</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Impactful quotes</title>
+      <link>https://example.org/about/quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.org/about/quotes/</guid>
+      <description>Here are some quotes that are particularly impactful to me:
+ &amp;ldquo;Adopt the pace of nature: her secret is patience.&amp;rdquo;
+~ Ralph Waldo Emerson
+&amp;ldquo;In every walk with nature one receives far more than he seeks.&amp;rdquo;
+~ John Muir
+&amp;ldquo;Only by going alone in silence, without baggage, can one truly get into the heart of the wilderness. All other travel is mere dust and hotels and baggage and chatter.&amp;rdquo;
+~ John Muir</description>
+    </item>
+    
+  </channel>
+</rss>

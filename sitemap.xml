@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://example.org/projects/ioc-finder/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/threatconnect/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/xntwist/</loc>
+    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/ioc-fang/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/robtex-sdk/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/bible-blog/</loc>
+    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/one-million/</loc>
+    <lastmod>2017-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/bible-notes/</loc>
+    <lastmod>2016-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.org/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.org/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/about/quotes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.org/projects/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
