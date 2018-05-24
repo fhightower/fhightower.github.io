@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About me on Floyd Hightower</title>
-    <link>https://example.org/about/</link>
+    <link>https://hightower.space/about/</link>
     <description>Recent content in About me on Floyd Hightower</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hightower.space/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Impactful quotes</title>
-      <link>https://example.org/about/quotes/</link>
+      <link>https://hightower.space/about/quotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.org/about/quotes/</guid>
+      <guid>https://hightower.space/about/quotes/</guid>
       <description>Here are some quotes that are particularly impactful to me:
  &amp;ldquo;Adopt the pace of nature: her secret is patience.&amp;rdquo;
 ~ Ralph Waldo Emerson
