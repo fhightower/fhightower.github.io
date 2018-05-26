@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Floyd Hightower</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 05 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hightower.space/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Angular</title>
+      <link>https://hightower.space/tags/angular/</link>
+      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/angular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bible</title>
+      <link>https://hightower.space/tags/bible/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/bible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://hightower.space/tags/python/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Threat Intelligence</title>
+      <link>https://hightower.space/tags/threat-intelligence/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/threat-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Threatconnect</title>
+      <link>https://hightower.space/tags/threatconnect/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/threatconnect/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

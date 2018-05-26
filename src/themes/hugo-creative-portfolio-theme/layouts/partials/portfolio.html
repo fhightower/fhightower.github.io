@@ -1,4 +1,4 @@
-<div id="projects" class="col-xs-12 col-sm-8 col-md-9 content-column">
+<div id="projects" class="col-xs-12 col-sm-8 col-md-9 content-column projectSection">
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
         <div class="row">
@@ -28,11 +28,14 @@
                                   {{ .Summary }}
                                 {{ end }}
                             </p>
-                            <p>
-                              {{ if .Params.link }}
+                            {{ range .Params.tags }}
+                              <a class="tagLink" href="../tags/{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                            <!-- {{ if .Params.link }}
+                              <p>
                                 <a href="{{ .Params.link }}">{{ .Params.link }}</a>
-                              {{ end }}
-                            </p>
+                              </p>
+                            {{ end }} -->
                           </div>
                       </div>
                   </div>

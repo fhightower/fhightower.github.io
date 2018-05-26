@@ -4,4 +4,5 @@ title = "Bible Notes"
 description = "Summaries for every book in the Bible"
 link = "https://bible.hightower.space/notes/"
 image = "img/projects/bible-notes.jpg"
+tags = ["Bible"]
 +++

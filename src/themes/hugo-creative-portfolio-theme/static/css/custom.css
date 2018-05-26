@@ -1,6 +1,11 @@
-/* your styles go here */
-
-/*#sidebar {
+body {
     background-color: #3c3c3c;
 }
-*/
+
+.projectSection {
+    background-color: white;
+}
+
+.tag {
+    background-color: lightgrey;
+}

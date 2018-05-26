@@ -47,6 +47,18 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/angular/</loc>
+    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/bible/</loc>
+    <lastmod>2017-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/categories/</loc>
     <priority>0</priority>
   </url>
@@ -72,7 +84,26 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/python/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/</loc>
+    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/threat-intelligence/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/threatconnect/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -4,4 +4,5 @@ title = "Bible Research Blog"
 description = "Blog investigating and researching the Bible and how to live as a follower of Christ in the modern world."
 link = "https://bible.hightower.space/"
 image = "img/projects/bible-research-blog.jpg"
+tags = ["Bible"]
 +++

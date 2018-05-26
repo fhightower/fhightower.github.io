@@ -2,8 +2,9 @@
 date = "2018-01-01"
 title = "ThreatConnect Resources"
 description = "Projects related to ThreatConnect."
-link = "projects/threatconnect/"
+link = "/projects/threatconnect"
 image = "img/projects/threatconnect.png"
+tags = ["ThreatConnect"]
 +++
 
 **Disclaimer:** None of the resources listed below are managed by ThreatConnect. Almost all (if not all) of the projects below are licensed under the [MIT](https://opensource.org/licenses/MIT) license. You are encouraged to use the resources below, but realize that the author is not responsible for any damages caused by these resources or the use of these resources. Enjoy!
