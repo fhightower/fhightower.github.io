@@ -4,5 +4,5 @@ title = "Robtex Python SDK"
 description = "Python wrapper for the Robtex API."
 link = "https://github.com/fhightower/robtex-python"
 image = "img/projects/robtex.png"
-tags = ["Threat Intelligence", "Python"]
+tags = ["Threat Intelligence", "Domains", "Analysis", "Indicators of Compromise", "Python", "Robtex"]
 +++
