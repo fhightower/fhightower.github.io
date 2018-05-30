@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Floyd Hightower</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hightower.space/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analysis</title>
+      <link>https://hightower.space/tags/analysis/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/analysis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Angular</title>
@@ -30,11 +39,83 @@
     </item>
     
     <item>
+      <title>Domain Squatting</title>
+      <link>https://hightower.space/tags/domain-squatting/</link>
+      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/domain-squatting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domains</title>
+      <link>https://hightower.space/tags/domains/</link>
+      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/domains/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indicators of Compromise</title>
+      <link>https://hightower.space/tags/indicators-of-compromise/</link>
+      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/indicators-of-compromise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>https://hightower.space/tags/json/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://hightower.space/tags/notes/</link>
+      <pubDate>Thu, 09 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Playbooks</title>
+      <link>https://hightower.space/tags/playbooks/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/playbooks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>https://hightower.space/tags/python/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robtex</title>
+      <link>https://hightower.space/tags/robtex/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/robtex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tcex</title>
+      <link>https://hightower.space/tags/tcex/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/tcex/</guid>
       <description></description>
     </item>
     
@@ -50,7 +131,7 @@
     <item>
       <title>Threatconnect</title>
       <link>https://hightower.space/tags/threatconnect/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/threatconnect/</guid>
       <description></description>

@@ -21,13 +21,48 @@
     </item>
     
     <item>
-      <title>ThreatConnect Resources</title>
-      <link>https://hightower.space/projects/threatconnect/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <title>HTTP Request JSON Mapper</title>
+      <link>https://hightower.space/projects/playbook-json-mapper/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hightower.space/projects/threatconnect/</guid>
-      <description>Disclaimer: None of the resources listed below are managed by ThreatConnect. Almost all (if not all) of the projects below are licensed under the MIT license. You are encouraged to use the resources below, but realize that the author is not responsible for any damages caused by these resources or the use of these resources. Enjoy!
- TCEX App Template: Template for creating a quality TCEX app (either a playbook app or python job app) quickly (once everything is installed, it take about 30 seconds to get a working app).</description>
+      <guid>https://hightower.space/projects/playbook-json-mapper/</guid>
+      <description>The code for this project is available on Github.</description>
+    </item>
+    
+    <item>
+      <title>Playbook Explorer</title>
+      <link>https://hightower.space/projects/playbook-explorer/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/playbook-explorer/</guid>
+      <description>The code for this project is available on Github.</description>
+    </item>
+    
+    <item>
+      <title>TCEX App Creation UI</title>
+      <link>https://hightower.space/projects/tcex-app-creator/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/tcex-app-creator/</guid>
+      <description>The code for this project is available on Github.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard Shortcuts for ThreatConnect</title>
+      <link>https://hightower.space/projects/tc-keyboard-shortcuts/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/tc-keyboard-shortcuts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Playbook Constructs and Paradigms</title>
+      <link>https://hightower.space/projects/playbook-constructs/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/playbook-constructs/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -72,6 +107,15 @@
       <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/projects/one-million/</guid>
+      <description>There is a UI/API where you can test this project here.</description>
+    </item>
+    
+    <item>
+      <title>ThreatConnect Populator</title>
+      <link>https://hightower.space/projects/tc-populator/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/tc-populator/</guid>
       <description></description>
     </item>
     

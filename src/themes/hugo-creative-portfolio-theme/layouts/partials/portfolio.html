@@ -1,3 +1,4 @@
+{{ $baseUrl := .Site.BaseURL }}
 <div id="projects" class="col-xs-12 col-sm-8 col-md-9 content-column projectSection">
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
@@ -28,9 +29,12 @@
                                   {{ .Summary }}
                                 {{ end }}
                             </p>
+                            <ul>
+                            {{ $ctx := . }}
                             {{ range .Params.tags }}
-                              <a class="tagLink" href="../tags/{{ . | urlize }}">{{ . }}</a>
+                              <li><a href="{{ $ctx.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a></li>
                             {{ end }}
+                            </ul>
                             <!-- {{ if .Params.link }}
                               <p>
                                 <a href="{{ .Params.link }}">{{ .Params.link }}</a>

@@ -8,8 +8,28 @@
   </url>
   
   <url>
-    <loc>https://hightower.space/projects/threatconnect/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <loc>https://hightower.space/projects/playbook-json-mapper/</loc>
+    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/playbook-explorer/</loc>
+    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/tcex-app-creator/</loc>
+    <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/tc-keyboard-shortcuts/</loc>
+    <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/playbook-constructs/</loc>
+    <lastmod>2017-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,12 +58,23 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/projects/tc-populator/</loc>
+    <lastmod>2017-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/projects/bible-notes/</loc>
     <lastmod>2016-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://hightower.space/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/analysis/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -68,6 +99,18 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/domain-squatting/</loc>
+    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/domains/</loc>
+    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/</loc>
     <lastmod>2018-02-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -75,6 +118,30 @@
   
   <url>
     <loc>https://hightower.space/about/quotes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/indicators-of-compromise/</loc>
+    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/json/</loc>
+    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/notes/</loc>
+    <lastmod>2016-06-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/playbooks/</loc>
+    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -90,8 +157,20 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/robtex/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/</loc>
-    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/tcex/</loc>
+    <lastmod>2018-01-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -103,7 +182,7 @@
   
   <url>
     <loc>https://hightower.space/tags/threatconnect/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
