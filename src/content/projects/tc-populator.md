@@ -4,5 +4,5 @@ title = "ThreatConnect Populator"
 description = "A script to create every available object in ThreatConnect."
 link = "https://github.com/fhightower-tc/threatconnect-populator"
 image = "img/projects/tc-populator.jpg"
-tags = ["ThreatConnect", "Python"]
+tags = ["Python", "ThreatConnect"]
 +++

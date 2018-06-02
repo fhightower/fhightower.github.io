@@ -44,6 +44,10 @@ languageCode = "en-us"
   name = "Get in touch"
   url = "contact/"
 
+  [[params.navlinks]]
+  name = "Tags"
+  url = "tags/"
+
   [params.social]
   github                = "https://github.com/fhightower"
   email                 = "floyd.hightower27@gmail.com"

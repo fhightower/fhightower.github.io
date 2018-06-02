@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hightower.space/projects/json-validator-explorer/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/mass-indicator-investigator/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/structured-import-app/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/threatconnect-r/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/threatconnect-js-spaces-template/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/threatconnect-angular-spaces-template/</loc>
+    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/projects/ioc-finder/</loc>
     <lastmod>2018-02-05T00:00:00+00:00</lastmod>
   </url>
@@ -20,6 +50,11 @@
   <url>
     <loc>https://hightower.space/projects/tcex-app-creator/</loc>
     <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/flask-app-template/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/projects/tcex-app-template/</loc>
+    <lastmod>2017-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/projects/one-million/</loc>
     <lastmod>2017-04-05T00:00:00+00:00</lastmod>
   </url>
@@ -60,6 +100,11 @@
   <url>
     <loc>https://hightower.space/projects/tc-populator/</loc>
     <lastmod>2017-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/python-project-template/</loc>
+    <lastmod>2017-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,8 +123,14 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/analyze/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/angular/</loc>
-    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,8 +162,20 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/flask/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/</loc>
-    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/heroku/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -121,14 +184,26 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/import/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/indicators-of-compromise/</loc>
-    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/javascript/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hightower.space/tags/json/</loc>
-    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -146,7 +221,13 @@
   
   <url>
     <loc>https://hightower.space/projects/</loc>
-    <lastmod>2018-02-05T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/pypi/</loc>
+    <lastmod>2017-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -157,8 +238,26 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/r/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/robtex/</loc>
     <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/sdk/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/spaces-app/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -175,6 +274,12 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/template/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/threat-intelligence/</loc>
     <lastmod>2018-02-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -182,7 +287,7 @@
   
   <url>
     <loc>https://hightower.space/tags/threatconnect/</loc>
-    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

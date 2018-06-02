@@ -21,9 +21,18 @@
     </item>
     
     <item>
+      <title>Analyze</title>
+      <link>https://hightower.space/tags/analyze/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/analyze/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Angular</title>
       <link>https://hightower.space/tags/angular/</link>
-      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/angular/</guid>
       <description></description>
@@ -57,18 +66,54 @@
     </item>
     
     <item>
+      <title>Flask</title>
+      <link>https://hightower.space/tags/flask/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://hightower.space/tags/heroku/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Import</title>
+      <link>https://hightower.space/tags/import/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/import/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Indicators of Compromise</title>
       <link>https://hightower.space/tags/indicators-of-compromise/</link>
-      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/indicators-of-compromise/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Javascript</title>
+      <link>https://hightower.space/tags/javascript/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Json</title>
       <link>https://hightower.space/tags/json/</link>
-      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/json/</guid>
       <description></description>
@@ -93,11 +138,29 @@
     </item>
     
     <item>
+      <title>Pypi</title>
+      <link>https://hightower.space/tags/pypi/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/pypi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>https://hightower.space/tags/python/</link>
       <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://hightower.space/tags/r/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/r/</guid>
       <description></description>
     </item>
     
@@ -111,11 +174,38 @@
     </item>
     
     <item>
+      <title>Sdk</title>
+      <link>https://hightower.space/tags/sdk/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/sdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spaces App</title>
+      <link>https://hightower.space/tags/spaces-app/</link>
+      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/spaces-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tcex</title>
       <link>https://hightower.space/tags/tcex/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/tcex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Template</title>
+      <link>https://hightower.space/tags/template/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/template/</guid>
       <description></description>
     </item>
     
@@ -131,7 +221,7 @@
     <item>
       <title>Threatconnect</title>
       <link>https://hightower.space/tags/threatconnect/</link>
-      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/threatconnect/</guid>
       <description></description>
