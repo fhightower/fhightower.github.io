@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>JSON Validator and Explorer</title>
-      <link>https://hightower.space/projects/json-validator-explorer/</link>
+      <title>Playbook Development Tools</title>
+      <link>https://hightower.space/projects/playbook-development-tools/</link>
       <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hightower.space/projects/json-validator-explorer/</guid>
+      <guid>https://hightower.space/projects/playbook-development-tools/</guid>
       <description></description>
     </item>
     
@@ -35,6 +35,15 @@
       <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/projects/structured-import-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note Taker</title>
+      <link>https://hightower.space/projects/note-taker/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/note-taker/</guid>
       <description></description>
     </item>
     

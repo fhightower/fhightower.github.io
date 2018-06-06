@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>https://hightower.space/projects/json-validator-explorer/</loc>
+    <loc>https://hightower.space/projects/playbook-development-tools/</loc>
     <lastmod>2018-05-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -25,6 +25,11 @@
   <url>
     <loc>https://hightower.space/projects/threatconnect-r/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/projects/note-taker/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -213,6 +218,12 @@
   </url>
   
   <url>
+    <loc>https://hightower.space/tags/jmes/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://hightower.space/tags/json/</loc>
     <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -220,13 +231,13 @@
   
   <url>
     <loc>https://hightower.space/tags/notes/</loc>
-    <lastmod>2016-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hightower.space/tags/playbooks/</loc>
-    <lastmod>2018-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -257,6 +268,12 @@
   <url>
     <loc>https://hightower.space/tags/r/</loc>
     <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hightower.space/tags/regex/</loc>
+    <lastmod>2018-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

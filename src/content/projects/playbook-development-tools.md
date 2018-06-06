@@ -1,0 +1,8 @@
++++
+date = "2018-05-30"
+title = "Playbook Development Tools"
+description = "Spaces app with tools to aid playbook development like JSON path search, JMES search, regex filtering, and more."
+link = "https://github.com/fhightower-tc/json-validator-and-explorer"
+image = "img/projects/playbook-dev-tools.png"
+tags = ["Angular", "JMES", "JSON", "Playbooks", "Regex", "Spaces App", "ThreatConnect"]
++++
