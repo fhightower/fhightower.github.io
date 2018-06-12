@@ -6,10 +6,21 @@
     <description>Recent content on Floyd Hightower</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hightower.space/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Collatz Conjecture Playground</title>
+      <link>https://hightower.space/projects/collatz-conjecture/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/collatz-conjecture/</guid>
+      <description>Starting value: 10.00
+Found solution in: 6.00 steps
+1.02.03.04.05.06.051015</description>
+    </item>
     
     <item>
       <title>Prayer Planner/Journal</title>

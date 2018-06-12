@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idyll on Floyd Hightower</title>
+    <link>https://hightower.space/tags/idyll/</link>
+    <description>Recent content in Idyll on Floyd Hightower</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hightower.space/tags/idyll/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Collatz Conjecture Playground</title>
+      <link>https://hightower.space/projects/collatz-conjecture/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/collatz-conjecture/</guid>
+      <description>Starting value: 10.00
+Found solution in: 6.00 steps
+1.02.03.04.05.06.051015</description>
+    </item>
+    
+  </channel>
+</rss>
