@@ -32,9 +32,18 @@
     <item>
       <title>Angular</title>
       <link>https://hightower.space/tags/angular/</link>
-      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/angular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple Script</title>
+      <link>https://hightower.space/tags/apple-script/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/apple-script/</guid>
       <description></description>
     </item>
     
@@ -53,6 +62,15 @@
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/collatz-conjecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D3.js</title>
+      <link>https://hightower.space/tags/d3.js/</link>
+      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/d3.js/</guid>
       <description></description>
     </item>
     
@@ -84,11 +102,38 @@
     </item>
     
     <item>
+      <title>Exploit</title>
+      <link>https://hightower.space/tags/exploit/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/exploit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Flask</title>
       <link>https://hightower.space/tags/flask/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game Theory</title>
+      <link>https://hightower.space/tags/game-theory/</link>
+      <pubDate>Sun, 28 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/game-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://hightower.space/tags/github/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/github/</guid>
       <description></description>
     </item>
     
@@ -122,7 +167,7 @@
     <item>
       <title>Indicators of Compromise</title>
       <link>https://hightower.space/tags/indicators-of-compromise/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/indicators-of-compromise/</guid>
       <description></description>
@@ -156,6 +201,15 @@
     </item>
     
     <item>
+      <title>Macos</title>
+      <link>https://hightower.space/tags/macos/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Math</title>
       <link>https://hightower.space/tags/math/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
@@ -170,6 +224,15 @@
       <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pickle</title>
+      <link>https://hightower.space/tags/pickle/</link>
+      <pubDate>Sun, 18 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/pickle/</guid>
       <description></description>
     </item>
     
@@ -275,7 +338,7 @@
     <item>
       <title>Threat Intelligence</title>
       <link>https://hightower.space/tags/threat-intelligence/</link>
-      <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/threat-intelligence/</guid>
       <description></description>
@@ -287,6 +350,15 @@
       <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/threatconnect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://hightower.space/tags/visualization/</link>
+      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/visualization/</guid>
       <description></description>
     </item>
     
