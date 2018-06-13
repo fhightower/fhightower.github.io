@@ -2,7 +2,7 @@
 date = "2018-06-12"
 title = "Collatz Conjecture Playground"
 description = "Play around with the Collatz conjecture."
-image = "img/projects/a.png"
+image = "img/projects/collatz.png"
 tags = ["Collatz Conjecture", "Idyll", "Math"]
 +++
 

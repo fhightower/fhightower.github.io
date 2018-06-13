@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Floyd Hightower</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hightower.space/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,25 +14,16 @@
     <item>
       <title>Analysis</title>
       <link>https://hightower.space/tags/analysis/</link>
-      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/analysis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Analyze</title>
-      <link>https://hightower.space/tags/analyze/</link>
-      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://hightower.space/tags/analyze/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Angular</title>
       <link>https://hightower.space/tags/angular/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/angular/</guid>
       <description></description>
@@ -80,6 +71,15 @@
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Documentation</title>
+      <link>https://hightower.space/tags/documentation/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/documentation/</guid>
       <description></description>
     </item>
     
@@ -201,11 +201,29 @@
     </item>
     
     <item>
+      <title>Jupyter Notebooks</title>
+      <link>https://hightower.space/tags/jupyter-notebooks/</link>
+      <pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/jupyter-notebooks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Macos</title>
       <link>https://hightower.space/tags/macos/</link>
       <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Malware</title>
+      <link>https://hightower.space/tags/malware/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/malware/</guid>
       <description></description>
     </item>
     
@@ -239,7 +257,7 @@
     <item>
       <title>Playbooks</title>
       <link>https://hightower.space/tags/playbooks/</link>
-      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/playbooks/</guid>
       <description></description>
@@ -309,11 +327,38 @@
     </item>
     
     <item>
+      <title>Shell</title>
+      <link>https://hightower.space/tags/shell/</link>
+      <pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snippets</title>
+      <link>https://hightower.space/tags/snippets/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/snippets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Spaces App</title>
       <link>https://hightower.space/tags/spaces-app/</link>
       <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/spaces-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sublime Text</title>
+      <link>https://hightower.space/tags/sublime-text/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/sublime-text/</guid>
       <description></description>
     </item>
     
@@ -347,16 +392,25 @@
     <item>
       <title>Threatconnect</title>
       <link>https://hightower.space/tags/threatconnect/</link>
-      <pubDate>Wed, 30 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/threatconnect/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Tmux</title>
+      <link>https://hightower.space/tags/tmux/</link>
+      <pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/tags/tmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Visualization</title>
       <link>https://hightower.space/tags/visualization/</link>
-      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/tags/visualization/</guid>
       <description></description>

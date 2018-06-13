@@ -6,10 +6,19 @@
     <description>Recent content in Analysis on Floyd Hightower</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hightower.space/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mass Indicator Investigator</title>
+      <link>https://hightower.space/projects/mass-indicator-investigator/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/mass-indicator-investigator/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Robtex Python SDK</title>
@@ -17,6 +26,15 @@
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/projects/robtex-sdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Magento Malware Investigation</title>
+      <link>https://hightower.space/projects/magento-malware/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/magento-malware/</guid>
       <description></description>
     </item>
     

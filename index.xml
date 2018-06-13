@@ -25,6 +25,24 @@ Starting value: [var name:&amp;quot;number&amp;quot; value:10 /] [Range value:nu
     </item>
     
     <item>
+      <title>Playbook Multimeter</title>
+      <link>https://hightower.space/projects/pb-multimeter/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/pb-multimeter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Human-in-the-Loop Playbook System</title>
+      <link>https://hightower.space/projects/human-in-the-loop/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/human-in-the-loop/</guid>
+      <description>There is documentation for this system here: https://pb-constructs.hightower.space/playbooks/constructs/human-in-the-loop-workflows.</description>
+    </item>
+    
+    <item>
       <title>Angular2&#43; Indicator of Compromise Parser</title>
       <link>https://hightower.space/projects/ng-ioc-parser/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
@@ -178,6 +196,15 @@ Starting value: [var name:&amp;quot;number&amp;quot; value:10 /] [Range value:nu
     </item>
     
     <item>
+      <title>Proportions Viewer</title>
+      <link>https://hightower.space/projects/proportions-viewer/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/proportions-viewer/</guid>
+      <description>You can view this page here: https://hightower.space/proportions-viewer/.</description>
+    </item>
+    
+    <item>
       <title>Indicator of Compromise Fanging/Defanging Library</title>
       <link>https://hightower.space/projects/ioc-fang/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
@@ -205,11 +232,29 @@ Starting value: [var name:&amp;quot;number&amp;quot; value:10 /] [Range value:nu
     </item>
     
     <item>
+      <title>Sublime Text Snippet Creator</title>
+      <link>https://hightower.space/projects/sublime-snippet-creator/</link>
+      <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/sublime-snippet-creator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ThreatConnect TCEX App Template</title>
       <link>https://hightower.space/projects/tcex-app-template/</link>
       <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/projects/tcex-app-template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sublime Text Snippet Documenter</title>
+      <link>https://hightower.space/projects/sublime-snippet-documenter/</link>
+      <pubDate>Wed, 24 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/sublime-snippet-documenter/</guid>
       <description></description>
     </item>
     
@@ -268,6 +313,15 @@ Starting value: [var name:&amp;quot;number&amp;quot; value:10 /] [Range value:nu
     </item>
     
     <item>
+      <title>Magento Malware Investigation</title>
+      <link>https://hightower.space/projects/magento-malware/</link>
+      <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/magento-malware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>d3.js Sortable Heatmap</title>
       <link>https://hightower.space/projects/d3-sortable-heatmap/</link>
       <pubDate>Fri, 16 Sep 2016 00:00:00 +0000</pubDate>
@@ -300,6 +354,15 @@ Starting value: [var name:&amp;quot;number&amp;quot; value:10 /] [Range value:nu
       <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://hightower.space/projects/apple-seeds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TMUX @ Startup</title>
+      <link>https://hightower.space/projects/tmux-at-startup/</link>
+      <pubDate>Wed, 18 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hightower.space/projects/tmux-at-startup/</guid>
       <description></description>
     </item>
     
