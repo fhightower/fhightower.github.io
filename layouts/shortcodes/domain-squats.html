@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse'
+    };
+</script>
+
+<pre><code class="language-klipse">
+    (defn pow [n x]
+    (reduce * (repeat x n)))
+
+    (defn possible-domain-squats [domain-length avg-replacement-chars]
+    (dec (pow (inc avg-replacement-chars) domain-length)))
+
+    ; change the values below to see how the possible domain squats change
+    (def domain-length 10)
+    (def avg-replacement-chars 10)
+
+    (possible-domain-squats domain-length avg-replacement-chars)
+</code></pre>
+
+<p>Here is another way to systematically observe how the number of domain squats changes with the size of the domain name. We assume ten replacement characters (that is, each character in the domain can be replaced with ten characters - which is very reasonable) for domains of varying lengths:</p>
+
+<pre><code class="language-klipse">
+    (for [domain-length (range 3 16)
+    :let [squats (possible-domain-squats domain-length 10)]]
+    {:domain-length domain-length :squats squats})
+</code></pre>
+
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>

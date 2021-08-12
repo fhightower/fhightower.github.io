@@ -1,0 +1,29 @@
+baseurl = "https://hightower.space/"
+title = "Floyd Hightower"
+theme = "dream"
+languageCode = "en"
+paginate = 11
+
+[params]
+  # dark mode
+  backgroundDark = "black"
+  darkLinkColor = "darkseagreen"
+  darkNav = true
+  dark404 = true
+
+  maxTags = 11
+  avatar = "https://avatars.githubusercontent.com/u/3599813?v=4"
+  nolastmod = true
+
+  highlightjs = true
+  highlightjsTheme = "gruvbox-light"
+  highlightjsThemeDark = "gruvbox-dark"
+  enableSearch = true
+
+  email = "floyd.hightower27@gmail.com"
+  github = "fhightower"
+  stackoverflow = "9149599/floyd"
+  fiveHundredpx = "https://500px.com/fhightower"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
