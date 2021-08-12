@@ -1,11 +1,11 @@
 +++
-date = "2021-01-01"
+date = "2021-05-01"
 title = "2021 Reading List"
 description = "Reading list for 2021 (updated regularly)."
 tags = ["Reading", "List"]
 +++
 
-Books read this year: 30
+Books read this year: 32
 
 Title | Author | Rating | Notes
 --- | --- | --- | ---
@@ -37,5 +37,7 @@ Title | Author | Rating | Notes
 *Out of the Silent Planet* | C. S. Lewis | B+ | Amazing work of science fiction (which certainly is influenced by and is a spin on H. G. Wells' *War of the Worlds*) pondering the interaction of a fallen man with unfallen creatures on Malacandra
 *The Abolition of Man* | C. S. Lewis | B | An amazing work critiquing moral subjectivism - I think he is, at times, oversimplifying his opponents' views and oversimplifying the evidence in favor of his own, but still think it is a thought-provoking read
 *A Gospel Primer for Christians: Learning to See the Glories of God's Love* | Milton Vincent | B | Very good work celebrating (and encouraging us to daily celebrate), in various forms and genres, the beauty of God the Father's love for us as shown in the Son, Jesus Christ, and mediated by the Holy Spirit.
-*From the Earth to the Moon* | Jules Verne | C | Mild interesting story in Verne's style
-*Amazing Grace in the Life of William Wilberforce* | John Piper | B | Fascinating biography of a wonderful man who fought to end the slave trade and slavery in England
+*From the Earth to the Moon* | Jules Verne | C- | Mild interesting story in Verne's style
+*Amazing Grace in the Life of William Wilberforce* | John Piper | C+ | Fascinating biography of a wonderful man who fought to end the slave trade and slavery in England
+*Modern Introductory Analysis* | Mary P. Dolciani | B+ | Very good math text that is approachable, readable, and consistent. Does a great job of introducing the value and uses of vectors.
+*What If?: Serious Scientific Answers to Absurd Hypothetical Questions* | Randall Munroe | B+ | Very fun read which is *very* well communicated and shows the remarkable power of mathematics to describe even "Absurd Hypothetical Questions"
