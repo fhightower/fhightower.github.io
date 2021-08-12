@@ -1,0 +1,523 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Playbook Documenter | Floyd Hightower</title>
+<meta name=author content>
+<meta name=description content>
+<meta name=generator content="Hugo 0.87.0">
+<link rel=canonical href=https://hightower.space/projects/playbook-documenter/>
+<meta property="og:title" content="Playbook Documenter">
+<meta property="og:description" content="Library for creating documentation for any ThreatConnect playbook.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hightower.space/projects/playbook-documenter/"><meta property="article:section" content="projects">
+<meta property="article:published_time" content="2018-08-03T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-08-03T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Playbook Documenter">
+<meta name=twitter:description content="Library for creating documentation for any ThreatConnect playbook.">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css>
+<link rel=stylesheet href=/css/icomoon.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css>
+<link rel=stylesheet href=/css/site.css>
+<style>a:not(.ui.button):hover{text-decoration:underline}.inverted a:not(.ui.button){color:#8fbc8f!important}body.dark{background-color:#000}</style>
+<link rel=stylesheet data-highlight href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/gruvbox-light.min.css>
+</head>
+<body class=default>
+<nav class="ui secondary menu dream-menu">
+<div class=item>
+<i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+</div>
+<div class=item>
+<i class="large link home icon" title=Home onclick="window.location.href='https://hightower.space/'"></i>
+</div>
+<div class=item>
+<i class="large link icon theme-switch" onclick=themeSwitch()></i>
+</div>
+<div class=item>
+<i class="large link search icon" onclick=toggleSearch()></i>
+</div>
+</nav>
+<div class=flip-container>
+<div class=flipper>
+<section class=front>
+<div class=dream-max-width>
+<div class="ui relaxed centered grid dream-grid dream-grid-single">
+<div class="sixteen wide mobile sixteen wide tablet ten wide computer column markdown-body dream-single" id=dream-save-post-as-img>
+<section class="ui top attached segment">
+<header>
+<h1 class="ui large header">Playbook Documenter<span class="sub header">
+<span class=left>
+Aug 3, 2018
+| 0 minutes
+</span>
+</span>
+</h1>
+</header>
+<article class=main>
+</article>
+</section>
+</div>
+</div>
+<footer class="ui basic center aligned segment" style=background-color:transparent>
+<p>© 2021 Floyd Hightower</p>
+<p>Powered by <a href=https://gohugo.io/ target=_blank>Hugo</a> with theme <a href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</p>
+</footer>
+</div>
+</section>
+<section class=back>
+<div class=dream-max-width>
+<header class="ui basic very padded segment dream-header">
+<div class="ui small circular image">
+<img src="https://avatars.githubusercontent.com/u/3599813?v=4" alt=avatar>
+</div>
+<div class=content>
+<h1 class="ui medium header">Set headerTitle in the config to display<span class="sub header"></span>
+</h1>
+<article class="ui horizontal list">
+<a class=item href=/posts>
+<i class="archive icon" title=Archives></i>
+</a>
+<a class=item href=/categories>
+<i class="th list icon" title="All Categories"></i>
+</a>
+<a class=item href=/tags>
+<i class="tags icon" title="All Tags"></i>
+</a>
+</article>
+<div class=tags-with-dropdown>
+<div class="ui accordion">
+<div class=title>
+<div class="ui horizontal list">
+<a class="item dropdown" href=#>
+<i class="chevron right icon dropdown-icon"></i>
+</a>
+</div>
+<div class=dream-tags>
+<a class="ui label" href=/tags/analysis/ title=Analysis>
+Analysis
+</a>
+<a class="ui label" href=/tags/angular/ title=Angular>
+Angular
+</a>
+<a class="ui label" href=/tags/api/ title=API>
+API
+</a>
+<a class="ui label" href=/tags/apple-script/ title="Apple Script">
+Apple Script
+</a>
+<a class="ui label" href=/tags/astronomy/ title=Astronomy>
+Astronomy
+</a>
+<a class="ui label" href=/tags/bible/ title=Bible>
+Bible
+</a>
+<a class="ui label" href=/tags/biblioteca/ title=Biblioteca>
+Biblioteca
+</a>
+<a class="ui label" href=/tags/boolean-algebra/ title="Boolean Algebra">
+Boolean Algebra
+</a>
+<a class="ui label" href=/tags/cli/ title=CLI>
+CLI
+</a>
+<a class="ui label" href=/tags/client-server/ title="Client & Server">
+Client & Server
+</a>
+<a class="ui label" href=/tags/code-linters/ title="Code Linters">
+Code Linters
+</a>
+</div>
+</div>
+<div class=content>
+<div class=dream-tags style=margin-left:1.5rem>
+<a class="ui label" href=/tags/collatz-conjecture/ title="Collatz Conjecture">
+Collatz Conjecture
+</a>
+<a class="ui label" href=/tags/csv/ title=CSV>
+CSV
+</a>
+<a class="ui label" href=/tags/d3.js/ title=d3.js>
+d3.js
+</a>
+<a class="ui label" href=/tags/data-converter/ title="Data Converter">
+Data Converter
+</a>
+<a class="ui label" href=/tags/definitions/ title=Definitions>
+Definitions
+</a>
+<a class="ui label" href=/tags/django/ title=Django>
+Django
+</a>
+<a class="ui label" href=/tags/documentation/ title=Documentation>
+Documentation
+</a>
+<a class="ui label" href=/tags/domain-squatting/ title="Domain Squatting">
+Domain Squatting
+</a>
+<a class="ui label" href=/tags/domains/ title=Domains>
+Domains
+</a>
+<a class="ui label" href=/tags/economics/ title=Economics>
+Economics
+</a>
+<a class="ui label" href=/tags/english/ title=English>
+English
+</a>
+<a class="ui label" href=/tags/eve/ title=Eve>
+Eve
+</a>
+<a class="ui label" href=/tags/exploit/ title=Exploit>
+Exploit
+</a>
+<a class="ui label" href=/tags/exponentials/ title=Exponentials>
+Exponentials
+</a>
+<a class="ui label" href=/tags/flags/ title=Flags>
+Flags
+</a>
+<a class="ui label" href=/tags/flask/ title=Flask>
+Flask
+</a>
+<a class="ui label" href=/tags/floyd-hightower/ title="Floyd Hightower">
+Floyd Hightower
+</a>
+<a class="ui label" href=/tags/following-christ/ title="Following Christ">
+Following Christ
+</a>
+<a class="ui label" href=/tags/game-theory/ title="Game Theory">
+Game Theory
+</a>
+<a class="ui label" href=/tags/gitbook/ title=Gitbook>
+Gitbook
+</a>
+<a class="ui label" href=/tags/github/ title=Github>
+Github
+</a>
+<a class="ui label" href=/tags/gitlab/ title=Gitlab>
+Gitlab
+</a>
+<a class="ui label" href=/tags/google/ title=Google>
+Google
+</a>
+<a class="ui label" href=/tags/google-alerts/ title="Google Alerts">
+Google Alerts
+</a>
+<a class="ui label" href=/tags/gui/ title=GUI>
+GUI
+</a>
+<a class="ui label" href=/tags/heroku/ title=Heroku>
+Heroku
+</a>
+<a class="ui label" href=/tags/html/ title=HTML>
+HTML
+</a>
+<a class="ui label" href=/tags/hugo/ title=Hugo>
+Hugo
+</a>
+<a class="ui label" href=/tags/human-computer-interaction/ title="Human Computer Interaction">
+Human Computer Interaction
+</a>
+<a class="ui label" href=/tags/idyll/ title=Idyll>
+Idyll
+</a>
+<a class="ui label" href=/tags/import/ title=Import>
+Import
+</a>
+<a class="ui label" href=/tags/indicators-of-compromise/ title="Indicators of Compromise">
+Indicators of Compromise
+</a>
+<a class="ui label" href=/tags/industrial-control-systems/ title="Industrial Control Systems">
+Industrial Control Systems
+</a>
+<a class="ui label" href=/tags/interface-design/ title="Interface Design">
+Interface Design
+</a>
+<a class="ui label" href=/tags/internet/ title=Internet>
+Internet
+</a>
+<a class="ui label" href=/tags/javascript/ title=Javascript>
+Javascript
+</a>
+<a class="ui label" href=/tags/jekyll/ title=Jekyll>
+Jekyll
+</a>
+<a class="ui label" href=/tags/jmes/ title=JMES>
+JMES
+</a>
+<a class="ui label" href=/tags/json/ title=JSON>
+JSON
+</a>
+<a class="ui label" href=/tags/jupyter-notebooks/ title="Jupyter Notebooks">
+Jupyter Notebooks
+</a>
+<a class="ui label" href=/tags/language/ title=Language>
+Language
+</a>
+<a class="ui label" href=/tags/list/ title=List>
+List
+</a>
+<a class="ui label" href=/tags/logic/ title=Logic>
+Logic
+</a>
+<a class="ui label" href=/tags/macos/ title=MacOS>
+MacOS
+</a>
+<a class="ui label" href=/tags/malware/ title=Malware>
+Malware
+</a>
+<a class="ui label" href=/tags/math/ title=Math>
+Math
+</a>
+<a class="ui label" href=/tags/messaging-queues/ title="Messaging Queues">
+Messaging Queues
+</a>
+<a class="ui label" href=/tags/money/ title=Money>
+Money
+</a>
+<a class="ui label" href=/tags/non-blocking/ title=Non-blocking>
+Non-blocking
+</a>
+<a class="ui label" href=/tags/notes/ title=Notes>
+Notes
+</a>
+<a class="ui label" href=/tags/patience/ title=Patience>
+Patience
+</a>
+<a class="ui label" href=/tags/philosophy/ title=Philosophy>
+Philosophy
+</a>
+<a class="ui label" href=/tags/pickle/ title=Pickle>
+Pickle
+</a>
+<a class="ui label" href=/tags/playbooks/ title=Playbooks>
+Playbooks
+</a>
+<a class="ui label" href=/tags/poetry/ title=Poetry>
+Poetry
+</a>
+<a class="ui label" href=/tags/pragmaticism/ title=Pragmaticism>
+Pragmaticism
+</a>
+<a class="ui label" href=/tags/prayer/ title=Prayer>
+Prayer
+</a>
+<a class="ui label" href=/tags/principle/ title=Principle>
+Principle
+</a>
+<a class="ui label" href=/tags/programmable-logic-controller/ title="Programmable Logic Controller">
+Programmable Logic Controller
+</a>
+<a class="ui label" href=/tags/programming/ title=Programming>
+Programming
+</a>
+<a class="ui label" href=/tags/push-pull/ title="Push & Pull">
+Push & Pull
+</a>
+<a class="ui label" href=/tags/puzzles/ title=Puzzles>
+Puzzles
+</a>
+<a class="ui label" href=/tags/pypi/ title=PyPI>
+PyPI
+</a>
+<a class="ui label" href=/tags/python/ title=Python>
+Python
+</a>
+<a class="ui label" href=/tags/quality-assurance/ title="Quality Assurance">
+Quality Assurance
+</a>
+<a class="ui label" href=/tags/quote/ title=Quote>
+Quote
+</a>
+<a class="ui label" href=/tags/r/ title=R>
+R
+</a>
+<a class="ui label" href=/tags/reading/ title=Reading>
+Reading
+</a>
+<a class="ui label" href=/tags/regex/ title=Regex>
+Regex
+</a>
+<a class="ui label" href=/tags/resources/ title=Resources>
+Resources
+</a>
+<a class="ui label" href=/tags/robtex/ title=Robtex>
+Robtex
+</a>
+<a class="ui label" href=/tags/sdk/ title=SDK>
+SDK
+</a>
+<a class="ui label" href=/tags/shell/ title=Shell>
+Shell
+</a>
+<a class="ui label" href=/tags/snippets/ title=Snippets>
+Snippets
+</a>
+<a class="ui label" href=/tags/software/ title=Software>
+Software
+</a>
+<a class="ui label" href=/tags/software-tests/ title="Software Tests">
+Software Tests
+</a>
+<a class="ui label" href=/tags/spaces-apps/ title="Spaces Apps">
+Spaces Apps
+</a>
+<a class="ui label" href=/tags/spiritual-disciplines/ title="Spiritual Disciplines">
+Spiritual Disciplines
+</a>
+<a class="ui label" href=/tags/sports/ title=Sports>
+Sports
+</a>
+<a class="ui label" href=/tags/sublime-text/ title="Sublime Text">
+Sublime Text
+</a>
+<a class="ui label" href=/tags/tactiles/ title=Tactiles>
+Tactiles
+</a>
+<a class="ui label" href=/tags/task-management/ title="Task Management">
+Task Management
+</a>
+<a class="ui label" href=/tags/tasks/ title=Tasks>
+Tasks
+</a>
+<a class="ui label" href=/tags/tcex/ title=TCEX>
+TCEX
+</a>
+<a class="ui label" href=/tags/template/ title=Template>
+Template
+</a>
+<a class="ui label" href=/tags/threat-hunting/ title="Threat Hunting">
+Threat Hunting
+</a>
+<a class="ui label" href=/tags/threat-intelligence/ title="Threat Intelligence">
+Threat Intelligence
+</a>
+<a class="ui label" href=/tags/threatconnect/ title=ThreatConnect>
+ThreatConnect
+</a>
+<a class="ui label" href=/tags/tmux/ title=TMUX>
+TMUX
+</a>
+<a class="ui label" href=/tags/tsv/ title=TSV>
+TSV
+</a>
+<a class="ui label" href=/tags/typescript/ title=Typescript>
+Typescript
+</a>
+<a class="ui label" href=/tags/ui/ title=UI>
+UI
+</a>
+<a class="ui label" href=/tags/velocio/ title=Velocio>
+Velocio
+</a>
+<a class="ui label" href=/tags/visual-impairments/ title="Visual Impairments">
+Visual Impairments
+</a>
+<a class="ui label" href=/tags/visualization/ title=Visualization>
+Visualization
+</a>
+<a class="ui label" href=/tags/vue.js/ title=Vue.js>
+Vue.js
+</a>
+<a class="ui label" href=/tags/web-design/ title="Web Design">
+Web Design
+</a>
+<a class="ui label" href=/tags/words/ title=Words>
+Words
+</a>
+<a class="ui label" href=/tags/zeromq/ title=ZeroMQ>
+ZeroMQ
+</a>
+<a class="ui label" href=/tags/zurb-foundation/ title="Zurb Foundation">
+Zurb Foundation
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="ui relaxed grid dream-grid dream-back">
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment markdown-body">
+<div class="ui medium header">About me</div>
+<p>Welcome! I&rsquo;m Floyd Hightower.</p>
+<p>I am a programmer who is passionate about making the world a better place using technology.</p>
+<h3 id=principles>Principles</h3>
+<h4 id=life-principles>Life Principles</h4>
+<p>Here are some of the principles I try apply to every area of my life:</p>
+<ul>
+<li><a href=/thoughts/light-of-day/>Let your ideas see the light of day</a></li>
+<li>Always be willing to accept feedback and criticism (even when it is poorly delivered)</li>
+<li><a href=/thoughts/great-things-take-time/>Rome ne s&rsquo;est pas faite en un jour</a> (Rome wasn&rsquo;t built in a day)</li>
+<li>Don’t be too proud to follow a good example</li>
+<li>Loose ends always unravel</li>
+<li>Unanswered questions never go away</li>
+<li>The Tisroc won’t live forever whether you want him to or not</li>
+<li>Talk less; listen more</li>
+<li>Use more semi-colons</li>
+<li>Use oxford commas</li>
+<li>Learn how to politely say &ldquo;No&rdquo;</li>
+<li>Don&rsquo;t let the possibility of failure scare you away from starting something</li>
+<li>To do something, you have to do something</li>
+<li>A whiteboard is worth a thousand laptops</li>
+<li><a href=https://hightower.space/reading-list/consequences-of-ideas/>Ideas have consequences</a></li>
+</ul>
+<blockquote>
+</blockquote>
+</article>
+</div>
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+<article class="ui segment">
+<div class="ui medium header">Social Links</div>
+<nav class="ui secondary menu dream-menu dream-socials">
+<div class=item>
+<a href=mailto:floyd.hightower27@gmail.com>
+<i class="large mail icon" title=Email></i>
+</a>
+</div>
+<div class=item>
+<a href=https://github.com/fhightower target=_blank>
+<i class="large github icon" title=GitHub></i>
+</a>
+</div>
+<div class=item>
+<a href=https://www.stackoverflow.com/users/9149599/floyd target=_blank>
+<i class="large stack overflow icon" title=StackOverflow></i>
+</a>
+</div>
+</nav>
+</article>
+</div>
+<div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>window.defaultDark=null,window.backgroundDark="black",window.backgroundImageDark=null,window.darkNav=!0,window.hasTwitterEmbed=null,window.maxTags=11,window.hasTwitterEmbed&&(window.twttr=function(c,d,e){var b,f=c.getElementsByTagName(d)[0],a=window.twttr||{};return c.getElementById(e)?a:(b=c.createElement(d),b.id=e,b.src='https://platform.twitter.com/widgets.js',f.parentNode.insertBefore(b,f),a._e=[],a.ready=function(b){a._e.push(b)},a)}(document,'script','twitter-wjs'))</script>
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/js/jquery.overlayScrollbars.min.js></script>
+<script src=/js/header.js></script>
+<script src=/js/main.js></script>
+<script src=/js/theme.js></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad(),setHighlightTheme();function setHighlightTheme(){var a=localStore.getItem('hugo-theme-dream-is-dark'),b,c,d;a=a?a:window.defaultDark?'y':a,b="gruvbox-light",c="gruvbox-dark",d=a==='y'?c:b,$('link[data-highlight]').attr('href','https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/'+d+'.min.css'),$('pre').css('background',a==='y'?'#333':'')}</script>
+<script src=https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js></script>
+<script src=/js/post.js defer></script>
+<div class="ui inverted segment" id=dream-search>
+<div class="ui search">
+<div class="ui transparent input">
+<input class=prompt type=text placeholder=Search>
+</div>
+<div class=results></div>
+</div>
+</div>
+<script>$(document).ready(function(){$.getJSON('https://hightower.space//index.json',function(a){$('.ui.search').search({source:a,searchFields:['title'],showNoResults:!0})})})</script>
+<script src=/js/search.js></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "logic-circuits",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "theme": "idyll",
+    "layout": "blog",
+    "css": "styles.css"
+  },
+  "dependencies": {
+    "idyll": "^3.0.0",
+    "md5": ""
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
