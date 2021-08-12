@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-{% if .Date %}date: {{ .Date }}{% endif %}
+date: {{ .Date }}
 draft: true
 ---
 
