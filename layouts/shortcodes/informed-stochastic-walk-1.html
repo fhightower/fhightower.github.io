@@ -1,0 +1,109 @@
+<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+
+<script>
+    window.klipse_settings = {
+        selector: '.cljs'
+    };
+</script>
+
+<pre hidden="hidden"><code class="cljs">
+(def canvas-id (atom "canvas"))
+
+(defn draw-line
+  [coord1 coord2]
+  (let [canvas (js/document.getElementById @canvas-id)
+        ctx (.getContext canvas "2d")]
+   (doto ctx
+     (.moveTo (first coord1) (second coord1))
+     (.lineTo (first coord2) (second coord2))
+     (.stroke))))
+</code></pre>
+
+<!-- <pre><code class="cljs" data-preamble="(reset! canvas-id &quot;canvas&quot;)"> -->
+<!-- (draw-grid (full-grid 10 10)) -->
+<!-- </code></pre> -->
+
+<pre><code class="cljs">
+(def step-length 10)
+
+(def step-count 0)
+
+(def target [300 300])
+
+(def increment 0.5)
+
+(def dirs {:North 2 :East 2 :South 2 :West 2})
+
+(defn make-weighted-list [dirs]
+  (flatten (map #(repeat (max (second %) 0) (first %)) dirs)))
+
+(defn get-dir [dirs]
+  (let [weighted-list (make-weighted-list dirs)]
+    (rand-nth weighted-list)))
+
+(defn get-next-loc [current dir]
+  (case dir
+    :North [(current 0) (- (current 1) step-length)]
+    :East [(+ (current 0) step-length) (current 1)]
+    :South [(current 0) (+ (current 1) step-length)]
+    :West [(- (current 0) step-length) (current 1)]))
+
+(defn get-dist [loc]
+  (Math/sqrt
+    (+
+    (Math/pow 
+      (- (loc 0) (target 0)) 
+      2)
+    (Math/pow 
+      (- (loc 1) (target 1))
+      2))))
+
+(defn opposite-dir [dir]
+  (case dir
+    :North :South
+    :East :West
+    :South :North
+    :West :East))
+
+(defn update-dirs [dirs dir dist-diff]
+  (if (= dist-diff 0)
+    dirs
+    (if (pos? dist-diff)
+      (update-in dirs [dir] #(+ % increment))
+      (update-in (update-in dirs [dir] #(- % increment)) [(opposite-dir dir)] #(+ % (* 2 increment))))))
+
+(defn setup [start]
+  (let [canvas (js/document.getElementById @canvas-id)
+        ctx (.getContext canvas "2d")]
+    (doto ctx
+      (.clearRect 0 0 canvas.width canvas.height)
+      (.arc (first start) (second start) 3 0 (* 2 Math.PI))
+      (.fillText "x" (first target) (second target)))))
+
+(defn walk [start dirs]
+  (loop [current start
+         dist (get-dist start)
+         dirs dirs
+         steps [start]]
+    (if (or (= current target) (> (count steps) 1000))
+      steps
+      (let [dir (get-dir dirs)
+            next-loc (get-next-loc current dir)
+            new-dist (get-dist next-loc)
+            new-dirs (update-dirs dirs dir (- dist new-dist))]
+        (recur next-loc new-dist new-dirs (conj steps next-loc))))))
+
+(defn draw-steps [steps]
+  (map #(draw-line (first %) (second %)) (partition 2 1 steps)))
+
+(def start [10 10])
+
+(setup start)
+(count (draw-steps (walk start dirs)))
+</code>
+</pre>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js">
+</script>
