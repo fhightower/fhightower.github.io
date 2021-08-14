@@ -72,11 +72,21 @@
       (update-in dirs [dir] #(+ % increment))
       (update-in (update-in dirs [dir] #(- % increment)) [(opposite-dir dir)] #(+ % (* 2 increment))))))
 
-(defn setup [start]
+(defn clear-canvas []
   (let [canvas (js/document.getElementById @canvas-id)
         ctx (.getContext canvas "2d")]
+    (set! (.-fillStyle ctx) "white")
     (doto ctx
-      (.clearRect 0 0 canvas.width canvas.height)
+      (.beginPath)
+      (.rect 0 0 canvas.width canvas.height)
+      (.fill))))
+
+(defn setup [start]
+  (clear-canvas)
+  (let [canvas (js/document.getElementById @canvas-id)
+        ctx (.getContext canvas "2d")]
+    (set! (.-fillStyle ctx) "black")
+    (doto ctx
       (.arc (first start) (second start) 3 0 (* 2 Math.PI))
       (.fillText "x" (first target) (second target)))))
 
@@ -85,25 +95,49 @@
          dist (get-dist start)
          dirs dirs
          steps [start]]
-    (if (or (= current target) (> (count steps) 1000))
-      steps
-      (let [dir (get-dir dirs)
+    (if (= current target)
+      [steps true]
+      (if (> (count steps) 1000)
+        [steps false]
+        (let [dir (get-dir dirs)
             next-loc (get-next-loc current dir)
             new-dist (get-dist next-loc)
             new-dirs (update-dirs dirs dir (- dist new-dist))]
-        (recur next-loc new-dist new-dirs (conj steps next-loc))))))
+        (recur next-loc new-dist new-dirs (conj steps next-loc)))))))
 
 (defn draw-steps [steps]
   (map #(draw-line (first %) (second %)) (partition 2 1 steps)))
 
 (def start [10 10])
 
-(setup start)
-(count (draw-steps (walk start dirs)))
+(defn print-output [step-count]
+  (-> js/document
+    (.getElementById "output")
+    (.-innerHTML)
+    (set! (str "Finished in " step-count " steps."))))
+
+(defn draw []
+  (setup start)
+  (let [steps (walk start dirs)
+        success? (second steps)]
+    (print-output (count (draw-steps (first steps))) success?)))
 </code>
 </pre>
 
+<pre hidden="hidden"><code class="cljs">
+(draw)
+
+(-> "generate-button"
+  (js/document.getElementById)
+  (.addEventListener "click" (fn [e]
+    (draw))))
+</code></pre>
+
 <canvas id="canvas" width="500" height="500"></canvas>
+
+<br/>
+<button class="button" id="generate-button">Redraw</button>
+<span id="output"></span>
 
 <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js">
 </script>
