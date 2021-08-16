@@ -95,32 +95,34 @@
          dist (get-dist start)
          dirs dirs
          steps [start]]
-    (if (= current target)
-      [steps true]
-      (if (> (count steps) 1000)
-        [steps false]
-        (let [dir (get-dir dirs)
-            next-loc (get-next-loc current dir)
-            new-dist (get-dist next-loc)
-            new-dirs (update-dirs dirs dir (- dist new-dist))]
-        (recur next-loc new-dist new-dirs (conj steps next-loc)))))))
+    (if (or (= current target) (> (count steps) 1000))
+      steps
+      (let [dir (get-dir dirs)
+          next-loc (get-next-loc current dir)
+          new-dist (get-dist next-loc)
+          new-dirs (update-dirs dirs dir (- dist new-dist))]
+      (recur next-loc new-dist new-dirs (conj steps next-loc))))))
 
 (defn draw-steps [steps]
   (map #(draw-line (first %) (second %)) (partition 2 1 steps)))
 
 (def start [10 10])
 
-(defn print-output [step-count]
-  (-> js/document
-    (.getElementById "output")
-    (.-innerHTML)
-    (set! (str "Finished in " step-count " steps."))))
+(defn print-output [step-count success?]
+  (println success?)
+  (let [message (if (= success? true)
+                  (str "Finished in " step-count " steps.")
+                  (str "Stopped after " step-count " steps."))]
+    (-> js/document
+      (.getElementById "output")
+      (.-innerHTML)
+      (set! message))))
 
 (defn draw []
   (setup start)
   (let [steps (walk start dirs)
-        success? (second steps)]
-    (print-output (count (draw-steps (first steps))) success?)))
+        success? (= (last steps) target)]
+    (print-output (count (draw-steps steps)) success?)))
 </code>
 </pre>
 
