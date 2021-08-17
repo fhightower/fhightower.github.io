@@ -17,36 +17,8 @@
      (.moveTo (first coord1) (second coord1))
      (.lineTo (first coord2) (second coord2))
      (.stroke))))
-</code></pre>
-
-<!-- <pre><code class="cljs" data-preamble="(reset! canvas-id &quot;canvas&quot;)"> -->
-<!-- (draw-grid (full-grid 10 10)) -->
-<!-- </code></pre> -->
-
-<pre><code class="cljs">
-(def step-length 10)
 
 (def step-count 0)
-
-(def target [300 300])
-
-(def increment 0.5)
-
-(def dirs {:North 2 :East 2 :South 2 :West 2})
-
-(defn make-weighted-list [dirs]
-  (flatten (map #(repeat (max (second %) 0) (first %)) dirs)))
-
-(defn get-dir [dirs]
-  (let [weighted-list (make-weighted-list dirs)]
-    (rand-nth weighted-list)))
-
-(defn get-next-loc [current dir]
-  (case dir
-    :North [(current 0) (- (current 1) step-length)]
-    :East [(+ (current 0) step-length) (current 1)]
-    :South [(current 0) (+ (current 1) step-length)]
-    :West [(- (current 0) step-length) (current 1)]))
 
 (defn get-dist [loc]
   (Math/sqrt
@@ -58,6 +30,60 @@
       (- (loc 1) (target 1))
       2))))
 
+(defn clear-canvas []
+(let [canvas (js/document.getElementById @canvas-id)
+      ctx (.getContext canvas "2d")]
+  (set! (.-fillStyle ctx) "white")
+  (doto ctx
+    (.beginPath)
+    (.rect 0 0 canvas.width canvas.height)
+    (.fill))))
+
+(defn setup [start]
+  (clear-canvas)
+  (let [canvas (js/document.getElementById @canvas-id)
+        ctx (.getContext canvas "2d")]
+    (set! (.-fillStyle ctx) "black")
+    (set! (.-font ctx) "bold 13px Arial")
+    (doto ctx
+      (.beginPath)
+      (.arc (first start) (second start) 4 0 (* 2 Math.PI))
+      (.fill)
+      (.fillText "x" (first target) (second target)))))
+
+(defn draw-steps [steps]
+  (map #(draw-line (first %) (second %)) (partition 2 1 steps)))
+
+(defn print-output [step-count success?]
+  (let [message (if (true? success?)
+                    (str "Finished in " step-count " steps.")
+                    (str "Stopped after " step-count " steps."))]
+    (-> js/document
+      (.getElementById "output")
+      (.-innerHTML)
+      (set! message))))
+</code></pre>
+
+Here are some of the underlying functions used to walk around the canvas. You can ignore them if you wish (or you can edit them too ;)):
+
+<pre><code class="cljs">
+(def step-length 10)
+(def max-step-count 1000)
+(def dirs {:North 2 :East 2 :South 2 :West 2})
+
+(defn make-weighted-list [dirs]
+  (flatten (map #(repeat (max (second %) 0) (first %)) dirs)))
+
+(defn get-dir [dirs]
+  (rand-nth (make-weighted-list dirs)))
+
+(defn get-next-loc [current dir]
+  (case dir
+    :North [(current 0) (- (current 1) step-length)]
+    :East [(+ (current 0) step-length) (current 1)]
+    :South [(current 0) (+ (current 1) step-length)]
+    :West [(- (current 0) step-length) (current 1)]))
+
 (defn opposite-dir [dir]
   (case dir
     :North :South
@@ -65,64 +91,40 @@
     :South :North
     :West :East))
 
-(defn update-dirs [dirs dir dist-diff]
-  (if (= dist-diff 0)
-    dirs
-    (if (pos? dist-diff)
-      (update-in dirs [dir] #(+ % increment))
-      (update-in (update-in dirs [dir] #(- % increment)) [(opposite-dir dir)] #(+ % (* 2 increment))))))
-
-(defn clear-canvas []
-  (let [canvas (js/document.getElementById @canvas-id)
-        ctx (.getContext canvas "2d")]
-    (set! (.-fillStyle ctx) "white")
-    (doto ctx
-      (.beginPath)
-      (.rect 0 0 canvas.width canvas.height)
-      (.fill))))
-
-(defn setup [start]
-  (clear-canvas)
-  (let [canvas (js/document.getElementById @canvas-id)
-        ctx (.getContext canvas "2d")]
-    (set! (.-fillStyle ctx) "black")
-    (doto ctx
-      (.arc (first start) (second start) 3 0 (* 2 Math.PI))
-      (.fillText "x" (first target) (second target)))))
-
 (defn walk [start dirs]
   (loop [current start
          dist (get-dist start)
          dirs dirs
          steps [start]]
-    (if (or (= current target) (> (count steps) 1000))
+    (if (or (= current target) (> (count steps) max-step-count))
       steps
       (let [dir (get-dir dirs)
           next-loc (get-next-loc current dir)
           new-dist (get-dist next-loc)
-          new-dirs (update-dirs dirs dir (- dist new-dist))]
-      (recur next-loc new-dist new-dirs (conj steps next-loc))))))
-
-(defn draw-steps [steps]
-  (map #(draw-line (first %) (second %)) (partition 2 1 steps)))
-
-(def start [10 10])
-
-(defn print-output [step-count success?]
-  (println success?)
-  (let [message (if (= success? true)
-                  (str "Finished in " step-count " steps.")
-                  (str "Stopped after " step-count " steps."))]
-    (-> js/document
-      (.getElementById "output")
-      (.-innerHTML)
-      (set! message))))
+          closer? (neg? (- new-dist dist))
+          new-dirs (update-dirs dirs dir closer?)]
+        (recur next-loc new-dist new-dirs (conj steps next-loc))))))
 
 (defn draw []
   (setup start)
   (let [steps (walk start dirs)
         success? (= (last steps) target)]
     (print-output (count (draw-steps steps)) success?)))
+</code></pre>
+
+Below is the interesting stuff. The <code>update-dirs</code> function is the one we use to update the weights given to each of the directions
+(thus, making it more or less likely for the walker to walk in that direction).
+Feel free to edit the code below to see how this changes the walker's behaviour:
+
+<pre><code class="cljs">
+(def start [50 50])
+(def target [300 300])
+(def dir-increment 0.5)
+
+(defn update-dirs [dirs dir closer?]
+  (if (true? closer?)
+    (update-in dirs [dir] #(+ % dir-increment))
+    (update-in (update-in dirs [dir] #(- % dir-increment)) [(opposite-dir dir)] #(+ % (* 2 dir-increment)))))
 </code>
 </pre>
 
@@ -135,11 +137,10 @@
     (draw))))
 </code></pre>
 
-<canvas id="canvas" width="500" height="500"></canvas>
-
-<br/>
 <button class="button" id="generate-button">Redraw</button>
 <span id="output"></span>
+<br>
+<canvas id="canvas" width="500" height="500"></canvas>
 
 <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js">
 </script>
