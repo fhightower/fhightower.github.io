@@ -13,10 +13,10 @@
   [coord1 coord2]
   (let [canvas (js/document.getElementById @canvas-id)
         ctx (.getContext canvas "2d")]
-   (doto ctx
-     (.moveTo (first coord1) (second coord1))
-     (.lineTo (first coord2) (second coord2))
-     (.stroke))))
+    (doto ctx
+      (.moveTo (first coord1) (second coord1))
+      (.lineTo (first coord2) (second coord2))
+      (.stroke))))
 
 (def step-count 0)
 
@@ -33,7 +33,7 @@
 (defn clear-canvas []
 (let [canvas (js/document.getElementById @canvas-id)
       ctx (.getContext canvas "2d")]
-  (set! (.-fillStyle ctx) "white")
+  (set! (.-fillStyle ctx) "#777")
   (doto ctx
     (.beginPath)
     (.rect 0 0 canvas.width canvas.height)
@@ -43,7 +43,7 @@
   (clear-canvas)
   (let [canvas (js/document.getElementById @canvas-id)
         ctx (.getContext canvas "2d")]
-    (set! (.-fillStyle ctx) "black")
+    (set! (.-fillStyle ctx) "#eee")
     (set! (.-font ctx) "bold 13px Arial")
     (doto ctx
       (.beginPath)
