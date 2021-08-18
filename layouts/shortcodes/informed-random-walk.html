@@ -119,12 +119,12 @@ Feel free to edit the code below to see how this changes the walker's behaviour:
 <pre><code class="cljs">
 (def start [50 50])
 (def target [300 300])
-(def dir-increment 0.5)
+(def dir-increment 1)
 
 (defn update-dirs [dirs dir closer?]
   (if (true? closer?)
     (update-in dirs [dir] #(+ % dir-increment))
-    (update-in (update-in dirs [dir] #(- % dir-increment)) [(opposite-dir dir)] #(+ % (* 2 dir-increment)))))
+    (update-in dirs [dir] #(max 1 (- % dir-increment)))))
 </code>
 </pre>
 
