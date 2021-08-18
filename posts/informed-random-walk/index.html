@@ -3,22 +3,20 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Informed, Stochastic Walk | Floyd Hightower</title>
+<title>Informed, Random Walk | Floyd Hightower</title>
 <meta name=author content>
-<meta name=description content>
+<meta name=description content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction.">
 <meta name=generator content="Hugo 0.87.0">
-<link rel=canonical href=https://hightower.space/posts/informed-stochastic-walk/>
-<meta property="og:title" content="Informed, Stochastic Walk">
-<meta property="og:description" content="I&rsquo;m going to describe what is going on here and make some improvements to this in the near future, but here is what I have so far:
- window.klipse_settings = { selector: '.cljs' };  (def canvas-id (atom &#34;canvas&#34;)) (defn draw-line [coord1 coord2] (let [canvas (js/document.getElementById @canvas-id) ctx (.getContext canvas &#34;2d&#34;)] (doto ctx (.moveTo (first coord1) (second coord1)) (.lineTo (first coord2) (second coord2)) (.stroke)))) (def step-count 0) (defn get-dist [loc] (Math/sqrt (+ (Math/pow (- (loc 0) (target 0)) 2) (Math/pow (- (loc 1) (target 1)) 2)))) (defn clear-canvas [] (let [canvas (js/document.">
+<link rel=canonical href=https://hightower.space/posts/informed-random-walk/>
+<meta property="og:title" content="Informed, Random Walk">
+<meta property="og:description" content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://hightower.space/posts/informed-stochastic-walk/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://hightower.space/posts/informed-random-walk/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-08-13T00:00:00+00:00">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Informed, Stochastic Walk">
-<meta name=twitter:description content="I&rsquo;m going to describe what is going on here and make some improvements to this in the near future, but here is what I have so far:
- window.klipse_settings = { selector: '.cljs' };  (def canvas-id (atom &#34;canvas&#34;)) (defn draw-line [coord1 coord2] (let [canvas (js/document.getElementById @canvas-id) ctx (.getContext canvas &#34;2d&#34;)] (doto ctx (.moveTo (first coord1) (second coord1)) (.lineTo (first coord2) (second coord2)) (.stroke)))) (def step-count 0) (defn get-dist [loc] (Math/sqrt (+ (Math/pow (- (loc 0) (target 0)) 2) (Math/pow (- (loc 1) (target 1)) 2)))) (defn clear-canvas [] (let [canvas (js/document.">
+<meta name=twitter:title content="Informed, Random Walk">
+<meta name=twitter:description content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction.">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css>
 <link rel=stylesheet href=/css/icomoon.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css>
@@ -47,19 +45,64 @@
 <section class=front>
 <div class=dream-max-width>
 <div class="ui relaxed centered grid dream-grid dream-grid-single">
+<aside class="sixteen wide mobile sixteen wide tablet three wide computer column dream-single-aside">
+<div class="ui segment toc">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#background>Background</a></li>
+<li><a href=#an-informed-random-walk>An Informed, Random Walk</a>
+<ul>
+<li><a href=#the-context>The Context</a></li>
+<li><a href=#the-algorithm>The Algorithm</a></li>
+<li><a href=#the-data-structure>The Data Structure</a></li>
+<li><a href=#the-code>The Code</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
 <div class="sixteen wide mobile sixteen wide tablet ten wide computer column markdown-body dream-single" id=dream-save-post-as-img>
 <section class="ui top attached segment">
 <header>
-<h1 class="ui large header">Informed, Stochastic Walk<span class="sub header">
+<h1 class="ui large header">Informed, Random Walk<span class="sub header">
 <span class=left>
 Aug 13, 2021
-| 3 minutes
+| 6 minutes
 </span>
 </span>
 </h1>
 </header>
 <article class=main>
-<p>I&rsquo;m going to describe what is going on here and make some improvements to this in the near future, but here is what I have so far:</p>
+<h2 id=background>Background</h2>
+<p><a href=https://press.stripe.com/>Stripe Press</a> published a beautiful copy of &ldquo;<em>The Art of Doing Science and Engineering</em>&rdquo; by Richard Hamming:</p>
+<p><img src=/img/learning-to-learn-cover.png alt="The cover of the book features an intriguing pattern"></p>
+<p>Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was thinking about what algorithm would make such a pattern. This post is an explication of my solution.</p>
+<h2 id=an-informed-random-walk>An Informed, Random Walk</h2>
+<p>Such a pattern could be created from what I am calling an &ldquo;Informed, Random Walk&rdquo;. The walk is &ldquo;informed&rdquo; because it contains feedback about each step and &ldquo;random&rdquo; because each step of the walk is randomly chosen.</p>
+<h3 id=the-context>The Context</h3>
+<p>Imagine we are standing on a point on a 2D plain. We are trying to move from our current location (whose coordinates are unknown to us) to a specific, target location (whose coordinates are also unknown to us). Imagine that we are only allowed to take steps in <a href=https://en.wikipedia.org/wiki/Cardinal_direction>cardinal directions</a> and, after taking a step, we will be told whether we are closer to the target location.</p>
+<h3 id=the-algorithm>The Algorithm</h3>
+<p>What algorithm would help us get to the target location as directly as possible? A basic algorithm is:</p>
+<ol>
+<li>Randomly choose a direction and take a step in that direction</li>
+<li>Determine whether the step brings us closer to the target</li>
+<li>If the step took us closer to the target, make it more likely to choose that direction in the future, otherwise make it less likely</li>
+</ol>
+<h3 id=the-data-structure>The Data Structure</h3>
+<p>Perhaps equally as important as the algorithm is the data structure used to track the steps we&rsquo;ve taken and their results. For this post, I&rsquo;ve written the algorithm using <a href=https://clojurescript.org/>ClojureScript</a> so I&rsquo;m using a <a href=https://cljs.github.io/api/syntax/#map>map</a> which looks like:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>{<span style=color:#e6db74>:North</span> <span style=color:#ae81ff>1</span> <span style=color:#e6db74>:East</span> <span style=color:#ae81ff>1</span> <span style=color:#e6db74>:South</span> <span style=color:#ae81ff>2</span> <span style=color:#e6db74>:West</span> <span style=color:#ae81ff>3</span>}
+</code></pre></div><p>The keys of the map are the possible directions and the values are the weights for that direction.</p>
+<p>At step 1 in the algorithm (when we randomly choose a direction), we use the weights to determine the likelihood of a direction being chosen. For example, given the map above, we would randomly choose a direction where <code>:South</code> is two times are likely to be chosen as <code>:North</code> and <code>:East</code> and where <code>:West</code> is three times more likely than <code>:North</code> and <code>:East</code>. The way this is actually implemented, we take the map of directions and their weights and generate an array where each direction is repeated as many times as the weight. So, using the map above as an example, we would have:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>[<span style=color:#e6db74>:North</span> <span style=color:#e6db74>:East</span> <span style=color:#e6db74>:South</span> <span style=color:#e6db74>:South</span> <span style=color:#e6db74>:West</span> <span style=color:#e6db74>:West</span> <span style=color:#e6db74>:West</span>]
+</code></pre></div><p>We then randomly choose one of these to determine in which direction we will take a step.</p>
+<p>At step 3 of the algorithm (where we record feedback about the step), we update the map with the directions in it according to whether or not the step brought us closer to the target. So say our direction map is:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>{<span style=color:#e6db74>:North</span> <span style=color:#ae81ff>1</span> <span style=color:#e6db74>:East</span> <span style=color:#ae81ff>1</span> <span style=color:#e6db74>:South</span> <span style=color:#ae81ff>2</span> <span style=color:#e6db74>:West</span> <span style=color:#ae81ff>3</span>}
+</code></pre></div><p>We take a step <code>:North</code> and this takes us closer to the target. So, we now want to make it more likely to take another step <code>:North</code>, so we increment the value for <code>:North</code>:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>{<span style=color:#e6db74>:North</span> <span style=color:#ae81ff>2</span> <span style=color:#e6db74>:East</span> <span style=color:#ae81ff>1</span> <span style=color:#e6db74>:South</span> <span style=color:#ae81ff>2</span> <span style=color:#e6db74>:West</span> <span style=color:#ae81ff>3</span>}
+</code></pre></div><p>This is the interesting part of the whole algorithm! Given a direction map, the direction of the most recent step, and whether or not that step brought you closer to the target: How do you update the direction map to best approach the destination?</p>
+<h3 id=the-code>The Code</h3>
+<p>Below is <em>interactive</em> code that sets the context for this problem. Some of the less important functionality is hidden, but feel free to edit what is visible. If you scroll below the code blocks, you will see an informed, random walk based on the code. Enjoy exploring!</p>
 <link rel=stylesheet type=text/css href=https://storage.googleapis.com/app.klipse.tech/css/codemirror.css>
 <script>window.klipse_settings={selector:'.cljs'}</script>
 <pre hidden><code class=cljs>
@@ -69,10 +112,10 @@ Aug 13, 2021
   [coord1 coord2]
   (let [canvas (js/document.getElementById @canvas-id)
         ctx (.getContext canvas "2d")]
-   (doto ctx
-     (.moveTo (first coord1) (second coord1))
-     (.lineTo (first coord2) (second coord2))
-     (.stroke))))
+    (doto ctx
+      (.moveTo (first coord1) (second coord1))
+      (.lineTo (first coord2) (second coord2))
+      (.stroke))))
 
 (def step-count 0)
 
@@ -89,7 +132,7 @@ Aug 13, 2021
 (defn clear-canvas []
 (let [canvas (js/document.getElementById @canvas-id)
       ctx (.getContext canvas "2d")]
-  (set! (.-fillStyle ctx) "white")
+  (set! (.-fillStyle ctx) "#777")
   (doto ctx
     (.beginPath)
     (.rect 0 0 canvas.width canvas.height)
@@ -99,7 +142,7 @@ Aug 13, 2021
   (clear-canvas)
   (let [canvas (js/document.getElementById @canvas-id)
         ctx (.getContext canvas "2d")]
-    (set! (.-fillStyle ctx) "black")
+    (set! (.-fillStyle ctx) "#eee")
     (set! (.-font ctx) "bold 13px Arial")
     (doto ctx
       (.beginPath)
@@ -171,12 +214,12 @@ Feel free to edit the code below to see how this changes the walker's behaviour:
 <pre><code class=cljs>
 (def start [50 50])
 (def target [300 300])
-(def dir-increment 0.5)
+(def dir-increment 1)
 
 (defn update-dirs [dirs dir closer?]
   (if (true? closer?)
     (update-in dirs [dir] #(+ % dir-increment))
-    (update-in (update-in dirs [dir] #(- % dir-increment)) [(opposite-dir dir)] #(+ % (* 2 dir-increment)))))
+    (update-in dirs [dir] #(max 1 (- % dir-increment)))))
 </code>
 </pre>
 <pre hidden><code class=cljs>
