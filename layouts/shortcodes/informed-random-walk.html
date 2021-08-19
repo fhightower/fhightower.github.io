@@ -64,7 +64,8 @@
       (set! message))))
 </code></pre>
 
-Here are some of the underlying functions used to walk around the canvas. You can ignore them if you wish (or you can edit them too ;)):
+Here are some of the underlying functions used to walk around the canvas.
+For starters, I recommend you skip this code block to the next, more interesting one below.
 
 <pre><code class="cljs">
 (def step-length 10)
@@ -112,8 +113,9 @@ Here are some of the underlying functions used to walk around the canvas. You ca
     (print-output (count (draw-steps steps)) success?)))
 </code></pre>
 
-Below is the interesting stuff. The <code>update-dirs</code> function is the one we use to update the weights given to each of the directions
+This is the interesting stuff! The <code>update-dirs</code> function is the one we use to update the weights given to each of the directions
 (thus, making it more or less likely for the walker to walk in that direction).
+If the walker doesn't find the target in 1,000 steps, it will stop (but you can change this by changing the <code>max-step-count</code> variable in the code block above).
 Feel free to edit the code below to see how this changes the walker's behaviour:
 
 <pre><code class="cljs">

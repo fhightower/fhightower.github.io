@@ -66,3 +66,14 @@ This is the interesting part of the whole algorithm! Given a direction map, the 
 Below is *interactive* code that sets the context for this problem. Some of the less important functionality is hidden, but feel free to edit what is visible. If you scroll below the code blocks, you will see an informed, random walk based on the code. Enjoy exploring!
 
 {{< informed-random-walk >}}
+
+The default `update-dirs` function is pretty bad (it rarely finds the target).
+
+What if you update it to:
+
+```clojure
+(defn update-dirs [dirs dir closer?]
+  (if (true? closer?)
+    (update-in dirs [dir] #(+ % dir-increment))
+    (update-in (update-in dirs [dir] #(- % dir-increment)) [(opposite-dir dir)] #(+ % dir-increment))))
+```
