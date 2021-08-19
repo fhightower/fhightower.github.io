@@ -162,7 +162,8 @@ Aug 13, 2021
       (.-innerHTML)
       (set! message))))
 </code></pre>
-Here are some of the underlying functions used to walk around the canvas. You can ignore them if you wish (or you can edit them too ;)):
+Here are some of the underlying functions used to walk around the canvas.
+For starters, I recommend you skip this code block to the next, more interesting one below.
 <pre><code class=cljs>
 (def step-length 10)
 (def max-step-count 1000)
@@ -208,8 +209,9 @@ Here are some of the underlying functions used to walk around the canvas. You ca
         success? (= (last steps) target)]
     (print-output (count (draw-steps steps)) success?)))
 </code></pre>
-Below is the interesting stuff. The <code>update-dirs</code> function is the one we use to update the weights given to each of the directions
+This is the interesting stuff! The <code>update-dirs</code> function is the one we use to update the weights given to each of the directions
 (thus, making it more or less likely for the walker to walk in that direction).
+If the walker doesn't find the target in 1,000 steps, it will stop (but you can change this by changing the <code>max-step-count</code> variable in the code block above).
 Feel free to edit the code below to see how this changes the walker's behaviour:
 <pre><code class=cljs>
 (def start [50 50])
@@ -235,6 +237,13 @@ Feel free to edit the code below to see how this changes the walker's behaviour:
 <br>
 <canvas id=canvas width=500 height=500></canvas>
 <script src=https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js></script>
+<p>The default <code>update-dirs</code> function is pretty bad (it rarely finds the target).</p>
+<p>What if you update it to:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure>(<span style=color:#66d9ef>defn </span>update-dirs [dirs dir closer?]
+  (<span style=color:#66d9ef>if </span>(true? closer?)
+    (<span style=color:#a6e22e>update-in</span> dirs [dir] <span style=color:#f92672>#</span>(+ % dir-increment))
+    (<span style=color:#a6e22e>update-in</span> (<span style=color:#a6e22e>update-in</span> dirs [dir] <span style=color:#f92672>#</span>(- % dir-increment)) [(<span style=color:#a6e22e>opposite-dir</span> dir)] <span style=color:#f92672>#</span>(+ % dir-increment))))
+</code></pre></div>
 </article>
 </section>
 </div>
