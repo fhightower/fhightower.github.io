@@ -1,11 +1,11 @@
 +++
-date = "2021-05-01"
+date = "2021-08-27"
 title = "2021 Reading List"
 description = "Reading list for 2021 (updated regularly)."
 tags = ["Reading", "List"]
 +++
 
-Books read this year: 32
+Books read this year: 49
 
 Title | Author | Rating | Notes
 --- | --- | --- | ---
@@ -41,3 +41,20 @@ Title | Author | Rating | Notes
 *Amazing Grace in the Life of William Wilberforce* | John Piper | C+ | Fascinating biography of a wonderful man who fought to end the slave trade and slavery in England
 *Modern Introductory Analysis* | Mary P. Dolciani | B+ | Very good math text that is approachable, readable, and consistent. Does a great job of introducing the value and uses of vectors.
 *What If?: Serious Scientific Answers to Absurd Hypothetical Questions* | Randall Munroe | B+ | Very fun read which is *very* well communicated and shows the remarkable power of mathematics to describe even "Absurd Hypothetical Questions"
+*The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography* | Simon Singh | C+ | Informative and clearly written
+*Software Design Decoded: 66 Ways Experts Think* | Marian Petre and André van der Hoek | B | Highly recommended. Insightful, simple, and practical proverbs for engineers, project managers, and creators of all kinds.
+*The Benedict Option* | Rod Dreher | B+ | Very insightful read which offers, I believe, an accurate assessment of the state of the Western World and poignant solutions for escaping and weathering this maelstrom.
+*The Lion, the Witch, and the Wardrobe* | C. S. Lewis | B+ | Fantastic read (as always with Lewis). "Peter held the door closed but did not shut it; for, of course, he remembered, as every sensible person does, that you should never never shut yourself up in a wardrobe."
+*The Moon Is a Harsh Mistress* | Robert A. Heinlein | A | Honestly, one of the best works of science fiction I have ever read. Involved questions about AI, ethics, political theory, and mathematics. Very fun and fascinating read.
+*The Wrong Shape* | G. K. Chesteron | D | Perhaps I missed an underlying theme of this work (I did listen to it while otherwise occupied), but I did not find this to be one of GK's better works.
+*Prince Caspian* | C. S. Lewis | C- | Not one of Lewis' better works. I appreciated it a bit more this time, but still feels rushed and hastily written.
+*Whose Body?* | Dorothy L. Sayers | C+ | Not bad as far as murder mysteries are concerned.
+*Unnatural Death* (see above)
+*Cloud of Witnesses* (see above)
+*The Necessity of Reforming the Church* | John Calvin | B- | Good work presenting the complaints of the reformers against the Roman Catholic Church. Interesting to hear the complaints in their own words and fascinating how much John Calvin quotes from the church fathers.
+*Little Book on the Christian Life* | John Calvin | B | Very good book. Recommended for Christians.
+*Five Red Herrings* | Dorothy L. Sayers | B | Very fun and tantalizing read. Enjoyed this one more than some of the others.
+*Desiring the Kingdom: Worship, Worldview, and Cultural Formation (Cultural Liturgies)* | James K. A. Smith | A | Fantastic read highly recommended for Christian scholars. He, appropriately I believe, addresses the overly rationalistic mentality that is common in the conservative, evangelical church today. I appreciate his focus on the value and import of daily, 'common' practices (read 'liturgies') that are shaping us.
+*NutureShock: New Thinking About Children* | Po Bronson and Ashley Merryman | B | Insightful book providing recent research about raising children.
+*Last Days According to Jesus* | R. C. Sproul | B+ | Very approachable and comprehensible overview of eschatology (with a focus on the partial, preterite view).
+*The ZDoggMD Show* | ZDogg | A+ | Not a book, but a very *highly* recommended [podcast](https://zdoggmd.com/podcasts/) in which ZDogg investigates various aspects of medicine. He does a better job than anybody I know at communicating nuance and complexity of things like the covid vaccine and whether or not masks do anything helpful. If there's one thing you take away from this list, it's to read some C. S. Lewis. Second to that is listen to this podcast :)
