@@ -6,7 +6,7 @@
 <title>Domain Squatting Math | Floyd Hightower</title>
 <meta name=author content>
 <meta name=description content="I was recently talking with a friend about the challenges of finding domain squats. Systems which grow at non-linear rates tend to catch us, as humans, off guard. This posts in a brief discussion on the math behind finding domain squats and the challenges inherent in the problem.">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.1">
 <link rel=canonical href=https://hightower.space/posts/math-behind-domain-squatting/>
 <meta property="og:title" content="Domain Squatting Math">
 <meta property="og:description" content="I was recently talking with a friend about the challenges of finding domain squats. Systems which grow at non-linear rates tend to catch us, as humans, off guard. This posts in a brief discussion on the math behind finding domain squats and the challenges inherent in the problem.">
@@ -83,7 +83,7 @@ Feb 23, 2019
 </ol>
 <p>For each character, we have the three options we listed above, so all possible combinations amount to: <code>3 * 3 * 3 = 27</code>. But, one of the twenty seven configurations is one in which all of the characters in the original domain are kept the same. Because this does not constitute a domain squat, we remove this one to get <code>26</code> as our final answer. A domain with three characters and an average of two replacements per character can produce twenty six domain squats!</p>
 <p>We can represent the number of domain squats formulaically as:</p>
-<pre><code>((r + 1) ^ n) - 1
+<pre tabindex=0><code>((r + 1) ^ n) - 1
 </code></pre><p>where</p>
 <ul>
 <li><code>r</code> is the number of characters which can replace each character in the domain</li>

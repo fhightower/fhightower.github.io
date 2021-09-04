@@ -6,7 +6,7 @@
 <title>JavaScript Puzzles: How Well do you Know Javascript? | Floyd Hightower</title>
 <meta name=author content>
 <meta name=description content="Javascript puzzles to test your understanding of Javascript.">
-<meta name=generator content="Hugo 0.87.0">
+<meta name=generator content="Hugo 0.88.1">
 <link rel=canonical href=https://hightower.space/posts/javascript-puzzles/>
 <meta property="og:title" content="JavaScript Puzzles: How Well do you Know Javascript?">
 <meta property="og:description" content="Javascript puzzles to test your understanding of Javascript.">
@@ -96,7 +96,7 @@ Jul 5, 2018
 <h1 id=answers>Answers</h1>
 <h2 id=variable-scoping-answer>Variable Scoping Answer</h2>
 <p>Most people expect, as did I, that this code would output:</p>
-<pre><code>0
+<pre tabindex=0><code>0
 1
 2
 3
@@ -107,7 +107,7 @@ Jul 5, 2018
 8
 9
 </code></pre><p>when in fact, the output is:</p>
-<pre><code>10
+<pre tabindex=0><code>10
 10
 10
 10
@@ -120,7 +120,7 @@ Jul 5, 2018
 </code></pre><p>This occurs because the <code>setTimeout</code> function will not run until the for loop has finished. By the time the for loop has finished, the value of variable <code>i</code> is 10. Each of the functions called by the <code>setTimeout</code> function is looking at the same <code>i</code> from the same scope, so they all log <code>10</code>.</p>
 <h2 id=indexing-an-objects-properties-answer>Indexing an Object&rsquo;s Properties Answer</h2>
 <p>The output of this code puzzle is:</p>
-<pre><code>zero
+<pre tabindex=0><code>zero
 eye
 </code></pre><p>This occurs because the first, and only, time through the for loop the value of <code>i</code> is 0 (zero). When I call <code>console.log(data[i]);</code>, javascript starts inside the brackets by getting the value of <code>i</code> (which is 0). Thus, the first logging is equivalent to saying <code>console.log(data.0);</code> and outputs &lsquo;zero&rsquo;.</p>
 <p>In the second logging (<code>console.log(data.i);</code>), javascript does not get the value of <code>i</code>, but instead treats &ldquo;i&rdquo; as a literal key. Thus, this is equivalent to saying <code>console.log(data["i"]);</code> which outputs &lsquo;eye&rsquo;.</p>
