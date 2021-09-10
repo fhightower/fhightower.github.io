@@ -1,11 +1,11 @@
 +++
-date = "2021-08-27"
+date = "2021-09-10"
 title = "2021 Reading List"
 description = "Reading list for 2021 (updated regularly)."
 tags = ["Reading", "List"]
 +++
 
-Books read this year: 57
+Books read this year: 59
 
 Title | Author | Rating | Notes
 --- | --- | --- | ---
@@ -66,3 +66,5 @@ Title | Author | Rating | Notes
 *He Saw That It Was Good: Reimagining Your Creative Life to Repair a Broken World* | Sho Baraka | C+ | I still do not know what I think this book. I recommend it and there is some great, thought provoking content therein. I am saddened and confused by an attitude in the book that seems to say (and I sincerely hope I'm not misrepresenting the book) that Christians of different ethnicities should be separate so they don't lose their cultural identities and creative resources. While I whole-heartedly support the preservation of cultural identities and creative resources, I also believe that a Church can be ethnically and culturally diverse without eclipsing many of the constituent ethnicities (although, I grant, this is rarely accomplished). I could have misunderstood Sho Baraka, but I understood him as advocating for christians of different ethnicies to remain relatively distinct and I do not see that as a desirable goal.
 *The Boy, the Mole, the Fox and the Horse* | Charlie Mackesy | A+ | "What do you want to be when you grow up?" "Kind" said the boy.
 *Replacing Darwin: The New Origin of Species* | Nathaniel T Jeanson | C+ | Interesting book. The first bit (half?) is introductory biology and genetics (both history and theory). The second half of the book makes the argument that speciation occurs rather rapidly (one new species every couple of years) and that "shifts from heterozygosity to homozygosity are the major genetic mechanism of speciation".
+*The Creation: An Appeal to Save Life on Earth* | Edward O. Wilson | C+ | Good book, written by a secular humanist scientist to a hypothetical pastor, presenting the case for preserving the created world. As the author expresses, I find it fascinating that Christians who believe God created the world have bought into political ideologies (the current, Republican mantra) which treats our planet with very little dignity.
+*The Most Beautiful Mathematical Formulas: An Entertaining Look at the Most Insightful, Useful, and Quirky Theorems of All Time* | Lionel Salem | B | Fun book to read with some fascinating mathematical principles and formulas.
