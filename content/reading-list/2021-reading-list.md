@@ -1,7 +1,7 @@
 +++
-date = "2021-09-10"
-title = "2021 Reading List"
-description = "Reading list for 2021 (updated regularly)."
+date = "2021-09-23"
+title = "2021 Mental Diet Log"
+description = "A log of books, documentaries, etc. I have enjoyed this year"
 tags = ["Reading", "List"]
 +++
 
@@ -68,3 +68,5 @@ Title | Author | Rating | Notes
 *Replacing Darwin: The New Origin of Species* | Nathaniel T Jeanson | C+ | Interesting book. The first bit (half?) is introductory biology and genetics (both history and theory). The second half of the book makes the argument that speciation occurs rather rapidly (one new species every couple of years) and that "shifts from heterozygosity to homozygosity are the major genetic mechanism of speciation".
 *The Creation: An Appeal to Save Life on Earth* | Edward O. Wilson | C+ | Good book, written by a secular humanist scientist to a hypothetical pastor, presenting the case for preserving the created world. As the author expresses, I find it fascinating that Christians who believe God created the world have bought into political ideologies (the current, Republican mantra) which treats our planet with very little dignity.
 *The Most Beautiful Mathematical Formulas: An Entertaining Look at the Most Insightful, Useful, and Quirky Theorems of All Time* | Lionel Salem | B | Fun book to read with some fascinating mathematical principles and formulas.
+*Better Left Unsaid* | Curt Jaimungal | B | Pertinent and poignant analysis of what's going on in America today and the bifurcation of discourse in America.
+*Flowers for Lisa: A Delirium of Photographic Invention* | Abelardo Morell | B | Beautiful collection of creative and imaginative photos!
