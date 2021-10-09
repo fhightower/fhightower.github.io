@@ -1,11 +1,11 @@
 +++
-date = "2021-09-23"
+date = "2021-10-09"
 title = "2021 Mental Diet Log"
 description = "A log of books, documentaries, etc. I have enjoyed this year"
 tags = ["Reading", "List"]
 +++
 
-Books read this year: 59
+Books read this year: 61
 
 Title | Author | Rating | Notes | Private Thoughts
 --- | --- | --- | --- | ---
@@ -71,3 +71,5 @@ Title | Author | Rating | Notes | Private Thoughts
 *Better Left Unsaid* | Curt Jaimungal | B | Pertinent and poignant analysis of what's going on in America today and the bifurcation of discourse in America. | 4658,29,5430,5450,4170,2429,1137,2415,2890,2380,2855,4102,2816,3573,339,2991,442,5198,4085,1697,878,247,2308,3845,3932,3546,2638,1129,5370,460,3173,524,2617,5171,187,3695,127,1892,5300,2098,2582,1877,2893,2088,5246,932,4259,2811,832,4887,3674,3255,1207,4896,2266,3861,3265,3963,2040,1817,1280,5350,2044,4792,116,3257,1848,4292,5818,3951,3549,2639,95,2761,3072,3385,3330,5727
 *Flowers for Lisa: A Delirium of Photographic Invention* | Abelardo Morell | B | Beautiful collection of creative and imaginative photos!
 *Undeniable: Evolution and the Science of Creation* | Bill Nye | C | Neither Bill Nye nor Ken Ham (a creationist Bill Nye debated which prompted this book) are very nuanced in their views and they both overstate their position. For example, Bill overstates the advantage and evolutionary world-view holds over a creationist view with respect to the joy of discovery and exploring the world around us. Both the evolutionist and creationist can passionately explore the world around us. Bill does raise some good objections to Ken Ham's distinction between 'historic' science and 'present' science (as he did in the debate). I will say, Bill Nye's rebuttle to the creationist objection that evolution violates the second law of thermodynamics by requiring that order come from energy released in a closed system was very poor. He objects that earth is *not* a closed system because it gets energy from the universe around it. This ignores the fact that the argument still works if one just expands the objection to the universe. In other words: granted that the earth isn't a closed system, but the *universe* is, so the same problem applies. Why is there order in the universe if, according to an evolutionary worldview, the universe is a closed system into which energy is released.
+*Kubernetes in Action (2nd Edition)* | Marko Lukša | C+ | Great introduction and overview of kubernetes. [Link](https://www.manning.com/books/kubernetes-in-action-second-edition).
+*The Montessori Baby: A Parent's Guide to Nurturing Your Baby with Love, Respect, and Understanding* | Simone Davies  (Author), Junnifa Uzodike (Author), Sanny van Loon (Illustrator) | B | Very practical tips and guidance for parents. Very repetitive (not necessarily a bad thing, but can be a bit bothersome at times). | 192,474,3954,4980,3194,1664,2375,913,5154,2087,3594,2574,5231,5797,77,2661,5,2053,1664,5616,4227,1608,5287,4511,4832,2097,4590,3297,2498,2189,1947,2889,1275,2274,5717,2725,4242,874,630,4787,136,524,4042,2340,2804,758,1956,71,1016,407,4577,3107,3315,6030,6095,1474,5907,3790,4642,5355,3242
