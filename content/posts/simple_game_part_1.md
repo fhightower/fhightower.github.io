@@ -1,7 +1,7 @@
 +++
 date = "2021-11-03"
 title = "Simplified Scale Game"
-description = ""
+description = "Describing a game which provides a good environment for exploring machine learning."
 tags = ["Games", "Machine Learning"]
 draft = true
 +++
@@ -44,17 +44,20 @@ def final_money(scale) -> Tuple[int]:
         return (scores[0] + 50, scores[1] + 50)
 
 
-def winner(player_) -> Optional[str]:
-    if money_tuple[0] > money_tuple[1]:
+def winner(player_a_money, player_b_money) -> Optional[str]:
+    if player_a_money > player_b_money:
         return 'a'
-    elif money_tuple[0] < money_tuple[1]:
+    elif player_b_money > player_a_money:
         return 'b'
 
 
 def place_marbles() -> int:
     """Determine how many numbers to play."""
-    ...
-    return player_one_marbles, player_two_marbles
+    # these values are just demonstrative... we'll update them later
+    player_a_marbles = 5
+    player_b_marbles = 10
+
+    return player_a_marbles, player_b_marbles
 
 
 def play():
@@ -64,7 +67,7 @@ def play():
     victor = winner(player_a_final_money, player_b_final_money)
 
     if victor is not None:
-        print(f'And the winner is player {victor}')
+        print(f'And the winner is: player {victor.upper()}')
     else:
         print(f'It\'s a tie!')
 
