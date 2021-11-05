@@ -3,7 +3,6 @@ date = "2021-11-03"
 title = "Simplified Scale Game"
 description = "Describing a game which provides a good environment for exploring machine learning."
 tags = ["Games", "Machine Learning"]
-draft = true
 +++
 
 # Simplified Scale Game
@@ -75,4 +74,6 @@ def play():
 play()
 ```
 
-{{< simple-game-base >}}
+{{< scale-game-base >}}
+
+In future posts, we'll explore some ways to programmatically play this game.
