@@ -33,24 +33,24 @@ starting_marbles = 10
 starting_money = 10
 
 
-def final_money(scale) -> Tuple[int]:
-    scores = ((starting_marbles - scale[0]), (starting_marbles - scale[1]))
-    if scale[0] > scale[1]:
-        return (scores[0] + 100, scores[1])
-    elif scale[0] < scale[1]:
-        return (scores[0], scores[1] + 100)
+def calculate_payout(player_a_move, player_b_move) -> Tuple[int]:
+    money = ((starting_marbles - player_a_move), (starting_marbles - player_b_move))
+    if player_a_move > player_b_move:
+        return (money[0] + 100, money[1])
+    elif player_a_move < player_b_move:
+        return (money[0], money[1] + 100)
     else:
-        return (scores[0] + 50, scores[1] + 50)
+        return (money[0] + 50, money[1] + 50)
 
 
-def winner(player_a_money, player_b_money) -> Optional[str]:
+def find_winner(player_a_money, player_b_money) -> Optional[str]:
     if player_a_money > player_b_money:
         return 'a'
     elif player_b_money > player_a_money:
         return 'b'
 
 
-def place_marbles() -> int:
+def get_marbles_to_place() -> int:
     """Determine how many numbers to play."""
     # these values are just demonstrative... we'll update them later
     player_a_marbles = 5
@@ -60,10 +60,9 @@ def place_marbles() -> int:
 
 
 def play():
-    player_a_move, player_b_move = place_marbles()
-    scale = (player_a_move, player_b_move)
-    player_a_final_money, player_b_final_money = final_money(scale)
-    victor = winner(player_a_final_money, player_b_final_money)
+    player_a_move, player_b_move = get_marbles_to_place()
+    player_a_payout, player_b_payout = calculate_payout(player_a_move, player_b_move)
+    victor = find_winner(player_a_payout, player_b_payout)
 
     if victor is not None:
         print(f'And the winner is: player {victor.upper()}')
