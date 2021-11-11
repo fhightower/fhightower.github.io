@@ -47,7 +47,11 @@ The words we use open doors for us to think new thoughts. Personally, I agree wi
 
 ### Bundling
 
-*Verb*: The action performed when one wears clothing appropriate for the weather you would *like* to have rather than the weather you actually have. 
+*Verb*: The action performed when one wears clothing appropriate for the weather you would *like* to have rather than the weather you actually have.
+
+### Strofe
+
+*Noun*: Derived from "**str**anger **o**n road **f**requently **e**ncountered" refers to a stranger that you keep seeing while traveling.
 
 ### Notes
 
