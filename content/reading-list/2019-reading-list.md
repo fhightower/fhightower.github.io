@@ -33,6 +33,9 @@ tags = ["Reading", "List"]
 - Written Also for Our Sake: Paul and the Art of Biblical Interpretation (James W Aageson)
 - To Be Continuous - Ep. #37, The Man Behind Windows PowerShell (Jeffrey Snover - [link](https://soundcloud.com/heavybit/to-be-continuous-ep-37-the-man-behind-windows-powershell))
 - As It Is Written: Studying Paul's Use of Scripture (Stanley E. Porter, Christopher D. Stanley)
+- The Epistle of Barnabas
+- The First Epistle of Clement to the Corinthians
+- Computing Machinery and Intelligence
 
 † Note on the "Redrawing the Line Between Hermeneutics and Application" article:
 
