@@ -2,7 +2,7 @@ baseurl = "https://hightower.space/"
 title = "Floyd Hightower"
 theme = "dream"
 languageCode = "en"
-paginate = 11
+paginate = 7
 
 [params]
   # dark mode
