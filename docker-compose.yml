@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  _base:
+    &base
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ./:/code
+    ports:
+      - "8888:8888"
+
+  # a fully loaded development environment to test new code
+  dev:
+    <<: *base
+    command: bash
+
+  jupyter:
+    <<: *base
+    entrypoint: "jupyter-lab"
+    command: ["--ip", "0.0.0.0", "--allow-root"]
