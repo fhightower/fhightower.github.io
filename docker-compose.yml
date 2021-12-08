@@ -20,3 +20,8 @@ services:
     <<: *base
     entrypoint: "jupyter-lab"
     command: ["--ip", "0.0.0.0", "--allow-root"]
+
+  voila:
+    <<: *base
+    entrypoint: "voila"
+    command: ["./notebooks", "--port=8888", "--no-browser", "--show_tracebacks=True", "--strip_sources=False"]
