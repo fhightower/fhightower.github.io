@@ -9,7 +9,7 @@
 
   <div class="content">
     <h2 class="ui medium header">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a {{ if isset .Params "voilalink" }}href="{{ .Params.voilaLink }}"{{ else }}href="{{ .RelPermalink }}"{{ end }}>{{ .Title }}</a>
     </h2>
     <div class="meta">
       <p class="date">
