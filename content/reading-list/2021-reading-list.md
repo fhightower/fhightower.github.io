@@ -5,7 +5,7 @@ description = "A log of books, documentaries, etc. I have enjoyed this year"
 tags = ["Reading", "List"]
 +++
 
-Books read this year: 61
+Books read this year: 71
 
 Title | Author | Rating | Notes | Private Thoughts
 --- | --- | --- | --- | ---
