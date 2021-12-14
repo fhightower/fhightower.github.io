@@ -31,6 +31,12 @@ docker-compose run --rm voila
 
 This is not yet enabled.
 
+```shell
+clojure -A:depstar -m hf.depstar.uberjar clojupyter-standalone.jar
+clj -m clojupyter.cmdline install --ident clojure-1 --jarfile clojupyter-standalone.jar
+clj -m clojupyter.cmdline list-installs
+```
+
 #### Javascript
 
 Local use of javascript in Jupyter Lab is limited (see [https://github.com/jupyterlab/jupyterlab/issues/3748](https://github.com/jupyterlab/jupyterlab/issues/3748)).
