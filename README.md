@@ -35,6 +35,8 @@ This is not yet enabled.
 clojure -A:depstar -m hf.depstar.uberjar clojupyter-standalone.jar
 clj -m clojupyter.cmdline install --ident clojure-1 --jarfile clojupyter-standalone.jar
 clj -m clojupyter.cmdline list-installs
+
+clj -m clojupyter.cmdline remove-install clojure-1
 ```
 
 #### Javascript
