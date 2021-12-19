@@ -29,15 +29,11 @@ docker-compose run --rm voila
 
 #### Clojure
 
-This is not yet enabled.
+A clojure kernel is available using [clojupyter](https://github.com/clojupyter/clojupyter).
 
-```shell
-clojure -A:depstar -m hf.depstar.uberjar clojupyter-standalone.jar
-clj -m clojupyter.cmdline install --ident clojure-1 --jarfile clojupyter-standalone.jar
-clj -m clojupyter.cmdline list-installs
-
-clj -m clojupyter.cmdline remove-install clojure-1
-```
+You can view the Clojure kernels with: `clj -m clojupyter.cmdline list-installs`
+and can remove them with: `clj -m clojupyter.cmdline remove-install {KERNEL NAME}`
+(e.g. `clj -m clojupyter.cmdline remove-install clojure-kernel`)
 
 #### Javascript
 

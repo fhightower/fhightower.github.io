@@ -33,3 +33,6 @@ RUN jupyter serverextension enable voila && jupyter server extension enable voil
 
 # install and enable ipyslickgrids
 RUN git clone https://github.com/johnomernik/qgrid --depth 1 && cd qgrid && python3.9 setup.py install && pip install qgrid2-1.1.3-py3-none-any.whl
+
+# install clojupyter
+RUN rm -rf .cpcache/ && clojure -A:depstar -m hf.depstar.uberjar clojupyter-standalone.jar && clj -m clojupyter.cmdline install --ident clojure-kernel --jarfile clojupyter-standalone.jar
