@@ -47,8 +47,9 @@ weight = 4
   mathjax = true
 
   # Home page settings
-  # description = "My personal website."
+  # description = "Floyd Hightower's personal website."
   mainSections = "posts" # your main section
+  mainSectionTitle = "Posts"
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 10 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
