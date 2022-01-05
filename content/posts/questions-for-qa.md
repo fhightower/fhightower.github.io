@@ -2,7 +2,7 @@
 date = "2018-07-25"
 title = "Questions for QA"
 description = "Abstract questions to ask when performing QA."
-tags = ["Quality Assurance", "Programming"]
+tags = ["Quality Assurance", "Testing"]
 +++
 
 In doing QA-esque things for friends and coworkers, I have noticed that some people do not have a good sense of how to 'QA' something. I compiled a short list of questions below that I ask myself.
