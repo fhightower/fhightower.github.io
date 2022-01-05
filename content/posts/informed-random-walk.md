@@ -2,7 +2,7 @@
 date = "2021-08-13"
 title = "Informed, Random Walk"
 description = "An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction."
-tags = ["Randomness", "Clojurescript", "Art"]
+tags = ["Randomness", "Clojurescript", "Art", "Nerd Sniping"]
 +++
 
 ## Background
@@ -11,7 +11,7 @@ tags = ["Randomness", "Clojurescript", "Art"]
 
 ![The cover of the book features an intriguing pattern](/img/learning-to-learn-cover.png)
 
-Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was thinking about what algorithm would make such a pattern. This post is an explication of my solution.
+Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was [nerd sniped](https://xkcd.com/356/) into designing an algorithm which would make such a pattern. This post is an explication of my solution.
 
 ## An Informed, Random Walk
 

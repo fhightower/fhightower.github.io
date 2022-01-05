@@ -39,10 +39,10 @@ weight = 10
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = false
+    lineNos = false
+    lineNumbersInTable = true
     noClasses = true
-    style = "dracula"
+    style = "paraiso-dark"
     tabWidth = 4
 
 [params]
