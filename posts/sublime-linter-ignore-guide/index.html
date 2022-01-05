@@ -168,21 +168,21 @@ A Definitive Guide for Ignoring Sublime Linter Errors
 <h3 id=ignoring-linter-errors>Ignoring Linter Errors</h3>
 <h4 id=example>Example</h4>
 <p>To ignore linter errors, open Sublime Text and navigate to <em>Preferences > Package Settings > SublimeLinter > Settings</em>. This will open a Sublime Text window with the default sublime linter settings on the left and your user settings on the right. If you decide to make any changes, you&rsquo;ll want to make them in the user settings (on the right). Below is an example of the content from my user settings:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#6272a4>// SublimeLinter Settings - User
-</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span style=color:#6272a4></span>{
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>    <span style=color:#ff79c6>&#34;lint_mode&#34;</span>: <span style=color:#f1fa8c>&#34;load_save&#34;</span>,
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>    <span style=color:#ff79c6>&#34;linters&#34;</span>: {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>        <span style=color:#ff79c6>&#34;pydocstyle&#34;</span>: {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>            <span style=color:#ff79c6>&#34;ignore&#34;</span>: <span style=color:#f1fa8c>&#34;D100,D101,D102,D103,D104,D105&#34;</span>,
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>        },
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>        <span style=color:#ff79c6>&#34;pep8&#34;</span>: {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>            <span style=color:#ff79c6>&#34;ignore&#34;</span>: <span style=color:#f1fa8c>&#34;E501&#34;</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>        },
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>        <span style=color:#ff79c6>&#34;flake8&#34;</span>: {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>            <span style=color:#ff79c6>&#34;args&#34;</span>: [<span style=color:#f1fa8c>&#34;--ignore=E501&#34;</span>],
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>        }
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>    }
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>}
+<div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=color:#776e71>// SublimeLinter Settings - User
+</span><span style=color:#776e71></span>{
+    <span style=color:#5bc4bf>&#34;lint_mode&#34;</span>: <span style=color:#48b685>&#34;load_save&#34;</span>,
+    <span style=color:#5bc4bf>&#34;linters&#34;</span>: {
+        <span style=color:#5bc4bf>&#34;pydocstyle&#34;</span>: {
+            <span style=color:#5bc4bf>&#34;ignore&#34;</span>: <span style=color:#48b685>&#34;D100,D101,D102,D103,D104,D105&#34;</span>,
+        },
+        <span style=color:#5bc4bf>&#34;pep8&#34;</span>: {
+            <span style=color:#5bc4bf>&#34;ignore&#34;</span>: <span style=color:#48b685>&#34;E501&#34;</span>
+        },
+        <span style=color:#5bc4bf>&#34;flake8&#34;</span>: {
+            <span style=color:#5bc4bf>&#34;args&#34;</span>: [<span style=color:#48b685>&#34;--ignore=E501&#34;</span>],
+        }
+    }
+}
 </code></pre></div><h4 id=explanation>Explanation</h4>
 <p>Within the <code>"linters"</code> key, I have the names of the linters followed by specific settings for each linter. For the <code>"pydocstyle"</code> linter, I am telling it to ignore rules <code>D100</code> through <code>D105</code> which will not show warnings or errors for missing docstrings (the error codes for pydocstyle (formerly known as pep257) are <a href=https://pep257.readthedocs.io/en/latest/error_codes.html>here</a>). For <code>"pep8"</code>, I&rsquo;m ignoring the 79 character limit (you can see the pep8 error codes <a href=https://pep8.readthedocs.io/en/release-1.7.x/intro.html#error-codes>here</a>). And I&rsquo;m doing the same for <code>"flake8"</code> because it will show the line-length error as well.</p>
 <h4 id=summary>Summary</h4>

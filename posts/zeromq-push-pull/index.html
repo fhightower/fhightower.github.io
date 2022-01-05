@@ -176,41 +176,41 @@ Simple, Non-blocking, Push/Pull Example with ZeroMQ
 <p>While the <a href=http://zeromq.org/>ZeroMQ</a> <a href=http://zguide.zeromq.org/page:all>documentation</a> is extensive, it is easy (at least for me) to get lost in the docs and forget the simplicity and elegance of ZeroMQ. In this post, I share a simple, non-blocking, push/pull system that pushes from a client (without waiting for a response) and pulls the data into a server. The benefit of this construct is that the client does not wait for a response from the server. In this sense, it is a non-blocking operation.</p>
 <h3 id=the-code>The Code</h3>
 <h4 id=client>Client</h4>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#ff79c6>import</span> zmq
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>context <span style=color:#ff79c6>=</span> zmq<span style=color:#ff79c6>.</span>Context()
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span style=color:#6272a4># Socket to send messages on</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>sender <span style=color:#ff79c6>=</span> context<span style=color:#ff79c6>.</span>socket(zmq<span style=color:#ff79c6>.</span>PUSH)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>sender<span style=color:#ff79c6>.</span>bind(<span style=color:#f1fa8c>&#34;tcp://*:5559&#34;</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span style=color:#ff79c6>for</span> i <span style=color:#ff79c6>in</span> <span style=color:#8be9fd;font-style:italic>range</span>(<span style=color:#bd93f9>3</span>):
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>    <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>&#39;sending </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c>&#39;</span><span style=color:#ff79c6>.</span>format(i))
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>    sender<span style=color:#ff79c6>.</span>send_string(<span style=color:#8be9fd;font-style:italic>str</span>(i))
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>
+<div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#5bc4bf>import</span> <span style=color:#fec418>zmq</span>
+
+context <span style=color:#5bc4bf>=</span> zmq<span style=color:#5bc4bf>.</span>Context()
+
+<span style=color:#776e71># Socket to send messages on</span>
+sender <span style=color:#5bc4bf>=</span> context<span style=color:#5bc4bf>.</span>socket(zmq<span style=color:#5bc4bf>.</span>PUSH)
+sender<span style=color:#5bc4bf>.</span>bind(<span style=color:#48b685>&#34;tcp://*:5559&#34;</span>)
+
+<span style=color:#815ba4>for</span> i <span style=color:#5bc4bf>in</span> range(<span style=color:#f99b15>3</span>):
+    print(<span style=color:#48b685>&#39;sending </span><span style=color:#f99b15>{}</span><span style=color:#48b685>&#39;</span><span style=color:#5bc4bf>.</span>format(i))
+    sender<span style=color:#5bc4bf>.</span>send_string(str(i))
+
 </code></pre></div><p>The client binds to a port (<code>5559</code> - this port is used in the server code as well) and then sends the numbers zero, one, and two to the server. The client pushes data (as specified by the <code>zmq.PUSH</code>) which means that it does not wait for a response from the server.</p>
 <h4 id=server>Server</h4>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#ff79c6>import</span> time
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span style=color:#ff79c6>import</span> zmq
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>context <span style=color:#ff79c6>=</span> zmq<span style=color:#ff79c6>.</span>Context()
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span style=color:#6272a4># Socket to receive messages on</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>receiver <span style=color:#ff79c6>=</span> context<span style=color:#ff79c6>.</span>socket(zmq<span style=color:#ff79c6>.</span>PULL)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>receiver<span style=color:#ff79c6>.</span>connect(<span style=color:#f1fa8c>&#34;tcp://localhost:5559&#34;</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>print_value</span>(s):
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>    time<span style=color:#ff79c6>.</span>sleep(<span style=color:#bd93f9>2</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>&#39;value: </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c>&#39;</span><span style=color:#ff79c6>.</span>format(s))
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span><span style=color:#6272a4># Process tasks forever</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span><span style=color:#ff79c6>while</span> <span style=color:#ff79c6>True</span>:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span>    s <span style=color:#ff79c6>=</span> receiver<span style=color:#ff79c6>.</span>recv_string()
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span>    <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>&#39;received </span><span style=color:#f1fa8c>{}</span><span style=color:#f1fa8c>&#39;</span><span style=color:#ff79c6>.</span>format(s))
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span>    print_value(s)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span>
+<div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#5bc4bf>import</span> <span style=color:#fec418>time</span>
+<span style=color:#5bc4bf>import</span> <span style=color:#fec418>zmq</span>
+
+context <span style=color:#5bc4bf>=</span> zmq<span style=color:#5bc4bf>.</span>Context()
+
+<span style=color:#776e71># Socket to receive messages on</span>
+receiver <span style=color:#5bc4bf>=</span> context<span style=color:#5bc4bf>.</span>socket(zmq<span style=color:#5bc4bf>.</span>PULL)
+receiver<span style=color:#5bc4bf>.</span>connect(<span style=color:#48b685>&#34;tcp://localhost:5559&#34;</span>)
+
+
+<span style=color:#815ba4>def</span> <span style=color:#06b6ef>print_value</span>(s):
+    time<span style=color:#5bc4bf>.</span>sleep(<span style=color:#f99b15>2</span>)
+    print(<span style=color:#48b685>&#39;value: </span><span style=color:#f99b15>{}</span><span style=color:#48b685>&#39;</span><span style=color:#5bc4bf>.</span>format(s))
+
+
+<span style=color:#776e71># Process tasks forever</span>
+<span style=color:#815ba4>while</span> <span style=color:#815ba4>True</span>:
+    s <span style=color:#5bc4bf>=</span> receiver<span style=color:#5bc4bf>.</span>recv_string()
+    print(<span style=color:#48b685>&#39;received </span><span style=color:#f99b15>{}</span><span style=color:#48b685>&#39;</span><span style=color:#5bc4bf>.</span>format(s))
+    print_value(s)
+
 </code></pre></div><p>The server is designed to pull content (as specified by the <code>zmq.PULL</code>) from <code>tcp://localhost:5559</code>. When it receives something, it will send it to the <code>print_value</code> function where the value will be printed off after two seconds. Again, the nice thing about this setup is that, even though the server takes some time to process the incoming data, the client doesn&rsquo;t have to wait around for a response from the server.</p>
 <h3 id=benefits>Benefits</h3>
 <p>This construct is helpful because it:</p>

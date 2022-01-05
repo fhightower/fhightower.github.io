@@ -164,22 +164,22 @@ JavaScript Puzzles: How Well do you Know Javascript?
 <h2 id=variable-scoping>Variable Scoping</h2>
 <p>As I&rsquo;m learning <a href=https://www.typescriptlang.org/index.html>Typescript</a>, I was reading through the docs and ran across a fascinating little code snippet demonstrating <a href=https://www.typescriptlang.org/docs/handbook/variable-declarations.html#variable-capturing-quirks>variable scoping gotchas</a> in javascript. The question was:</p>
 <p>What is the output of the code below?</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span style=color:#ff79c6>for</span> (<span style=color:#8be9fd;font-style:italic>var</span> i <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>; i <span style=color:#ff79c6>&lt;</span> <span style=color:#bd93f9>10</span>; i<span style=color:#ff79c6>++</span>) {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span>    setTimeout(<span style=color:#8be9fd;font-style:italic>function</span>() { console.log(i); }, <span style=color:#bd93f9>100</span> <span style=color:#ff79c6>*</span> i);
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span>}
+<div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#815ba4>for</span> (<span style=color:#815ba4>var</span> <span style=color:#06b6ef>i</span> <span style=color:#5bc4bf>=</span> <span style=color:#f99b15>0</span>; <span style=color:#06b6ef>i</span> <span style=color:#5bc4bf>&lt;</span> <span style=color:#f99b15>10</span>; <span style=color:#06b6ef>i</span><span style=color:#5bc4bf>++</span>) {
+    <span style=color:#06b6ef>setTimeout</span>(<span style=color:#815ba4>function</span>() { <span style=color:#06b6ef>console</span>.<span style=color:#06b6ef>log</span>(<span style=color:#06b6ef>i</span>); }, <span style=color:#f99b15>100</span> <span style=color:#5bc4bf>*</span> <span style=color:#06b6ef>i</span>);
+}
 </code></pre></div><p><em>Think about it and check your <a href=#variable-scoping-answer>answer</a> below.</em></p>
 <h2 id=indexing-an-objects-properties>Indexing an Object&rsquo;s Properties</h2>
 <p>I came up with this puzzle to demonstrate the difference between accessing the value of an Object using a dot versus using brackets (e.g. <code>data["test"]</code> vs. <code>data.test</code>).</p>
 <p>What is the output of the code block below?</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span style=color:#8be9fd;font-style:italic>var</span> data <span style=color:#ff79c6>=</span> {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span>    <span style=color:#bd93f9>0</span><span style=color:#ff79c6>:</span> <span style=color:#f1fa8c>&#34;zero&#34;</span>,
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span>    i<span style=color:#ff79c6>:</span> <span style=color:#f1fa8c>&#34;eye&#34;</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span>};
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span style=color:#ff79c6>for</span> (<span style=color:#8be9fd;font-style:italic>var</span> i <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>0</span>; i <span style=color:#ff79c6>&lt;</span> <span style=color:#bd93f9>1</span>; i<span style=color:#ff79c6>++</span>) {
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span>    console.log(data[i]);
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span>    console.log(data.i);
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span>}
+<div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#815ba4>var</span> <span style=color:#06b6ef>data</span> <span style=color:#5bc4bf>=</span> {
+    <span style=color:#f99b15>0</span><span style=color:#5bc4bf>:</span> <span style=color:#48b685>&#34;zero&#34;</span>,
+    <span style=color:#06b6ef>i</span><span style=color:#5bc4bf>:</span> <span style=color:#48b685>&#34;eye&#34;</span>
+};
+
+<span style=color:#815ba4>for</span> (<span style=color:#815ba4>var</span> <span style=color:#06b6ef>i</span> <span style=color:#5bc4bf>=</span> <span style=color:#f99b15>0</span>; <span style=color:#06b6ef>i</span> <span style=color:#5bc4bf>&lt;</span> <span style=color:#f99b15>1</span>; <span style=color:#06b6ef>i</span><span style=color:#5bc4bf>++</span>) {
+    <span style=color:#06b6ef>console</span>.<span style=color:#06b6ef>log</span>(<span style=color:#06b6ef>data</span>[<span style=color:#06b6ef>i</span>]);
+    <span style=color:#06b6ef>console</span>.<span style=color:#06b6ef>log</span>(<span style=color:#06b6ef>data</span>.<span style=color:#06b6ef>i</span>);
+}
 </code></pre></div><p><em>Think about it and check your <a href=#indexing-an-object-s-properties-answer>answer</a> below.</em></p>
 <h1 id=answers>Answers</h1>
 <h2 id=variable-scoping-answer>Variable Scoping Answer</h2>

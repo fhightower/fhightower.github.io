@@ -137,7 +137,7 @@ Simplified Scale Game
 </div>
 <div class=article-read-time>
 <i class="far fa-clock"></i>
-2 minute read
+1 minute read
 </div>
 <div class=article-tag>
 <i class="fas fa-tag"></i>
@@ -160,62 +160,20 @@ I call it the &ldquo;Scale Game&rdquo;. The version I&rsquo;m going to describe 
 <li>Each player starts with ten marbles and ten dollars</li>
 <li>Each marble weighs one unit</li>
 <li>Each player chooses how many marbles of his/her marbles to place on his/her side of the scale</li>
+</ul>
+<p>Here are some rules we&rsquo;ll start with, but will change over time:</p>
+<ul>
 <li>It costs one dollar to put a marble on the scale</li>
 <li>The player with the most weight on the scale is the winner</li>
 <li>If there&rsquo;s a winner, he/she gets one hundred dollars</li>
 <li>In case of a tie, the players split the one hundred dollars (getting fifty each)</li>
 </ul>
-<p>Encoded in Python, this game could look like:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#ff79c6>from</span> typing <span style=color:#ff79c6>import</span> Optional, Tuple
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>starting_marbles <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>10</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>starting_money <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>10</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>calculate_payout</span>(player_a_move, player_b_move) <span style=color:#ff79c6>-&gt;</span> Tuple[<span style=color:#8be9fd;font-style:italic>int</span>]:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>    money <span style=color:#ff79c6>=</span> ((starting_marbles <span style=color:#ff79c6>-</span> player_a_move), (starting_marbles <span style=color:#ff79c6>-</span> player_b_move))
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>    <span style=color:#ff79c6>if</span> player_a_move <span style=color:#ff79c6>&gt;</span> player_b_move:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>        <span style=color:#ff79c6>return</span> (money[<span style=color:#bd93f9>0</span>] <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>100</span>, money[<span style=color:#bd93f9>1</span>])
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>    <span style=color:#ff79c6>elif</span> player_a_move <span style=color:#ff79c6>&lt;</span> player_b_move:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>        <span style=color:#ff79c6>return</span> (money[<span style=color:#bd93f9>0</span>], money[<span style=color:#bd93f9>1</span>] <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>100</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    <span style=color:#ff79c6>else</span>:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>        <span style=color:#ff79c6>return</span> (money[<span style=color:#bd93f9>0</span>] <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>50</span>, money[<span style=color:#bd93f9>1</span>] <span style=color:#ff79c6>+</span> <span style=color:#bd93f9>50</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>find_winner</span>(player_a_money, player_b_money) <span style=color:#ff79c6>-&gt;</span> Optional[<span style=color:#8be9fd;font-style:italic>str</span>]:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span>    <span style=color:#ff79c6>if</span> player_a_money <span style=color:#ff79c6>&gt;</span> player_b_money:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span>        <span style=color:#ff79c6>return</span> <span style=color:#f1fa8c>&#39;a&#39;</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span>    <span style=color:#ff79c6>elif</span> player_b_money <span style=color:#ff79c6>&gt;</span> player_a_money:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span>        <span style=color:#ff79c6>return</span> <span style=color:#f1fa8c>&#39;b&#39;</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>get_marbles_to_place</span>() <span style=color:#ff79c6>-&gt;</span> <span style=color:#8be9fd;font-style:italic>int</span>:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span>    <span style=color:#f1fa8c>&#34;&#34;&#34;Determine how many numbers to play.&#34;&#34;&#34;</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span>    <span style=color:#6272a4># these values are just demonstrative... we&#39;ll update them later</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span>    player_a_marbles <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>5</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span>    player_b_marbles <span style=color:#ff79c6>=</span> <span style=color:#bd93f9>10</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30</span>    <span style=color:#ff79c6>return</span> player_a_marbles, player_b_marbles
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33</span><span style=color:#ff79c6>def</span> <span style=color:#50fa7b>play</span>():
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34</span>    player_a_move, player_b_move <span style=color:#ff79c6>=</span> get_marbles_to_place()
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35</span>    player_a_payout, player_b_payout <span style=color:#ff79c6>=</span> calculate_payout(player_a_move, player_b_move)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36</span>    victor <span style=color:#ff79c6>=</span> find_winner(player_a_payout, player_b_payout)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38</span>    <span style=color:#ff79c6>if</span> victor <span style=color:#ff79c6>is</span> <span style=color:#ff79c6>not</span> <span style=color:#ff79c6>None</span>:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39</span>        <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>f</span><span style=color:#f1fa8c>&#39;And the winner is: player </span><span style=color:#f1fa8c>{</span>victor<span style=color:#ff79c6>.</span>upper()<span style=color:#f1fa8c>}</span><span style=color:#f1fa8c>&#39;</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40</span>    <span style=color:#ff79c6>else</span>:
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41</span>        <span style=color:#8be9fd;font-style:italic>print</span>(<span style=color:#f1fa8c>f</span><span style=color:#f1fa8c>&#39;It</span><span style=color:#f1fa8c>\&#39;</span><span style=color:#f1fa8c>s a tie!&#39;</span>)
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">42</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">43</span>
-<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">44</span>play()
-</code></pre></div><script src=https://cdn.jsdelivr.net/pyodide/v0.18.0/full/pyodide.js></script>
-<button onclick=evaluatePython()>Run</button>
-<div>Output:</div>
-<textarea id=output style=width:100% rows=6 disabled></textarea>
-<script>const output=document.getElementById("output"),code=document.getElementsByTagName("code")[0];function print(a){output.value+=a+"\n",logTa=document.getElementById("output"),logTa.scrollTop=logTa.scrollHeight}output.value="Initializing...\n";async function main(){let a=await loadPyodide({indexURL:"https://cdn.jsdelivr.net/pyodide/v0.18.0/full/"});return output.value+="Ready!\n",code.contentEditable="true",a}let pyodideReadyPromise=main();async function evaluatePython(){let a=await pyodideReadyPromise;try{let b=a.runPython(code.innerText);print(b)}catch(a){print(a)}}</script>
-<p>In future posts, we&rsquo;ll explore some ways to programmatically play this game.</p>
+<p>You can read, run, and edit an implementation of this game in Clojure (and Python) <a href=https://nextjournal.com/fhightower/scale-game-part-1>here</a>.</p>
+<p>In future posts, I&rsquo;ll examine:</p>
+<ul>
+<li>Different approaches to playing this game (including machine learning strategies)</li>
+<li>How these approaches change when the game changes</li>
+</ul>
 </div>
 </article>
 <div id=footer-post-container>
