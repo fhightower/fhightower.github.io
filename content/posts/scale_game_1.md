@@ -2,7 +2,7 @@
 date = "2021-11-03"
 title = "Simplified Scale Game"
 description = "Describing a game which provides a good environment for exploring machine learning."
-tags = ["Games", "Machine Learning", "Clojure, "Python"]
+tags = ["Games", "Machine Learning", "Clojure", "Python"]
 +++
 
 # Simplified Scale Game
