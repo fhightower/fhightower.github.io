@@ -1,0 +1,30 @@
+<section>
+<ol>
+    {{ $year := (. | (.Get 0)) }}
+    {{ range (index .Site.Data $year).list }}
+        <li>
+            <details>
+                <summary>{{ .title | markdownify }}</summary>
+                <p><u style="text-decoration: wavy underline; text-decoration-thickness: 0.1%;">{{ .author }}</u> | {{ .rating }}</p>
+                {{ if isset . "notes" }}
+                    Notes:
+                    <ul>
+                        {{ range .notes }}
+                            <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+                {{ if isset . "privateNotes" }}
+                    Private Notes:
+                    <ul>
+                        {{ range .privateNotes }}
+                            <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+                <br>
+            </details>
+        </li>
+    {{ end }}
+</ol>
+</section>
