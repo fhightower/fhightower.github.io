@@ -1,16 +1,28 @@
 <section>
+{{ $filename := (. | (.Get 0)) }}
+{{ $readingList := (index .Site.Data $filename).list }}
+{{ $year := substr $filename 7 }}
+
+Books read in {{ $year }}: {{ len $readingList }}
+
 <ol>
-    {{ $year := (. | (.Get 0)) }}
-    {{ range (index .Site.Data $year).list }}
+    {{ range $readingList }}
         <li>
             <details>
-                <summary>{{ .title | markdownify }}</summary>
-                <p><u style="text-decoration: wavy underline; text-decoration-thickness: 0.1%;">{{ .author }}</u> | {{ .rating }}</p>
+                <summary>{{ .title | markdownify }} [{{ .rating }}]</summary>
+                {{ if isset . "authors" }}
+                    Author(s):
+                    <ul>
+                        {{ range .authors }}
+                            <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
                 {{ if isset . "notes" }}
                     Notes:
                     <ul>
                         {{ range .notes }}
-                            <li>{{ . }}</li>
+                            <li>{{ . | markdownify }}</li>
                         {{ end }}
                     </ul>
                 {{ end }}
