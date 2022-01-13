@@ -2,7 +2,7 @@
 date = "2018-01-01"
 title = "2018 Reading List"
 description = "My reading list for 2018."
-tags = ["Reading", "List"]
+tags = ["Reading", "Books"]
 category = ["Reading List"]
 +++
 
