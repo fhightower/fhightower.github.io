@@ -1,5 +1,5 @@
 <section>
-{{ $filename := . | (.Get 0) }}
+{{ $filename := .Params | (.Get 0) }}
 {{ $readingList := (index .Site.Data $filename).list }}
 {{ $year := substr $filename 7 }}
 
