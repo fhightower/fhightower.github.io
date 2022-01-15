@@ -2,7 +2,25 @@
 We can represent every natural number as the sum of, at most, four squares.
 For example, we can represent 27 as:
 16 + 9 + 1 + 1 or
-4^2 + 3^3 + 1^2 + 1^2 As I was reading about this, I came up with the following conjecture.</description></item><item><title>Logic Operations</title><link>https://hightower.space/posts/logic_operations/</link><pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/logic_operations/</guid><description/></item><item><title>Collatz Conjecture Playground</title><link>https://hightower.space/posts/collatz-conjecture/</link><pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/collatz-conjecture/</guid><description>Starting value: 10.00
+4^2 + 3^3 + 1^2 + 1^2 As I was reading about this, I came up with the following conjecture.</description></item><item><title>Logic Operations</title><link>https://hightower.space/posts/logic_operations/</link><pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/logic_operations/</guid><description>NOT A: 0.00
+B: 0.00
+= 1−A1 - A1−A
+= 1 - 0.00
+= 1.00
+AND A: 0.00
+B: 0.00
+= A∗BA * BA∗B
+=0.00 *0.00
+=0.00
+NAND A: 0.00
+B: 0.00
+= 1−(A∗B)1 - (A * B)1−(A∗B)
+=1 - (0.00 *0.00)
+=1.00
+OR A: 0.00
+B: 0.00
+= A+B−A∗BA + B - A * BA+B−A∗B
+= 0.00 + 0.</description></item><item><title>Collatz Conjecture Playground</title><link>https://hightower.space/posts/collatz-conjecture/</link><pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/collatz-conjecture/</guid><description>Starting value: 10.00
 Found solution in: 6.00 steps
 1.02.03.04.05.06.051015xy0101521638445261Loading... This was written using the Idyll markup language for creating interactive documents. The Idyll code to create this page is:
 Starting value: [var name:&amp;quot;number&amp;quot; value:10 /] [Range value:number min:1 max:100 /] [Display value:number /] [var name:&amp;quot;createJson&amp;quot; value:`function(max, step, number) { var data = []; function iterate(max, step, number) { var newNumber; if (number % 2 === 0) { newNumber = number / 2; } else { newNumber = 3*number + 1; } if (newNumber !</description></item></channel></rss>
