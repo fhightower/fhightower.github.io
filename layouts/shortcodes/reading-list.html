@@ -1,9 +1,12 @@
 <section>
-{{ $filename := .Params | (.Get 0) }}
-{{ $readingList := (index .Site.Data $filename).list }}
-{{ $year := substr $filename 7 }}
+{{ $year := delimit .Params "" }}
+{{ $filename := (printf "reading%s" $year) }}
+{{ $readingList := (index .Site.Data $filename) }}
 
-Books read in {{ $year }}: {{ len $readingList }}
+<!-- not sure why, but the `with` block below is required to process the length of the reading list -->
+{{ with $readingList }}
+Books read in {{ $year }}: {{ len . }}
+{{ end }}
 
 <ol>
     {{ range $readingList }}

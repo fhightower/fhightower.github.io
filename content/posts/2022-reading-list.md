@@ -6,4 +6,4 @@ tags = ["Reading", "Books", "Podcasts"]
 categories = ["Reading List"]
 +++
 
-{{< reading-list "reading2022" >}}
+{{< reading-list "2022" >}}
