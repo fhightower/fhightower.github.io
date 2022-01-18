@@ -5,20 +5,32 @@ Here is a regularly updated list of skills I have:
 ## Daily
 
 ![Python](/img/skills/python.png "Python")
+![Pytest](/img/skills/pytest.png "Pytest")
 ![Docker](/img/skills/docker.png "Docker")
-<img src="/img/skills/vim.svg" alt="Vim" title="Vim" style="width:64px;"/>
 ![Markdown](/img/skills/markdown.png "Markdown")
+<img src="/img/skills/vim.svg" alt="Vim" title="Vim" style="width:64px;"/>
 
 ## Weekly
 
 ![Clojure](/img/skills/clojure.png "Clojure")
-![Helm](/img/skills/helm.png "Helm")
+![Elasticsearch](/img/skills/elastic-elasticsearch.png "Elasticsearch")
+![Kibana](/img/skills/elastic-kibana.png "Kibana")
+![Grafana](/img/skills/grafana.png "Grafana")
+![Jupyter (notebooks and kernals)](/img/skills/jupyter.png "Jupyter (notebooks and kernals)")
 ![Kubernetes](/img/skills/kubernetes.png "Kubernetes")
+![Helm](/img/skills/helm.png "Helm")
 
 ## Monthly
 
-- Javascript
-- Hugo
+![ClojureScript](/img/skills/clojurescript.png "ClojureScript")
+![JavaScript](/img/skills/javascript.png "JavaScript")
+![Hugo](/img/skills/hugo.png "Hugo")
 - Luminus
 - Pedestal
-![ClojureScript](/img/skills/clojurescript.png "ClojureScript")
+
+## Want to Learn...
+
+- Java
+- Go
+- Kotlin and/or Scala
+- TLA+
