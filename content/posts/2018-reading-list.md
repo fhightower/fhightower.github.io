@@ -3,7 +3,7 @@ date = "2018-01-01"
 title = "2018 Reading List"
 description = "My reading list for 2018."
 tags = ["Reading", "Books"]
-category = ["Reading List"]
+categories = ["Reading List"]
 +++
 
 - A Guide to Prayer (Isaac Watts)

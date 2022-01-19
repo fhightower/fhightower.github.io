@@ -38,6 +38,8 @@ categories = ["Reading List"]
 - The First Epistle of Clement to the Corinthians
 - Computing Machinery and Intelligence
 
+Many more...
+
 † Note on the "Redrawing the Line Between Hermeneutics and Application" article:
 
 > I could certainly be wrong, but this article's lament that the New Hermeneutic has "[incorporated] the step of application into the hermeneutical process"<sup>1</sup> seems to contradict Article IX of the [Chicago Statement on Biblical Hermeneutics](https://library.dts.edu/Pages/TL/Special/ICBI_2.pdf) which says:
