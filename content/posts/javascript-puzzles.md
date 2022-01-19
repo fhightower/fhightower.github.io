@@ -7,9 +7,9 @@ tags = ["Javascript", "Programming", "Puzzles"]
 
 Here are a couple of fun Javascript puzzles I've created/found to demonstrate important Javascript gotchas. There are answers/explanations near the bottom of the page.
 
-# Puzzles
+## Puzzles
 
-## Variable Scoping
+### Variable Scoping
 
 As I'm learning [Typescript](https://www.typescriptlang.org/index.html), I was reading through the docs and ran across a fascinating little code snippet demonstrating [variable scoping gotchas](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#variable-capturing-quirks) in javascript. The question was:
 
@@ -23,7 +23,7 @@ for (var i = 0; i < 10; i++) {
 
 *Think about it and check your [answer](#variable-scoping-answer) below.*
 
-## Indexing an Object's Properties
+### Indexing an Object's Properties
 
 I came up with this puzzle to demonstrate the difference between accessing the value of an Object using a dot versus using brackets (e.g. `data["test"]` vs. `data.test`).
 
@@ -45,9 +45,9 @@ for (var i = 0; i < 1; i++) {
 
 <hr>
 
-# Answers
+## Answers
 
-## Variable Scoping Answer
+### Variable Scoping Answer
 
 Most people expect, as did I, that this code would output:
 
@@ -81,7 +81,7 @@ when in fact, the output is:
 
 This occurs because the `setTimeout` function will not run until the for loop has finished. By the time the for loop has finished, the value of variable `i` is 10. Each of the functions called by the `setTimeout` function is looking at the same `i` from the same scope, so they all log `10`.
 
-## Indexing an Object's Properties Answer
+### Indexing an Object's Properties Answer
 
 The output of this code puzzle is:
 
