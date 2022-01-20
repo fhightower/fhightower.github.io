@@ -9,6 +9,12 @@ There are two main components housed in this repo:
 1. Configs and files for a static site generated using [Hugo](gohugo.io)
 2. A directory with [Jupyter](https://jupyter.org/) notebooks deployed on Heroku using [Voila](https://github.com/voila-dashboards/voila)
 
+### Hugo
+
+#### Changes From Base Theme
+
+- Removed some sharing options (#28)
+
 ### Notebooks
 
 Jupyter notebooks capturing thoughts and explorations.
