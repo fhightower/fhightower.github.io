@@ -2,7 +2,7 @@
 date = "2019-02-26"
 title = "Simple, Non-blocking, Push/Pull Example with ZeroMQ"
 description = "A simple example of a non-blocking client-server relationship in ZeroMQ using a client which pushes and a server which pulls."
-tags = ["ZeroMQ", "Messaging Queues", "Programming", "Push & Pull", "Client & Server", "Non-blocking"]
+tags = ["ZeroMQ", "Messaging Queues", "Programming", "Push & Pull", "Client & Server", "Non-blocking", "Python", "TotalEmail"]
 +++
 
 ### Intro
