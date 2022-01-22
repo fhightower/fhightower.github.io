@@ -11,6 +11,34 @@
     - "Ron McMillan"
     - "Al Switzler"
     - "Kerry Patterson"
+  rating: "B+"
+  notes:
+    - "I think this book is a 'must-read' for everyone and worth reading regularly. It provides so many practical, helpful tips applicable to relationships with a spouse, family, friends, co-workers, and bosses"
+- title: "*Extreme Ownership: How U.S. Navy SEALs Lead and Win*"
+  authors:
+    - "Jocko Willink"
+    - "Leif Babin"
   rating: "A+"
   notes:
-    - "I think this book is a 'must-read' for everyone and is a rare book I will try to read every year or so. It provides so many practical, helpful tips applicable to relationships with a spouse, family, friends, co-workers, and bosses"
+    - "Absolutely fantastic read. A rare book I will read yearly."
+    - "Very challenging book that rips out the heart of excuses and apathy."
+- title: "*Redeeming Mathematics: A God-Centered Approach*"
+  authors:
+    - "Vern S. Poythress"
+  rating: "C"
+  notes:
+    - "Mildly interesting"
+    - "At times, the arguments seem overly simple, obvious, or forced. For example, the author argues that our ability to extrapolate natural numbers to infinity shows how we are thinking God's thoughts after Him and imitating (in a small way) God's infinitude. While this may be true, I don't *feel* the weight/value of this argument."
+- title: "*Trivium: The Classical Liberal Arts of Grammar, Logic, & Rhetoric*"
+  authors:
+    - "many..."
+  rating: "C+"
+  notes:
+    - "Fun and informative read, providing a number of basic constructs and principles in grammar, logic, and rhetoric."
+- title: "*The Art of Doing Science and Engineering: Learning to Learn*"
+  authors:
+    - "Richard W. Hamming"
+  rating: "C+"
+  notes:
+    - "Fascinating read on multiple levels: historically (as it describes the development of a number of computer technologies), mathematically, technologically, and philosophically."
+    - "Good read although a bit dry or wandering at times"
