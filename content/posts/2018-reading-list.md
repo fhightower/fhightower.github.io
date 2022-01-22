@@ -30,5 +30,9 @@ categories = ["Reading List"]
 - Prayer (John Bunyan)
 - Cognitive Dimensions of Notations (many - [link](https://www.cl.cam.ac.uk/~afb21/publications/CT2001.pdf))
 - New Kind of Science (Stephen Wolfram)
+- Undaunted Courage (Stephen E. Ambrose)
+- Alice's Adventures in Wonderland (Lewis Carroll)
+- Through the Looking Glass (Lewis Carroll)
+- Not a Sometimes Love (Keith Korstjens)
 
 Many more...
