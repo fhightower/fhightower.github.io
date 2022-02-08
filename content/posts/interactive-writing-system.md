@@ -5,27 +5,27 @@ description = "Describing requirements for an interactive writing system."
 tags = ["Blogging", "Writing", "Interactivity"]
 +++
 
-# Interactive Writing System
+## Interactive Writing System
 
-## What are interactive systems?
+### What are interactive systems?
 
 I will not, in this blog post, consider the essential and non-essential properties of interactive systems.
 I will simply assert that an essential characteristic of interactive systems is a short feedback loop.
 
-## The problem
+### The problem
 
 For some reason, we (as humanity and software developers) have relegated ourselves to static systems and tools.
 We have eschewed interactivity. In this blog post, I will not examine why this is the case, but will note examples
 of this problem and describe a system which would introduce interactivity to the technical blog writing world.
 
-### Examples of the problem
+#### Examples of the problem
 
 Most technical blogs I have seen include either code snippets (which are static and can't be run/edited) or screenshots of code.
 There is no way to run the code without exporting it (usually via copy/paste) into an appropriate environment.
 One can imagine what the code will do or read the blog post describing what it does, but one cannot easily
 interact with the code to learn what it does and how it works.
 
-## Requirements for an interactive writing system
+### Requirements for an interactive writing system
 
 There are two actors in any writing system (be it a printing press, pen and paper, or blog post):
 

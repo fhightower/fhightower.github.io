@@ -5,7 +5,7 @@ description = "Describing a game which provides a good environment for exploring
 tags = ["Games", "Machine Learning", "Clojure", "Python"]
 +++
 
-# Simplified Scale Game
+## Simplified Scale Game
 
 As I'm exploring machine learning, I have found it helpful to have a simple game I can use as a context in which to test ideas.
 This blog post describes one such game.
