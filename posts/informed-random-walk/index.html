@@ -1,112 +1,24 @@
-<!doctype html><html lang=en>
-<head>
-<link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
-<script type=text/javascript src=https://latest.cactus.chat/cactus.js></script>
-<link rel=stylesheet href=https://latest.cactus.chat/style.css type=text/css>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<title> Informed, Random Walk | Floyd Hightower</title><link rel=canonical href=https://hightower.space/posts/informed-random-walk/>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=robots content="all,follow">
-<meta name=googlebot content="index,follow,snippet,archive">
-<meta property="og:title" content="Informed, Random Walk">
-<meta property="og:description" content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://hightower.space/posts/informed-random-walk/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-08-13T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-08-13T00:00:00+00:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Informed, Random Walk">
-<meta name=twitter:description content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction.">
-<link rel=stylesheet href=https://hightower.space/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg=="><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
-<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
-<link rel=icon type=image/png href=https://hightower.space/images/favicon.ico>
-</head><body class="max-width mx-auto px3 ltr">
-<div class="content index py4">
-<div id=header-post>
-<a id=menu-icon href=#><i class="fas fa-bars fa-lg"></i></a>
+<!doctype html><html lang=en><head><link rel=preload href=/lib/font-awesome/webfonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous><link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous><script type=text/javascript src=https://latest.cactus.chat/cactus.js></script>
+<link rel=stylesheet href=https://latest.cactus.chat/style.css type=text/css><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Informed, Random Walk | Floyd Hightower</title><link rel=canonical href=https://hightower.space/posts/informed-random-walk/><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta property="og:title" content="Informed, Random Walk"><meta property="og:description" content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction."><meta property="og:type" content="article"><meta property="og:url" content="https://hightower.space/posts/informed-random-walk/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-08-13T00:00:00+00:00"><meta property="article:modified_time" content="2021-08-13T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Informed, Random Walk"><meta name=twitter:description content="An interactive post showing an algorithm which walks in a random direction, but gets feedback which updates the likelihood of moving in a certain direction."><link rel=stylesheet href=https://hightower.space/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N+XoIuZg=="><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script>
+<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://hightower.space/images/favicon.ico></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><div id=header-post><a id=menu-icon href=#><i class="fas fa-bars fa-lg"></i></a>
 <a id=menu-icon-tablet href=#><i class="fas fa-bars fa-lg"></i></a>
 <a id=top-icon-tablet href=# onclick='$("html, body").animate({scrollTop:0},"fast")' style=display:none aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
-<span id=menu>
-<span id=nav>
-<ul>
-<li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/skills>Skills</a></li><li><a href=/about>About</a></li></ul></span>
-<br>
-<span id=actions>
-<ul>
-<li>
-<a class=icon href=https://hightower.space/posts/2021-reading-list/ aria-label=Previous>
-<i class="fas fa-chevron-left" aria-hidden=true onmouseover='$("#i-prev").toggle()' onmouseout='$("#i-prev").toggle()'></i>
-</a>
-</li><li>
-<a class=icon href=https://hightower.space/posts/conjecture-on-n-sided-numbers/ aria-label=Next>
-<i class="fas fa-chevron-right" aria-hidden=true onmouseover='$("#i-next").toggle()' onmouseout='$("#i-next").toggle()'></i>
-</a>
-</li><li>
-<a class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page">
-<i class="fas fa-chevron-up" aria-hidden=true onmouseover='$("#i-top").toggle()' onmouseout='$("#i-top").toggle()'></i>
-</a>
-</li><li>
-<a class=icon href=# aria-label=Share>
-<i class="fas fa-share-alt" aria-hidden=true onmouseover='$("#i-share").toggle()' onmouseout='$("#i-share").toggle()' onclick='return $("#share").toggle(),!1'></i>
-</a>
-</li></ul><span id=i-prev class=info style=display:none>Previous post</span>
+<span id=menu><span id=nav><ul><li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/skills>Skills</a></li><li><a href=/about>About</a></li></ul></span><br><span id=actions><ul><li><a class=icon href=https://hightower.space/posts/2021-reading-list/ aria-label=Previous><i class="fas fa-chevron-left" aria-hidden=true onmouseover='$("#i-prev").toggle()' onmouseout='$("#i-prev").toggle()'></i></a></li><li><a class=icon href=https://hightower.space/posts/conjecture-on-n-sided-numbers/ aria-label=Next><i class="fas fa-chevron-right" aria-hidden=true onmouseover='$("#i-next").toggle()' onmouseout='$("#i-next").toggle()'></i></a></li><li><a class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page"><i class="fas fa-chevron-up" aria-hidden=true onmouseover='$("#i-top").toggle()' onmouseout='$("#i-top").toggle()'></i></a></li><li><a class=icon href=# aria-label=Share><i class="fas fa-share-alt" aria-hidden=true onmouseover='$("#i-share").toggle()' onmouseout='$("#i-share").toggle()' onclick='return $("#share").toggle(),!1'></i></a></li></ul><span id=i-prev class=info style=display:none>Previous post</span>
 <span id=i-next class=info style=display:none>Next post</span>
 <span id=i-top class=info style=display:none>Back to top</span>
-<span id=i-share class=info style=display:none>Share post</span>
-</span>
-<br>
-<div id=share style=display:none>
-<ul>
-<li>
-<a class=icon href="mailto:?subject=Informed%2c%20Random%20Walk&body=Check out this article: https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f" aria-label=Email>
-<i class="fas fa-envelope" aria-hidden=true></i>
-</a>
-</li><li>
-<a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&title=Informed%2c%20Random%20Walk" aria-label=Pocket>
-<i class="fab fa-get-pocket" aria-hidden=true></i>
-</a>
-</li><li>
-<a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&t=Informed%2c%20Random%20Walk" aria-label="Hacker News">
-<i class="fab fa-hacker-news" aria-hidden=true></i>
-</a>
-</li></ul></div><div id=toc>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#background>Background</a></li><li><a href=#an-informed-random-walk>An Informed, Random Walk</a>
-<ul>
-<li><a href=#the-context>The Context</a></li><li><a href=#the-algorithm>The Algorithm</a></li><li><a href=#the-data-structure>The Data Structure</a></li><li><a href=#the-code>The Code</a></li></ul></li></ul></nav></div></span>
-</div><article class=post itemscope itemtype=http://schema.org/BlogPosting>
-<header>
-<h1 class=posttitle itemprop="name headline">
-Informed, Random Walk
-</h1><div class=meta>
-<div class=postdate>
-<time datetime="2021-08-13 00:00:00 +0000 UTC" itemprop=datePublished>2021-08-13</time>
-</div><div class=article-read-time>
-<i class="far fa-clock"></i>
-5 minute read
-</div><div class=article-tag>
-<i class="fas fa-tag"></i>
+<span id=i-share class=info style=display:none>Share post</span></span><br><div id=share style=display:none><ul><li><a class=icon href="mailto:?subject=Informed%2c%20Random%20Walk&body=Check out this article: https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f" aria-label=Email><i class="fas fa-envelope" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&title=Informed%2c%20Random%20Walk" aria-label=Pocket><i class="fab fa-get-pocket" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&t=Informed%2c%20Random%20Walk" aria-label="Hacker News"><i class="fab fa-hacker-news" aria-hidden=true></i></a></li></ul></div><div id=toc><nav id=TableOfContents><ul><li><a href=#background>Background</a></li><li><a href=#an-informed-random-walk>An Informed, Random Walk</a><ul><li><a href=#the-context>The Context</a></li><li><a href=#the-algorithm>The Algorithm</a></li><li><a href=#the-data-structure>The Data Structure</a></li><li><a href=#the-code>The Code</a></li></ul></li></ul></nav></div></span></div><article class=post itemscope itemtype=http://schema.org/BlogPosting><header><h1 class=posttitle itemprop="name headline">Informed, Random Walk</h1><div class=meta><div class=postdate><time datetime="2021-08-13 00:00:00 +0000 UTC" itemprop=datePublished>2021-08-13</time></div><div class=article-read-time><i class="far fa-clock"></i>
+5 minute read</div><div class=article-tag><i class="fas fa-tag"></i>
 <a class=tag-link href=/tags/randomness rel=tag>Randomness</a>
 ,
 <a class=tag-link href=/tags/clojurescript rel=tag>Clojurescript</a>
 ,
 <a class=tag-link href=/tags/art rel=tag>Art</a>
 ,
-<a class=tag-link href=/tags/nerd-sniping rel=tag>Nerd Sniping</a>
-</div></div></header><div class=content itemprop=articleBody>
-<h2 id=background>Background</h2><p><a href=https://press.stripe.com/>Stripe Press</a> published a beautiful copy of &ldquo;<em>The Art of Doing Science and Engineering</em>&rdquo; by Richard Hamming:</p><p><img src=/img/learning-to-learn-cover.png alt="The cover of the book features an intriguing pattern"></p><p>Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was <a href=https://xkcd.com/356/>nerd sniped</a> into designing an algorithm which would make such a pattern. This post is an explication of my solution.</p><h2 id=an-informed-random-walk>An Informed, Random Walk</h2><p>Such a pattern could be created from what I am calling an &ldquo;Informed, Random Walk&rdquo;. The walk is &ldquo;informed&rdquo; because it contains feedback about each step and &ldquo;random&rdquo; because each step of the walk is randomly chosen.</p><h3 id=the-context>The Context</h3><p>Imagine we are standing on a point on a 2D plain. We are trying to move from our current location (whose coordinates are unknown to us) to a specific, target location (whose coordinates are also unknown to us). Imagine that we are only allowed to take steps in <a href=https://en.wikipedia.org/wiki/Cardinal_direction>cardinal directions</a> and, after taking a step, we will be told whether we are closer to the target location.</p><h3 id=the-algorithm>The Algorithm</h3><p>What algorithm would help us get to the target location as directly as possible? A basic algorithm is:</p><ol>
-<li>Randomly choose a direction and take a step in that direction</li><li>Determine whether the step brings us closer to the target</li><li>If the step took us closer to the target, make it more likely to choose that direction in the future, otherwise make it less likely</li></ol><h3 id=the-data-structure>The Data Structure</h3><p>Perhaps equally as important as the algorithm is the data structure used to track the steps we&rsquo;ve taken and their results. For this post, I&rsquo;ve written the algorithm using <a href=https://clojurescript.org/>ClojureScript</a> so I&rsquo;m using a <a href=https://cljs.github.io/api/syntax/#map>map</a> which looks like:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>{<span style=color:#48b685>:North</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:East</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:South</span> <span style=color:#f99b15>2</span> <span style=color:#48b685>:West</span> <span style=color:#f99b15>3</span>}
+<a class=tag-link href=/tags/nerd-sniping rel=tag>Nerd Sniping</a></div></div></header><div class=content itemprop=articleBody><h2 id=background>Background</h2><p><a href=https://press.stripe.com/>Stripe Press</a> published a beautiful copy of &ldquo;<em>The Art of Doing Science and Engineering</em>&rdquo; by Richard Hamming:</p><p><img src=/img/learning-to-learn-cover.png alt="The cover of the book features an intriguing pattern"></p><p>Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was <a href=https://xkcd.com/356/>nerd sniped</a> into designing an algorithm which would make such a pattern. This post is an explication of my solution.</p><h2 id=an-informed-random-walk>An Informed, Random Walk</h2><p>Such a pattern could be created from what I am calling an &ldquo;Informed, Random Walk&rdquo;. The walk is &ldquo;informed&rdquo; because it contains feedback about each step and &ldquo;random&rdquo; because each step of the walk is randomly chosen.</p><h3 id=the-context>The Context</h3><p>Imagine we are standing on a point on a 2D plain. We are trying to move from our current location (whose coordinates are unknown to us) to a specific, target location (whose coordinates are also unknown to us). Imagine that we are only allowed to take steps in <a href=https://en.wikipedia.org/wiki/Cardinal_direction>cardinal directions</a> and, after taking a step, we will be told whether we are closer to the target location.</p><h3 id=the-algorithm>The Algorithm</h3><p>What algorithm would help us get to the target location as directly as possible? A basic algorithm is:</p><ol><li>Randomly choose a direction and take a step in that direction</li><li>Determine whether the step brings us closer to the target</li><li>If the step took us closer to the target, make it more likely to choose that direction in the future, otherwise make it less likely</li></ol><h3 id=the-data-structure>The Data Structure</h3><p>Perhaps equally as important as the algorithm is the data structure used to track the steps we&rsquo;ve taken and their results. For this post, I&rsquo;ve written the algorithm using <a href=https://clojurescript.org/>ClojureScript</a> so I&rsquo;m using a <a href=https://cljs.github.io/api/syntax/#map>map</a> which looks like:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>{<span style=color:#48b685>:North</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:East</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:South</span> <span style=color:#f99b15>2</span> <span style=color:#48b685>:West</span> <span style=color:#f99b15>3</span>}
 </span></span></code></pre></div><p>The keys of the map are the possible directions and the values are the weights for that direction.</p><p>At step 1 in the algorithm (when we randomly choose a direction), we use the weights to determine the likelihood of a direction being chosen. For example, given the map above, we would randomly choose a direction where <code>:South</code> is two times are likely to be chosen as <code>:North</code> and <code>:East</code> and where <code>:West</code> is three times more likely than <code>:North</code> and <code>:East</code>. The way this is actually implemented, we take the map of directions and their weights and generate an array where each direction is repeated as many times as the weight. So, using the map above as an example, we would have:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>[<span style=color:#48b685>:North</span> <span style=color:#48b685>:East</span> <span style=color:#48b685>:South</span> <span style=color:#48b685>:South</span> <span style=color:#48b685>:West</span> <span style=color:#48b685>:West</span> <span style=color:#48b685>:West</span>]
 </span></span></code></pre></div><p>We then randomly choose one of these to determine in which direction we will take a step.</p><p>At step 3 of the algorithm (where we record feedback about the step), we update the map with the directions in it according to whether or not the step brought us closer to the target. So say our direction map is:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>{<span style=color:#48b685>:North</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:East</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:South</span> <span style=color:#f99b15>2</span> <span style=color:#48b685>:West</span> <span style=color:#f99b15>3</span>}
 </span></span></code></pre></div><p>We take a step <code>:North</code> and this takes us closer to the target. So, we now want to make it more likely to take another step <code>:North</code>, so we increment the value for <code>:North</code>:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>{<span style=color:#48b685>:North</span> <span style=color:#f99b15>2</span> <span style=color:#48b685>:East</span> <span style=color:#f99b15>1</span> <span style=color:#48b685>:South</span> <span style=color:#f99b15>2</span> <span style=color:#48b685>:West</span> <span style=color:#f99b15>3</span>}
-</span></span></code></pre></div><p>This is the interesting part of the whole algorithm! Given a direction map, the direction of the most recent step, and whether or not that step brought you closer to the target: How do you update the direction map to best approach the destination?</p><h3 id=the-code>The Code</h3><p>Below is <em>interactive</em> code that sets the context for this problem. Some of the less important functionality is hidden, but feel free to edit what is visible. If you scroll below the code blocks, you will see an informed, random walk based on the code. Enjoy exploring!</p><link rel=stylesheet type=text/css href=https://storage.googleapis.com/app.klipse.tech/css/codemirror.css>
-<script>window.klipse_settings={selector:".cljs"}</script>
-<pre hidden><code class=cljs>
+</span></span></code></pre></div><p>This is the interesting part of the whole algorithm! Given a direction map, the direction of the most recent step, and whether or not that step brought you closer to the target: How do you update the direction map to best approach the destination?</p><h3 id=the-code>The Code</h3><p>Below is <em>interactive</em> code that sets the context for this problem. Some of the less important functionality is hidden, but feel free to edit what is visible. If you scroll below the code blocks, you will see an informed, random walk based on the code. Enjoy exploring!</p><link rel=stylesheet type=text/css href=https://storage.googleapis.com/app.klipse.tech/css/codemirror.css><script>window.klipse_settings={selector:".cljs"}</script><pre hidden><code class=cljs>
 (def canvas-id (atom "canvas"))
 
 (defn draw-line
@@ -163,8 +75,7 @@ Informed, Random Walk
       (.-innerHTML)
       (set! message))))
 </code></pre>Here are some of the underlying functions used to walk around the canvas.
-For starters, I recommend you skip this code block to the next, more interesting one below.
-<pre><code class=cljs>
+For starters, I recommend you skip this code block to the next, more interesting one below.<pre><code class=cljs>
 (def step-length 10)
 (def max-step-count 1000)
 (def dirs {:North 2 :East 2 :South 2 :West 2})
@@ -211,8 +122,7 @@ For starters, I recommend you skip this code block to the next, more interesting
 </code></pre>This is the interesting stuff! The <code>update-dirs</code> function is the one we use to update the weights given to each of the directions
 (thus, making it more or less likely for the walker to walk in that direction).
 If the walker doesn't find the target in 1,000 steps, it will stop (but you can change this by changing the <code>max-step-count</code> variable in the code block above).
-Feel free to edit the code below to see how this changes the walker's behaviour:
-<pre><code class=cljs>
+Feel free to edit the code below to see how this changes the walker's behaviour:<pre><code class=cljs>
 (def start [50 50])
 (def target [300 300])
 (def dir-increment 1)
@@ -230,56 +140,15 @@ Feel free to edit the code below to see how this changes the walker's behaviour:
   (.addEventListener "click" (fn [e]
     (draw))))
 </code></pre><button class=button id=generate-button>Redraw</button>
-<span id=output></span>
-<br>
-<canvas id=canvas width=500 height=500></canvas>
-<script src=https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js></script>
-<p>The default <code>update-dirs</code> function is pretty bad (it rarely finds the target).</p><p>What if you update it to:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>(<span style=color:#815ba4>defn </span><span style=color:#ef6155>update-dirs</span> [<span style=color:#ef6155>dirs</span> <span style=color:#ef6155>dir</span> <span style=color:#ef6155>closer?</span>]
+<span id=output></span><br><canvas id=canvas width=500 height=500></canvas>
+<script src=https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js></script><p>The default <code>update-dirs</code> function is pretty bad (it rarely finds the target).</p><p>What if you update it to:</p><div class=highlight><pre tabindex=0 style=color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-clojure data-lang=clojure><span style=display:flex><span>(<span style=color:#815ba4>defn </span><span style=color:#ef6155>update-dirs</span> [<span style=color:#ef6155>dirs</span> <span style=color:#ef6155>dir</span> <span style=color:#ef6155>closer?</span>]
 </span></span><span style=display:flex><span>  (<span style=color:#815ba4>if </span>(true? <span style=color:#ef6155>closer?</span>)
 </span></span><span style=display:flex><span>    (<span style=color:#06b6ef>update-in</span> <span style=color:#ef6155>dirs</span> [<span style=color:#ef6155>dir</span>] <span style=color:#5bc4bf>#</span>(+ <span style=color:#ef6155>%</span> <span style=color:#ef6155>dir-increment</span>))
 </span></span><span style=display:flex><span>    (<span style=color:#06b6ef>update-in</span> (<span style=color:#06b6ef>update-in</span> <span style=color:#ef6155>dirs</span> [<span style=color:#ef6155>dir</span>] <span style=color:#5bc4bf>#</span>(- <span style=color:#ef6155>%</span> <span style=color:#ef6155>dir-increment</span>)) [(<span style=color:#06b6ef>opposite-dir</span> <span style=color:#ef6155>dir</span>)] <span style=color:#5bc4bf>#</span>(+ <span style=color:#ef6155>%</span> <span style=color:#ef6155>dir-increment</span>))))
-</span></span></code></pre></div></div></article><div id=footer-post-container>
-<div id=footer-post>
-<div id=nav-footer style=display:none>
-<ul>
-<li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/skills>Skills</a></li><li><a href=/about>About</a></li></ul></div><div id=toc-footer style=display:none>
-<nav id=TableOfContents>
-<ul>
-<li><a href=#background>Background</a></li><li><a href=#an-informed-random-walk>An Informed, Random Walk</a>
-<ul>
-<li><a href=#the-context>The Context</a></li><li><a href=#the-algorithm>The Algorithm</a></li><li><a href=#the-data-structure>The Data Structure</a></li><li><a href=#the-code>The Code</a></li></ul></li></ul></nav></div><div id=share-footer style=display:none>
-<ul>
-<li>
-<a class=icon href="mailto:?subject=Informed%2c%20Random%20Walk&body=Check out this article: https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f" aria-label=Email>
-<i class="fas fa-envelope fa-lg" aria-hidden=true></i>
-</a>
-</li><li>
-<a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&title=Informed%2c%20Random%20Walk" aria-label=Pocket>
-<i class="fab fa-get-pocket fa-lg" aria-hidden=true></i>
-</a>
-</li><li>
-<a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&t=Informed%2c%20Random%20Walk" aria-label="Hacker News">
-<i class="fab fa-hacker-news fa-lg" aria-hidden=true></i>
-</a>
-</li></ul></div><div id=actions-footer>
-<a id=menu-toggle class=icon href=# onclick='return $("#nav-footer").toggle(),!1' aria-label=Menu>
-<i class="fas fa-bars fa-lg" aria-hidden=true></i> Menu</a>
-<a id=toc-toggle class=icon href=# onclick='return $("#toc-footer").toggle(),!1' aria-label=TOC>
-<i class="fas fa-list fa-lg" aria-hidden=true></i> TOC</a>
-<a id=share-toggle class=icon href=# onclick='return $("#share-footer").toggle(),!1' aria-label=Share>
-<i class="fas fa-share-alt fa-lg" aria-hidden=true></i> share</a>
-<a id=top style=display:none class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page">
-<i class="fas fa-chevron-up fa-lg" aria-hidden=true></i> Top</a>
-</div></div></div><footer id=footer>
-<div class=footer-left>
-Copyright &copy; 2022 Floyd Hightower
-</div><div class=footer-right>
-<nav>
-<ul>
-<li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/skills>Skills</a></li><li><a href=/about>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css>
-<script src=/lib/jquery/jquery.min.js></script>
+</span></span></code></pre></div></div></article><div id=footer-post-container><div id=footer-post><div id=nav-footer style=display:none><ul><li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/skills>Skills</a></li><li><a href=/about>About</a></li></ul></div><div id=toc-footer style=display:none><nav id=TableOfContents><ul><li><a href=#background>Background</a></li><li><a href=#an-informed-random-walk>An Informed, Random Walk</a><ul><li><a href=#the-context>The Context</a></li><li><a href=#the-algorithm>The Algorithm</a></li><li><a href=#the-data-structure>The Data Structure</a></li><li><a href=#the-code>The Code</a></li></ul></li></ul></nav></div><div id=share-footer style=display:none><ul><li><a class=icon href="mailto:?subject=Informed%2c%20Random%20Walk&body=Check out this article: https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f" aria-label=Email><i class="fas fa-envelope fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&title=Informed%2c%20Random%20Walk" aria-label=Pocket><i class="fab fa-get-pocket fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fhightower.space%2fposts%2finformed-random-walk%2f&t=Informed%2c%20Random%20Walk" aria-label="Hacker News"><i class="fab fa-hacker-news fa-lg" aria-hidden=true></i></a></li></ul></div><div id=actions-footer><a id=menu-toggle class=icon href=# onclick='return $("#nav-footer").toggle(),!1' aria-label=Menu><i class="fas fa-bars fa-lg" aria-hidden=true></i> Menu</a>
+<a id=toc-toggle class=icon href=# onclick='return $("#toc-footer").toggle(),!1' aria-label=TOC><i class="fas fa-list fa-lg" aria-hidden=true></i> TOC</a>
+<a id=share-toggle class=icon href=# onclick='return $("#share-footer").toggle(),!1' aria-label=Share><i class="fas fa-share-alt fa-lg" aria-hidden=true></i> share</a>
+<a id=top style=display:none class=icon href=# onclick='$("html, body").animate({scrollTop:0},"fast")' aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg" aria-hidden=true></i> Top</a></div></div></div><footer id=footer><div class=footer-left>Copyright &copy; 2022 Floyd Hightower</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/skills>Skills</a></li><li><a href=/about>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
 <script src=/js/code-copy.js></script>
-<script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script>
-<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-</html>
+<script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></html>
