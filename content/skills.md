@@ -8,7 +8,9 @@ Here is a regularly updated list of skills I have:
 ![Pytest](/img/skills/pytest.png "Pytest")
 ![Docker](/img/skills/docker.png "Docker")
 ![Markdown](/img/skills/markdown.png "Markdown")
-<img src="/img/skills/vim.svg" alt="Vim" title="Vim" style="width:64px;"/>
+![Neovim](/img/skills/neovim.png "Neovim")
+![Google Cloud](/img/skills/google-cloud.png "Google Cloud")
+<img src="/img/skills/go.svg" alt="Go" title="Go" style="width:64px;"/>
 
 ## Weekly
 
@@ -28,9 +30,12 @@ Here is a regularly updated list of skills I have:
 - Luminus
 - Pedestal
 
+## Past Experience
+
+![AWS](/img/skills/aws.png "Google Cloud")
+
 ## Want to Learn...
 
 - Java
-- Go
 - Kotlin and/or Scala
 - TLA+
