@@ -36,6 +36,6 @@ For this discussion, we'll focus on the three serverless options:
 Product | Docs | Description | Cool Features | Use-Cases
 -- | -- | -- | -- | --
 Cloud Run | [docs](https://cloud.google.com/run/) | Runs containerized apps | <ul><li>Split http traffic btw. diff versions of an app for A/B Tesing</li><li>Uses [knative](https://knative.dev/docs/), allowing portability</li><li>Can be triggered by events</li></ul> | <ul><li>Websites/APIs</li><li>Cronjobs</li></ul>
-App Engine | [docs](https://cloud.google.com/appengine/) | Run http services | <ul><li>Split http traffic btw. diff versions of an app for A/B Tesing</li><li>Easy config. using `app.yaml`</li></ul> | <ul><li>Server-rendered websites/APIs</li></ul>
+App Engine | [docs](https://cloud.google.com/appengine/) | Run http services | <ul><li>Split http traffic btw. diff versions of an app for A/B Tesing</li><li>Easy config. using [`app.yaml`](https://cloud.google.com/appengine/docs/standard/python3/config/appref)</li><li>Flexible [structure](https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine) allowing services in different languages in the same app</li></ul> | <ul><li>Server-rendered websites/APIs</li></ul>
 Cloud Functions | [docs](https://cloud.google.com/functions/) | Run event-driven functions | <ul><li>Uses [knative](https://knative.dev/docs/), allowing portability</li></ul> | 
 
