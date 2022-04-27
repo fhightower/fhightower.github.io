@@ -20,6 +20,11 @@ url = "/tags"
 weight = 3
 
 [[menu.main]]
+name = "Categories"
+url = "/categories"
+weight = 3
+
+[[menu.main]]
 name = "Skills"
 url = "/skills"
 weight = 4
