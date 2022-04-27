@@ -1,7 +1,7 @@
 +++
 date = "2022-04-19"
 title = "GCP Serverless Compute Options Overview"
-tags = ["GCP", "Google", "Google Cloud", "Serverless", "Microservices", "Cloud Run", "Cloud Functions", "App Engine"]
+tags = ["Google Cloud", "Serverless", "Microservices", "Cloud Run", "Cloud Functions", "App Engine"]
 +++
 
 ## Intro
