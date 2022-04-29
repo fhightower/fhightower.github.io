@@ -24,7 +24,7 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
 - Fully managed, petabyte-scale data warehouse/analysis service
 - Has two components:
   - Storage (built on "Colossus")
-  - Query/Processing Service
+  - Query/Processing Engine
 - Good for [federated searching](https://en.wikipedia.org/wiki/Federated_search)
 - Column-based storage
 - Allows [ANSI SQL](https://blog.ansi.org/2018/10/sql-standard-iso-iec-9075-2016-ansi-x3-135/) compliant queries
@@ -47,4 +47,18 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
     - Can be done against multiple columns
     - Clustering is applied *while* the query is run, so you don't know how much the query will cost and how much cluster will save you
     - More granular than partitioning
+- Typically populated in batch inserts
+  - Offers streaming inserts to allow smaller queries, run more often, w/ lower latency, and at a higher cost
+  - Max streaming capability ≈ 100,000 rows/table/sec.
+- Offers access control at project, dataset, and table/view levels
+
+## Similar Systems
+
+### BigQuery vs. BigTable
+
+Among many other differences:
+
+BigTable is designed for long, narrow tables.
+
+BigQuery typically has short(er), wide(r) tables.
 
