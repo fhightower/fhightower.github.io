@@ -3,7 +3,7 @@ date = "2022-04-29"
 title = "BigQuery in a Nutshell"
 tags = ["Google Cloud", "Professional Data Engineer Certfication", "BigQuery", "SQL", "Data Warehouse"]
 categories = ["GCP Notes"]
-+++
+bigquery+++
 
 ## Intro
 
@@ -30,6 +30,8 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
 - Allows [ANSI SQL](https://blog.ansi.org/2018/10/sql-standard-iso-iec-9075-2016-ansi-x3-135/) compliant queries
 - Includes good support for:
   - Building (basic) ML models
+    - Logistic regression - classifying categories
+    - Linear regression - forcasting # values
   - GeoViz
   - Structs
     - Allows horizontal storage
@@ -38,6 +40,9 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
   - Arrays (when `mode=REPEATED`)
     - Allows vertical storage
     - Identifiable where mode=`REPEATED`
+  - Analytic window functions using `LAG`
+  - Named subqueries using `WITH`
+    - Pre-processes data which can be cached for future queries
 - Optimization:
   - Partition tables
     - Group data into sections allowing BQ to scan less data
