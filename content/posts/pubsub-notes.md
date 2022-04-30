@@ -3,7 +3,7 @@ date = "2022-04-29"
 title = "Pub/Sub in a Nutshell"
 tags = ["Google Cloud", "Professional Data Engineer Certfication", "Pub/Sub"]
 categories = ["GCP Notes"]
-bigquery+++
++++
 
 ## Intro
 
@@ -26,7 +26,7 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
 - Good soln. for buffering changes for lightly-coupled architectures
   - P/S decouples publishers and subscribers
 - HIPPA compliant
-- Stores data for 7 days
+- Stores data for up to 7 days
 - Has topics and subscriptions
   - Data is published to a topic
   - Subscriptions dictate who recieves content for which topics

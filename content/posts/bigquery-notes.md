@@ -3,7 +3,7 @@ date = "2022-04-29"
 title = "BigQuery in a Nutshell"
 tags = ["Google Cloud", "Professional Data Engineer Certfication", "BigQuery", "SQL", "Data Warehouse"]
 categories = ["GCP Notes"]
-bigquery+++
++++
 
 ## Intro
 
