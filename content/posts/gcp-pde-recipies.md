@@ -1,7 +1,7 @@
 +++
 date = "2022-05-03"
 title = "GCP PDE Recipies"
-tags = ["Google Cloud", "Professional Data Engineer Certfication", "Principles"]
+tags = ["Google Cloud", "Professional Data Engineer Certfication", "BigQuery", "Dataflow", "Pub/Sub", "Bigtable"]
 categories = ["GCP Notes"]
 +++
 

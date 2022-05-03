@@ -2,6 +2,7 @@
 date = "2022-04-19"
 title = "GCP Serverless Compute Options Overview"
 tags = ["Google Cloud", "Serverless", "Microservices", "Cloud Run", "Cloud Functions", "App Engine"]
+categories = ["GCP Notes"]
 +++
 
 ## Intro
