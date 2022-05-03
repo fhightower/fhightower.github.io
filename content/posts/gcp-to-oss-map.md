@@ -33,4 +33,6 @@ Dataproc | Apache Hadoop/Spark |
 Cloud Storage | HDFS | A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage
 Dataflow | Apache Beam | 
 Cloud Composer | Apache Airflow | 
+Memorystore | Redis and Memcached | 
+Firestore | MongoDB | Firestore is not API comptabile w/ MongoDB but is conceptually similar
 

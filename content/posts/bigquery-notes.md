@@ -9,7 +9,7 @@ categories = ["GCP Notes"]
 
 This post is part of a series of posts with notes as I'm studying for [Google's Professional Data Engineer Certification](https://cloud.google.com/certification/data-engineer).
 
-This particular post deals with BigQuery.
+This particular post covers BigQuery in a nutshell.
 
 ## Disclaimer
 
@@ -37,7 +37,7 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
     - Allows horizontal storage
     - Look like: `event.status`
     - Identifiable where type=`RECORD`
-  - Arrays (when `mode=REPEATED`)
+  - Arrays
     - Allows vertical storage
     - Identifiable where mode=`REPEATED`
   - Analytic window functions using `LAG`
@@ -48,6 +48,7 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
     - Group data into sections allowing BQ to scan less data
     - Partition pruning occurs *before* the query is run, allowing you to know costs up-front
     - Common partition source is dates/times
+    - ≈ an index row wrapping the entire table
   - Clustering
     - Can be done against multiple columns
     - Clustering is applied *while* the query is run, so you don't know how much the query will cost and how much cluster will save you

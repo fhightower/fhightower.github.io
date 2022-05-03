@@ -9,7 +9,7 @@ categories = ["GCP Notes"]
 
 This post is part of a series of posts with notes as I'm studying for [Google's Professional Data Engineer Certification](https://cloud.google.com/certification/data-engineer).
 
-This particular post deals with Pub/Sub.
+This particular post covers Pub/Sub in a nutshell.
 
 ## Disclaimer
 
@@ -26,7 +26,8 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
 - Good soln. for buffering changes for lightly-coupled architectures
   - P/S decouples publishers and subscribers
 - HIPPA compliant
-- Stores data for up to 7 days
+- Stores data for up to 31 days
+  - Default is 7 days
 - Has topics and subscriptions
   - Data is published to a topic
   - Subscriptions dictate who recieves content for which topics

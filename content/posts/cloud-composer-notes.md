@@ -9,7 +9,7 @@ categories = ["GCP Notes"]
 
 This post is part of a series of posts with notes as I'm studying for [Google's Professional Data Engineer Certification](https://cloud.google.com/certification/data-engineer).
 
-This particular post deals with Cloud Composer.
+This particular post covers Cloud Composer in a nutshell.
 
 ## Disclaimer
 

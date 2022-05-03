@@ -38,4 +38,5 @@ Use them at your own risk and always defer to Google's docs as [canon](https://e
 - Typically, serverless/cloud-native solution is favorable over managed services or dedicated machines/VMs
 - HDFS files should be stored in GCS
 - It is not uncommon for multiple services to be used together (b/c each service is often optimized to do one thing very well)
+- If the question involves "ANSI SQL", the answer probably involves BigQuery
 
