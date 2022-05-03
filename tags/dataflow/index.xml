@@ -3,4 +3,8 @@ This particular post covers Dataflow in a nutshell.
 Disclaimer The content of these posts is written before I have taken the exam.
 I do not guarantee the accuracy or long-term reliability of these notes.
 Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.
-Dataflow Serverless Wraps apache beam Handles batch and streaming data Typically, more effecient scaling than Dataproc Therefore, it&amp;rsquo;s typically cheaper than Dataproc Used internally at Google Improved by Google over time Know about windowing fixed window in java/python ≈ tumbling in SQL sliding ≈ hoping in SQL session (is the same for both SQL and java/python) Know about watermarks</description></item></channel></rss>
+Dataflow Serverless Wraps apache beam Handles batch and streaming data Typically, more effecient scaling than Dataproc Therefore, it&amp;rsquo;s typically cheaper than Dataproc Used internally at Google Improved by Google over time Know about windowing fixed window in java/python ≈ tumbling in SQL sliding ≈ hoping in SQL session (is the same for both SQL and java/python) Know about watermarks</description></item><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>Intro This is a post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
+In this post, I provide some common recipies which are commonly used in Google Cloud.
+Disclaimer The content of these posts is written before I have taken the exam.
+I do not guarantee the accuracy or long-term reliability of these notes.
+Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.</description></item></channel></rss>

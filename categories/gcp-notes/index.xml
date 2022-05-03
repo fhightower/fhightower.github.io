@@ -29,4 +29,6 @@ Pub/Sub Fully managed, data ingestion and distro.</description></item><item><tit
 The plan is that each post will discuss a particular service, relevant to the GCP PDE cert.
 Disclaimer The content of these posts is written before I have taken the exam.
 I do not guarantee the accuracy or long-term reliability of these notes.
-Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.</description></item></channel></rss>
+Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.</description></item><item><title>GCP Serverless Compute Options Overview</title><link>https://hightower.space/posts/gcp-serverless-compute-options/</link><pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-serverless-compute-options/</guid><description>Intro This is a brief overview of the Serverless Compute Options in GCP.
+After reading this post, I hope you are:
+Familiar with the main options (at a high-level) Understand some main use-cases for each option Have a limited understanding of what it looks like to work with a service in each product The google docs on these subjects are really helpful&amp;hellip; I strongly recommend reading through them.</description></item></channel></rss>
