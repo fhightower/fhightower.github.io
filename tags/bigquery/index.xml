@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BigQuery on Floyd Hightower</title><link>https://hightower.space/tags/bigquery/</link><description>Recent content in BigQuery on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/bigquery/index.xml" rel="self" type="application/rss+xml"/><item><title>BigQuery in a Nutshell</title><link>https://hightower.space/posts/bigquery-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigquery-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post deals with BigQuery.
+This particular post covers BigQuery in a nutshell.
 Disclaimer The content of these posts is written before I have taken the exam.
 I do not guarantee the accuracy or long-term reliability of these notes.
 Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.
