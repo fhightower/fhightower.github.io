@@ -31,8 +31,10 @@ Variations:
 
 - gsutil
   - on-prem. (if practical based on network bandwidth and data size)
+  - Good for < 1TB
 - Storage Transfer Service
-  - From another storage provider
+  - From another cloud/on-prem. data center w/ sufficient bandwidth
+  - Good for > 1TB
 - Transfer Appliance
   - Physical hard-drive you fill and send back
   - For large amounts of data on-prem. and/or in a low-bandwidth location which makes gsutil impractical
