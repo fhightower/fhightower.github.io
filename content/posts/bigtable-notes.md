@@ -27,5 +27,9 @@ Please read [this disclaimer](/posts/gcp-notes-disclaimer/).
     - Don't put timestamps first
     - Don't hash values (keep values human-readable as row-keys are lexigraphically sorted)
     - Pad integers (and sometimes timestamps) so all row keys will be the same length and be reasonably sorted lexigraphically
+  - I've observed that keys often follow one of the following formats:
+    - `{large-component}#{small-component}#{timestamp}`
+    - `{large-component}#{small-component}#{reverse-timestamp}`
 - Supports [column families](https://cloud.google.com/bigtable/docs/schema-design#column-families)
+- Performance increase linearly w/ nodes
 
