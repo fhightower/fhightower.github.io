@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pub/Sub on Floyd Hightower</title><link>https://hightower.space/tags/pub/sub/</link><description>Recent content in Pub/Sub on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://hightower.space/tags/pub/sub/index.xml" rel="self" type="application/rss+xml"/><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>Intro This is a post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
 In this post, I provide some common recipies which are commonly used in Google Cloud.
-Disclaimer The content of these posts is written before I have taken the exam.
-I do not guarantee the accuracy or long-term reliability of these notes.
-Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.</description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
+Disclaimer Please read this disclaimer.
+GCP PDE Recipies The Classic Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (batch inserts)
+Variations:
+Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (streaming inserts) Pub/Sub -&amp;gt; Dataflow -&amp;gt; Bigtable -&amp;gt; BQ (querying Bigtable using federated query) For use-cases which require analytics and the low-latency afforded by Bigtable Uploading Data to Google Cloud gsutil on-prem.</description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
 This particular post covers Pub/Sub in a nutshell.
-Disclaimer The content of these posts is written before I have taken the exam.
-I do not guarantee the accuracy or long-term reliability of these notes.
-Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.
-Pub/Sub Fully managed, data ingestion and distro.</description></item></channel></rss>
+Disclaimer Please read this disclaimer.
+Pub/Sub Fully managed, data ingestion and distro. system Async., real-time message bus Good soln. for buffering changes for lightly-coupled architectures P/S decouples publishers and subscribers HIPPA compliant Stores data for up to 31 days Default is 7 days Has topics and subscriptions Data is published to a topic Subscriptions dictate who recieves content for which topics Relationship btw.</description></item></channel></rss>

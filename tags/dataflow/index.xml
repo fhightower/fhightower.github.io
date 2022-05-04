@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dataflow on Floyd Hightower</title><link>https://hightower.space/tags/dataflow/</link><description>Recent content in Dataflow on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/dataflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Dataflow in a Nutshell</title><link>https://hightower.space/posts/dataflow-notes/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/dataflow-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
 This particular post covers Dataflow in a nutshell.
-Disclaimer The content of these posts is written before I have taken the exam.
-I do not guarantee the accuracy or long-term reliability of these notes.
-Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.
+Disclaimer Please read this disclaimer.
 Dataflow Serverless Wraps apache beam Handles batch and streaming data Typically, more effecient scaling than Dataproc Therefore, it&amp;rsquo;s typically cheaper than Dataproc Used internally at Google Improved by Google over time Know about windowing fixed window in java/python ≈ tumbling in SQL sliding ≈ hoping in SQL session (is the same for both SQL and java/python) Know about watermarks</description></item><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>Intro This is a post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
 In this post, I provide some common recipies which are commonly used in Google Cloud.
-Disclaimer The content of these posts is written before I have taken the exam.
-I do not guarantee the accuracy or long-term reliability of these notes.
-Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.</description></item></channel></rss>
+Disclaimer Please read this disclaimer.
+GCP PDE Recipies The Classic Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (batch inserts)
+Variations:
+Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (streaming inserts) Pub/Sub -&amp;gt; Dataflow -&amp;gt; Bigtable -&amp;gt; BQ (querying Bigtable using federated query) For use-cases which require analytics and the low-latency afforded by Bigtable Uploading Data to Google Cloud gsutil on-prem.</description></item></channel></rss>
