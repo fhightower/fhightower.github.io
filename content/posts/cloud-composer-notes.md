@@ -13,11 +13,7 @@ This particular post covers Cloud Composer in a nutshell.
 
 ## Disclaimer
 
-The content of these posts is written *before* I have taken the exam.
-
-I do not guarantee the accuracy or long-term reliability of these notes.
-
-Use them at your own risk and always defer to Google's docs as [canon](https://en.wikipedia.org/wiki/Canon_(basic_principle)).
+Please read [this disclaimer](/posts/gcp-notes-disclaimer/).
 
 ## Cloud Composer
 
