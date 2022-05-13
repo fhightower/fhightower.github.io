@@ -9,7 +9,7 @@ Here is a regularly updated list of skills I have:
 ![Docker](/img/skills/docker.png "Docker")
 ![Markdown](/img/skills/markdown.png "Markdown")
 ![Neovim](/img/skills/neovim.png "Neovim")
-![Google Cloud](/img/skills/google-cloud.png "Google Cloud")
+![Google Cloud](/img/skills/google-cloud.png "Google Cloud") (I'm also a [Google Certified Professional Data Engineer](https://cloud.google.com/certification/data-engineer))
 <img src="/img/skills/go.svg" alt="Go" title="Go" style="width:64px;"/>
 
 ## Weekly
@@ -32,10 +32,10 @@ Here is a regularly updated list of skills I have:
 
 ## Past Experience
 
-![AWS](/img/skills/aws.png "Google Cloud")
+![AWS](/img/skills/aws.png "AWS")
 
 ## Want to Learn...
 
-- Java
+- Java (Refresh)
 - Kotlin and/or Scala
 - TLA+
