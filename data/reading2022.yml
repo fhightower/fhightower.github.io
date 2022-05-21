@@ -1,7 +1,7 @@
 - title: "*Lord of the Rings: The Fellowship of the Ring*"
   authors:
     - "J. R. Tolkien"
-  rating: "B+"
+  rating: "A"
   notes:
     - "I enjoy this series more and more each time I read it."
     - "This time, I noticed how the adventure begins right in Hobbiton as Frodo is almost caught on a number of occasions. The movies scale the danger as the adventure goes on, but the books introduce the danger right from the start"
@@ -14,6 +14,12 @@
   rating: "B+"
   notes:
     - "I think this book is a 'must-read' for everyone and worth reading regularly. It provides so many practical, helpful tips applicable to relationships with a spouse, family, friends, co-workers, and bosses"
+- title: "*Live Not by Lies: A Manual for Christian Dissidents*"
+  authors:
+    - "Rod Dreher"
+  rating: "B"
+  notes:
+    - "Worth reading... forecasts concerning trends in today's culture and provides practical steps (not the least of which is to 'live not by lies') to live a Christian in this culture"
 - title: "*Extreme Ownership: How U.S. Navy SEALs Lead and Win*"
   authors:
     - "Jocko Willink"
@@ -105,3 +111,104 @@
   notes:
     - "One of the best theology books I've read - it addresses pertinent, enlightning, and awe-inspiring topics usually neglected by theology books I've read"
     - "Even as a Protestant, I find this book fascinating and insightful"
+- title: "*Lord of the Rings: The Return of the Ring*"
+  authors:
+    - "J. R. Tolkien"
+  rating: "A"
+  notes:
+    - "Fantastic conclusion to the trilogy"
+    - "Even better than the movie"
+    - "Gets better every time I read it"
+- title: "*The Millionaire Next Door: The Surprising Secrets of America's Wealthy*"
+  authors:
+    - "Thomas J. Stanley"
+    - "William D. Danko"
+  rating: "B"
+  notes:
+    - "Good book w/ many suprises and practical insights into how to build wealth"
+    - "Easy skim"
+- title: "*How to Get Control of Your Time and Your Life*"
+  authors:
+    - "Alan Lakein"
+  rating: "C"
+  notes:
+    - "Good book w/ some helpful practical tips"
+    - "Not the best book on the subject of time/life management, but not bad and worth a skim"
+- title: "*Artificial Intelligence: Thinking Machines and Smart Robots with Science Activities for Kids*"
+  authors:
+    - "Angie Smibert"
+    - "Alexis Cornell"
+  rating: "C"
+  notes:
+    - "Good intro for kids w/ some fun projects"
+- title: "*Learning to Invest: Principles for Abundant Living*"
+  authors:
+    - "Matt Schoenfeld"
+  rating: "C"
+  notes:
+    - "Good intro to various aspects of investing"
+    - "Very basic, but a good intro and jumping-off point for beginners"
+- title: "*Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies*"
+  authors:
+    - "Geoffrey West"
+  rating: "C+"
+  notes:
+    - "The subtitle is very accurate; basic thesis: There are 'laws' of scale that apply across diverse contexts and seem to be woven into the universe"
+    - "For example, the ratio between size with heart rate for mammals (and this extends to other animals too) is very similar"
+    - "I'm surprised I've never heard of this book before"
+    - "Fascinating book I'd like to re-read as I didn't get focus on it as much as I'd like"
+- title: "[*The Call to Mastery*](https://jordanraynor.com/podcast/)"
+  authors:
+    - "Jordan Raynor"
+  rating: "C+"
+  notes:
+    - "Encouraging and inspiring podcast celebrating the role of good work in the Christian life"
+- title: "*Practical Java Machine Learning: Projects with Google Cloud Platform and Amazon Web Services*"
+  authors:
+    - "Mark Wickham"
+  rating: "C"
+  notes:
+    - "Decent book - has a great overview of machine learning models and approaches (and how they map to Java)"
+- title: "*The Cartoon Guide to the Computer"
+  authors:
+    - "Larry Gonick"
+    - "Mark Wheelis"
+  rating: "B"
+  notes:
+    - "Fun read!"
+    - "It's always interesting to read a computer book written decades ago... the dicsussion of the future of high level languages is hilarious look back on a time when Fortran was cutting edge"
+- title: "*Perelandra*"
+  authors:
+    - "C. S. Lewis"
+  rating: "A+"
+  notes:
+    - "Such a great story"
+    - "I think this is one of Lewis' best worlds"
+- title: "*Superintelligence*"
+  authors:
+    - "Nick Bostrom"
+  rating: "C"
+  notes:
+    - "Pessimistic about the future of superintelligence"
+    - "Assumes superintelligence possible and doesn't get much into the philosophy supporting this claim"
+    - "Appreciated the term 'superintelligence' instead of 'artificial intelligence'"
+    - "Appreciated the emphasis on the difficulty/impossibility of bounding work given to a superintelligent being/computer (e.g. telling a superintelligence to optimize production of paper clips could cause the super intelligence to take over the world to ensure paper clip production)"
+- title: "*Humble Pi: When Math Goes Wrong in the Real World*"
+  authors:
+    - "Matt Parker"
+  rating: "A"
+  notes:
+    - "Fun, cathartic read for those in engineering, computer science, or math"
+    - "Fascinating study in what can go wrong (and leads quickly into a discussion of how to avoid things going wrong)"
+- title: "[*The Briefing*](https://albertmohler.com/the-briefing)"
+  authors:
+    - "Albert Mohler"
+  rating: "A"
+  notes:
+    - "Fantastic new resource providing 'a daily analysis of news and events from a Christian worldview'"
+- title: "*Data Science on the Google Cloud Platform: Implementing End-to-End Real-Time Data Pipelines: From Ingest to Machine Learning*"
+  authors:
+    - "Valliappa Lakshmanan"
+  rating: "C"
+  notes:
+    - "Decent introduction to GCP which picks a project and walks through a solution"
