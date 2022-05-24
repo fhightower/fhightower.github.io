@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud Composer on Floyd Hightower</title><link>https://hightower.space/tags/cloud-composer/</link><description>Recent content in Cloud Composer on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/cloud-composer/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Composer in a Nutshell</title><link>https://hightower.space/posts/cloud-composer-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-composer-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Cloud Composer in a nutshell.
-Disclaimer Please read this disclaimer.
-Cloud Composer Managed Apache Airflow Create DAGs (Directed Acyclic Graph) Scheduling: Periodic (pull) (specified in the Airflow GUI - e.g. every day at noon) Event-driven (push) (e.g. when new data is uploaded to GCS)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud Composer on Floyd</title><link>https://hightower.space/tags/cloud-composer/</link><description>Recent content in Cloud Composer on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/cloud-composer/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Composer in a Nutshell</title><link>https://hightower.space/posts/cloud-composer-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-composer-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Cloud Composer in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="cloud-composer">Cloud Composer&lt;/h2>
+&lt;ul>
+&lt;li>Managed Apache Airflow&lt;/li>
+&lt;li>Create DAGs (&lt;a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Directed Acyclic Graph&lt;/a>)&lt;/li>
+&lt;li>Scheduling:
+&lt;ul>
+&lt;li>Periodic (pull) (specified in the Airflow GUI - e.g. every day at noon)&lt;/li>
+&lt;li>Event-driven (push) (e.g. when new data is uploaded to GCS)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

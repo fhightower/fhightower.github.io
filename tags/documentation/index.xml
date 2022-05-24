@@ -1,2 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on Floyd Hightower</title><link>https://hightower.space/tags/documentation/</link><description>Recent content in Documentation on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Running Gitbook on Gitlab</title><link>https://hightower.space/posts/gitbook-on-gitlab/</link><pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gitbook-on-gitlab/</guid><description>Here&amp;rsquo;s how to run a gitbook in gitlab pages:
-Create a repo in Gitlab Clone the template here Add the following file as .gitlab-ci.yml and push to gitlab: # requiring the environment of NodeJS 6.12.x image: node:6.12 # add &amp;#39;node_modules&amp;#39; to cache for speeding up builds cache: paths: - node_modules/ # Node modules and dependencies before_script: - npm install gitbook-cli -g # install gitbook - gitbook fetch latest # fetch latest stable version - gitbook install # add any requested plugins in book.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on Floyd</title><link>https://hightower.space/tags/documentation/</link><description>Recent content in Documentation on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 27 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Running Gitbook on Gitlab</title><link>https://hightower.space/posts/gitbook-on-gitlab/</link><pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gitbook-on-gitlab/</guid><description>&lt;p>Here&amp;rsquo;s how to run a &lt;a href="https://www.gitbook.com/">gitbook&lt;/a> in &lt;a href="https://docs.gitlab.com/ee/user/project/pages/">gitlab pages&lt;/a>:&lt;/p>
+&lt;ol>
+&lt;li>Create a repo in Gitlab&lt;/li>
+&lt;li>Clone the template &lt;a href="https://github.com/fhightower-templates/gitbook-template">here&lt;/a>&lt;/li>
+&lt;li>Add the following file as &lt;code>.gitlab-ci.yml&lt;/code> and push to gitlab:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code># requiring the environment of NodeJS 6.12.x
+image: node:6.12
+# add &amp;#39;node_modules&amp;#39; to cache for speeding up builds
+cache:
+paths:
+- node_modules/ # Node modules and dependencies
+before_script:
+- npm install gitbook-cli -g # install gitbook
+- gitbook fetch latest # fetch latest stable version
+- gitbook install # add any requested plugins in book.json
+# the &amp;#39;pages&amp;#39; job will deploy and build your site to the &amp;#39;public&amp;#39; path
+pages:
+stage: deploy
+script:
+- gitbook build . public # build to public path
+artifacts:
+paths:
+- public
+only:
+- master # this job will affect only the &amp;#39;master&amp;#39; branch
+&lt;/code>&lt;/pre>&lt;p>Once you push this, you&amp;rsquo;ll have a gitbook running.&lt;/p></description></item></channel></rss>

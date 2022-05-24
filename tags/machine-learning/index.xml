@@ -1,6 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on Floyd Hightower</title><link>https://hightower.space/tags/machine-learning/</link><description>Recent content in Machine Learning on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>ML for the GCP PDE Exam</title><link>https://hightower.space/posts/gcp-pde-ml-notes/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-ml-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers ML topics.
-Disclaimer Please read this disclaimer.
-Key Concepts L1 vs. L2 regression: L1 estimates the median of the data using absolute value Reduces low-value features Robust to outliers Good when only certain features contribute to success of model L2 estimates the mean of the data to avoid overfitting Not recommended for feature selection Good when all features contribute relatively equally to the success of a model TensorFlow Know how TensorFlow can be deployed (also, cost vs.</description></item><item><title>Simplex: A Simple, Extensible Game for Exploring Machine Learning</title><link>https://hightower.space/posts/scale_game_1/</link><pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/scale_game_1/</guid><description>Simplex As I&amp;rsquo;m exploring machine learning, I have found it helpful to have a simple game I can use as a context in which to test ideas. This blog post describes one such game. I call it &amp;ldquo;Simplex&amp;rdquo;. The game is trivially simple, but can be extended to make it more challenging.
-The game works as follows:
-There are two players (&amp;lsquo;a&amp;rsquo; and &amp;lsquo;b&amp;rsquo;) Each player gets only one move which is made simultaneously with the other player Each player has one marble Each marble weighs one unit For each move, players choose how many marbles to place on his/her side of a scale The winner is the player with the most weight on their side of the scale You can read, run, and edit an implementation of this game in Clojure (and Python) here.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on Floyd</title><link>https://hightower.space/tags/machine-learning/</link><description>Recent content in Machine Learning on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>ML for the GCP PDE Exam</title><link>https://hightower.space/posts/gcp-pde-ml-notes/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-ml-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers ML topics.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
+&lt;ul>
+&lt;li>L1 vs. L2 regression:
+&lt;ul>
+&lt;li>L1 estimates the &lt;em>median&lt;/em> of the data using absolute value
+&lt;ul>
+&lt;li>Reduces low-value features&lt;/li>
+&lt;li>Robust to outliers&lt;/li>
+&lt;li>Good when only certain features contribute to success of model&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>L2 estimates the &lt;em>mean&lt;/em> of the data to avoid overfitting
+&lt;ul>
+&lt;li>Not recommended for feature selection&lt;/li>
+&lt;li>Good when all features contribute relatively equally to the success of a model&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>TensorFlow
+&lt;ul>
+&lt;li>Know how TensorFlow can be deployed (also, cost vs. value)
+&lt;ul>
+&lt;li>CPUs, GPUs, TPUs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>BQ ML
+&lt;ul>
+&lt;li>Understand the basic flow when using BQ ML:&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Vertex AI
+&lt;ul>
+&lt;li>Create computation graph and training app&lt;/li>
+&lt;li>Package app&lt;/li>
+&lt;li>Start Vertex AI job to run packaged app&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Simplex: A Simple, Extensible Game for Exploring Machine Learning</title><link>https://hightower.space/posts/scale_game_1/</link><pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/scale_game_1/</guid><description>&lt;h2 id="simplex">Simplex&lt;/h2>
+&lt;p>As I&amp;rsquo;m exploring machine learning, I have found it helpful to have a simple game I can use as a context in which to test ideas.
+This blog post describes one such game.
+I call it &amp;ldquo;Simplex&amp;rdquo;. The game is trivially simple, but can be extended to make it more challenging.&lt;/p>
+&lt;p>The game works as follows:&lt;/p>
+&lt;ul>
+&lt;li>There are two players (&amp;lsquo;a&amp;rsquo; and &amp;lsquo;b&amp;rsquo;)&lt;/li>
+&lt;li>Each player gets only one move which is made simultaneously with the other player&lt;/li>
+&lt;li>Each player has one marble&lt;/li>
+&lt;li>Each marble weighs one unit&lt;/li>
+&lt;li>For each move, players choose how many marbles to place on his/her side of a scale&lt;/li>
+&lt;li>The winner is the player with the most weight on their side of the scale&lt;/li>
+&lt;/ul>
+&lt;p>You can read, run, and edit an implementation of this game in Clojure (and Python) &lt;a href="https://nextjournal.com/fhightower/scale-game-part-1">here&lt;/a>.&lt;/p>
+&lt;p>In future posts, I&amp;rsquo;ll examine:&lt;/p>
+&lt;ul>
+&lt;li>Different approaches to playing this game (including machine learning strategies)&lt;/li>
+&lt;li>How these approaches change when the game changes&lt;/li>
+&lt;/ul></description></item></channel></rss>

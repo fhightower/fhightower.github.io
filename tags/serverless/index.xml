@@ -1,6 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serverless on Floyd Hightower</title><link>https://hightower.space/tags/serverless/</link><description>Recent content in Serverless on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/serverless/index.xml" rel="self" type="application/rss+xml"/><item><title>Frustrations When Using Cloud Functions</title><link>https://hightower.space/posts/cloud-functions-non-starter/</link><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-functions-non-starter/</guid><description>I&amp;rsquo;ve been examining Google Cloud&amp;rsquo;s serverless compute options.
-I&amp;rsquo;ve been trying to use Cloud Functions, but have found them extrodinarily frustrating.
-My problems are:
-Slow feedback loop Slow feedback loops kill a dev&amp;rsquo;s effectiveness&amp;hellip; when deploying a new cloud function, it takes ≈ 30-40 seconds before one knows if something has failed - this is a long time to get feedback on a change One really can&amp;rsquo;t reasonably use cloud functions in the GUI - one would have to develop and test locally to make any workflow possible A ton of clicking just to see what has gone wrong If something does go wrong, (after waiting the 30-40 seconds to see that it has failed), one then has to click through a number of tabs/pages to view the logs&amp;hellip; this is really frustrating for devs who are used to not having to take their hands off the keyboard Odd UX when deploy fails When a deploy fails and one tries to edit the function, one will find that the function is not the most recent version of the function&amp;hellip; it&amp;rsquo;s the previously deployed version of the function!</description></item><item><title>GCP Serverless Compute Options Overview</title><link>https://hightower.space/posts/gcp-serverless-compute-options/</link><pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-serverless-compute-options/</guid><description>Intro This is a brief overview of the Serverless Compute Options in GCP.
-After reading this post, I hope you are:
-Familiar with the main options (at a high-level) Understand some main use-cases for each option Have a limited understanding of what it looks like to work with a service in each product The google docs on these subjects are really helpful&amp;hellip; I strongly recommend reading through them.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serverless on Floyd</title><link>https://hightower.space/tags/serverless/</link><description>Recent content in Serverless on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/serverless/index.xml" rel="self" type="application/rss+xml"/><item><title>Frustrations When Using Cloud Functions</title><link>https://hightower.space/posts/cloud-functions-non-starter/</link><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-functions-non-starter/</guid><description>&lt;p>I&amp;rsquo;ve been &lt;a href="https://hightower.space/posts/gcp-serverless-compute-options/">examining&lt;/a> Google Cloud&amp;rsquo;s serverless compute options.&lt;/p>
+&lt;p>I&amp;rsquo;ve been trying to use Cloud Functions, but have found them extrodinarily frustrating.&lt;/p>
+&lt;p>My problems are:&lt;/p>
+&lt;ol>
+&lt;li>Slow feedback loop
+&lt;ul>
+&lt;li>Slow feedback loops kill a dev&amp;rsquo;s effectiveness&amp;hellip; when deploying a new cloud function, it takes ≈ 30-40 seconds before one knows if something has failed - this is a &lt;em>long&lt;/em> time to get feedback on a change&lt;/li>
+&lt;li>One really can&amp;rsquo;t reasonably use cloud functions in the GUI - one would have to develop and test locally to make any workflow possible&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A &lt;em>ton&lt;/em> of clicking just to see what has gone wrong
+&lt;ul>
+&lt;li>If something does go wrong, (after waiting the 30-40 seconds to see that it has failed), one then has to click through a number of tabs/pages to view the logs&amp;hellip; this is really frustrating for devs who are used to not having to take their hands off the keyboard&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Odd UX when deploy fails
+&lt;ul>
+&lt;li>When a deploy fails and one tries to edit the function, one will find that the function is &lt;em>not&lt;/em> the most recent version of the function&amp;hellip; it&amp;rsquo;s the &lt;em>previously deployed&lt;/em> version of the function! So, if I write ten lines of code in a function, try to deploy it, and the deploy fails, I have lost the ten lines I added b/c the deploy failed!&lt;/li>
+&lt;li>This, in my opinion, violates the &lt;a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment">principle of least astonishment&lt;/a> and makes working with functions in the GUI absolutely impractical&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>All in all, I was disappointed to find Cloud Functions frustrating and largely impractical.
+It is marketed as an &amp;rsquo;easy&amp;rsquo;, &amp;lsquo;simple&amp;rsquo; way to run code, but I&amp;rsquo;ve found it is more hassle unless one is using docker to develop locally and deploying to a cloud function by pushing to a git repo.&lt;/p></description></item><item><title>GCP Serverless Compute Options Overview</title><link>https://hightower.space/posts/gcp-serverless-compute-options/</link><pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-serverless-compute-options/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a brief overview of the Serverless Compute Options in GCP.&lt;/p>
+&lt;p>After reading this post, I hope you are:&lt;/p>
+&lt;ol>
+&lt;li>Familiar with the main options (at a high-level)&lt;/li>
+&lt;li>Understand some main use-cases for each option&lt;/li>
+&lt;li>Have a limited understanding of what it looks like to work with a service in each product&lt;/li>
+&lt;/ol>
+&lt;p>The google docs on these subjects are really helpful&amp;hellip; I strongly recommend reading through them.&lt;/p>
+&lt;h3 id="serverless-compute-options">Serverless Compute Options&lt;/h3>
+&lt;p>Here are the primary compute options in GCP:&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/priyankavergadia/GCPSketchnote/main/images/ComputeOptionsv1.jpg" alt="Visual, Google Compute Options">&lt;/p>
+&lt;p>&lt;em>&lt;a href="https://raw.githubusercontent.com/priyankavergadia/GCPSketchnote/main/images/ComputeOptionsv1.jpg">source&lt;/a>&lt;/em>&lt;/p>
+&lt;p>For this discussion, we&amp;rsquo;ll focus on the three serverless options:&lt;/p>
+&lt;ol>
+&lt;li>Cloud Run&lt;/li>
+&lt;li>App Engine&lt;/li>
+&lt;li>Cloud Functions&lt;/li>
+&lt;/ol>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Product&lt;/th>
+&lt;th>Docs&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Cool Features&lt;/th>
+&lt;th>Use-Cases&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Cloud Run&lt;/td>
+&lt;td>&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
+&lt;td>Runs containerized apps&lt;/td>
+&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>App Engine&lt;/td>
+&lt;td>&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
+&lt;td>Run http services&lt;/td>
+&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Functions&lt;/td>
+&lt;td>&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
+&lt;td>Run event-driven functions&lt;/td>
+&lt;td>&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

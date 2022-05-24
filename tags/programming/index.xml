@@ -1,9 +1,178 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Floyd Hightower</title><link>https://hightower.space/tags/programming/</link><description>Recent content in Programming on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Simple, Non-blocking, Push/Pull Example with ZeroMQ</title><link>https://hightower.space/posts/zeromq-push-pull/</link><pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/zeromq-push-pull/</guid><description>Intro While working on TotalEmail, I ran across a situation in which we needed to make a non-blocking request (a request where the client makes the request without waiting or expecting a response). To accomplish this, I started looking into ZeroMQ. ZeroMQ is amazing! It is very well-structured and generalizes the problem of messaging between machines very effectively.
-While the ZeroMQ documentation is extensive, it is easy (at least for me) to get lost in the docs and forget the simplicity and elegance of ZeroMQ.</description></item><item><title>HTML-to-JSON Conversion Library</title><link>https://hightower.space/posts/html-to-json/</link><pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/html-to-json/</guid><description>HTML-to-JSON Library I have a project here to convert HTML to JSON. You can find installation instructions here: https://gitlab.com/fhightower/html-to-json#installation.
-The library can convert any/all html to json such that this:
-&amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Floyd Hightower&amp;#39;s Projects&amp;lt;/title&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Floyd Hightower&amp;amp;#39;s Projects&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;keywords&amp;#34; content=&amp;#34;projects,fhightower,Floyd,Hightower&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; becomes:
-{ &amp;#34;head&amp;#34;: [ { &amp;#34;title&amp;#34;: [ { &amp;#34;value&amp;#34;: &amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34; }], &amp;#34;meta&amp;#34;: [ { &amp;#34;attributes&amp;#34;: { &amp;#34;charset&amp;#34;: &amp;#34;UTF-8&amp;#34; } }, { &amp;#34;attributes&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;description&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34; } }, { &amp;#34;attributes&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;keywords&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;projects,fhightower,Floyd,Hightower&amp;#34; } }] }] } And you can tell it to only convert html tables in which case it will convert tables and use the table headings as the keys for the resulting json (this is described in depth here).</description></item><item><title>GUI vs. UI</title><link>https://hightower.space/posts/gui-vs-ui/</link><pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gui-vs-ui/</guid><description>I believe words are important.1 I recently caught myself saying something I consider dangerous for the way we think about computing and programming. I found my self saying &amp;ldquo;UI&amp;rdquo; (which is short for &amp;ldquo;User Interface&amp;rdquo;) to describe a &amp;ldquo;GUI&amp;rdquo; (a &amp;ldquo;Graphical User Interface&amp;rdquo;). UI is a broad category which encompasses multiple ways a user may interface with a system. A GUI is a specific instance of UI which relies on &amp;lsquo;visual metaphors&amp;rsquo; to communicate information to a user and allow the user to interact with the underlying system (the most ubiquitous example of a GUI is a website).</description></item><item><title>A Definitive Guide for Ignoring Sublime Linter Errors</title><link>https://hightower.space/posts/sublime-linter-ignore-guide/</link><pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/sublime-linter-ignore-guide/</guid><description>I found it very difficult to ignore sublime linter errors in Sublime Text, so this guide shows how to ignore these errors easily. If you have feedback, updates, or additions, please let me know (or raise an issue).
-Ignoring Linter Errors Example To ignore linter errors, open Sublime Text and navigate to Preferences &amp;gt; Package Settings &amp;gt; SublimeLinter &amp;gt; Settings. This will open a Sublime Text window with the default sublime linter settings on the left and your user settings on the right.</description></item><item><title>JavaScript Puzzles: How Well do you Know Javascript?</title><link>https://hightower.space/posts/javascript-puzzles/</link><pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/javascript-puzzles/</guid><description>Here are a couple of fun Javascript puzzles I&amp;rsquo;ve created/found to demonstrate important Javascript gotchas. There are answers/explanations near the bottom of the page.
-Puzzles Variable Scoping As I&amp;rsquo;m learning Typescript, I was reading through the docs and ran across a fascinating little code snippet demonstrating variable scoping gotchas in javascript. The question was:
-What is the output of the code below?
-for (var i = 0; i &amp;lt; 10; i++) { setTimeout(function() { console.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Floyd</title><link>https://hightower.space/tags/programming/</link><description>Recent content in Programming on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Simple, Non-blocking, Push/Pull Example with ZeroMQ</title><link>https://hightower.space/posts/zeromq-push-pull/</link><pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/zeromq-push-pull/</guid><description>&lt;h3 id="intro">Intro&lt;/h3>
+&lt;p>While working on &lt;a href="https://totalemail.io">TotalEmail&lt;/a>, I ran across a situation in which we needed to make a non-blocking request (a request where the client makes the request without waiting or expecting a response). To accomplish this, I started looking into &lt;a href="http://zeromq.org/">ZeroMQ&lt;/a>. ZeroMQ is amazing! It is very well-structured and generalizes the problem of messaging between machines very effectively.&lt;/p>
+&lt;p>While the &lt;a href="http://zeromq.org/">ZeroMQ&lt;/a> &lt;a href="http://zguide.zeromq.org/page:all">documentation&lt;/a> is extensive, it is easy (at least for me) to get lost in the docs and forget the simplicity and elegance of ZeroMQ. In this post, I share a simple, non-blocking, push/pull system that pushes from a client (without waiting for a response) and pulls the data into a server. The benefit of this construct is that the client does not wait for a response from the server. In this sense, it is a non-blocking operation.&lt;/p>
+&lt;h3 id="the-code">The Code&lt;/h3>
+&lt;h4 id="client">Client&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> zmq
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>context &lt;span style="color:#f92672">=&lt;/span> zmq&lt;span style="color:#f92672">.&lt;/span>Context()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Socket to send messages on&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sender &lt;span style="color:#f92672">=&lt;/span> context&lt;span style="color:#f92672">.&lt;/span>socket(zmq&lt;span style="color:#f92672">.&lt;/span>PUSH)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sender&lt;span style="color:#f92672">.&lt;/span>bind(&lt;span style="color:#e6db74">&amp;#34;tcp://*:5559&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> i &lt;span style="color:#f92672">in&lt;/span> range(&lt;span style="color:#ae81ff">3&lt;/span>):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;sending &lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>format(i))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sender&lt;span style="color:#f92672">.&lt;/span>send_string(str(i))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The client binds to a port (&lt;code>5559&lt;/code> - this port is used in the server code as well) and then sends the numbers zero, one, and two to the server. The client pushes data (as specified by the &lt;code>zmq.PUSH&lt;/code>) which means that it does not wait for a response from the server.&lt;/p>
+&lt;h4 id="server">Server&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> time
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> zmq
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>context &lt;span style="color:#f92672">=&lt;/span> zmq&lt;span style="color:#f92672">.&lt;/span>Context()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Socket to receive messages on&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>receiver &lt;span style="color:#f92672">=&lt;/span> context&lt;span style="color:#f92672">.&lt;/span>socket(zmq&lt;span style="color:#f92672">.&lt;/span>PULL)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>receiver&lt;span style="color:#f92672">.&lt;/span>connect(&lt;span style="color:#e6db74">&amp;#34;tcp://localhost:5559&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">print_value&lt;/span>(s):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> time&lt;span style="color:#f92672">.&lt;/span>sleep(&lt;span style="color:#ae81ff">2&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;value: &lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>format(s))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Process tasks forever&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">while&lt;/span> &lt;span style="color:#66d9ef">True&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> s &lt;span style="color:#f92672">=&lt;/span> receiver&lt;span style="color:#f92672">.&lt;/span>recv_string()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#39;received &lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#39;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>format(s))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print_value(s)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The server is designed to pull content (as specified by the &lt;code>zmq.PULL&lt;/code>) from &lt;code>tcp://localhost:5559&lt;/code>. When it receives something, it will send it to the &lt;code>print_value&lt;/code> function where the value will be printed off after two seconds. Again, the nice thing about this setup is that, even though the server takes some time to process the incoming data, the client doesn&amp;rsquo;t have to wait around for a response from the server.&lt;/p>
+&lt;h3 id="benefits">Benefits&lt;/h3>
+&lt;p>This construct is helpful because it:&lt;/p>
+&lt;ul>
+&lt;li>Keeps the communication between systems as simple as possible
+&lt;ul>
+&lt;li>No worrying about http status codes, query parameters, or request bodies&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Is non-blocking in the sense that the client doesn&amp;rsquo;t wait for a response from the server&lt;/li>
+&lt;li>Is simple (in terms of the code required to accomplish the task)&lt;/li>
+&lt;/ul>
+&lt;p>If you have never used ZeroMQ, give it a try! It is fun to use and opens some exciting doors.&lt;/p></description></item><item><title>HTML-to-JSON Conversion Library</title><link>https://hightower.space/posts/html-to-json/</link><pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/html-to-json/</guid><description>&lt;h3 id="html-to-json-library">HTML-to-JSON Library&lt;/h3>
+&lt;p>I have a project &lt;a href="https://gitlab.com/fhightower/html-to-json">here&lt;/a> to convert HTML to JSON. You can find installation instructions here: &lt;a href="https://gitlab.com/fhightower/html-to-json#installation">https://gitlab.com/fhightower/html-to-json#installation&lt;/a>.&lt;/p>
+&lt;p>The library can convert any/all html to json such that this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">title&lt;/span>&amp;gt;Floyd Hightower&amp;#39;s Projects&amp;lt;/&lt;span style="color:#f92672">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">charset&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;description&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Floyd Hightower&amp;amp;#39;s Projects&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;keywords&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;projects,fhightower,Floyd,Hightower&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>becomes:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;head&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;title&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;value&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;meta&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;attributes&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;charset&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;UTF-8&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;attributes&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;description&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;attributes&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;keywords&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;projects,fhightower,Floyd,Hightower&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And you can tell it to only convert html tables in which case it will convert tables and use the table headings as the keys for the resulting json (this is described in depth &lt;a href="https://gitlab.com/fhightower/html-to-json#html-tables-to-json">here&lt;/a>).&lt;/p>
+&lt;h3 id="benefits-of-html-to-json-library">Benefits of HTML-to-JSON Library&lt;/h3>
+&lt;p>What is exciting about this library is that it allows you to treat every website like a JSON API. This means you do not have to use &lt;a href="https://www.crummy.com/software/BeautifulSoup/">beautiful soup&lt;/a> or some other HTML parser and traversal system; you can just work with JSON!&lt;/p>
+&lt;p>Enjoy the project and please &lt;a href="https://hightower.space/contact/">contact me&lt;/a> if you have any questions or feedback!&lt;/p></description></item><item><title>GUI vs. UI</title><link>https://hightower.space/posts/gui-vs-ui/</link><pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gui-vs-ui/</guid><description>&lt;p>I believe words are important.&lt;sup>1&lt;/sup> I recently caught myself saying something I consider dangerous for the way we think about computing and programming. I found my self saying &amp;ldquo;UI&amp;rdquo; (which is short for &amp;ldquo;User Interface&amp;rdquo;) to describe a &amp;ldquo;GUI&amp;rdquo; (a &amp;ldquo;Graphical User Interface&amp;rdquo;). UI is a broad category which encompasses multiple ways a user may interface with a system. A GUI is a specific instance of UI which relies on &amp;lsquo;visual metaphors&amp;rsquo; to communicate information to a user and allow the user to interact with the underlying system (the most ubiquitous example of a GUI is a website).&lt;/p>
+&lt;aside class="marginnote">
+&lt;span class="noteNumber">1&lt;/span> - I've started inventing my own words &lt;a href="https://hightower.space/thoughts/my-words/" target="_blank">here&lt;/a>
+&lt;/aside>
+&lt;p>When I use &amp;lsquo;UI&amp;rsquo; to describe a GUI, I&amp;rsquo;m limiting the definition of UI only to GUIs.&lt;sup>2&lt;/sup> Shrinking the definition of UI is dangerous because it makes it easy for us to forget about all of the other ways users interface with a system. A CLI (Command Line Interface) or API (Application Programming Interface) is just as much a UI as a GUI. All interfaces with a system should be as user-friendly as possible and the first step to accomplish this is to recognize all of the ways a user interfaces with a system.&lt;/p>
+&lt;aside class="marginnote">
+&lt;span class="noteNumber">2&lt;/span> - In this instance, "UI" is something that I call a &lt;a href="https://hightower.space/thoughts/my-words#Lamech" target="_blank">Lamech&lt;/a>
+&lt;/aside></description></item><item><title>A Definitive Guide for Ignoring Sublime Linter Errors</title><link>https://hightower.space/posts/sublime-linter-ignore-guide/</link><pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/sublime-linter-ignore-guide/</guid><description>&lt;p>I found it very difficult to ignore &lt;a href="http://www.sublimelinter.com/en/stable/">sublime linter&lt;/a> errors in &lt;a href="https://www.sublimetext.com/">Sublime Text&lt;/a>, so this guide shows how to ignore these errors easily. If you have feedback, updates, or additions, please &lt;a href="https://hightower.space/contact/">let me know&lt;/a> (or &lt;a href="https://gitlab.com/fhightower/fhightower.gitlab.io/issues">raise an issue&lt;/a>).&lt;/p>
+&lt;h3 id="ignoring-linter-errors">Ignoring Linter Errors&lt;/h3>
+&lt;h4 id="example">Example&lt;/h4>
+&lt;p>To ignore linter errors, open Sublime Text and navigate to &lt;em>Preferences &amp;gt; Package Settings &amp;gt; SublimeLinter &amp;gt; Settings&lt;/em>. This will open a Sublime Text window with the default sublime linter settings on the left and your user settings on the right. If you decide to make any changes, you&amp;rsquo;ll want to make them in the user settings (on the right). Below is an example of the content from my user settings:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// SublimeLinter Settings - User
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;lint_mode&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;load_save&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;linters&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;pydocstyle&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;ignore&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;D100,D101,D102,D103,D104,D105&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;pep8&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;ignore&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;E501&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;flake8&amp;#34;&lt;/span>: {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;args&amp;#34;&lt;/span>: [&lt;span style="color:#e6db74">&amp;#34;--ignore=E501&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="explanation">Explanation&lt;/h4>
+&lt;p>Within the &lt;code>&amp;quot;linters&amp;quot;&lt;/code> key, I have the names of the linters followed by specific settings for each linter. For the &lt;code>&amp;quot;pydocstyle&amp;quot;&lt;/code> linter, I am telling it to ignore rules &lt;code>D100&lt;/code> through &lt;code>D105&lt;/code> which will not show warnings or errors for missing docstrings (the error codes for pydocstyle (formerly known as pep257) are &lt;a href="https://pep257.readthedocs.io/en/latest/error_codes.html">here&lt;/a>). For &lt;code>&amp;quot;pep8&amp;quot;&lt;/code>, I&amp;rsquo;m ignoring the 79 character limit (you can see the pep8 error codes &lt;a href="https://pep8.readthedocs.io/en/release-1.7.x/intro.html#error-codes">here&lt;/a>). And I&amp;rsquo;m doing the same for &lt;code>&amp;quot;flake8&amp;quot;&lt;/code> because it will show the line-length error as well.&lt;/p>
+&lt;h4 id="summary">Summary&lt;/h4>
+&lt;p>The principle described above should work for other linters as well. Just add the name of the linter and add the settings you would like to use. Please &lt;a href="https://hightower.space/contact/">let me know&lt;/a> if there is another linter you have worked with that you would like to me to add to my examples.&lt;/p>
+&lt;p>Happy coding!&lt;/p></description></item><item><title>JavaScript Puzzles: How Well do you Know Javascript?</title><link>https://hightower.space/posts/javascript-puzzles/</link><pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/javascript-puzzles/</guid><description>&lt;p>Here are a couple of fun Javascript puzzles I&amp;rsquo;ve created/found to demonstrate important Javascript gotchas. There are answers/explanations near the bottom of the page.&lt;/p>
+&lt;h2 id="puzzles">Puzzles&lt;/h2>
+&lt;h3 id="variable-scoping">Variable Scoping&lt;/h3>
+&lt;p>As I&amp;rsquo;m learning &lt;a href="https://www.typescriptlang.org/index.html">Typescript&lt;/a>, I was reading through the docs and ran across a fascinating little code snippet demonstrating &lt;a href="https://www.typescriptlang.org/docs/handbook/variable-declarations.html#variable-capturing-quirks">variable scoping gotchas&lt;/a> in javascript. The question was:&lt;/p>
+&lt;p>What is the output of the code below?&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">10&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span>&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">setTimeout&lt;/span>(&lt;span style="color:#66d9ef">function&lt;/span>() { &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">i&lt;/span>); }, &lt;span style="color:#ae81ff">100&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;em>Think about it and check your &lt;a href="#variable-scoping-answer">answer&lt;/a> below.&lt;/em>&lt;/p>
+&lt;h3 id="indexing-an-objects-properties">Indexing an Object&amp;rsquo;s Properties&lt;/h3>
+&lt;p>I came up with this puzzle to demonstrate the difference between accessing the value of an Object using a dot versus using brackets (e.g. &lt;code>data[&amp;quot;test&amp;quot;]&lt;/code> vs. &lt;code>data.test&lt;/code>).&lt;/p>
+&lt;p>What is the output of the code block below?&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">data&lt;/span> &lt;span style="color:#f92672">=&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ae81ff">0&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#34;zero&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">i&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#e6db74">&amp;#34;eye&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>; &lt;span style="color:#a6e22e">i&lt;/span>&lt;span style="color:#f92672">++&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">data&lt;/span>[&lt;span style="color:#a6e22e">i&lt;/span>]);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">console&lt;/span>.&lt;span style="color:#a6e22e">log&lt;/span>(&lt;span style="color:#a6e22e">data&lt;/span>.&lt;span style="color:#a6e22e">i&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;em>Think about it and check your &lt;a href="#indexing-an-object-s-properties-answer">answer&lt;/a> below.&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h2 id="answers">Answers&lt;/h2>
+&lt;h3 id="variable-scoping-answer">Variable Scoping Answer&lt;/h3>
+&lt;p>Most people expect, as did I, that this code would output:&lt;/p>
+&lt;pre tabindex="0">&lt;code>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/code>&lt;/pre>&lt;p>when in fact, the output is:&lt;/p>
+&lt;pre tabindex="0">&lt;code>10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+&lt;/code>&lt;/pre>&lt;p>This occurs because the &lt;code>setTimeout&lt;/code> function will not run until the for loop has finished. By the time the for loop has finished, the value of variable &lt;code>i&lt;/code> is 10. Each of the functions called by the &lt;code>setTimeout&lt;/code> function is looking at the same &lt;code>i&lt;/code> from the same scope, so they all log &lt;code>10&lt;/code>.&lt;/p>
+&lt;h3 id="indexing-an-objects-properties-answer">Indexing an Object&amp;rsquo;s Properties Answer&lt;/h3>
+&lt;p>The output of this code puzzle is:&lt;/p>
+&lt;pre tabindex="0">&lt;code>zero
+eye
+&lt;/code>&lt;/pre>&lt;p>This occurs because the first, and only, time through the for loop the value of &lt;code>i&lt;/code> is 0 (zero). When I call &lt;code>console.log(data[i]);&lt;/code>, javascript starts inside the brackets by getting the value of &lt;code>i&lt;/code> (which is 0). Thus, the first logging is equivalent to saying &lt;code>console.log(data.0);&lt;/code> and outputs &amp;lsquo;zero&amp;rsquo;.&lt;/p>
+&lt;p>In the second logging (&lt;code>console.log(data.i);&lt;/code>), javascript does not get the value of &lt;code>i&lt;/code>, but instead treats &amp;ldquo;i&amp;rdquo; as a literal key. Thus, this is equivalent to saying &lt;code>console.log(data[&amp;quot;i&amp;quot;]);&lt;/code> which outputs &amp;rsquo;eye'.&lt;/p>
+&lt;p>Give these puzzles to your friends and enjoy as they over-think them and second-guess themselves!&lt;/p></description></item></channel></rss>

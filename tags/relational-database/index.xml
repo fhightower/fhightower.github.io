@@ -1,7 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Relational Database on Floyd Hightower</title><link>https://hightower.space/tags/relational-database/</link><description>Recent content in Relational Database on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/relational-database/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud SQL in a Nutshell</title><link>https://hightower.space/posts/cloud-sql-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-sql-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Cloud SQL in a nutshell.
-Disclaimer Please read this disclaimer.
-Cloud SQL Offers: MySQL Postgres Micro$oft SQL server High Availability through data replication through zones in a region (and failover - there are VMs in each zone in case one fails) Can transition to Spanner pretty easily</description></item><item><title>Spanner in a Nutshell</title><link>https://hightower.space/posts/spanner-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/spanner-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Spanner in a nutshell.
-Disclaimer Please read this disclaimer.
-Spanner Horizontally scalable No-ops Only change needed is to add nodes Add another node if CPU &amp;gt; 70-75% Each node can handle 1.5 - 2 TB Can create linked/embeded tables Helps avoid the cost of joins for normalized tables Two payment methods: Pay-by-node: standard method Pay-by-processing-unit: let&amp;rsquo;s you pay for more granular operations/scale 1 node = 1,000 processing units</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Relational Database on Floyd</title><link>https://hightower.space/tags/relational-database/</link><description>Recent content in Relational Database on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/relational-database/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud SQL in a Nutshell</title><link>https://hightower.space/posts/cloud-sql-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-sql-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Cloud SQL in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="cloud-sql">Cloud SQL&lt;/h2>
+&lt;ul>
+&lt;li>Offers:
+&lt;ul>
+&lt;li>MySQL&lt;/li>
+&lt;li>Postgres&lt;/li>
+&lt;li>Micro$oft SQL server&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>High Availability through data replication through zones in a region (and failover - there are VMs in each zone in case one fails)&lt;/li>
+&lt;li>Can transition to Spanner pretty easily&lt;/li>
+&lt;/ul></description></item><item><title>Spanner in a Nutshell</title><link>https://hightower.space/posts/spanner-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/spanner-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Spanner in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="spanner">Spanner&lt;/h2>
+&lt;ul>
+&lt;li>Horizontally scalable&lt;/li>
+&lt;li>No-ops
+&lt;ul>
+&lt;li>Only change needed is to add nodes&lt;/li>
+&lt;li>Add another node if CPU &amp;gt; 70-75%&lt;/li>
+&lt;li>Each node can handle 1.5 - 2 TB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Can create linked/embeded tables
+&lt;ul>
+&lt;li>Helps avoid the cost of joins for normalized tables&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Two payment methods:
+&lt;ul>
+&lt;li>Pay-by-node: standard method&lt;/li>
+&lt;li>Pay-by-processing-unit: let&amp;rsquo;s you pay for more granular operations/scale&lt;/li>
+&lt;li>1 node = 1,000 processing units&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

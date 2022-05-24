@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JSON on Floyd Hightower</title><link>https://hightower.space/tags/json/</link><description>Recent content in JSON on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/json/index.xml" rel="self" type="application/rss+xml"/><item><title>HTML-to-JSON Conversion Library</title><link>https://hightower.space/posts/html-to-json/</link><pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/html-to-json/</guid><description>HTML-to-JSON Library I have a project here to convert HTML to JSON. You can find installation instructions here: https://gitlab.com/fhightower/html-to-json#installation.
-The library can convert any/all html to json such that this:
-&amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Floyd Hightower&amp;#39;s Projects&amp;lt;/title&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Floyd Hightower&amp;amp;#39;s Projects&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;keywords&amp;#34; content=&amp;#34;projects,fhightower,Floyd,Hightower&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; becomes:
-{ &amp;#34;head&amp;#34;: [ { &amp;#34;title&amp;#34;: [ { &amp;#34;value&amp;#34;: &amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34; }], &amp;#34;meta&amp;#34;: [ { &amp;#34;attributes&amp;#34;: { &amp;#34;charset&amp;#34;: &amp;#34;UTF-8&amp;#34; } }, { &amp;#34;attributes&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;description&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34; } }, { &amp;#34;attributes&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;keywords&amp;#34;, &amp;#34;content&amp;#34;: &amp;#34;projects,fhightower,Floyd,Hightower&amp;#34; } }] }] } And you can tell it to only convert html tables in which case it will convert tables and use the table headings as the keys for the resulting json (this is described in depth here).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JSON on Floyd</title><link>https://hightower.space/tags/json/</link><description>Recent content in JSON on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/json/index.xml" rel="self" type="application/rss+xml"/><item><title>HTML-to-JSON Conversion Library</title><link>https://hightower.space/posts/html-to-json/</link><pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/html-to-json/</guid><description>&lt;h3 id="html-to-json-library">HTML-to-JSON Library&lt;/h3>
+&lt;p>I have a project &lt;a href="https://gitlab.com/fhightower/html-to-json">here&lt;/a> to convert HTML to JSON. You can find installation instructions here: &lt;a href="https://gitlab.com/fhightower/html-to-json#installation">https://gitlab.com/fhightower/html-to-json#installation&lt;/a>.&lt;/p>
+&lt;p>The library can convert any/all html to json such that this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">title&lt;/span>&amp;gt;Floyd Hightower&amp;#39;s Projects&amp;lt;/&lt;span style="color:#f92672">title&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">charset&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;UTF-8&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;description&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Floyd Hightower&amp;amp;#39;s Projects&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;keywords&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">content&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;projects,fhightower,Floyd,Hightower&amp;#34;&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>becomes:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;head&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;title&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;value&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;meta&amp;#34;&lt;/span>: [
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;attributes&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;charset&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;UTF-8&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;attributes&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;description&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Floyd Hightower\&amp;#39;s Projects&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;attributes&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;name&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;keywords&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">&amp;#34;content&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;projects,fhightower,Floyd,Hightower&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And you can tell it to only convert html tables in which case it will convert tables and use the table headings as the keys for the resulting json (this is described in depth &lt;a href="https://gitlab.com/fhightower/html-to-json#html-tables-to-json">here&lt;/a>).&lt;/p>
+&lt;h3 id="benefits-of-html-to-json-library">Benefits of HTML-to-JSON Library&lt;/h3>
+&lt;p>What is exciting about this library is that it allows you to treat every website like a JSON API. This means you do not have to use &lt;a href="https://www.crummy.com/software/BeautifulSoup/">beautiful soup&lt;/a> or some other HTML parser and traversal system; you can just work with JSON!&lt;/p>
+&lt;p>Enjoy the project and please &lt;a href="https://hightower.space/contact/">contact me&lt;/a> if you have any questions or feedback!&lt;/p></description></item></channel></rss>

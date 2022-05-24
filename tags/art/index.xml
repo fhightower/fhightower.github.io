@@ -1,2 +1,160 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on Floyd Hightower</title><link>https://hightower.space/tags/art/</link><description>Recent content in Art on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/art/index.xml" rel="self" type="application/rss+xml"/><item><title>Informed, Random Walk</title><link>https://hightower.space/posts/informed-random-walk/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/informed-random-walk/</guid><description>Background Stripe Press published a beautiful copy of &amp;ldquo;The Art of Doing Science and Engineering&amp;rdquo; by Richard Hamming:
-Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was nerd sniped into designing an algorithm which would make such a pattern. This post is an explication of my solution.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on Floyd</title><link>https://hightower.space/tags/art/</link><description>Recent content in Art on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/art/index.xml" rel="self" type="application/rss+xml"/><item><title>Informed, Random Walk</title><link>https://hightower.space/posts/informed-random-walk/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/informed-random-walk/</guid><description>&lt;h2 id="background">Background&lt;/h2>
+&lt;p>&lt;a href="https://press.stripe.com/">Stripe Press&lt;/a> published a beautiful copy of &amp;ldquo;&lt;em>The Art of Doing Science and Engineering&lt;/em>&amp;rdquo; by Richard Hamming:&lt;/p>
+&lt;p>&lt;img src="https://hightower.space/img/learning-to-learn-cover.png" alt="The cover of the book features an intriguing pattern">&lt;/p>
+&lt;p>Aside from being a wonderful read, the cover of this book (which is an apt analogy for the learning process) features an intriguing pattern. As I was reading the book while traveling, I was &lt;a href="https://xkcd.com/356/">nerd sniped&lt;/a> into designing an algorithm which would make such a pattern. This post is an explication of my solution.&lt;/p>
+&lt;h2 id="an-informed-random-walk">An Informed, Random Walk&lt;/h2>
+&lt;p>Such a pattern could be created from what I am calling an &amp;ldquo;Informed, Random Walk&amp;rdquo;. The walk is &amp;ldquo;informed&amp;rdquo; because it contains feedback about each step and &amp;ldquo;random&amp;rdquo; because each step of the walk is randomly chosen.&lt;/p>
+&lt;h3 id="the-context">The Context&lt;/h3>
+&lt;p>Imagine we are standing on a point on a 2D plain. We are trying to move from our current location (whose coordinates are unknown to us) to a specific, target location (whose coordinates are also unknown to us). Imagine that we are only allowed to take steps in &lt;a href="https://en.wikipedia.org/wiki/Cardinal_direction">cardinal directions&lt;/a> and, after taking a step, we will be told whether we are closer to the target location.&lt;/p>
+&lt;h3 id="the-algorithm">The Algorithm&lt;/h3>
+&lt;p>What algorithm would help us get to the target location as directly as possible? A basic algorithm is:&lt;/p>
+&lt;ol>
+&lt;li>Randomly choose a direction and take a step in that direction&lt;/li>
+&lt;li>Determine whether the step brings us closer to the target&lt;/li>
+&lt;li>If the step took us closer to the target, make it more likely to choose that direction in the future, otherwise make it less likely&lt;/li>
+&lt;/ol>
+&lt;h3 id="the-data-structure">The Data Structure&lt;/h3>
+&lt;p>Perhaps equally as important as the algorithm is the data structure used to track the steps we&amp;rsquo;ve taken and their results. For this post, I&amp;rsquo;ve written the algorithm using &lt;a href="https://clojurescript.org/">ClojureScript&lt;/a> so I&amp;rsquo;m using a &lt;a href="https://cljs.github.io/api/syntax/#map">map&lt;/a> which looks like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-clojure" data-lang="clojure">&lt;span style="display:flex;">&lt;span>{&lt;span style="color:#e6db74">:North&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#e6db74">:East&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#e6db74">:South&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#e6db74">:West&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The keys of the map are the possible directions and the values are the weights for that direction.&lt;/p>
+&lt;p>At step 1 in the algorithm (when we randomly choose a direction), we use the weights to determine the likelihood of a direction being chosen. For example, given the map above, we would randomly choose a direction where &lt;code>:South&lt;/code> is two times are likely to be chosen as &lt;code>:North&lt;/code> and &lt;code>:East&lt;/code> and where &lt;code>:West&lt;/code> is three times more likely than &lt;code>:North&lt;/code> and &lt;code>:East&lt;/code>. The way this is actually implemented, we take the map of directions and their weights and generate an array where each direction is repeated as many times as the weight. So, using the map above as an example, we would have:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-clojure" data-lang="clojure">&lt;span style="display:flex;">&lt;span>[&lt;span style="color:#e6db74">:North&lt;/span> &lt;span style="color:#e6db74">:East&lt;/span> &lt;span style="color:#e6db74">:South&lt;/span> &lt;span style="color:#e6db74">:South&lt;/span> &lt;span style="color:#e6db74">:West&lt;/span> &lt;span style="color:#e6db74">:West&lt;/span> &lt;span style="color:#e6db74">:West&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We then randomly choose one of these to determine in which direction we will take a step.&lt;/p>
+&lt;p>At step 3 of the algorithm (where we record feedback about the step), we update the map with the directions in it according to whether or not the step brought us closer to the target. So say our direction map is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-clojure" data-lang="clojure">&lt;span style="display:flex;">&lt;span>{&lt;span style="color:#e6db74">:North&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#e6db74">:East&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#e6db74">:South&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#e6db74">:West&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We take a step &lt;code>:North&lt;/code> and this takes us closer to the target. So, we now want to make it more likely to take another step &lt;code>:North&lt;/code>, so we increment the value for &lt;code>:North&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-clojure" data-lang="clojure">&lt;span style="display:flex;">&lt;span>{&lt;span style="color:#e6db74">:North&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#e6db74">:East&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span> &lt;span style="color:#e6db74">:South&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#e6db74">:West&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is the interesting part of the whole algorithm! Given a direction map, the direction of the most recent step, and whether or not that step brought you closer to the target: How do you update the direction map to best approach the destination?&lt;/p>
+&lt;h3 id="the-code">The Code&lt;/h3>
+&lt;p>Below is &lt;em>interactive&lt;/em> code that sets the context for this problem. Some of the less important functionality is hidden, but feel free to edit what is visible. If you scroll below the code blocks, you will see an informed, random walk based on the code. Enjoy exploring!&lt;/p>
+&lt;link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+&lt;script>
+window.klipse_settings = {
+selector: '.cljs'
+};
+&lt;/script>
+&lt;pre hidden="hidden">&lt;code class="cljs">
+(def canvas-id (atom "canvas"))
+(defn draw-line
+[coord1 coord2]
+(let [canvas (js/document.getElementById @canvas-id)
+ctx (.getContext canvas "2d")]
+(doto ctx
+(.moveTo (first coord1) (second coord1))
+(.lineTo (first coord2) (second coord2))
+(.stroke))))
+(def step-count 0)
+(defn get-dist [loc]
+(Math/sqrt
+(+
+(Math/pow
+(- (loc 0) (target 0))
+2)
+(Math/pow
+(- (loc 1) (target 1))
+2))))
+(defn clear-canvas []
+(let [canvas (js/document.getElementById @canvas-id)
+ctx (.getContext canvas "2d")]
+(set! (.-fillStyle ctx) "#777")
+(doto ctx
+(.beginPath)
+(.rect 0 0 canvas.width canvas.height)
+(.fill))))
+(defn setup [start]
+(clear-canvas)
+(let [canvas (js/document.getElementById @canvas-id)
+ctx (.getContext canvas "2d")]
+(set! (.-fillStyle ctx) "#eee")
+(set! (.-font ctx) "bold 13px Arial")
+(doto ctx
+(.beginPath)
+(.arc (first start) (second start) 4 0 (* 2 Math.PI))
+(.fill)
+(.fillText "x" (first target) (second target)))))
+(defn draw-steps [steps]
+(map #(draw-line (first %) (second %)) (partition 2 1 steps)))
+(defn print-output [step-count success?]
+(let [message (if (true? success?)
+(str "Finished in " step-count " steps.")
+(str "Stopped after " step-count " steps."))]
+(-> js/document
+(.getElementById "output")
+(.-innerHTML)
+(set! message))))
+&lt;/code>&lt;/pre>
+Here are some of the underlying functions used to walk around the canvas.
+For starters, I recommend you skip this code block to the next, more interesting one below.
+&lt;pre>&lt;code class="cljs">
+(def step-length 10)
+(def max-step-count 1000)
+(def dirs {:North 2 :East 2 :South 2 :West 2})
+(defn make-weighted-list [dirs]
+(flatten (map #(repeat (max (second %) 0) (first %)) dirs)))
+(defn get-dir [dirs]
+(rand-nth (make-weighted-list dirs)))
+(defn get-next-loc [current dir]
+(case dir
+:North [(current 0) (- (current 1) step-length)]
+:East [(+ (current 0) step-length) (current 1)]
+:South [(current 0) (+ (current 1) step-length)]
+:West [(- (current 0) step-length) (current 1)]))
+(defn opposite-dir [dir]
+(case dir
+:North :South
+:East :West
+:South :North
+:West :East))
+(defn walk [start dirs]
+(loop [current start
+dist (get-dist start)
+dirs dirs
+steps [start]]
+(if (or (= current target) (> (count steps) max-step-count))
+steps
+(let [dir (get-dir dirs)
+next-loc (get-next-loc current dir)
+new-dist (get-dist next-loc)
+closer? (neg? (- new-dist dist))
+new-dirs (update-dirs dirs dir closer?)]
+(recur next-loc new-dist new-dirs (conj steps next-loc))))))
+(defn draw []
+(setup start)
+(let [steps (walk start dirs)
+success? (= (last steps) target)]
+(print-output (count (draw-steps steps)) success?)))
+&lt;/code>&lt;/pre>
+This is the interesting stuff! The &lt;code>update-dirs&lt;/code> function is the one we use to update the weights given to each of the directions
+(thus, making it more or less likely for the walker to walk in that direction).
+If the walker doesn't find the target in 1,000 steps, it will stop (but you can change this by changing the &lt;code>max-step-count&lt;/code> variable in the code block above).
+Feel free to edit the code below to see how this changes the walker's behaviour:
+&lt;pre>&lt;code class="cljs">
+(def start [50 50])
+(def target [300 300])
+(def dir-increment 1)
+(defn update-dirs [dirs dir closer?]
+(if (true? closer?)
+(update-in dirs [dir] #(+ % dir-increment))
+(update-in dirs [dir] #(max 1 (- % dir-increment)))))
+&lt;/code>
+&lt;/pre>
+&lt;pre hidden="hidden">&lt;code class="cljs">
+(draw)
+(-> "generate-button"
+(js/document.getElementById)
+(.addEventListener "click" (fn [e]
+(draw))))
+&lt;/code>&lt;/pre>
+&lt;button class="button" id="generate-button">Redraw&lt;/button>
+&lt;span id="output">&lt;/span>
+&lt;br>
+&lt;canvas id="canvas" width="500" height="500">&lt;/canvas>
+&lt;script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js">
+&lt;/script>
+&lt;p>The default &lt;code>update-dirs&lt;/code> function is pretty bad (it rarely finds the target).&lt;/p>
+&lt;p>What if you update it to:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-clojure" data-lang="clojure">&lt;span style="display:flex;">&lt;span>(&lt;span style="color:#66d9ef">defn &lt;/span>update-dirs [dirs dir closer?]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#66d9ef">if &lt;/span>(true? closer?)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#a6e22e">update-in&lt;/span> dirs [dir] &lt;span style="color:#f92672">#&lt;/span>(+ % dir-increment))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#a6e22e">update-in&lt;/span> (&lt;span style="color:#a6e22e">update-in&lt;/span> dirs [dir] &lt;span style="color:#f92672">#&lt;/span>(- % dir-increment)) [(&lt;span style="color:#a6e22e">opposite-dir&lt;/span> dir)] &lt;span style="color:#f92672">#&lt;/span>(+ % dir-increment))))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

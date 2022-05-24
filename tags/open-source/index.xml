@@ -1,5 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source on Floyd Hightower</title><link>https://hightower.space/tags/open-source/</link><description>Recent content in Open Source on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><item><title>Mapping GCP Products to Open-Source Systems</title><link>https://hightower.space/posts/gcp-to-oss-map/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-to-oss-map/</guid><description>Intro This is the first post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-The plan is that each post will discuss a particular service, relevant to the GCP PDE cert.
-Disclaimer Please read this disclaimer.
-Mapping GCP Products to OSS I find it helpful to map GCP Products to open-source software systems used by each GCP product.
-Here&amp;rsquo;s a table with my current understanding:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open Source on Floyd</title><link>https://hightower.space/tags/open-source/</link><description>Recent content in Open Source on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><item><title>Mapping GCP Products to Open-Source Systems</title><link>https://hightower.space/posts/gcp-to-oss-map/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-to-oss-map/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is the first post in a series recording some notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>The plan is that each post will discuss a particular service, relevant to the GCP PDE cert.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="mapping-gcp-products-to-oss">Mapping GCP Products to OSS&lt;/h2>
+&lt;p>I find it helpful to map GCP Products to open-source software systems used by each GCP product.&lt;/p>
+&lt;p>Here&amp;rsquo;s a table with my current understanding:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>GCP Product&lt;/th>
+&lt;th>Open-Source System&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>BigTable&lt;/td>
+&lt;td>Hbase&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CloudSQL&lt;/td>
+&lt;td>mysql/postgresql&lt;/td>
+&lt;td>CloudSQL provides managed instances of common databases&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dataproc&lt;/td>
+&lt;td>Apache Hadoop/Spark&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Storage&lt;/td>
+&lt;td>HDFS&lt;/td>
+&lt;td>A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dataflow&lt;/td>
+&lt;td>Apache Beam&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Composer&lt;/td>
+&lt;td>Apache Airflow&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Memorystore&lt;/td>
+&lt;td>Redis and Memcached&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Firestore&lt;/td>
+&lt;td>MongoDB&lt;/td>
+&lt;td>Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

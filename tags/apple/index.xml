@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apple on Floyd Hightower</title><link>https://hightower.space/tags/apple/</link><description>Recent content in Apple on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/apple/index.xml" rel="self" type="application/rss+xml"/><item><title>Fake Apple App Download Sites</title><link>https://hightower.space/posts/fake-apple-app-download-sites/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/fake-apple-app-download-sites/</guid><description>Note: All URLs/domains in this post are defanged. You can fang/defang them here.
-I was investigating how to use x11 to serve a GUI running inside a docker container for an nand2tetris project I&amp;rsquo;m working on and I found a collection of domains serving fake Apple app downloads:
-hXXps://loadsea[.]heredoggi[.]com/x11-forwarding-for-mac/ hXXps://moraea[.]batteryscience[.]us/location-of-x11-libraries-mac-os/ hXXps://letdwnl[.]brittanythomassigler[.]us/mac-os-x11-app/ hXXps://gogo[.]sunshinebeagles[.]us/mac-x11-manual-pdf-5252/ hXXps://isabelmaries[.]co/xquartz-alternative/ hXXps://holidayshunter[.]naturalwatches[.]co/x11-forwarding-for-mac/ Most of these redirect to a URL like:
-hXXps://viperctum[.]info/go[.]php?url=https%3A%2F%2Fcdn[.]ketamo[.]info%2F%3Fa%3D337 89%26c%3D303745%26s1%3D111%26s2%3D1411c3vzwslb4a16%26s3%3DX11%2BForwarding%2BFor%2BM ac&amp;amp;uclick=3vzwslb4 Which, decoded, looks like:
-hXXps://viperctum[.]info/go[.]php?url=hXXps://cdn[.]ketamo[.]info/?a=33789&amp;amp;c=303745 &amp;amp;s1=111&amp;amp;s2=1411c3vzwslb4a16&amp;amp;s3=X11+Forwarding+For+Mac&amp;amp;uclick=3vzwslb4 When followed, this link goes to:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apple on Floyd</title><link>https://hightower.space/tags/apple/</link><description>Recent content in Apple on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/apple/index.xml" rel="self" type="application/rss+xml"/><item><title>Fake Apple App Download Sites</title><link>https://hightower.space/posts/fake-apple-app-download-sites/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/fake-apple-app-download-sites/</guid><description>&lt;p>&lt;strong>Note:&lt;/strong> All URLs/domains in this post are &lt;a href="https://ioc-fanger.hightower.space/#overview">defanged&lt;/a>. You can fang/defang them &lt;a href="https://ioc-fanger.hightower.space/#use-the-package-live">here&lt;/a>.&lt;/p>
+&lt;p>I was investigating how to use &lt;a href="https://elinux.org/X11">x11&lt;/a> to serve a GUI running inside a docker container for an &lt;a href="https://github.com/fhightower/nand2tetris">nand2tetris&lt;/a> project I&amp;rsquo;m working on and I found a collection of domains serving fake Apple app downloads:&lt;/p>
+&lt;pre tabindex="0">&lt;code>hXXps://loadsea[.]heredoggi[.]com/x11-forwarding-for-mac/
+hXXps://moraea[.]batteryscience[.]us/location-of-x11-libraries-mac-os/
+hXXps://letdwnl[.]brittanythomassigler[.]us/mac-os-x11-app/
+hXXps://gogo[.]sunshinebeagles[.]us/mac-x11-manual-pdf-5252/
+hXXps://isabelmaries[.]co/xquartz-alternative/
+hXXps://holidayshunter[.]naturalwatches[.]co/x11-forwarding-for-mac/
+&lt;/code>&lt;/pre>&lt;p>Most of these redirect to a URL like:&lt;/p>
+&lt;pre tabindex="0">&lt;code>hXXps://viperctum[.]info/go[.]php?url=https%3A%2F%2Fcdn[.]ketamo[.]info%2F%3Fa%3D337
+89%26c%3D303745%26s1%3D111%26s2%3D1411c3vzwslb4a16%26s3%3DX11%2BForwarding%2BFor%2BM
+ac&amp;amp;uclick=3vzwslb4
+&lt;/code>&lt;/pre>&lt;p>Which, decoded, looks like:&lt;/p>
+&lt;pre tabindex="0">&lt;code>hXXps://viperctum[.]info/go[.]php?url=hXXps://cdn[.]ketamo[.]info/?a=33789&amp;amp;c=303745
+&amp;amp;s1=111&amp;amp;s2=1411c3vzwslb4a16&amp;amp;s3=X11+Forwarding+For+Mac&amp;amp;uclick=3vzwslb4
+&lt;/code>&lt;/pre>&lt;p>When followed, this link goes to:&lt;/p>
+&lt;pre tabindex="0">&lt;code>hXXps://www[.]pdf4mac[.]com/?czfjp=1296&amp;amp;e=2647&amp;amp;a=4389&amp;amp;f=pb&amp;amp;r=d2c78a53d92d4e789ead565
+5b694d7101c8b4
+&lt;/code>&lt;/pre>&lt;p>Which contains a download for &lt;a href="https://www.virustotal.com/gui/file/856f233ee7363c0297a4f84e8783cdae0098ada0241009957dea433ebe1270de">this&lt;/a>, undetected file.&lt;/p></description></item></channel></rss>

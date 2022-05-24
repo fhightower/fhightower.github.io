@@ -1,46 +1,502 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Professional Data Engineer Certfication on Floyd Hightower</title><link>https://hightower.space/tags/professional-data-engineer-certfication/</link><description>Recent content in Professional Data Engineer Certfication on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/professional-data-engineer-certfication/index.xml" rel="self" type="application/rss+xml"/><item><title>GCP Databases in a Nutshell</title><link>https://hightower.space/posts/gcp-pde-database-notes/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-database-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Cloud Composer in a nutshell.
-Disclaimer Please read this disclaimer.
-Databases Grouped by Management Model Managed Services Cloud SQL Cloud Spanner Cloud Bigtable Serverless Services Cloud Storage Firestore Grouped by Size/Relationality Size of Data: Small Large Relational Cloud SQL Spanner* Non-Relational Firestore** Bigtable * The option of using processing units as the means of calculating cost for Spanner makes it a better option for smaller solutions ** Firestore can handle large amounts of data too when provisioned correctly, but it can be used for small applications where-as Bigtable really isn&amp;rsquo;t/shouldn&amp;rsquo;t be used for small use-cases</description></item><item><title>ML for the GCP PDE Exam</title><link>https://hightower.space/posts/gcp-pde-ml-notes/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-ml-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers ML topics.
-Disclaimer Please read this disclaimer.
-Key Concepts L1 vs. L2 regression: L1 estimates the median of the data using absolute value Reduces low-value features Robust to outliers Good when only certain features contribute to success of model L2 estimates the mean of the data to avoid overfitting Not recommended for feature selection Good when all features contribute relatively equally to the success of a model TensorFlow Know how TensorFlow can be deployed (also, cost vs.</description></item><item><title>Dataflow in a Nutshell</title><link>https://hightower.space/posts/dataflow-notes/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/dataflow-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Dataflow in a nutshell.
-Disclaimer Please read this disclaimer.
-Dataflow Serverless Wraps apache beam Handles batch and streaming data Typically, more effecient scaling than Dataproc Therefore, it&amp;rsquo;s typically cheaper than Dataproc Used internally at Google Improved by Google over time Know about windowing fixed window in java/python ≈ tumbling in SQL sliding ≈ hoping in SQL session (is the same for both SQL and java/python) Know about watermarks</description></item><item><title>GCP PDE Exam Principles</title><link>https://hightower.space/posts/gcp-pde-exam-principles/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-exam-principles/</guid><description>Intro This is a post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-In this post, I provide some principles I am keeping in mind as I prepare for the exam.
-Disclaimer Please read this disclaimer.
-GCP PDE Exam Principles [security] Follow the Principle of Least Privilege When between multiple options, the simplest answer is probably right When between multiple options, the cheapest answer is probably right An answer&amp;rsquo;s complexity is likely proporitional to the questions&amp;rsquo; complexity For example, simple questions like: &amp;ldquo;What is your favorite colour&amp;rdquo; probably has a simple answer A more complex question (e.</description></item><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>Intro This is a post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-In this post, I provide some common recipies which are commonly used in Google Cloud.
-Disclaimer Please read this disclaimer.
-GCP PDE Recipies The Classic Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (batch inserts)
-Variations:
-Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (streaming inserts) Pub/Sub -&amp;gt; Dataflow -&amp;gt; Bigtable -&amp;gt; BQ (querying Bigtable using federated query) For use-cases which require analytics and the low-latency afforded by Bigtable Uploading Data to Google Cloud gsutil on-prem.</description></item><item><title>BigQuery in a Nutshell</title><link>https://hightower.space/posts/bigquery-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigquery-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers BigQuery in a nutshell.
-Disclaimer Please read this disclaimer.
-BigQuery Fully managed, petabyte-scale data warehouse/analysis service Has two components: Storage (built on &amp;ldquo;Colossus&amp;rdquo;) Query/Processing Engine Good for federated searching Column-based storage Allows ANSI SQL compliant queries Includes good support for: Building (basic) ML models Logistic regression - classifying categories Linear regression - forcasting # values GeoViz Structs Allows horizontal storage Look like: event.</description></item><item><title>Bigtable in a Nutshell</title><link>https://hightower.space/posts/bigtable-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigtable-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Bigtable in a nutshell.
-Disclaimer Please read this disclaimer.
-Bigtable h-base compliant Requires configuration and management of nodes Designing/choosing a good row-key (index) is critical to avoiding hot-spots (where some nodes have significantly more to process than others) Rows are sorted lexigraphically by row-key Generally a long, compound key (e.</description></item><item><title>Cloud Composer in a Nutshell</title><link>https://hightower.space/posts/cloud-composer-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-composer-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Cloud Composer in a nutshell.
-Disclaimer Please read this disclaimer.
-Cloud Composer Managed Apache Airflow Create DAGs (Directed Acyclic Graph) Scheduling: Periodic (pull) (specified in the Airflow GUI - e.g. every day at noon) Event-driven (push) (e.g. when new data is uploaded to GCS)</description></item><item><title>Cloud SQL in a Nutshell</title><link>https://hightower.space/posts/cloud-sql-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-sql-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Cloud SQL in a nutshell.
-Disclaimer Please read this disclaimer.
-Cloud SQL Offers: MySQL Postgres Micro$oft SQL server High Availability through data replication through zones in a region (and failover - there are VMs in each zone in case one fails) Can transition to Spanner pretty easily</description></item><item><title>Firestore in a Nutshell</title><link>https://hightower.space/posts/firestore-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/firestore-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Firestore in a nutshell.
-Disclaimer Please read this disclaimer.
-Firestore Similar to mongodb Store data as documents Rare to migrate to Bigtable (unlike Cloud SQL which may migrate to Spanner eventually) Web devs. like it and it has easy integration for web/mobile use-cases</description></item><item><title>GCP Notes Disclaimer</title><link>https://hightower.space/posts/gcp-notes-disclaimer/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-notes-disclaimer/</guid><description>Disclaimer You were likely linked to this post from a GCP note blog post.
-This post is to warn you that the content of that post was written before I had taken the exam.
-I do not guarantee the accuracy or long-term reliability of these notes.
-Use them at your own risk and always defer to Google&amp;rsquo;s docs as canon.</description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Pub/Sub in a nutshell.
-Disclaimer Please read this disclaimer.
-Pub/Sub Fully managed, data ingestion and distro. system Async., real-time message bus Good soln. for buffering changes for lightly-coupled architectures P/S decouples publishers and subscribers HIPPA compliant Stores data for up to 31 days Default is 7 days Has topics and subscriptions Data is published to a topic Subscriptions dictate who recieves content for which topics Relationship btw.</description></item><item><title>Spanner in a Nutshell</title><link>https://hightower.space/posts/spanner-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/spanner-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Spanner in a nutshell.
-Disclaimer Please read this disclaimer.
-Spanner Horizontally scalable No-ops Only change needed is to add nodes Add another node if CPU &amp;gt; 70-75% Each node can handle 1.5 - 2 TB Can create linked/embeded tables Helps avoid the cost of joins for normalized tables Two payment methods: Pay-by-node: standard method Pay-by-processing-unit: let&amp;rsquo;s you pay for more granular operations/scale 1 node = 1,000 processing units</description></item><item><title>Mapping GCP Products to Open-Source Systems</title><link>https://hightower.space/posts/gcp-to-oss-map/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-to-oss-map/</guid><description>Intro This is the first post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-The plan is that each post will discuss a particular service, relevant to the GCP PDE cert.
-Disclaimer Please read this disclaimer.
-Mapping GCP Products to OSS I find it helpful to map GCP Products to open-source software systems used by each GCP product.
-Here&amp;rsquo;s a table with my current understanding:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Professional Data Engineer Certfication on Floyd</title><link>https://hightower.space/tags/professional-data-engineer-certfication/</link><description>Recent content in Professional Data Engineer Certfication on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/professional-data-engineer-certfication/index.xml" rel="self" type="application/rss+xml"/><item><title>GCP Databases in a Nutshell</title><link>https://hightower.space/posts/gcp-pde-database-notes/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-database-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Cloud Composer in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="databases">Databases&lt;/h2>
+&lt;h3 id="grouped-by-management-model">Grouped by Management Model&lt;/h3>
+&lt;h4 id="managed-services">Managed Services&lt;/h4>
+&lt;ul>
+&lt;li>Cloud SQL&lt;/li>
+&lt;li>Cloud Spanner&lt;/li>
+&lt;li>Cloud Bigtable&lt;/li>
+&lt;/ul>
+&lt;h4 id="serverless-services">Serverless Services&lt;/h4>
+&lt;ul>
+&lt;li>Cloud Storage&lt;/li>
+&lt;li>Firestore&lt;/li>
+&lt;/ul>
+&lt;h3 id="grouped-by-sizerelationality">Grouped by Size/Relationality&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Size of Data:&lt;/th>
+&lt;th>Small&lt;/th>
+&lt;th>Large&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Relational&lt;/td>
+&lt;td>Cloud SQL&lt;/td>
+&lt;td>Spanner*&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Non-Relational&lt;/td>
+&lt;td>Firestore**&lt;/td>
+&lt;td>Bigtable&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>* The option of using processing units as the means of calculating cost for Spanner makes it a better option for smaller solutions
+** Firestore can handle large amounts of data too when provisioned correctly, but it &lt;em>can&lt;/em> be used for small applications where-as Bigtable really isn&amp;rsquo;t/shouldn&amp;rsquo;t be used for small use-cases&lt;/p>
+&lt;h3 id="grouped-by-proprietary-ness">Grouped by Proprietary-ness&lt;/h3>
+&lt;h4 id="google-proprietary">Google Proprietary&lt;/h4>
+&lt;ul>
+&lt;li>Spanner&lt;/li>
+&lt;li>Firestore&lt;/li>
+&lt;/ul>
+&lt;h4 id="generic">Generic&lt;/h4>
+&lt;p>(data in these systems could be easily transfered on-prem. or to a diff. cloud provider)&lt;/p>
+&lt;ul>
+&lt;li>SQL&lt;/li>
+&lt;li>Bigtable (h-base compatible)&lt;/li>
+&lt;/ul>
+&lt;h3 id="transaction-support">Transaction Support&lt;/h3>
+&lt;h4 id="acid-transactions">ACID Transactions&lt;/h4>
+&lt;ul>
+&lt;li>SQL&lt;/li>
+&lt;li>Spanner&lt;/li>
+&lt;li>Firestore&lt;/li>
+&lt;/ul>
+&lt;h4 id="row-level-transactions">Row-Level Transactions&lt;/h4>
+&lt;ul>
+&lt;li>Bigtable&lt;/li>
+&lt;/ul></description></item><item><title>ML for the GCP PDE Exam</title><link>https://hightower.space/posts/gcp-pde-ml-notes/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-ml-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers ML topics.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="key-concepts">Key Concepts&lt;/h2>
+&lt;ul>
+&lt;li>L1 vs. L2 regression:
+&lt;ul>
+&lt;li>L1 estimates the &lt;em>median&lt;/em> of the data using absolute value
+&lt;ul>
+&lt;li>Reduces low-value features&lt;/li>
+&lt;li>Robust to outliers&lt;/li>
+&lt;li>Good when only certain features contribute to success of model&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>L2 estimates the &lt;em>mean&lt;/em> of the data to avoid overfitting
+&lt;ul>
+&lt;li>Not recommended for feature selection&lt;/li>
+&lt;li>Good when all features contribute relatively equally to the success of a model&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>TensorFlow
+&lt;ul>
+&lt;li>Know how TensorFlow can be deployed (also, cost vs. value)
+&lt;ul>
+&lt;li>CPUs, GPUs, TPUs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>BQ ML
+&lt;ul>
+&lt;li>Understand the basic flow when using BQ ML:&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Vertex AI
+&lt;ul>
+&lt;li>Create computation graph and training app&lt;/li>
+&lt;li>Package app&lt;/li>
+&lt;li>Start Vertex AI job to run packaged app&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Dataflow in a Nutshell</title><link>https://hightower.space/posts/dataflow-notes/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/dataflow-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Dataflow in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="dataflow">Dataflow&lt;/h2>
+&lt;ul>
+&lt;li>Serverless&lt;/li>
+&lt;li>Wraps apache beam
+&lt;ul>
+&lt;li>Handles batch &lt;em>and&lt;/em> streaming data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Typically, more effecient scaling than Dataproc
+&lt;ul>
+&lt;li>Therefore, it&amp;rsquo;s typically cheaper than Dataproc&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Used internally at Google
+&lt;ul>
+&lt;li>Improved by Google over time&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Know about &lt;a href="https://cloud.google.com/dataflow/docs/concepts/streaming-pipelines#windows">windowing&lt;/a>
+&lt;ul>
+&lt;li>&lt;code>fixed&lt;/code> window in java/python ≈ &lt;code>tumbling&lt;/code> in SQL&lt;/li>
+&lt;li>&lt;code>sliding&lt;/code> ≈ &lt;code>hoping&lt;/code> in SQL&lt;/li>
+&lt;li>session (is the same for both SQL and java/python)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Know about &lt;a href="https://cloud.google.com/dataflow/docs/concepts/streaming-pipelines#watermarks">watermarks&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>GCP PDE Exam Principles</title><link>https://hightower.space/posts/gcp-pde-exam-principles/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-exam-principles/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a post in a series recording some notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>In this post, I provide some principles I am keeping in mind as I prepare for the exam.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="gcp-pde-exam-principles">GCP PDE Exam Principles&lt;/h2>
+&lt;ul>
+&lt;li>[security] Follow the &lt;a href="https://en.wikipedia.org/wiki/Principle_of_least_privilege">Principle of Least Privilege&lt;/a>&lt;/li>
+&lt;li>When between multiple options, the simplest answer is probably right&lt;/li>
+&lt;li>When between multiple options, the cheapest answer is probably right&lt;/li>
+&lt;li>An answer&amp;rsquo;s complexity is likely proporitional to the questions&amp;rsquo; complexity
+&lt;ul>
+&lt;li>For example, simple questions like: &amp;ldquo;What is your favorite colour&amp;rdquo; probably has a simple answer&lt;/li>
+&lt;li>A more complex question (e.g. &amp;ldquo;What is the Air-Speed Velocity of an Unladen Swallow on a Tuesday in a head-wind of 30 kmph and 70% relative humidity&amp;rdquo;) probably requires a more complex answer&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When creating Bigtable row keys, the key focus is to avoid hot spots
+&lt;ul>
+&lt;li>DON&amp;rsquo;T USE timestamp as start of rowkey for bigtable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prefer pre-trained ML models to custom-trained
+&lt;ul>
+&lt;li>These solutions are typically good enough for basic use-cases and can be implemented more quickly&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>[security] Assign roles to groups and add users to groups (don&amp;rsquo;t apply roles to users)&lt;/li>
+&lt;li>If something is self-joined and running into problems when scaling, the answer likely involves normalizing&lt;/li>
+&lt;li>If question mentions &amp;ldquo;realtime&amp;rdquo; and pub/sub, it probably requires a &lt;em>push&lt;/em> from pub/sub rather than a pull&lt;/li>
+&lt;li>[BQ] W/ multiple, wildcard tables, &lt;em>partitioning&lt;/em> is best (over sharding)&lt;/li>
+&lt;li>Typically, serverless/cloud-native solution is favorable over managed services or dedicated machines/VMs&lt;/li>
+&lt;li>HDFS files should be stored in GCS&lt;/li>
+&lt;li>It is not uncommon for multiple services to be used together (b/c each service is often optimized to do one thing very well)&lt;/li>
+&lt;li>If the question involves &amp;ldquo;ANSI SQL&amp;rdquo;, the answer probably involves BigQuery&lt;/li>
+&lt;/ul></description></item><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a post in a series recording some notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>In this post, I provide some common recipies which are commonly used in Google Cloud.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="gcp-pde-recipies">GCP PDE Recipies&lt;/h2>
+&lt;h3 id="the-classic">The Classic&lt;/h3>
+&lt;p>Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (batch inserts)&lt;/p>
+&lt;p>Variations:&lt;/p>
+&lt;ul>
+&lt;li>Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (streaming inserts)&lt;/li>
+&lt;li>Pub/Sub -&amp;gt; Dataflow -&amp;gt; Bigtable -&amp;gt; BQ (querying Bigtable using federated query)
+&lt;ul>
+&lt;li>For use-cases which require analytics &lt;em>and&lt;/em> the low-latency afforded by Bigtable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="uploading-data-to-google-cloud">Uploading Data to Google Cloud&lt;/h3>
+&lt;ul>
+&lt;li>gsutil
+&lt;ul>
+&lt;li>on-prem. (if practical based on network bandwidth and data size)&lt;/li>
+&lt;li>Good for &amp;lt; 1TB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Storage Transfer Service
+&lt;ul>
+&lt;li>From another cloud/on-prem. data center w/ sufficient bandwidth&lt;/li>
+&lt;li>Good for &amp;gt; 1TB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Transfer Appliance
+&lt;ul>
+&lt;li>Physical hard-drive you fill and send back&lt;/li>
+&lt;li>For large amounts of data on-prem. and/or in a low-bandwidth location which makes gsutil impractical&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>BigQuery in a Nutshell</title><link>https://hightower.space/posts/bigquery-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigquery-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers BigQuery in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="bigquery">BigQuery&lt;/h2>
+&lt;ul>
+&lt;li>Fully managed, petabyte-scale data warehouse/analysis service&lt;/li>
+&lt;li>Has two components:
+&lt;ul>
+&lt;li>Storage (built on &amp;ldquo;Colossus&amp;rdquo;)&lt;/li>
+&lt;li>Query/Processing Engine&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Good for &lt;a href="https://en.wikipedia.org/wiki/Federated_search">federated searching&lt;/a>&lt;/li>
+&lt;li>Column-based storage&lt;/li>
+&lt;li>Allows &lt;a href="https://blog.ansi.org/2018/10/sql-standard-iso-iec-9075-2016-ansi-x3-135/">ANSI SQL&lt;/a> compliant queries&lt;/li>
+&lt;li>Includes good support for:
+&lt;ul>
+&lt;li>Building (basic) ML models
+&lt;ul>
+&lt;li>Logistic regression - classifying categories&lt;/li>
+&lt;li>Linear regression - forcasting # values&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GeoViz&lt;/li>
+&lt;li>Structs
+&lt;ul>
+&lt;li>Allows horizontal storage&lt;/li>
+&lt;li>Look like: &lt;code>event.status&lt;/code>&lt;/li>
+&lt;li>Identifiable where type=&lt;code>RECORD&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Arrays
+&lt;ul>
+&lt;li>Allows vertical storage&lt;/li>
+&lt;li>Identifiable where mode=&lt;code>REPEATED&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Analytic window functions using &lt;code>LAG&lt;/code>&lt;/li>
+&lt;li>Named subqueries using &lt;code>WITH&lt;/code>
+&lt;ul>
+&lt;li>Pre-processes data which can be cached for future queries&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Optimization:
+&lt;ul>
+&lt;li>Partition tables
+&lt;ul>
+&lt;li>Group data into sections allowing BQ to scan less data&lt;/li>
+&lt;li>Partition pruning occurs &lt;em>before&lt;/em> the query is run, allowing you to know costs up-front&lt;/li>
+&lt;li>Common partition source is dates/times&lt;/li>
+&lt;li>≈ an index row wrapping the entire table&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Clustering
+&lt;ul>
+&lt;li>Can be done against multiple columns&lt;/li>
+&lt;li>Clustering is applied &lt;em>while&lt;/em> the query is run, so you don&amp;rsquo;t know how much the query will cost and how much cluster will save you&lt;/li>
+&lt;li>More granular than partitioning&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Typically populated in batch inserts
+&lt;ul>
+&lt;li>Offers streaming inserts to allow smaller queries, run more often, w/ lower latency, and at a higher cost&lt;/li>
+&lt;li>Max streaming capability ≈ 100,000 rows/table/sec.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Offers access control at project, dataset, and table/view levels&lt;/li>
+&lt;/ul>
+&lt;h2 id="similar-systems">Similar Systems&lt;/h2>
+&lt;h3 id="bigquery-vs-bigtable">BigQuery vs. BigTable&lt;/h3>
+&lt;p>Among many other differences:&lt;/p>
+&lt;p>BigTable is designed for long, narrow tables.&lt;/p>
+&lt;p>BigQuery typically has short(er), wide(r) tables.&lt;/p></description></item><item><title>Bigtable in a Nutshell</title><link>https://hightower.space/posts/bigtable-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigtable-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Bigtable in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="bigtable">Bigtable&lt;/h2>
+&lt;ul>
+&lt;li>h-base compliant&lt;/li>
+&lt;li>Requires configuration and management of nodes&lt;/li>
+&lt;li>Designing/choosing a good row-key (index) is &lt;em>critical&lt;/em> to avoiding hot-spots (where some nodes have significantly more to process than others)
+&lt;ul>
+&lt;li>Rows are sorted lexigraphically by row-key&lt;/li>
+&lt;li>Generally a long, compound key (e.g. &lt;code>{id}#{source}#{timestamp}&lt;/code>)&lt;/li>
+&lt;li>Order of a compound key matters!&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/bigtable/docs/schema-design">Principles&lt;/a>:
+&lt;ul>
+&lt;li>Don&amp;rsquo;t put timestamps first&lt;/li>
+&lt;li>Don&amp;rsquo;t hash values (keep values human-readable as row-keys are lexigraphically sorted)&lt;/li>
+&lt;li>Pad integers (and sometimes timestamps) so all row keys will be the same length and be reasonably sorted lexigraphically&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>I&amp;rsquo;ve observed that keys often follow one of the following formats:
+&lt;ul>
+&lt;li>&lt;code>{large-component}#{small-component}#{timestamp}&lt;/code>&lt;/li>
+&lt;li>&lt;code>{large-component}#{small-component}#{reverse-timestamp}&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Supports &lt;a href="https://cloud.google.com/bigtable/docs/schema-design#column-families">column families&lt;/a>&lt;/li>
+&lt;li>Performance increase linearly w/ nodes&lt;/li>
+&lt;/ul></description></item><item><title>Cloud Composer in a Nutshell</title><link>https://hightower.space/posts/cloud-composer-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-composer-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Cloud Composer in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="cloud-composer">Cloud Composer&lt;/h2>
+&lt;ul>
+&lt;li>Managed Apache Airflow&lt;/li>
+&lt;li>Create DAGs (&lt;a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Directed Acyclic Graph&lt;/a>)&lt;/li>
+&lt;li>Scheduling:
+&lt;ul>
+&lt;li>Periodic (pull) (specified in the Airflow GUI - e.g. every day at noon)&lt;/li>
+&lt;li>Event-driven (push) (e.g. when new data is uploaded to GCS)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Cloud SQL in a Nutshell</title><link>https://hightower.space/posts/cloud-sql-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/cloud-sql-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Cloud SQL in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="cloud-sql">Cloud SQL&lt;/h2>
+&lt;ul>
+&lt;li>Offers:
+&lt;ul>
+&lt;li>MySQL&lt;/li>
+&lt;li>Postgres&lt;/li>
+&lt;li>Micro$oft SQL server&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>High Availability through data replication through zones in a region (and failover - there are VMs in each zone in case one fails)&lt;/li>
+&lt;li>Can transition to Spanner pretty easily&lt;/li>
+&lt;/ul></description></item><item><title>Firestore in a Nutshell</title><link>https://hightower.space/posts/firestore-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/firestore-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Firestore in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="firestore">Firestore&lt;/h2>
+&lt;ul>
+&lt;li>Similar to mongodb&lt;/li>
+&lt;li>Store data as documents&lt;/li>
+&lt;li>Rare to migrate to Bigtable (unlike Cloud SQL which may migrate to Spanner eventually)&lt;/li>
+&lt;li>Web devs. like it and it has easy integration for web/mobile use-cases&lt;/li>
+&lt;/ul></description></item><item><title>GCP Notes Disclaimer</title><link>https://hightower.space/posts/gcp-notes-disclaimer/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-notes-disclaimer/</guid><description>&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>You were likely linked to this post from a &lt;a href="https://hightower.space/categories/gcp-notes/">GCP note&lt;/a> blog post.&lt;/p>
+&lt;p>This post is to warn you that the content of that post was written &lt;em>before&lt;/em> I had taken the exam.&lt;/p>
+&lt;p>I do not guarantee the accuracy or long-term reliability of these notes.&lt;/p>
+&lt;p>Use them at your own risk and always defer to Google&amp;rsquo;s docs as &lt;a href="https://en.wikipedia.org/wiki/Canon_(basic_principle)">canon&lt;/a>.&lt;/p></description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Pub/Sub in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="pubsub">Pub/Sub&lt;/h2>
+&lt;ul>
+&lt;li>Fully managed, data ingestion and distro. system&lt;/li>
+&lt;li>Async., real-time message bus&lt;/li>
+&lt;li>Good soln. for buffering changes for lightly-coupled architectures
+&lt;ul>
+&lt;li>P/S decouples publishers and subscribers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HIPPA compliant&lt;/li>
+&lt;li>Stores data for up to 31 days
+&lt;ul>
+&lt;li>Default is 7 days&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Has topics and subscriptions
+&lt;ul>
+&lt;li>Data is published to a topic&lt;/li>
+&lt;li>Subscriptions dictate who recieves content for which topics&lt;/li>
+&lt;li>Relationship btw. topics and subscriptions can be one:one or one:many&lt;/li>
+&lt;li>Relationship btw. publishers and subscribers and can be one:many, many:one, or many:many&lt;/li>
+&lt;li>Multiple subscribers can work on a single subscription&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Guarantees &amp;ldquo;at least once&amp;rdquo; delivery
+&lt;ul>
+&lt;li>May send duplicate and/or out-of-order messages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Two options for delivery:
+&lt;ol>
+&lt;li>Push (from pub/sub to subscriber)&lt;/li>
+&lt;li>Pull (from subscriber to pub/sub)&lt;/li>
+&lt;li>Sync. - &amp;ldquo;Give me &lt;em>n&lt;/em> messages&amp;rdquo;&lt;/li>
+&lt;li>Async.
+- Higher throughput
+- Better for latency-sensitive applications&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Two, primary use-cases:
+&lt;ol>
+&lt;li>Streaming analytics/ingestion of data into analytic systems&lt;/li>
+&lt;li>Async. workflows w/ decoupled publishers and subscribers&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul></description></item><item><title>Spanner in a Nutshell</title><link>https://hightower.space/posts/spanner-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/spanner-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Spanner in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="spanner">Spanner&lt;/h2>
+&lt;ul>
+&lt;li>Horizontally scalable&lt;/li>
+&lt;li>No-ops
+&lt;ul>
+&lt;li>Only change needed is to add nodes&lt;/li>
+&lt;li>Add another node if CPU &amp;gt; 70-75%&lt;/li>
+&lt;li>Each node can handle 1.5 - 2 TB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Can create linked/embeded tables
+&lt;ul>
+&lt;li>Helps avoid the cost of joins for normalized tables&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Two payment methods:
+&lt;ul>
+&lt;li>Pay-by-node: standard method&lt;/li>
+&lt;li>Pay-by-processing-unit: let&amp;rsquo;s you pay for more granular operations/scale&lt;/li>
+&lt;li>1 node = 1,000 processing units&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Mapping GCP Products to Open-Source Systems</title><link>https://hightower.space/posts/gcp-to-oss-map/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-to-oss-map/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is the first post in a series recording some notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>The plan is that each post will discuss a particular service, relevant to the GCP PDE cert.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="mapping-gcp-products-to-oss">Mapping GCP Products to OSS&lt;/h2>
+&lt;p>I find it helpful to map GCP Products to open-source software systems used by each GCP product.&lt;/p>
+&lt;p>Here&amp;rsquo;s a table with my current understanding:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>GCP Product&lt;/th>
+&lt;th>Open-Source System&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>BigTable&lt;/td>
+&lt;td>Hbase&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CloudSQL&lt;/td>
+&lt;td>mysql/postgresql&lt;/td>
+&lt;td>CloudSQL provides managed instances of common databases&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dataproc&lt;/td>
+&lt;td>Apache Hadoop/Spark&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Storage&lt;/td>
+&lt;td>HDFS&lt;/td>
+&lt;td>A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dataflow&lt;/td>
+&lt;td>Apache Beam&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cloud Composer&lt;/td>
+&lt;td>Apache Airflow&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Memorystore&lt;/td>
+&lt;td>Redis and Memcached&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Firestore&lt;/td>
+&lt;td>MongoDB&lt;/td>
+&lt;td>Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

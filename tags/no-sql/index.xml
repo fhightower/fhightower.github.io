@@ -1,7 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>No-SQL on Floyd Hightower</title><link>https://hightower.space/tags/no-sql/</link><description>Recent content in No-SQL on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/no-sql/index.xml" rel="self" type="application/rss+xml"/><item><title>Bigtable in a Nutshell</title><link>https://hightower.space/posts/bigtable-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigtable-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Bigtable in a nutshell.
-Disclaimer Please read this disclaimer.
-Bigtable h-base compliant Requires configuration and management of nodes Designing/choosing a good row-key (index) is critical to avoiding hot-spots (where some nodes have significantly more to process than others) Rows are sorted lexigraphically by row-key Generally a long, compound key (e.</description></item><item><title>Firestore in a Nutshell</title><link>https://hightower.space/posts/firestore-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/firestore-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Firestore in a nutshell.
-Disclaimer Please read this disclaimer.
-Firestore Similar to mongodb Store data as documents Rare to migrate to Bigtable (unlike Cloud SQL which may migrate to Spanner eventually) Web devs. like it and it has easy integration for web/mobile use-cases</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>No-SQL on Floyd</title><link>https://hightower.space/tags/no-sql/</link><description>Recent content in No-SQL on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/no-sql/index.xml" rel="self" type="application/rss+xml"/><item><title>Bigtable in a Nutshell</title><link>https://hightower.space/posts/bigtable-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigtable-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Bigtable in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="bigtable">Bigtable&lt;/h2>
+&lt;ul>
+&lt;li>h-base compliant&lt;/li>
+&lt;li>Requires configuration and management of nodes&lt;/li>
+&lt;li>Designing/choosing a good row-key (index) is &lt;em>critical&lt;/em> to avoiding hot-spots (where some nodes have significantly more to process than others)
+&lt;ul>
+&lt;li>Rows are sorted lexigraphically by row-key&lt;/li>
+&lt;li>Generally a long, compound key (e.g. &lt;code>{id}#{source}#{timestamp}&lt;/code>)&lt;/li>
+&lt;li>Order of a compound key matters!&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/bigtable/docs/schema-design">Principles&lt;/a>:
+&lt;ul>
+&lt;li>Don&amp;rsquo;t put timestamps first&lt;/li>
+&lt;li>Don&amp;rsquo;t hash values (keep values human-readable as row-keys are lexigraphically sorted)&lt;/li>
+&lt;li>Pad integers (and sometimes timestamps) so all row keys will be the same length and be reasonably sorted lexigraphically&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>I&amp;rsquo;ve observed that keys often follow one of the following formats:
+&lt;ul>
+&lt;li>&lt;code>{large-component}#{small-component}#{timestamp}&lt;/code>&lt;/li>
+&lt;li>&lt;code>{large-component}#{small-component}#{reverse-timestamp}&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Supports &lt;a href="https://cloud.google.com/bigtable/docs/schema-design#column-families">column families&lt;/a>&lt;/li>
+&lt;li>Performance increase linearly w/ nodes&lt;/li>
+&lt;/ul></description></item><item><title>Firestore in a Nutshell</title><link>https://hightower.space/posts/firestore-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/firestore-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Firestore in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="firestore">Firestore&lt;/h2>
+&lt;ul>
+&lt;li>Similar to mongodb&lt;/li>
+&lt;li>Store data as documents&lt;/li>
+&lt;li>Rare to migrate to Bigtable (unlike Cloud SQL which may migrate to Spanner eventually)&lt;/li>
+&lt;li>Web devs. like it and it has easy integration for web/mobile use-cases&lt;/li>
+&lt;/ul></description></item></channel></rss>

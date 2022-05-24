@@ -1,2 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogging on Floyd Hightower</title><link>https://hightower.space/tags/blogging/</link><description>Recent content in Blogging on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/blogging/index.xml" rel="self" type="application/rss+xml"/><item><title>Interactive Writing System</title><link>https://hightower.space/posts/interactive-writing-system/</link><pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interactive-writing-system/</guid><description>Interactive Writing System What are interactive systems? I will not, in this blog post, consider the essential and non-essential properties of interactive systems. I will simply assert that an essential characteristic of interactive systems is a short feedback loop.
-The problem For some reason, we (as humanity and software developers) have relegated ourselves to static systems and tools. We have eschewed interactivity. In this blog post, I will not examine why this is the case, but will note examples of this problem and describe a system which would introduce interactivity to the technical blog writing world.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogging on Floyd</title><link>https://hightower.space/tags/blogging/</link><description>Recent content in Blogging on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/blogging/index.xml" rel="self" type="application/rss+xml"/><item><title>Interactive Writing System</title><link>https://hightower.space/posts/interactive-writing-system/</link><pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interactive-writing-system/</guid><description>&lt;h2 id="interactive-writing-system">Interactive Writing System&lt;/h2>
+&lt;h3 id="what-are-interactive-systems">What are interactive systems?&lt;/h3>
+&lt;p>I will not, in this blog post, consider the essential and non-essential properties of interactive systems.
+I will simply assert that an essential characteristic of interactive systems is a short feedback loop.&lt;/p>
+&lt;h3 id="the-problem">The problem&lt;/h3>
+&lt;p>For some reason, we (as humanity and software developers) have relegated ourselves to static systems and tools.
+We have eschewed interactivity. In this blog post, I will not examine why this is the case, but will note examples
+of this problem and describe a system which would introduce interactivity to the technical blog writing world.&lt;/p>
+&lt;h4 id="examples-of-the-problem">Examples of the problem&lt;/h4>
+&lt;p>Most technical blogs I have seen include either code snippets (which are static and can&amp;rsquo;t be run/edited) or screenshots of code.
+There is no way to run the code without exporting it (usually via copy/paste) into an appropriate environment.
+One can imagine what the code will do or read the blog post describing what it does, but one cannot easily
+interact with the code to learn what it does and how it works.&lt;/p>
+&lt;h3 id="requirements-for-an-interactive-writing-system">Requirements for an interactive writing system&lt;/h3>
+&lt;p>There are two actors in any writing system (be it a printing press, pen and paper, or blog post):&lt;/p>
+&lt;ol>
+&lt;li>Writer&lt;/li>
+&lt;li>Reader&lt;/li>
+&lt;/ol>
+&lt;p>The writer should be able to:&lt;/p>
+&lt;ul>
+&lt;li>Write prose and code (from multiple languages)&lt;/li>
+&lt;li>Trust that the finished product will look like what is written&lt;/li>
+&lt;li>Run the code live (and choose whether the code and/or its output will be shown)&lt;/li>
+&lt;/ul>
+&lt;p>The reader should be able to:&lt;/p>
+&lt;ul>
+&lt;li>Edit and run all/most code snippets w/o putting significant effort into creating a new environment to run the code&lt;/li>
+&lt;li>Export/save edited content locally&lt;/li>
+&lt;/ul></description></item></channel></rss>

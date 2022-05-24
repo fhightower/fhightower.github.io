@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>As on Floyd Hightower</title><link>https://hightower.space/a/</link><description>Recent content in As on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/a/index.xml" rel="self" type="application/rss+xml"/><item><title>About me</title><link>https://hightower.space/a/me/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/a/me/</guid><description>Welcome! I&amp;rsquo;m Floyd Hightower.
-I am a programmer who is passionate about making the world a better place using technology.
-Principles Life Principles Here are some of the principles I try apply to every area of my life:
-Let your ideas see the light of day Always be willing to accept feedback and criticism (even when it is poorly delivered) Rome ne s&amp;rsquo;est pas faite en un jour (Rome wasn&amp;rsquo;t built in a day) Don’t be too proud to follow a good example Loose ends always unravel Unanswered questions never go away The Tisroc won’t live forever whether you want him to or not Talk less; listen more Use more semi-colons Use oxford commas Learn how to politely say &amp;ldquo;No&amp;rdquo; Don&amp;rsquo;t let the possibility of failure scare you away from starting something To do something, you have to do something A whiteboard is worth a thousand laptops Ideas have consequences</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>As on Floyd</title><link>https://hightower.space/a/</link><description>Recent content in As on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/a/index.xml" rel="self" type="application/rss+xml"/><item><title>About me</title><link>https://hightower.space/a/me/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/a/me/</guid><description>&lt;p>Welcome! I&amp;rsquo;m Floyd Hightower.&lt;/p>
+&lt;p>I am a programmer who is passionate about making the world a better place using technology.&lt;/p>
+&lt;h3 id="principles">Principles&lt;/h3>
+&lt;h4 id="life-principles">Life Principles&lt;/h4>
+&lt;p>Here are some of the principles I try apply to every area of my life:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://hightower.space/thoughts/light-of-day/">Let your ideas see the light of day&lt;/a>&lt;/li>
+&lt;li>Always be willing to accept feedback and criticism (even when it is poorly delivered)&lt;/li>
+&lt;li>&lt;a href="https://hightower.space/thoughts/great-things-take-time/">Rome ne s&amp;rsquo;est pas faite en un jour&lt;/a> (Rome wasn&amp;rsquo;t built in a day)&lt;/li>
+&lt;li>Don’t be too proud to follow a good example&lt;/li>
+&lt;li>Loose ends always unravel&lt;/li>
+&lt;li>Unanswered questions never go away&lt;/li>
+&lt;li>The Tisroc won’t live forever whether you want him to or not&lt;/li>
+&lt;li>Talk less; listen more&lt;/li>
+&lt;li>Use more semi-colons&lt;/li>
+&lt;li>Use oxford commas&lt;/li>
+&lt;li>Learn how to politely say &amp;ldquo;No&amp;rdquo;&lt;/li>
+&lt;li>Don&amp;rsquo;t let the possibility of failure scare you away from starting something&lt;/li>
+&lt;li>To do something, you have to do something&lt;/li>
+&lt;li>A whiteboard is worth a thousand laptops&lt;/li>
+&lt;li>&lt;a href="https://hightower.space/reading-list/consequences-of-ideas/">Ideas have consequences&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;!-- #### Software Design and Development Principles
+When working on a software project, I try to consider and apply the following principles:
+- Make the software do the work: software should make life easier (for the end-user)... if it isn't, you're doing something wrong
+- Sometimes the best way to start is by writing code that you know will not work
+- Simple is better than complex
+- Human interaction with a computer should be dynamic
+--></description></item></channel></rss>

@@ -1,3 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quality Assurance on Floyd Hightower</title><link>https://hightower.space/tags/quality-assurance/</link><description>Recent content in Quality Assurance on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 25 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/quality-assurance/index.xml" rel="self" type="application/rss+xml"/><item><title>Questions for QA</title><link>https://hightower.space/posts/questions-for-qa/</link><pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/questions-for-qa/</guid><description>In doing QA-esque things for friends and coworkers, I have noticed that some people do not have a good sense of how to &amp;lsquo;QA&amp;rsquo; something. I compiled a short list of questions below that I ask myself.
-Testing Inputs Does the system handle1&amp;hellip;
-1 - Defining the word "handle" can be tricky and the definition and standards change from project to project. In most projects, a system can be said to "</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quality Assurance on Floyd</title><link>https://hightower.space/tags/quality-assurance/</link><description>Recent content in Quality Assurance on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 25 Jul 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/quality-assurance/index.xml" rel="self" type="application/rss+xml"/><item><title>Questions for QA</title><link>https://hightower.space/posts/questions-for-qa/</link><pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/questions-for-qa/</guid><description>&lt;p>In doing QA-esque things for friends and coworkers, I have noticed that some people do not have a good sense of how to &amp;lsquo;QA&amp;rsquo; something. I compiled a short list of questions below that I ask myself.&lt;/p>
+&lt;h2 id="testing-inputs">Testing Inputs&lt;/h2>
+&lt;p>Does the system handle&lt;sup>1&lt;/sup>&amp;hellip;&lt;/p>
+&lt;aside class="marginnote">
+&lt;span class="noteNumber">1&lt;/span> - Defining the word "handle" can be tricky and the definition and standards change from project to project. In most projects, a system can be said to "handle" input well if it either works with the given input or fails gracefully (showing a helpful error message with instructions for fixing or avoiding the problem).
+&lt;/aside>
+&lt;h3 id="different-quantities">Different Quantities&lt;/h3>
+&lt;ul>
+&lt;li>a little input?&lt;/li>
+&lt;li>a lot?&lt;/li>
+&lt;li>A LOT?&lt;/li>
+&lt;li>nothing?&lt;/li>
+&lt;li>a &amp;rsquo;normal&amp;rsquo; amount?&lt;/li>
+&lt;li>one value that is really short?&lt;/li>
+&lt;li>one value that is really loooonnnnnnggggg?&lt;/li>
+&lt;/ul>
+&lt;h3 id="different-qualities">Different Qualities&lt;/h3>
+&lt;ul>
+&lt;li>something of a weird type?&lt;/li>
+&lt;li>input that is already in the system?&lt;/li>
+&lt;li>uppercase?&lt;/li>
+&lt;li>lowercase?&lt;/li>
+&lt;li>input with special characters (e.g. Unicode) in it?&lt;/li>
+&lt;/ul>
+&lt;h2 id="testing-workflows">Testing Workflows&lt;/h2>
+&lt;ul>
+&lt;li>go forward&lt;/li>
+&lt;li>go backwards from each step&lt;/li>
+&lt;li>go back-and-forth between steps&lt;/li>
+&lt;/ul></description></item></channel></rss>

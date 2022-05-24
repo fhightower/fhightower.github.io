@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SQL on Floyd Hightower</title><link>https://hightower.space/tags/sql/</link><description>Recent content in SQL on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/sql/index.xml" rel="self" type="application/rss+xml"/><item><title>BigQuery in a Nutshell</title><link>https://hightower.space/posts/bigquery-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigquery-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers BigQuery in a nutshell.
-Disclaimer Please read this disclaimer.
-BigQuery Fully managed, petabyte-scale data warehouse/analysis service Has two components: Storage (built on &amp;ldquo;Colossus&amp;rdquo;) Query/Processing Engine Good for federated searching Column-based storage Allows ANSI SQL compliant queries Includes good support for: Building (basic) ML models Logistic regression - classifying categories Linear regression - forcasting # values GeoViz Structs Allows horizontal storage Look like: event.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SQL on Floyd</title><link>https://hightower.space/tags/sql/</link><description>Recent content in SQL on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/sql/index.xml" rel="self" type="application/rss+xml"/><item><title>BigQuery in a Nutshell</title><link>https://hightower.space/posts/bigquery-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/bigquery-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers BigQuery in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="bigquery">BigQuery&lt;/h2>
+&lt;ul>
+&lt;li>Fully managed, petabyte-scale data warehouse/analysis service&lt;/li>
+&lt;li>Has two components:
+&lt;ul>
+&lt;li>Storage (built on &amp;ldquo;Colossus&amp;rdquo;)&lt;/li>
+&lt;li>Query/Processing Engine&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Good for &lt;a href="https://en.wikipedia.org/wiki/Federated_search">federated searching&lt;/a>&lt;/li>
+&lt;li>Column-based storage&lt;/li>
+&lt;li>Allows &lt;a href="https://blog.ansi.org/2018/10/sql-standard-iso-iec-9075-2016-ansi-x3-135/">ANSI SQL&lt;/a> compliant queries&lt;/li>
+&lt;li>Includes good support for:
+&lt;ul>
+&lt;li>Building (basic) ML models
+&lt;ul>
+&lt;li>Logistic regression - classifying categories&lt;/li>
+&lt;li>Linear regression - forcasting # values&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GeoViz&lt;/li>
+&lt;li>Structs
+&lt;ul>
+&lt;li>Allows horizontal storage&lt;/li>
+&lt;li>Look like: &lt;code>event.status&lt;/code>&lt;/li>
+&lt;li>Identifiable where type=&lt;code>RECORD&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Arrays
+&lt;ul>
+&lt;li>Allows vertical storage&lt;/li>
+&lt;li>Identifiable where mode=&lt;code>REPEATED&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Analytic window functions using &lt;code>LAG&lt;/code>&lt;/li>
+&lt;li>Named subqueries using &lt;code>WITH&lt;/code>
+&lt;ul>
+&lt;li>Pre-processes data which can be cached for future queries&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Optimization:
+&lt;ul>
+&lt;li>Partition tables
+&lt;ul>
+&lt;li>Group data into sections allowing BQ to scan less data&lt;/li>
+&lt;li>Partition pruning occurs &lt;em>before&lt;/em> the query is run, allowing you to know costs up-front&lt;/li>
+&lt;li>Common partition source is dates/times&lt;/li>
+&lt;li>≈ an index row wrapping the entire table&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Clustering
+&lt;ul>
+&lt;li>Can be done against multiple columns&lt;/li>
+&lt;li>Clustering is applied &lt;em>while&lt;/em> the query is run, so you don&amp;rsquo;t know how much the query will cost and how much cluster will save you&lt;/li>
+&lt;li>More granular than partitioning&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Typically populated in batch inserts
+&lt;ul>
+&lt;li>Offers streaming inserts to allow smaller queries, run more often, w/ lower latency, and at a higher cost&lt;/li>
+&lt;li>Max streaming capability ≈ 100,000 rows/table/sec.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Offers access control at project, dataset, and table/view levels&lt;/li>
+&lt;/ul>
+&lt;h2 id="similar-systems">Similar Systems&lt;/h2>
+&lt;h3 id="bigquery-vs-bigtable">BigQuery vs. BigTable&lt;/h3>
+&lt;p>Among many other differences:&lt;/p>
+&lt;p>BigTable is designed for long, narrow tables.&lt;/p>
+&lt;p>BigQuery typically has short(er), wide(r) tables.&lt;/p></description></item></channel></rss>

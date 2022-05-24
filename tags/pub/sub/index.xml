@@ -1,9 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pub/Sub on Floyd Hightower</title><link>https://hightower.space/tags/pub/sub/</link><description>Recent content in Pub/Sub on Floyd Hightower</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://hightower.space/tags/pub/sub/index.xml" rel="self" type="application/rss+xml"/><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>Intro This is a post in a series recording some notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-In this post, I provide some common recipies which are commonly used in Google Cloud.
-Disclaimer Please read this disclaimer.
-GCP PDE Recipies The Classic Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (batch inserts)
-Variations:
-Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (streaming inserts) Pub/Sub -&amp;gt; Dataflow -&amp;gt; Bigtable -&amp;gt; BQ (querying Bigtable using federated query) For use-cases which require analytics and the low-latency afforded by Bigtable Uploading Data to Google Cloud gsutil on-prem.</description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>Intro This post is part of a series of posts with notes as I&amp;rsquo;m studying for Google&amp;rsquo;s Professional Data Engineer Certification.
-This particular post covers Pub/Sub in a nutshell.
-Disclaimer Please read this disclaimer.
-Pub/Sub Fully managed, data ingestion and distro. system Async., real-time message bus Good soln. for buffering changes for lightly-coupled architectures P/S decouples publishers and subscribers HIPPA compliant Stores data for up to 31 days Default is 7 days Has topics and subscriptions Data is published to a topic Subscriptions dictate who recieves content for which topics Relationship btw.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pub/Sub on Floyd</title><link>https://hightower.space/tags/pub/sub/</link><description>Recent content in Pub/Sub on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://hightower.space/tags/pub/sub/index.xml" rel="self" type="application/rss+xml"/><item><title>GCP PDE Recipies</title><link>https://hightower.space/posts/gcp-pde-recipies/</link><pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-pde-recipies/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This is a post in a series recording some notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>In this post, I provide some common recipies which are commonly used in Google Cloud.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="gcp-pde-recipies">GCP PDE Recipies&lt;/h2>
+&lt;h3 id="the-classic">The Classic&lt;/h3>
+&lt;p>Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (batch inserts)&lt;/p>
+&lt;p>Variations:&lt;/p>
+&lt;ul>
+&lt;li>Pub/Sub -&amp;gt; Dataflow -&amp;gt; BQ (streaming inserts)&lt;/li>
+&lt;li>Pub/Sub -&amp;gt; Dataflow -&amp;gt; Bigtable -&amp;gt; BQ (querying Bigtable using federated query)
+&lt;ul>
+&lt;li>For use-cases which require analytics &lt;em>and&lt;/em> the low-latency afforded by Bigtable&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="uploading-data-to-google-cloud">Uploading Data to Google Cloud&lt;/h3>
+&lt;ul>
+&lt;li>gsutil
+&lt;ul>
+&lt;li>on-prem. (if practical based on network bandwidth and data size)&lt;/li>
+&lt;li>Good for &amp;lt; 1TB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Storage Transfer Service
+&lt;ul>
+&lt;li>From another cloud/on-prem. data center w/ sufficient bandwidth&lt;/li>
+&lt;li>Good for &amp;gt; 1TB&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Transfer Appliance
+&lt;ul>
+&lt;li>Physical hard-drive you fill and send back&lt;/li>
+&lt;li>For large amounts of data on-prem. and/or in a low-bandwidth location which makes gsutil impractical&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post covers Pub/Sub in a nutshell.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>Please read &lt;a href="https://hightower.space/posts/gcp-notes-disclaimer/">this disclaimer&lt;/a>.&lt;/p>
+&lt;h2 id="pubsub">Pub/Sub&lt;/h2>
+&lt;ul>
+&lt;li>Fully managed, data ingestion and distro. system&lt;/li>
+&lt;li>Async., real-time message bus&lt;/li>
+&lt;li>Good soln. for buffering changes for lightly-coupled architectures
+&lt;ul>
+&lt;li>P/S decouples publishers and subscribers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HIPPA compliant&lt;/li>
+&lt;li>Stores data for up to 31 days
+&lt;ul>
+&lt;li>Default is 7 days&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Has topics and subscriptions
+&lt;ul>
+&lt;li>Data is published to a topic&lt;/li>
+&lt;li>Subscriptions dictate who recieves content for which topics&lt;/li>
+&lt;li>Relationship btw. topics and subscriptions can be one:one or one:many&lt;/li>
+&lt;li>Relationship btw. publishers and subscribers and can be one:many, many:one, or many:many&lt;/li>
+&lt;li>Multiple subscribers can work on a single subscription&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Guarantees &amp;ldquo;at least once&amp;rdquo; delivery
+&lt;ul>
+&lt;li>May send duplicate and/or out-of-order messages&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Two options for delivery:
+&lt;ol>
+&lt;li>Push (from pub/sub to subscriber)&lt;/li>
+&lt;li>Pull (from subscriber to pub/sub)&lt;/li>
+&lt;li>Sync. - &amp;ldquo;Give me &lt;em>n&lt;/em> messages&amp;rdquo;&lt;/li>
+&lt;li>Async.
+- Higher throughput
+- Better for latency-sensitive applications&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Two, primary use-cases:
+&lt;ol>
+&lt;li>Streaming analytics/ingestion of data into analytic systems&lt;/li>
+&lt;li>Async. workflows w/ decoupled publishers and subscribers&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
