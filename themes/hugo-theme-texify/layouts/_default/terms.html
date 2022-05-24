@@ -1,0 +1,20 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/terms.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main">
+  <table>
+    {{ range .Data.Terms.ByCount }}
+    <tr class="terms">
+      <td class="term-name">
+        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+      </td>
+      <td class="term-count">
+          {{ .Count }}
+      </td>
+    </tr>
+    {{ end }}
+  </table>
+</main>
+{{ end }}

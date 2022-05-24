@@ -1,17 +1,12 @@
 baseurl = "https://hightower.space/"
-title = "Floyd Hightower"
-theme = "cactus"
+title = "Floyd"
+theme = "hugo-theme-texify"
 languageCode = "en"
-
-# Main menu which appears below site header.
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+paginate = 7
 
 [[menu.main]]
-name = "Posts"
-url = "/posts"
+name = "Reading Lists"
+url = "/categories/reading-list"
 weight = 2
 
 [[menu.main]]
@@ -19,10 +14,10 @@ name = "Tags"
 url = "/tags"
 weight = 3
 
-[[menu.main]]
-name = "Categories"
-url = "/categories"
-weight = 3
+# [[menu.main]]
+# name = "Projects"
+# url = "/categories/projects"
+# weight = 1
 
 [[menu.main]]
 name = "Skills"
@@ -30,53 +25,30 @@ url = "/skills"
 weight = 4
 
 [[menu.main]]
+name = "All Posts"
+url = "/posts"
+weight = 5
+
+[[menu.main]]
 name = "About"
 url = "/about"
 weight = 10
 
 [markup]
-  [markup.tableOfContents]
-    endLevel = 4
-    ordered = false
-    startLevel = 2
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "paraiso-dark"
-    tabWidth = 4
   [markup.goldmark.renderer]
     unsafe = true # Allow HTML in md files
 
 [params]
-  colortheme = "dark" # dark, light, white, or classic
-  rss = true # generate rss feed. default value is false
-  showAllPostsArchive = true # this determines whether archive lists are paginated or not
+  rss = true
   mathjax = true
+  favicon = "favicon.ico"
 
-  # Home page settings
-  # description = "Floyd Hightower's personal website."
-  mainSections = "posts" # your main section
-  mainSectionTitle = "Posts"
-  showAllPostsOnHomePage = false # default
-  postsOnHomePage = 10 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = true # show tags overview by default.
-  showProjectsList = false
-  projectsUrl = "https://github.com/fhightower" # title link for projects list
+  description = "A digital space for sharing my thoughts."
 
-  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-  dateFormat = "2006-01-02" # default
-
-  # Post page settings
-  show_updated = true # default
-  showReadTime = true # default
-
-  [params.comments]
-    enabled = false # default
+  [params.outdated]
+  enable = true # whether to display warnings for outdated posts
+  limit = 1000   # days between last modified time and outdated time
+  warning = "⚠️ It has been <i>%d</i> days since the last update, the content of the article may be outdated."
 
   # the value of name should be an valid font awesome icon name (brands type)
   # https://fontawesome.com/icons?d=gallery&s=brands
@@ -89,3 +61,4 @@ weight = 10
   [[params.social]]
     name = "email"
     link = "floyd.hightower27@gmail.com"
+
