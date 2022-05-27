@@ -37,11 +37,20 @@ weight = 10
 [markup]
   [markup.goldmark.renderer]
     unsafe = true # Allow HTML in md files
+  [markup.highlight]
+    style = "paraiso-dark"
 
 [params]
   rss = true
   mathjax = true
-  favicon = "favicon.ico"
+  favicon = "img/favicon.ico"
+
+  footnote = """
+<a class=link href=https://github.com/fhightower>GitHub</a> |
+<a class=link href=https://500px.com/p/fhightower?view=photos>500px</a> |
+<a class=link href=mailto:floyd.hightower27@gmail.com>Email</a> |
+<a class=link href=/index.xml>RSS</a>
+"""
 
   description = "A digital space for sharing my thoughts."
 
@@ -49,16 +58,4 @@ weight = 10
   enable = true # whether to display warnings for outdated posts
   limit = 1000   # days between last modified time and outdated time
   warning = "⚠️ It has been <i>%d</i> days since the last update, the content of the article may be outdated."
-
-  # the value of name should be an valid font awesome icon name (brands type)
-  # https://fontawesome.com/icons?d=gallery&s=brands
-  [[params.social]]
-    name = "github"
-    link = "https://github.com/fhightower"
-  [[params.social]]
-    name = "500px"
-    link = "https://500px.com/p/fhightower?view=photos"
-  [[params.social]]
-    name = "email"
-    link = "floyd.hightower27@gmail.com"
 
