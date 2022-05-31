@@ -9,8 +9,10 @@ Here is a regularly updated list of skills I have:
 ![Docker](/img/skills/docker.png "Docker")
 ![Markdown](/img/skills/markdown.png "Markdown")
 ![Neovim](/img/skills/neovim.png "Neovim")
-![Google Cloud](/img/skills/google-cloud.png "Google Cloud") (I'm also a [Google Certified Professional Data Engineer](https://cloud.google.com/certification/data-engineer))
-<img src="/img/skills/go.svg" alt="Go" title="Go" style="width:64px;"/>
+![Google Cloud](/img/skills/google-cloud.png "Google Cloud")
+![Go](/img/skills/go.png "Go")
+
+(I'm also a [Google Certified Professional Data Engineer](https://cloud.google.com/certification/data-engineer))
 
 ## Weekly
 
@@ -27,6 +29,7 @@ Here is a regularly updated list of skills I have:
 ![ClojureScript](/img/skills/clojurescript.png "ClojureScript")
 ![JavaScript](/img/skills/javascript.png "JavaScript")
 ![Hugo](/img/skills/hugo.png "Hugo")
+![Vault](https://img.shields.io/badge/-Vault-gray?style=for-the-badge&logo=vault "Vault")
 - Luminus
 - Pedestal
 
