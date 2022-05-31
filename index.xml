@@ -3665,8 +3665,9 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;img src="https://hightower.space/img/skills/docker.png" alt="Docker" title="Docker">
 &lt;img src="https://hightower.space/img/skills/markdown.png" alt="Markdown" title="Markdown">
 &lt;img src="https://hightower.space/img/skills/neovim.png" alt="Neovim" title="Neovim">
-&lt;img src="https://hightower.space/img/skills/google-cloud.png" alt="Google Cloud" title="Google Cloud"> (I&amp;rsquo;m also a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)
-&lt;img src="https://hightower.space/img/skills/go.svg" alt="Go" title="Go" style="width:64px;"/>&lt;/p>
+&lt;img src="https://hightower.space/img/skills/google-cloud.png" alt="Google Cloud" title="Google Cloud">
+&lt;img src="https://hightower.space/img/skills/go.png" alt="Go" title="Go">&lt;/p>
+&lt;p>(I&amp;rsquo;m also a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/p>
 &lt;h2 id="weekly">Weekly&lt;/h2>
 &lt;p>&lt;img src="https://hightower.space/img/skills/clojure.png" alt="Clojure" title="Clojure">
 &lt;img src="https://hightower.space/img/skills/elastic-elasticsearch.png" alt="Elasticsearch" title="Elasticsearch">
@@ -3678,7 +3679,8 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;h2 id="monthly">Monthly&lt;/h2>
 &lt;p>&lt;img src="https://hightower.space/img/skills/clojurescript.png" alt="ClojureScript" title="ClojureScript">
 &lt;img src="https://hightower.space/img/skills/javascript.png" alt="JavaScript" title="JavaScript">
-&lt;img src="https://hightower.space/img/skills/hugo.png" alt="Hugo" title="Hugo">&lt;/p>
+&lt;img src="https://hightower.space/img/skills/hugo.png" alt="Hugo" title="Hugo">
+&lt;img src="https://img.shields.io/badge/-Vault-gray?style=for-the-badge&amp;amp;logo=vault" alt="Vault" title="Vault">&lt;/p>
 &lt;ul>
 &lt;li>Luminus&lt;/li>
 &lt;li>Pedestal&lt;/li>
