@@ -12,7 +12,7 @@ Books read in {{ $year }}: {{ len . }}
     {{ range $readingList }}
         <li>
             <details>
-                <summary>{{ .title | markdownify }} [{{ .rating }}]</summary>
+	        <summary><i>{{ .title | markdownify }}</i> [{{ .rating }}]</summary>
                 {{ if isset . "authors" }}
                     Author(s):
                     <ul>
