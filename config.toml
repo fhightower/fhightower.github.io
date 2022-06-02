@@ -43,7 +43,7 @@ weight = 10
 [params]
   rss = true
   mathjax = true
-  favicon = "img/favicon.ico"
+  favicon = "img/favicon.png"
 
   footnote = """
 <a class=link href=https://github.com/fhightower>GitHub</a> |
