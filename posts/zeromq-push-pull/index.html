@@ -2,7 +2,7 @@
 <span class=nav-bar-item><a class=link href=/tags>Tags</a></span>
 <span class=nav-bar-item><a class=link href=/skills>Skills</a></span>
 <span class=nav-bar-item><a class=link href=/posts>All Posts</a></span>
-<span class=nav-bar-item><a class=link href=/about>About</a></span></nav></header><main id=main class=post><div class=warning>⚠️ It has been <i>1203</i> days since the last update, the content of the article may be outdated.</div><h1>Simple, Non-blocking, Push/Pull Example with ZeroMQ</h1><div><a class=link href=https://hightower.space/tags/zeromq>#ZeroMQ</a>
+<span class=nav-bar-item><a class=link href=/about>About</a></span></nav></header><main id=main class=post><div class=warning>⚠️ It has been <i>1208</i> days since the last update, the content of the article may be outdated.</div><h1>Simple, Non-blocking, Push/Pull Example with ZeroMQ</h1><div><a class=link href=https://hightower.space/tags/zeromq>#ZeroMQ</a>
 <a class=link href=https://hightower.space/tags/messaging-queues>#Messaging Queues</a>
 <a class=link href=https://hightower.space/tags/programming>#Programming</a>
 <a class=link href=https://hightower.space/tags/push-pull>#Push & Pull</a>
@@ -43,8 +43,8 @@
 </span></span></code></pre></div><p>The server is designed to pull content (as specified by the <code>zmq.PULL</code>) from <code>tcp://localhost:5559</code>. When it receives something, it will send it to the <code>print_value</code> function where the value will be printed off after two seconds. Again, the nice thing about this setup is that, even though the server takes some time to process the incoming data, the client doesn&rsquo;t have to wait around for a response from the server.</p><h3 id=benefits>Benefits</h3><p>This construct is helpful because it:</p><ul><li>Keeps the communication between systems as simple as possible<ul><li>No worrying about http status codes, query parameters, or request bodies</li></ul></li><li>Is non-blocking in the sense that the client doesn&rsquo;t wait for a response from the server</li><li>Is simple (in terms of the code required to accomplish the task)</li></ul><p>If you have never used ZeroMQ, give it a try! It is fun to use and opens some exciting doors.</p></article><div class=paginator><a class=link href=https://hightower.space/posts/math-behind-domain-squatting/>← prev</a>
 <a class=link href=https://hightower.space/posts/2020-reading-list/>next →</a></div><div class=comment></div></main><footer id=footer><div><span>© 2019</span> - <span>2022</span></div><div><span>Powered by</span>
 <a class=link href=https://gohugo.io/>Hugo</a>
-<span>🍦 Theme</span>
-<a class=link href=https://github.com/queensferryme/hugo-theme-texify>TeXify</a></div><div class=footnote><span><a class=link href=https://github.com/fhightower>GitHub</a> |
+<span>| Theme</span>
+<a class=link href=https://github.com/fhightower/hugo-theme-texify>TeXify</a></div><div class=footnote><span><a class=link href=https://github.com/fhightower>GitHub</a> |
 <a class=link href="https://500px.com/p/fhightower?view=photos">500px</a> |
 <a class=link href=mailto:floyd.hightower27@gmail.com>Email</a> |
 <a class=link href=/index.xml>RSS</a></span></div></footer></div></body></html>
