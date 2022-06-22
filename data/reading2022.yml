@@ -212,3 +212,29 @@
   rating: "C"
   notes:
     - "Decent introduction to GCP which picks a project and walks through a solution"
+- title: "Language Families of the World"
+  authors:
+    - "John McWhorter"
+  rating: "A"
+  notes:
+    - "Absolutely fantastic professor - John is clear, knowledgable, and passionate about the topic. He makes it approachable and enjoyable for all."
+    - "https://www.thegreatcourses.com/courses/language-families-of-the-world"
+- title: "Extreme Ownership: How U.S. Navy SEALs Lead and Win"
+  authors:
+    - "Jocko Willink"
+    - "Leif Babin"
+  rating: "A"
+  notes:
+    - "Read this book again this year... still very good"
+    - "Appreciated emphasis on seeking win-win solutions rather than settling for win-lose or lose-lose options"
+- [ ] j
+- title: "Farming the Woods: An Integrated Permaculture Approach to Growing Food and Medicinals in Temperate Forests"
+  authors:
+    - "Ken Mudge"
+    - "Steve Gabriel"
+  rating: "A+"
+  notes:
+    - "Fantastic read - very clear, informative, and practical"
+    - "Accessible for those unfamiliar with Agroforestry"
+    - "Great pictures/graphics throughout the book"
+    - "One of the fascinating themes in the book is the ecological changes that climate change will bring. Apparently, tree species can move about 100 meters a year in any new direction. But to keep up with climate change, tree species would have to move about 10 *kilometers* a year! Thus, many farmers are proactively 'helping' tree species move (called 'assisted migration')."
