@@ -5,7 +5,7 @@ Here is a regularly updated list of skills I have:
 ~ | Skill | Fluency\* | Years of Experience | Frequency of Use | Context
 --- | --- | --- | --- | --- | ---
 ![Python](/img/skills/python.png "Python") | Python | Expert | 15+ | Daily | Personal, Professional, Academic
-![Markdown](/img/skills/markdown.png "Markdown") | Markdown | Expert | 7 | Daily | Personal, Professional
+![Markdown](/img/skills/markdown.png "Markdown") | Markdown | n/a (with Markdown, I think you either use it or you don't) | 7 | Daily | Personal, Professional
 ![Pytest](/img/skills/pytest.png "Pytest")| Pytest | Expert | 5 | Daily | Personal, Professional
 ![Docker](/img/skills/docker.png "Docker") | Docker | Intermediate | 4 | Daily | Personal, Professional
 ![Kubernetes](/img/skills/kubernetes.png "Kubernetes") | Kubernetes | Intermediate | 2 | Daily | Professional
