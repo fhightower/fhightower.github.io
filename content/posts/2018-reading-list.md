@@ -35,5 +35,6 @@ categories = ["Reading List"]
 - Through the Looking Glass (Lewis Carroll)
 - Not a Sometimes Love (Keith Korstjens)
 - The Oxford Union Guide to Speaking in Public
+- The Vanishing Conscience (John MacArthur)
 
 Many more...
