@@ -5,6 +5,10 @@ Here is a regularly updated list of skills I have:
 ~ | Skill | Fluency\* | Years of Experience | Frequency of Use | Context
 --- | --- | --- | --- | --- | ---
 ![Python](/img/skills/python.png "Python") | Python | Expert | 15+ | Daily | Personal, Professional, Academic
+![Github](https://img.shields.io/badge/--grey?style=for-the-badge&logo=github "Github") | Github | Expert | 7 | Daily | Academic, Personal, Professional
+![Flask](https://img.shields.io/badge/--grey?style=for-the-badge&logo=flask "Flask") | Flask | Expert | 7 | Monthly | Personal, Professional
+![Gitlab](https://img.shields.io/badge/--grey?style=for-the-badge&logo=gitlab "Gitlab") | Gitlab | Expert | 3 | Monthly | Personal, Professional
+![FastAPI](https://img.shields.io/badge/--grey?style=for-the-badge&logo=fastapi "FastAPI") | FastAPI | Expert | 3 | Monthly | Personal, Professional
 ![Markdown](/img/skills/markdown.png "Markdown") | Markdown | n/a (with Markdown, I think you either use it or you don't) | 7 | Daily | Personal, Professional
 ![Pytest](/img/skills/pytest.png "Pytest")| Pytest | Expert | 5 | Daily | Personal, Professional
 ![Docker](/img/skills/docker.png "Docker") | Docker | Intermediate | 4 | Daily | Personal, Professional
@@ -15,13 +19,14 @@ Here is a regularly updated list of skills I have:
 ![Elasticsearch](/img/skills/elastic-elasticsearch.png "Elasticsearch") | Elasticsearch | Beginner | 3 | Weekly | Personal, Professional
 ![Kibana](/img/skills/elastic-kibana.png "Kibana") | Kibana | Beginner | 3 | Weekly | Professional
 ![Helm](/img/skills/helm.png "Helm") | Helm | Intermediate | 2 | Weekly | Professional
+![Buildkite](https://img.shields.io/badge/--black?style=for-the-badge&logo=buildkite "Buildkite") | Buildkite | Intermediate | 2 | Daily | Professional
 ![Go](/img/skills/go.png "Go") | Go | Beginner | 1 | Weekly | Personal
 ![Clojure](/img/skills/clojure.png "Clojure") | Clojure | Beginner | 1 | Weekly | Personal
 ![Grafana](/img/skills/grafana.png "Grafana") | Grafana | Beginner | 1 | Weekly | Professional
 ![ClojureScript](/img/skills/clojurescript.png "ClojureScript") | ClojureScript | Beginner | 1 | Monthly | Personal
 ![JavaScript](/img/skills/javascript.png "JavaScript") | Javascript | Beginner | 10 | Monthly | Personal
-![Java](https://img.shields.io/badge/-Java-gray?style=for-the-badge&logo=java "Java") | Java | Intermediate | 5 | Rarely | Personal, Academic
-![Vault](https://img.shields.io/badge/-Vault-gray?style=for-the-badge&logo=vault "Vault") | Vault | Beginner | 5 | Monthly | Professional
+~ | Java | Intermediate | 5 | Rarely | Personal, Academic
+![Vault](https://img.shields.io/badge/--gray?style=for-the-badge&logo=vault "Vault") | Vault | Beginner | 5 | Monthly | Professional
 ![Hugo](/img/skills/hugo.png "Hugo") | Hugo | Intermediate | 3 | Monthly | Personal
 ![AWS](/img/skills/aws.png "AWS") | AWS | Intermediate | 3 | Rarely | Personal
 
