@@ -1,8 +1,8 @@
 +++
 date = "2022-07-12"
-title = "Open Letter to my Employer on Their Abortion Policy"
+title = "Letter to my Employer on Their Abortion Policy"
 description = "An anonymized version of a letter I shared with my employer regarding recently announced policy reimbursing travel to get abortions."
-tags = ["Abortion", "Roe v. Wade"]
+tags = ["Pro-Life", "Abortion", "Roe v. Wade"]
 +++
 
 ## Background
@@ -11,9 +11,9 @@ Below is an anonymized version of a letter I shared with my employer to clarify 
 
 ## My Letter
 
-In this document, I express my concerns about the announcement[1] of the "New Reproductive Rights Travel Benefit" in the form of two contradictions. I believe these two contradictions, present in the announcement, demonstrate that this partisan policy will not accomplish its stated mission and will have the unintended consequence of excluding certain groups from access to a "welcoming space" and respect. Because abortion[2] is such an immensely important and impactful matter, affecting the lives of millions of mothers and the unborn (not to mention their families), I consider it necessary to express these contradictions with the hope of clarifying [Acme]’s position on these issues and seeking a less partisan policy which is more inclusive and respectful of diverse ideologies and people.
+In this document, I express questions and concerns about the “New Reproductive Rights Travel Benefit”[1] in the form of two contradictions. Both contradictions exist between the decision to reimburse travel to abortion and the original announcement’s statement: “We at [Acme] have worked to create a welcoming space for all and believe in our guiding principles of Respecting Others”. I believe these two contradictions demonstrate that this partisan policy will not create a “welcoming space for all” and will have the unintended consequence of excluding certain groups from access to a “welcoming space” and respect.
 
-Both contradictions exist between the decision to reimburse travel to abortion and the original announcment’s statement "We at [Acme] have worked to create a welcoming space for all and believe in our guiding principles of Respecting Others".
+Because abortion[2] is such an immensely important and impactful matter, affecting the lives of millions of mothers and the unborn (not to mention their families), I consider it necessary to express these contradictions with the hope of clarifying [Acme]’s position on these issues and seeking a less partisan policy which is more inclusive and respectful of diverse ideologies and people.
 
 ### Contradiction 1: Regarding Pro-Life Employees
 
