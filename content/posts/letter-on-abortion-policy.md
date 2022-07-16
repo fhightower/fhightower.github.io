@@ -1,7 +1,7 @@
 +++
 date = "2022-07-12"
-title = "Letter to my Employer on Their Abortion Policy"
-description = "An anonymized version of a letter I shared with my employer regarding recently announced policy reimbursing travel to get abortions."
+title = "Concerns Over Businesses Reimbursing Travel to get Abortions"
+description = "In this post, I express concerns about what is becoming a regular policy at many American companies - reiumbursing travel for employees to get an abortion. These concerns are expressed as an anonymized version of a letter I shared with my employer after they have adopted such a policy."
 tags = ["Pro-Life", "Abortion", "Roe v. Wade"]
 +++
 
