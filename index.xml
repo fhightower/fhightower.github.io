@@ -3852,7 +3852,7 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Personal, Professional, Academic&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://img.shields.io/badge/--grey?style=for-the-badge&amp;amp;logo=github" alt="Github" title="Github">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="Github" title="Github">&lt;/td>
 &lt;td>Github&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>7&lt;/td>
@@ -3860,7 +3860,7 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Academic, Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://img.shields.io/badge/--grey?style=for-the-badge&amp;amp;logo=flask" alt="Flask" title="Flask">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg" alt="Flask" title="Flask">&lt;/td>
 &lt;td>Flask&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>7&lt;/td>
@@ -3868,7 +3868,7 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://img.shields.io/badge/--grey?style=for-the-badge&amp;amp;logo=gitlab" alt="Gitlab" title="Gitlab">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gitlab.svg" alt="Gitlab" title="Gitlab">&lt;/td>
 &lt;td>Gitlab&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>3&lt;/td>
@@ -3876,7 +3876,7 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://img.shields.io/badge/--grey?style=for-the-badge&amp;amp;logo=fastapi" alt="FastAPI" title="FastAPI">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/fastapi.svg" alt="FastAPI" title="FastAPI">&lt;/td>
 &lt;td>FastAPI&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>3&lt;/td>
@@ -3932,8 +3932,8 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/jupyter.png" alt="Jupyter (notebooks and kernals)" title="Jupyter (notebooks and kernals)">&lt;/td>
-&lt;td>Jupyter (notebooks and kernals)&lt;/td>
+&lt;td>&lt;img src="https://hightower.space/img/skills/jupyter.png" alt="Jupyter (notebooks and kernels)" title="Jupyter (notebooks and kernals)">&lt;/td>
+&lt;td>Jupyter (notebooks and kernels)&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>5&lt;/td>
 &lt;td>Weekly&lt;/td>
@@ -3964,12 +3964,44 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://img.shields.io/badge/--black?style=for-the-badge&amp;amp;logo=buildkite" alt="Buildkite" title="Buildkite">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buildkite.svg" alt="Buildkite" title="Buildkite">&lt;/td>
 &lt;td>Buildkite&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>2&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://hightower.space/img/skills/hugo.png" alt="Hugo" title="Hugo">&lt;/td>
+&lt;td>Hugo&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>Monthly&lt;/td>
+&lt;td>Personal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vuedotjs.svg" alt="Vue.js" title="Vue.js">&lt;/td>
+&lt;td>Vue.js&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>Rarely&lt;/td>
+&lt;td>Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/django.svg" alt="Django" title="Django">&lt;/td>
+&lt;td>Django&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>4&lt;/td>
+&lt;td>Rarely&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://hightower.space/img/skills/aws.png" alt="AWS" title="AWS">&lt;/td>
+&lt;td>AWS&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>Rarely&lt;/td>
+&lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/go.png" alt="Go" title="Go">&lt;/td>
@@ -4005,7 +4037,7 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/javascript.png" alt="JavaScript" title="JavaScript">&lt;/td>
-&lt;td>Javascript&lt;/td>
+&lt;td>JavaScript&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>10&lt;/td>
 &lt;td>Monthly&lt;/td>
@@ -4020,7 +4052,7 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Personal, Academic&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://img.shields.io/badge/--gray?style=for-the-badge&amp;amp;logo=vault" alt="Vault" title="Vault">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vault.svg" alt="Vault" title="Vault">&lt;/td>
 &lt;td>Vault&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>5&lt;/td>
@@ -4028,26 +4060,20 @@ The smith of the gods is lame.&lt;/p></description></item><item><title/><link>ht
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/hugo.png" alt="Hugo" title="Hugo">&lt;/td>
-&lt;td>Hugo&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Monthly&lt;/td>
-&lt;td>Personal&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/aws.png" alt="AWS" title="AWS">&lt;/td>
-&lt;td>AWS&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Rarely&lt;/td>
+&lt;td>~&lt;/td>
+&lt;td>Fatherhood&lt;/td>
+&lt;td>Beginner&lt;/td>
+&lt;td>&amp;lt;1&lt;/td>
+&lt;td>Daily&lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;p>* - I&amp;rsquo;m categorizing fluency as either: Expert, Intermediate, or Beginner.&lt;/p>
 &lt;h2 id="want-to-learn">Want to Learn&amp;hellip;&lt;/h2>
 &lt;ul>
 &lt;li>Kotlin and/or Scala&lt;/li>
 &lt;li>TLA+&lt;/li>
 &lt;/ul>
-&lt;p>* - I&amp;rsquo;m categorizing fluency as either: Expert, Intermediate, or Beginner. I &lt;a href="https://github.com/fhightower/fhightower.github.io/issues/31">plan&lt;/a> to make this more robust in the future.&lt;/p></description></item></channel></rss>
+&lt;h2 id="credits">Credits&lt;/h2>
+&lt;p>Some icons by &lt;a href="https://simpleicons.org/">simpleicons.org&lt;/a>.&lt;/p></description></item></channel></rss>
