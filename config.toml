@@ -54,8 +54,3 @@ weight = 10
 
   description = "A digital space for sharing my thoughts."
 
-  [params.outdated]
-  enable = true # whether to display warnings for outdated posts
-  limit = 1000   # days between last modified time and outdated time
-  warning = "⚠️ It has been <i>%d</i> days since the last update, the content of the article may be outdated."
-
