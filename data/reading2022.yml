@@ -73,7 +73,7 @@
   notes:
     - "I felt all positions were very clearly articulated"
     - "My agreement w/ the various views (from greatest to least) is: 1. Spiritual Continuity, 2. Moderate Discontinuity, 3. Eschatological Continuity, 4. Strong Discontinuity"
-    - "I was particularly interested by C. S. Cowles argument and responses. His respone to Tremper Longman was interesting in that he seemed (like Job's friends) to be saying 'The book of Revelation is complicated... here's what it means...'. Additionally, his quotation of Exodus 34:6-7 (pg. 195) was interesting b/c he cut the quotation short so that it didn't include God's promise to punish the guilty and punish evil-doers and their children."
+    - "I was particularly interested by C. S. Cowles argument and responses. His response to Tremper Longman was interesting in that he seemed (like Job's friends) to be saying 'The book of Revelation is complicated... here's what it means...'. Additionally, his quotation of Exodus 34:6-7 (pg. 195) was interesting b/c he cut the quotation short so that it didn't include God's promise to punish the guilty and punish evil-doers and their children."
 - title: "Enlightening Symbols: A Short History of Mathematical Notation and Its Hidden Powers"
   authors:
     - "Joseph Mazur"
@@ -109,7 +109,7 @@
     - "Frank Sheed"
   rating: "A"
   notes:
-    - "One of the best theology books I've read - it addresses pertinent, enlightning, and awe-inspiring topics usually neglected by theology books I've read"
+    - "One of the best theology books I've read - it addresses pertinent, enlightening, and awe-inspiring topics usually neglected by theology books I've read"
     - "Even as a Protestant, I find this book fascinating and insightful"
 - title: "Lord of the Rings: The Return of the Ring"
   authors:
@@ -125,7 +125,7 @@
     - "William D. Danko"
   rating: "B"
   notes:
-    - "Good book w/ many suprises and practical insights into how to build wealth"
+    - "Good book w/ many surprises and practical insights into how to build wealth"
     - "Easy skim"
 - title: "How to Get Control of Your Time and Your Life"
   authors:
@@ -176,7 +176,7 @@
   rating: "B"
   notes:
     - "Fun read!"
-    - "It's always interesting to read a computer book written decades ago... the dicsussion of the future of high level languages is hilarious look back on a time when Fortran was cutting edge"
+    - "It's always interesting to read a computer book written decades ago... the discussion of the future of high level languages is hilarious look back on a time when Fortran was cutting edge"
 - title: "Perelandra"
   authors:
     - "C. S. Lewis"
@@ -206,7 +206,7 @@
     - "Albert Mohler"
   rating: "A"
   notes:
-    - "Fantastic new resource providing 'a daily analysis of news and events from a Christian worldview'"
+    - "Fantastic news resource providing 'a daily analysis of news and events from a Christian worldview'"
 - title: "Data Science on the Google Cloud Platform: Implementing End-to-End Real-Time Data Pipelines: From Ingest to Machine Learning"
   authors:
     - "Valliappa Lakshmanan"
@@ -263,9 +263,9 @@
     - "Greg L. Bahnsen"
   rating: "10"
   notes:
-    - "Good intro to presuppositional apoligetics"
-    - "Before reading this book, I would not have considered myself a presuppositional apoligist, but after reading it I now do"
-    - "When claiming that one of the steps of the apoligist is to demonstrate internal inconsistencies in other world-views, his entire argument relies on the KJV translation of 2 Tim. 2:25... other translations translate this passage in way that does not support his conclusion"
+    - "Good intro to presuppositional apologetics"
+    - "Before reading this book, I would not have considered myself a presuppositional apologist, but after reading it I now do"
+    - "When claiming that one of the steps of the apologist is to demonstrate internal inconsistencies in other world-views, his entire argument relies on the KJV translation of 2 Tim. 2:25... other translations translate this passage in way that does not support his conclusion"
 - title: "Dune"
   authors:
     - "Frank Herbert"
@@ -274,3 +274,23 @@
     - "It is hard for me to say too many good things about this book... this is great science fiction; it strikes the perfect balance of futuristic and exotic with relatable and clear"
     - "My one negative critique is that there are scenes which jump significant amounts of time without warning and sometimes leave the reader (at least me) with a sense of 'whiplash'. I would have appreciated smoother transitions at a few points."
     - "I really appreciated the complexity of the world he created. I love how politics, religion, philosophy, environmentalism, and anthropology are all woven into the story"
+- title: "Universal Patterns (The Golden Relationship : Art, Math & Nature, Book 1)"
+  authors:
+    - "Martha Boles"
+    - "Rochelle Newman"
+  rating: "10"
+  notes:
+    - "Fascinating, fun read with some practical art projects one can work on"
+- title: "The Horse and His Boy"
+  authors:
+    - "C. S. Lewis"
+  rating: "1"
+  notes:
+    - "One of my favorite books in the Narniad"
+    - "Exciting, well-written story with great quotes and profound conversations"
+- title: "[Blog and Mablog](https://dougwils.com/audio/blog-mablog)"
+  authors:
+    - "Douglas Wilson"
+  rating: "1"
+  notes:
+    - "Aside from being one of the best named blogs out there, this podcast is insightful, poignant, often hilarious, and well written even if you don't agree with Doug Wilson"
