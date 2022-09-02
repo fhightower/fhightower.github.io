@@ -2,7 +2,7 @@
 date = "2022-07-17"
 title = "Orders of Magnitude Scoring System"
 description = "A scoring system whose values are orders of magnitude different from one another can be very helpful in a multitude of use-cases. This post describes what such a system is and why it can be helpful."
-tags = ["Maths", "Scoring Systems", "Exponents", "Orders of Magnitude"]
+tags = ["Maths", "Scoring Systems", "Exponentials", "Orders of Magnitude"]
 +++
 
 While this idea is original to me, I am confident I am not the first person to come up with this idea.
@@ -26,7 +26,7 @@ The possible scores of this system will be:
 - 100 (10^2)
 - 1000 (10^3) ...
 
-Thinking back to our example about a scoring system for books in which one provides the number of years one        
+Thinking back to our example about a scoring system for books in which one provides the number of years one
 would wait before reading a book again, I think it is easy to see how this scoring system is easier to use as it avoids the challenge
 of differentiating adjacent values (e.g. 6 versus 7 years).
 
