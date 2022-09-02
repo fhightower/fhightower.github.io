@@ -2,7 +2,7 @@
 &lt;p>In this post, I explain a script (deployable to k8s) which will log incoming requests to collect requests from vulnerability and exploit scanners.&lt;/p>
 &lt;p>It&amp;rsquo;s very basic and is not meant for any production use-cases, but it just a fun project to learn more about GoLang, k8s, and vulnerability scanners.&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>You can find the scanner &lt;a href="https://github.com/fhightower/k8s-scanner-collector">here&lt;/a>.&lt;/p>
+&lt;p>You can find the scanner on Github &lt;a href="https://github.com/fhightower/k8s-scanner-collector">here&lt;/a>.&lt;/p>
 &lt;p>We&amp;rsquo;ll deploy it to a k8s cluster (I&amp;rsquo;m using &lt;a href="https://docs.digitalocean.com/products/kubernetes/">DigitalOcean&amp;rsquo;s Kubernetes service&lt;/a> (DOKS)) and see what vulnerability and exploit scanners hit our app!&lt;/p>
 &lt;p>If you&amp;rsquo;ve never built a docker image, pushed it to a registry, and/or deployed that image to k8s, you can keep reading this post as I&amp;rsquo;ll walk you through the process, but you may also find
 DigitalOcean&amp;rsquo;s &lt;a href="https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/">guide on the subject&lt;/a> helpful.&lt;/p>
@@ -51,11 +51,11 @@ If you already have a registry in DigitalOcean, you an skip this step.&lt;/p>
 &lt;/code>&lt;/pre>&lt;h3 id="deploy-image-to-k8s">Deploy Image to k8s&lt;/h3>
 &lt;p>Now, we&amp;rsquo;re ready to deploy our image to k8s.&lt;/p>
 &lt;p>First, we create a new cluster with sane defaults:&lt;/p>
-&lt;pre tabindex="0">&lt;code>doctl kubernetes cluster create &amp;lt;cluster-name&amp;gt; --tag k8s-scanner-collector --auto-upgrade=true --node-pool &amp;#34;name=mypool;count=2;auto-scale=true;min-nodes=1;max-nodes=3;tag=scanner-collector&amp;#34;
+&lt;pre tabindex="0">&lt;code>doctl kubernetes cluster create &amp;lt;cluster-name&amp;gt; --tag scanner-collector --auto-upgrade=true --node-pool &amp;#34;name=mypool;count=2;auto-scale=true;min-nodes=1;max-nodes=3;tag=scanner-collector&amp;#34;
 &lt;/code>&lt;/pre>&lt;p>(see more details on this command &lt;a href="https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/#step-5-create-a-cluster">here&lt;/a>).&lt;/p>
 &lt;p>Now, we need to give our cluster access to our private registry:&lt;/p>
 &lt;pre tabindex="0">&lt;code>doctl registry kubernetes-manifest | kubectl apply -f -
-kubectl patch serviceaccount default -p &amp;#39;{&amp;#34;imagePullSecrets&amp;#34;: [{&amp;#34;name&amp;#34;: &amp;#34;registry-&amp;lt;your-registry-name&amp;gt;&amp;#34;}]}&amp;#39;
+kubectl patch serviceaccount default -p &amp;#39;{&amp;#34;imagePullSecrets&amp;#34;: [{&amp;#34;name&amp;#34;: &amp;#34;registry-&amp;lt;registry-name&amp;gt;&amp;#34;}]}&amp;#39;
 &lt;/code>&lt;/pre>&lt;p>(see more details about these commands &lt;a href="https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/#step-6-run-your-app-on-a-cluster">here&lt;/a>).&lt;/p>
 &lt;p>Now for the fun part&amp;hellip; let&amp;rsquo;s deploy the collector:&lt;/p>
 &lt;pre tabindex="0">&lt;code>kubectl create deployment scanner-collector --image=registry.digitalocean.com/&amp;lt;registry-name&amp;gt;/scanner-collector
@@ -74,8 +74,8 @@ kubectl patch serviceaccount default -p &amp;#39;{&amp;#34;imagePullSecrets&amp;
 &lt;pre tabindex="0">&lt;code>kubectl get pods
 &lt;/code>&lt;/pre>&lt;p>and then, using a pod name from the output from the last command:&lt;/p>
 &lt;pre tabindex="0">&lt;code>kubectl logs &amp;lt;pod-name&amp;gt;
-&lt;/code>&lt;/pre>&lt;p>This will show some odd traffic like a request to &lt;code>/?XDEBUG_SESSION_START=phpstorm HTTP/1.1&lt;/code> trying to take advantage of &lt;a href="https://www.exploit-db.com/ghdb/6763">this&lt;/a> vulnerability.&lt;/p>
-&lt;p>Enjoy!&lt;/p></description></item><item><title>Orders of Magnitude Scoring System</title><link>https://hightower.space/posts/orders-of-mag-scoring-system/</link><pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/orders-of-mag-scoring-system/</guid><description>&lt;p>While this idea is original to me, I am confident I am not the first person to come up with this idea.
+&lt;/code>&lt;/pre>&lt;p>This will show some odd traffic like a request to &lt;code>/?XDEBUG_SESSION_START=phpstorm&lt;/code> trying to take advantage of &lt;a href="https://www.exploit-db.com/ghdb/6763">this&lt;/a> vulnerability.&lt;/p>
+&lt;p>Enjoy and &lt;a href="mailto:11floyd@proton.me">let me know&lt;/a> if you find anything particularly interesting!&lt;/p></description></item><item><title>Orders of Magnitude Scoring System</title><link>https://hightower.space/posts/orders-of-mag-scoring-system/</link><pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/orders-of-mag-scoring-system/</guid><description>&lt;p>While this idea is original to me, I am confident I am not the first person to come up with this idea.
 I have not, however, been able to find this idea mentioned anywhere (after a cursory search).&lt;/p>
 &lt;h2 id="the-use-case">The Use-Case&lt;/h2>
 &lt;p>There are cases in which using counting numbers for a scoring system does not work because the difference between n and n+1
