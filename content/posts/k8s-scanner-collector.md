@@ -13,7 +13,7 @@ It's very basic and is not meant for any production use-cases, but it just a fun
 
 ## Overview
 
-You can find the scanner [here](https://github.com/fhightower/k8s-scanner-collector).
+You can find the scanner on Github [here](https://github.com/fhightower/k8s-scanner-collector).
 
 We'll deploy it to a k8s cluster (I'm using [DigitalOcean's Kubernetes service](https://docs.digitalocean.com/products/kubernetes/) (DOKS)) and see what vulnerability and exploit scanners hit our app!
 
@@ -114,7 +114,7 @@ Now, we're ready to deploy our image to k8s.
 First, we create a new cluster with sane defaults:
 
 ```
-doctl kubernetes cluster create <cluster-name> --tag k8s-scanner-collector --auto-upgrade=true --node-pool "name=mypool;count=2;auto-scale=true;min-nodes=1;max-nodes=3;tag=scanner-collector"
+doctl kubernetes cluster create <cluster-name> --tag scanner-collector --auto-upgrade=true --node-pool "name=mypool;count=2;auto-scale=true;min-nodes=1;max-nodes=3;tag=scanner-collector"
 ```
 
 (see more details on this command [here](https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/#step-5-create-a-cluster)).
@@ -123,7 +123,7 @@ Now, we need to give our cluster access to our private registry:
 
 ```
 doctl registry kubernetes-manifest | kubectl apply -f -
-kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "registry-<your-registry-name>"}]}'
+kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "registry-<registry-name>"}]}'
 ```
 
 (see more details about these commands [here](https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/#step-6-run-your-app-on-a-cluster)).
@@ -174,7 +174,7 @@ and then, using a pod name from the output from the last command:
 kubectl logs <pod-name>
 ```
 
-This will show some odd traffic like a request to `/?XDEBUG_SESSION_START=phpstorm HTTP/1.1` trying to take advantage of [this](https://www.exploit-db.com/ghdb/6763) vulnerability.
+This will show some odd traffic like a request to `/?XDEBUG_SESSION_START=phpstorm` trying to take advantage of [this](https://www.exploit-db.com/ghdb/6763) vulnerability.
 
-Enjoy!
+Enjoy and [let me know](mailto:11floyd@proton.me) if you find anything particularly interesting!
 
