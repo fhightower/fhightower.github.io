@@ -15,7 +15,7 @@ The possible scores of this system will be:&lt;/p>
 &lt;li>100 (10^2)&lt;/li>
 &lt;li>1000 (10^3) &amp;hellip;&lt;/li>
 &lt;/ul>
-&lt;p>Thinking back to our example about a scoring system for books in which one provides the number of years one &lt;br>
+&lt;p>Thinking back to our example about a scoring system for books in which one provides the number of years one
 would wait before reading a book again, I think it is easy to see how this scoring system is easier to use as it avoids the challenge
 of differentiating adjacent values (e.g. 6 versus 7 years).&lt;/p>
 &lt;p>Another use case where I&amp;rsquo;ve found this system helpful is capturing how long one estimates a task to take.

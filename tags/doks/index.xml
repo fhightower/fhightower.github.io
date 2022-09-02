@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DOKS on Floyd</title><link>https://hightower.space/tags/doks/</link><description>Recent content in DOKS on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 01 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/doks/index.xml" rel="self" type="application/rss+xml"/><item><title>k8s Scanner Collector</title><link>https://hightower.space/posts/k8s-scanner-collector/</link><pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/k8s-scanner-collector/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>In this post, I explain a script (deployable to k8s) which will log incoming requests to collect requests from vulnerability and exploit scanners.&lt;/p>
+&lt;p>It&amp;rsquo;s very basic and is not meant for any production use-cases, but it just a fun project to learn more about GoLang, k8s, and vulnerability scanners.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>You can find the scanner &lt;a href="https://github.com/fhightower/k8s-scanner-collector">here&lt;/a>.&lt;/p>
+&lt;p>We&amp;rsquo;ll deploy it to a k8s cluster (I&amp;rsquo;m using &lt;a href="https://docs.digitalocean.com/products/kubernetes/">DigitalOcean&amp;rsquo;s Kubernetes service&lt;/a> (DOKS)) and see what vulnerability and exploit scanners hit our app!&lt;/p>
+&lt;p>If you&amp;rsquo;ve never built a docker image, pushed it to a registry, and/or deployed that image to k8s, you can keep reading this post as I&amp;rsquo;ll walk you through the process, but you may also find
+DigitalOcean&amp;rsquo;s &lt;a href="https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/">guide on the subject&lt;/a> helpful.&lt;/p>
+&lt;h2 id="the-process">The process&lt;/h2>
+&lt;p>The process requires four steps:&lt;/p>
+&lt;ol>
+&lt;li>Create a docker image&lt;/li>
+&lt;li>Push docker image to a registry&lt;/li>
+&lt;li>Deploy that image to a k8s cluster&lt;/li>
+&lt;li>View logs showing scanner activity&lt;/li>
+&lt;/ol>
+&lt;p>So let&amp;rsquo;s jump in!&lt;/p>
+&lt;h3 id="create-docker-image">Create Docker Image&lt;/h3>
+&lt;p>To create a docker image locally, we start by cloning the &lt;a href="https://github.com/fhightower/k8s-scanner-collector">repo&lt;/a>:&lt;/p>
+&lt;pre tabindex="0">&lt;code>git clone git@github.com:fhightower/k8s-scanner-collector.git;
+cd k8s-scanner-collector;
+&lt;/code>&lt;/pre>&lt;p>and we build a docker image with the name &lt;code>scanner-collector&lt;/code> like:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker build -t scanner-collector .
+&lt;/code>&lt;/pre>&lt;p>You can look at the &lt;code>Dockerfile&lt;/code> to see what is included in this docker image.&lt;/p>
+&lt;p>You can then run the image you created with:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker run -p 80:80 scanner-collector
+&lt;/code>&lt;/pre>&lt;p>which will run the scanner on http://localhost:80.&lt;/p>
+&lt;p>If you run this locally, you can see that, for each request, it logs:&lt;/p>
+&lt;ul>
+&lt;li>The requested path&lt;/li>
+&lt;li>The IP from which the request is coming (we make a best effort to find this)&lt;/li>
+&lt;/ul>
+&lt;h3 id="push-docker-image-to-registry">Push Docker Image to Registry&lt;/h3>
+&lt;p>Next, we&amp;rsquo;ll deploy our docker image to a registry (in this case, in DigitalOcean, but the process should be similar for different cloud providers).&lt;/p>
+&lt;p>To do this, we&amp;rsquo;ll use the &lt;a href="https://docs.digitalocean.com/reference/doctl/how-to/install/">doctl&lt;/a> cli.&lt;/p>
+&lt;p>We start by &lt;a href="https://cloud.digitalocean.com/account/api/tokens/new">creating a token&lt;/a> and then running this command which
+will prompt you for your token:&lt;/p>
+&lt;pre tabindex="0">&lt;code>doctl auth init
+&lt;/code>&lt;/pre>&lt;p>Now, if you don&amp;rsquo;t already have a registry, run:&lt;/p>
+&lt;pre tabindex="0">&lt;code>doctl registry create &amp;lt;registry-name&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>where &lt;code>&amp;lt;registry-name&amp;gt;&lt;/code> is globally unique.
+If you already have a registry in DigitalOcean, you an skip this step.&lt;/p>
+&lt;p>Next, we login into our registry:&lt;/p>
+&lt;pre tabindex="0">&lt;code>doctl registry login
+&lt;/code>&lt;/pre>&lt;p>Now, run this command to let docker know which image we want to push to the registry:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker tag scanner-collector registry.digitalocean.com/&amp;lt;registry-name&amp;gt;/scanner-collector
+&lt;/code>&lt;/pre>&lt;p>and push it to the registry:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker push registry.digitalocean.com/&amp;lt;registry-name&amp;gt;/scanner-collector
+&lt;/code>&lt;/pre>&lt;p>To make sure it has been pushed successfully, we can run it locally using the image from the registry:&lt;/p>
+&lt;pre tabindex="0">&lt;code>docker run -p 80:80 registry.digitalocean.com/&amp;lt;registry-name&amp;gt;/scanner-collector
+&lt;/code>&lt;/pre>&lt;h3 id="deploy-image-to-k8s">Deploy Image to k8s&lt;/h3>
+&lt;p>Now, we&amp;rsquo;re ready to deploy our image to k8s.&lt;/p>
+&lt;p>First, we create a new cluster with sane defaults:&lt;/p>
+&lt;pre tabindex="0">&lt;code>doctl kubernetes cluster create &amp;lt;cluster-name&amp;gt; --tag k8s-scanner-collector --auto-upgrade=true --node-pool &amp;#34;name=mypool;count=2;auto-scale=true;min-nodes=1;max-nodes=3;tag=scanner-collector&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>(see more details on this command &lt;a href="https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/#step-5-create-a-cluster">here&lt;/a>).&lt;/p>
+&lt;p>Now, we need to give our cluster access to our private registry:&lt;/p>
+&lt;pre tabindex="0">&lt;code>doctl registry kubernetes-manifest | kubectl apply -f -
+kubectl patch serviceaccount default -p &amp;#39;{&amp;#34;imagePullSecrets&amp;#34;: [{&amp;#34;name&amp;#34;: &amp;#34;registry-&amp;lt;your-registry-name&amp;gt;&amp;#34;}]}&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>(see more details about these commands &lt;a href="https://docs.digitalocean.com/tutorials/build-and-deploy-your-first-image-to-your-first-cluster/#step-6-run-your-app-on-a-cluster">here&lt;/a>).&lt;/p>
+&lt;p>Now for the fun part&amp;hellip; let&amp;rsquo;s deploy the collector:&lt;/p>
+&lt;pre tabindex="0">&lt;code>kubectl create deployment scanner-collector --image=registry.digitalocean.com/&amp;lt;registry-name&amp;gt;/scanner-collector
+&lt;/code>&lt;/pre>&lt;p>You can view the pods with:&lt;/p>
+&lt;pre tabindex="0">&lt;code>kubectl get pods
+&lt;/code>&lt;/pre>&lt;!-- Todo: include other interesting commands here... -->
+&lt;p>Now, let&amp;rsquo;s add a load balancer so our service is publicly accessible:&lt;/p>
+&lt;pre tabindex="0">&lt;code>kubectl expose deployment scanner-collector --type=LoadBalancer --port=80 --target-port=80
+&lt;/code>&lt;/pre>&lt;p>This can take a few minutes to get created, but you can run this until the &lt;code>Status&lt;/code> field is &lt;code>active&lt;/code>:&lt;/p>
+&lt;pre tabindex="0">&lt;code>doctl compute load-balancer list --format Name,Created,IP,Status
+&lt;/code>&lt;/pre>&lt;p>Once &lt;code>Status&lt;/code> is &lt;code>active&lt;/code>, you should see an IP address which is the public IP for your deployment.&lt;/p>
+&lt;p>You can visit that IP address in your browser and will see your app.&lt;/p>
+&lt;h3 id="view-logs-showing-scanner-activity">View Logs Showing Scanner Activity&lt;/h3>
+&lt;p>Now that we have a publicly accessible app, we can look at the logs to see if there&amp;rsquo;s anyone scanning our IP for vulnerabilities or exploits.&lt;/p>
+&lt;p>I recommend running:&lt;/p>
+&lt;pre tabindex="0">&lt;code>kubectl get pods
+&lt;/code>&lt;/pre>&lt;p>and then, using a pod name from the output from the last command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>kubectl logs &amp;lt;pod-name&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>This will show some odd traffic like a request to &lt;code>/?XDEBUG_SESSION_START=phpstorm HTTP/1.1&lt;/code> trying to take advantage of &lt;a href="https://www.exploit-db.com/ghdb/6763">this&lt;/a> vulnerability.&lt;/p>
+&lt;p>Enjoy!&lt;/p></description></item></channel></rss>

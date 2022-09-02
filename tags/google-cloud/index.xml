@@ -387,7 +387,44 @@ It is marketed as an &amp;rsquo;easy&amp;rsquo;, &amp;lsquo;simple&amp;rsquo; wa
 &lt;p>You were likely linked to this post from a &lt;a href="https://hightower.space/categories/gcp-notes/">GCP note&lt;/a> blog post.&lt;/p>
 &lt;p>This post is to warn you that the content of that post was written &lt;em>before&lt;/em> I had taken the exam.&lt;/p>
 &lt;p>I do not guarantee the accuracy or long-term reliability of these notes.&lt;/p>
-&lt;p>Use them at your own risk and always defer to Google&amp;rsquo;s docs as &lt;a href="https://en.wikipedia.org/wiki/Canon_(basic_principle)">canon&lt;/a>.&lt;/p></description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Use them at your own risk and always defer to Google&amp;rsquo;s docs as &lt;a href="https://en.wikipedia.org/wiki/Canon_(basic_principle)">canon&lt;/a>.&lt;/p></description></item><item><title>GCP Paradigms</title><link>https://hightower.space/posts/gcp-paradigms/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-paradigms/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
+&lt;p>This particular post lists paradigms and categories which are helpful to know when working with GCP.&lt;/p>
+&lt;h2 id="disclaimer">Disclaimer&lt;/h2>
+&lt;p>The content of these posts is written &lt;em>before&lt;/em> I have taken the exam.&lt;/p>
+&lt;p>I do not guarantee the accuracy or long-term reliability of these notes.&lt;/p>
+&lt;p>Use them at your own risk and always defer to Google&amp;rsquo;s docs as &lt;a href="https://en.wikipedia.org/wiki/Canon_(basic_principle)">canon&lt;/a>.&lt;/p>
+&lt;h2 id="paradigms">Paradigms&lt;/h2>
+&lt;h3 id="data-lakes-data-warehouses-and-databases">Data Lakes, Data Warehouses, and Databases&lt;/h3>
+&lt;p>A &lt;strong>data lake&lt;/strong> is typically a place to store/replicate raw data.&lt;/p>
+&lt;p>A &lt;strong>data warehouse&lt;/strong> is typically a place to store/replicate transformed data.
+Typically, this is done by applying a ETL step to the data in a data lake.&lt;/p>
+&lt;p>Data lakes and warehouses often fit together like:&lt;/p>
+&lt;p>[Raw data] -replicated-&amp;gt; [Data lake] -ETL-&amp;gt; [Data Warehouse]&lt;/p>
+&lt;p>&lt;strong>Databases&lt;/strong>, like data warehouses and unlike data lakes, store structured data. Unlike data warehouses, they are optimized
+for writes and often use record/row-based storage. Data is databases is typically live rather than populated from somewhere else.&lt;/p>
+&lt;h3 id="el-elt-and-etl">EL, ELT, and ETL&lt;/h3>
+&lt;p>These are three methods to consider when moving data from a source into a target GCP system.
+The correct method is determined by how much transformation is required to get the data into the desired state.
+The methods below are listed from lesser to greater transformation required:&lt;/p>
+&lt;ul>
+&lt;li>EL - Extract and Load: Extract data from source and load data as-is into target system&lt;/li>
+&lt;li>ELT - Extract, Load, and Transform: Extract data from source, load into target system, transform in the target system&lt;/li>
+&lt;li>ETL - Extract, Transform, and Load: Extract data from source, transform data, load data into target system&lt;/li>
+&lt;/ul>
+&lt;p>In an ETL pipeline, it is important to:&lt;/p>
+&lt;ul>
+&lt;li>Maintain data lineage&lt;/li>
+&lt;li>Keep metadata&lt;/li>
+&lt;li>Data Catalog is a GCP product to help discover and manage metadata&lt;/li>
+&lt;/ul>
+&lt;h3 id="others">Others&lt;/h3>
+&lt;p>Here are some others which I&amp;rsquo;m not going to discuss here:&lt;/p>
+&lt;ul>
+&lt;li>push vs. pull events&lt;/li>
+&lt;li>3 v&amp;rsquo;s of data: variety, volume, velocity&lt;/li>
+&lt;li>seperation of compute and storage&lt;/li>
+&lt;/ul></description></item><item><title>Pub/Sub in a Nutshell</title><link>https://hightower.space/posts/pubsub-notes/</link><pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pubsub-notes/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>This post is part of a series of posts with notes as I&amp;rsquo;m studying for &lt;a href="https://cloud.google.com/certification/data-engineer">Google&amp;rsquo;s Professional Data Engineer Certification&lt;/a>.&lt;/p>
 &lt;p>This particular post covers Pub/Sub in a nutshell.&lt;/p>
 &lt;h2 id="disclaimer">Disclaimer&lt;/h2>
