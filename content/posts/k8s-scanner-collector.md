@@ -1,8 +1,8 @@
 +++
 date = "2022-09-01"
-title = "k8s Scanner Collector"
+title = "Logging Scans from Vulnerability and Exploit Scanners (for Fun)"
 description = "Script (deployable to k8s) to log requests from vulnerability and exploit scanners."
-tags = ["GoLang", "Vulnerabilities", "Exploits", "Scanners", "Threat Intelligence", "DigitalOcean", "k8s", "DOKS", "Docker"]
+tags = ["GoLang", "Vulnerabilities", "Exploits", "Scanners", "Threat Intelligence", "DigitalOcean", "k8s", "DOKS", "Docker", "Load Balancers"]
 +++
 
 ## Intro
