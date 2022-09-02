@@ -5,6 +5,11 @@ languageCode = "en"
 paginate = 7
 
 [[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
 name = "Reading Lists"
 url = "/categories/reading-list"
 weight = 2
