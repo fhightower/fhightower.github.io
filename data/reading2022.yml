@@ -294,3 +294,31 @@
   rating: "1"
   notes:
     - "Aside from being one of the best named blogs out there, this podcast is insightful, poignant, often hilarious, and well written even if you don't agree with Doug Wilson"
+- title: "How to Solve It"
+  authors:
+    - "George Pólya"
+  rating: "100"
+  notes:
+    - "Interesting read, but underwhelming. I had high expectations for this book based on a friend's review and was definitely disappointed."
+    - "A few good tips for solving problems, but nothing earth-shaking"
+- title: "[Having Two Legs](https://podcasts.apple.com/us/podcast/having-two-legs/id1606820470)"
+  authors:
+    - "Toby Sumpter"
+  rating: "0"
+  notes:
+    - "Perhaps one of the best podcasts I have found. The posts are thoughtful, biblical, short, and (perhaps most uniquely) encouraging."
+    - "This podcast is joyful and encouraging in a way that few others are."
+- title: "Mathematics and Art: A Cultural History"
+  authors:
+    - "Lynn Gamwell"
+  rating: "1"
+  notes:
+    - "Great read covering a number of fascinating topics"
+- title: "There's No Free Lunch: 250 Economic Truths"
+  authors:
+    - "David L. Bahnsen"
+  rating: "1"
+  notes:
+    - "Really approachable, enjoyable, and informative read"
+    - "Love the idea of a book that is a commentary on notable quotes"
+
