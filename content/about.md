@@ -1,5 +1,14 @@
 # About Me...
 
-My name is Floyd Hightower and I'm a software engineer passionate about designing systems and crafting software to make the world a better place.
+I go by "Floyd". I'm a software craftsman dedicated to designing software and systems which make the world a better place.
+I try to:
 
-I'll be adding more information here soon!
+- Practice [Extreme Ownership](https://echelonfront.com/extreme-ownership/)
+- Be humble enough to accept feedback and adopt a good idea
+- Always be learning something new and pushing myself outside of my comfort zones
+
+I hope you enjoy poking around this site and find it profitable, thought-provoking, and insightful.
+
+Cheers,<br/>
+Floyd
+
