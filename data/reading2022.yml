@@ -323,4 +323,50 @@
     - "Love the idea of a book that is a commentary on notable quotes"
     - "The quotes in this book cohere to form a compelling argument for the free market and a healthy definition of economics in which human creativity and passion fuels production to meet needs and facilitate human flourishing"
     - "This book introduced me to the 'Knowledge Problem'"
-
+- title: "The Brothers Karamazov"
+  authors:
+    - "Fyodor Dostoevsky"
+  rating: "100"
+  notes:
+    - "Underwhelming... below the expectations set by the reviews of this book I have heard in the past"
+    - "IMO, not one of Dostoevsky's better works"
+    - "Intriguing and captivating storyline which was much more engaging than 'Crime and Punishment'"
+- title: "A Guide to a Georgia Barrier Island: Featuring Jekyll Island With St. Simons & Sapelo Islands"
+  authors:
+    - "Taylor Schoettle"
+  rating: "10"
+  notes:
+    - "Fascinating book on a rare and unique part of the US"
+- title: "A Naturalist's Guide to the Okefenokee Swamp"
+  authors:
+    - "Taylor Schoettle"
+  rating: "100"
+  notes:
+    - "Good read about a fascinating ecosystem"
+- title: "Tree Houses: Fairy Tale Castles"
+  authors:
+    - "Philip Jodidio"
+  rating: "10"
+  notes:
+    - "Fun read about some amazing tree houses"
+    - "This was my favorite: https://www.treehotel.se/en/rooms/the-mirrorcube"
+- title: "The Florida Everglades"
+  authors:
+    - "Connie Toops"
+  rating: "100"
+  notes:
+    - "Interesting read about a unique part of the US"
+- title: "Personal Financial Planning for Executives and Entrepreneurs: The Path to Financial Peace of Mind (2nd ed.)"
+  authors:
+    - "Many: https://www.amazon.com/Personal-Financial-Planning-Executives-Entrepreneurs/dp/3030653994"
+  rating: "1"
+  notes:
+    - "Very informative and practical guide for more than just executives and entrepreneurs"
+    - "Highly recommended"
+- title: "Hawk Watch: A Guide for Beginners"
+  authors:
+    - "Pete Dunne"
+  rating: "1"
+  notes:
+    - "Really helpful introduction to Hawk Watching"
+    - "Very helpful guides detailing how to differentiate raptors from one another"
