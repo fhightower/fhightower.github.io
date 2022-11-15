@@ -2,7 +2,7 @@
 date = "2022-07-17"
 title = "Orders of Magnitude Scoring System"
 description = "A scoring system whose values are orders of magnitude different from one another can be very helpful in a multitude of use-cases. This post describes what such a system is and why it can be helpful."
-tags = ["Maths", "Scoring Systems", "Exponentials", "Orders of Magnitude"]
+tags = ["Math", "Scoring Systems", "Exponentials", "Orders of Magnitude"]
 +++
 
 While this idea is original to me, I am confident I am not the first person to come up with this idea.
