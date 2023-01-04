@@ -35,7 +35,7 @@ kubectl patch serviceaccount default -p &#39;{&#34;imagePullSecrets&#34;: [{&#34
 </code></pre><p>Once <code>Status</code> is <code>active</code>, you should see an IP address which is the public IP for your deployment.</p><p>You can visit that IP address in your browser and will see your app.</p><h3 id=view-logs-showing-scanner-activity>View Logs Showing Scanner Activity</h3><p>Now that we have a publicly accessible app, we can look at the logs to see if there&rsquo;s anyone scanning our IP for vulnerabilities or exploits.</p><p>I recommend running:</p><pre tabindex=0><code>kubectl get pods
 </code></pre><p>and then, using a pod name from the output from the last command:</p><pre tabindex=0><code>kubectl logs &lt;pod-name&gt;
 </code></pre><p>This will show some odd traffic like a request to <code>/?XDEBUG_SESSION_START=phpstorm</code> trying to take advantage of <a href=https://www.exploit-db.com/ghdb/6763>this</a> vulnerability.</p><p>Enjoy and <a href=mailto:11floyd@proton.me>let me know</a> if you find anything particularly interesting!</p></article><div class=paginator><a class=link href=https://hightower.space/posts/orders-of-mag-scoring-system/>← prev</a>
-<a></a></div><div class=comment></div></main><footer id=footer><div><span>© 2019</span> - <span>2022</span></div><div><span>Powered by</span>
+<a></a></div><div class=comment></div></main><footer id=footer><div><span>© 2019</span> - <span>2023</span></div><div><span>Powered by</span>
 <a class=link href=https://gohugo.io/>Hugo</a>
 <span>| Theme</span>
 <a class=link href=https://github.com/fhightower/hugo-theme-texify>TeXify</a></div><div class=footnote><span><a class=link href=https://github.com/fhightower>GitHub</a> |
