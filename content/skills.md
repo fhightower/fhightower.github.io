@@ -4,17 +4,17 @@ Here is a regularly updated list of skills I have:
 
 ~ | Skill | Fluency\* | Years of Experience | Frequency of Use | Context
 --- | --- | --- | --- | --- | ---
-![Python](/img/skills/python.png "Python") | Python | Expert | 15+ | Daily | Personal, Professional, Academic
-![Github](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg "Github") | Github | Expert | 7 | Daily | Academic, Personal, Professional
-![Flask](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg "Flask") | Flask | Expert | 7 | Monthly | Personal, Professional
+![Python](/img/skills/python.png "Python") | Python | Expert | {{< since 2013 >}} | Daily | Personal, Professional, Academic
+![Github](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg "Github") | Github | Expert | {{< since 2013 >}} | Daily | Academic, Personal, Professional
+![Flask](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg "Flask") | Flask | Expert | {{< since 2017 >}} | Monthly | Personal, Professional
 ![Gitlab](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gitlab.svg "Gitlab") | Gitlab | Expert | 3 | Monthly | Personal, Professional
 ![FastAPI](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/fastapi.svg "FastAPI") | FastAPI | Expert | 3 | Monthly | Personal, Professional
-![Markdown](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/markdown.svg "Markdown") | Markdown | n/a (with Markdown, I think you either use it or you don't) | 7 | Daily | Personal, Professional
-![Pytest](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/pytest.svg "Pytest")| Pytest | Expert | 5 | Daily | Personal, Professional
-![Docker](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg "Docker") | Docker | Intermediate | 4 | Daily | Personal, Professional
-![Kubernetes](/img/skills/kubernetes.png "Kubernetes") | Kubernetes | Intermediate | 2 | Daily | Professional
-![Neovim](/img/skills/neovim.png "Neovim") | Neovim | Beginner | 1 | Daily | Personal, Professional
-![Google Cloud](/img/skills/google-cloud.png "Google Cloud") | Google Cloud | Intermediate (I'm a [Google Certified Professional Data Engineer](https://cloud.google.com/certification/data-engineer)) | 1 | Daily | Personal, Professional
+![Markdown](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/markdown.svg "Markdown") | Markdown | n/a (with Markdown, I think you either use it or you don't) | {{< since 2015 >}} | Daily | Personal, Professional
+![Pytest](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/pytest.svg "Pytest")| Pytest | Expert | {{< since 2017 >}} | Daily | Personal, Professional
+![Docker](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg "Docker") | Docker | Intermediate | {{< since 2019 >}} | Daily | Personal, Professional
+![Kubernetes](/img/skills/kubernetes.png "Kubernetes") | Kubernetes | Intermediate | {{< since 2020 >}} | Daily | Professional
+![Neovim](/img/skills/neovim.png "Neovim") | Neovim | Beginner | {{< since 2022 >}} | Daily | Personal, Professional
+![Google Cloud](/img/skills/google-cloud.png "Google Cloud") | Google Cloud | Intermediate (I'm a [Google Certified Professional Data Engineer](https://cloud.google.com/certification/data-engineer)) | {{< since 2020 >}} | Weekly | Personal, Professional
 ![Jupyter (notebooks and kernels)](/img/skills/jupyter.png "Jupyter (notebooks and kernals)") | Jupyter (notebooks and kernels) | Intermediate | 5 | Weekly | Personal
 ![Elasticsearch](/img/skills/elastic-elasticsearch.png "Elasticsearch") | Elasticsearch | Beginner | 3 | Weekly | Personal, Professional
 ![Kibana](/img/skills/elastic-kibana.png "Kibana") | Kibana | Beginner | 3 | Weekly | Professional
