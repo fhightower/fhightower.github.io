@@ -4307,7 +4307,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://hightower.space/img/skills/python.png" alt="Python" title="Python">&lt;/td>
 &lt;td>Python&lt;/td>
 &lt;td>Expert&lt;/td>
-&lt;td>15+&lt;/td>
+&lt;td>
+10
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional, Academic&lt;/td>
 &lt;/tr>
@@ -4315,7 +4317,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="Github" title="Github">&lt;/td>
 &lt;td>Github&lt;/td>
 &lt;td>Expert&lt;/td>
-&lt;td>7&lt;/td>
+&lt;td>
+10
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Academic, Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4323,7 +4327,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg" alt="Flask" title="Flask">&lt;/td>
 &lt;td>Flask&lt;/td>
 &lt;td>Expert&lt;/td>
-&lt;td>7&lt;/td>
+&lt;td>
+6
+&lt;/td>
 &lt;td>Monthly&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4347,7 +4353,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/markdown.svg" alt="Markdown" title="Markdown">&lt;/td>
 &lt;td>Markdown&lt;/td>
 &lt;td>n/a (with Markdown, I think you either use it or you don&amp;rsquo;t)&lt;/td>
-&lt;td>7&lt;/td>
+&lt;td>
+8
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4355,7 +4363,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/pytest.svg" alt="Pytest" title="Pytest">&lt;/td>
 &lt;td>Pytest&lt;/td>
 &lt;td>Expert&lt;/td>
-&lt;td>5&lt;/td>
+&lt;td>
+6
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4363,7 +4373,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg" alt="Docker" title="Docker">&lt;/td>
 &lt;td>Docker&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>4&lt;/td>
+&lt;td>
+4
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4371,7 +4383,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://hightower.space/img/skills/kubernetes.png" alt="Kubernetes" title="Kubernetes">&lt;/td>
 &lt;td>Kubernetes&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>2&lt;/td>
+&lt;td>
+3
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
@@ -4379,7 +4393,9 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://hightower.space/img/skills/neovim.png" alt="Neovim" title="Neovim">&lt;/td>
 &lt;td>Neovim&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>1&lt;/td>
+&lt;td>
+1
+&lt;/td>
 &lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4387,8 +4403,10 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>&lt;img src="https://hightower.space/img/skills/google-cloud.png" alt="Google Cloud" title="Google Cloud">&lt;/td>
 &lt;td>Google Cloud&lt;/td>
 &lt;td>Intermediate (I&amp;rsquo;m a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>Daily&lt;/td>
+&lt;td>
+3
+&lt;/td>
+&lt;td>Weekly&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
