@@ -1,0 +1,13 @@
+{{ if .Params }}
+    {{ $startYear := (index .Params 0) }}
+    {{ $endYear := now.Year }}
+    {{ $endYearText := "Present" }}
+
+    {{ if ne (index .Params 1) nil }}
+        {{ $endYear = (index .Params 1) }}
+        {{ $endYearText = (index .Params 1) }}
+    {{ end }}
+
+    {{ sub $endYear (sub $startYear 1) }}<br/>({{ $startYear }} - {{ $endYearText }})
+{{ end }}
+
