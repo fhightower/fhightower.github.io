@@ -4298,7 +4298,6 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;th>Skill&lt;/th>
 &lt;th>Fluency*&lt;/th>
 &lt;th>Years of Experience&lt;/th>
-&lt;th>Frequency of Use&lt;/th>
 &lt;th>Context&lt;/th>
 &lt;/tr>
 &lt;/thead>
@@ -4308,9 +4307,8 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Python&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-10
+11&lt;br/>(2013 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional, Academic&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4318,9 +4316,8 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Github&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-10
+11&lt;br/>(2013 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Academic, Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4328,25 +4325,26 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Flask&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-6
+7&lt;br/>(2017 - Present)
 &lt;/td>
-&lt;td>Monthly&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gitlab.svg" alt="Gitlab" title="Gitlab">&lt;/td>
 &lt;td>Gitlab&lt;/td>
 &lt;td>Expert&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Monthly&lt;/td>
+&lt;td>
+4&lt;br/>(2017 - 2020)
+&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/fastapi.svg" alt="FastAPI" title="FastAPI">&lt;/td>
 &lt;td>FastAPI&lt;/td>
 &lt;td>Expert&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Monthly&lt;/td>
+&lt;td>
+4&lt;br/>(2019 - 2022)
+&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4354,9 +4352,8 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Markdown&lt;/td>
 &lt;td>n/a (with Markdown, I think you either use it or you don&amp;rsquo;t)&lt;/td>
 &lt;td>
-8
+9&lt;br/>(2015 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4364,19 +4361,26 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Pytest&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-6
+7&lt;br/>(2017 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://hightower.space/img/skills/hugo.png" alt="Hugo" title="Hugo">&lt;/td>
+&lt;td>Hugo&lt;/td>
+&lt;td>Expert&lt;/td>
+&lt;td>
+5&lt;br/>(2019 - Present)
+&lt;/td>
+&lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg" alt="Docker" title="Docker">&lt;/td>
 &lt;td>Docker&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-4
+5&lt;br/>(2019 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4384,9 +4388,8 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Kubernetes&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-3
+4&lt;br/>(2020 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4394,9 +4397,8 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Neovim&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-1
+2&lt;br/>(2022 - Present)
 &lt;/td>
-&lt;td>Daily&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
@@ -4404,145 +4406,161 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Google Cloud&lt;/td>
 &lt;td>Intermediate (I&amp;rsquo;m a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/td>
 &lt;td>
-3
+4&lt;br/>(2020 - Present)
 &lt;/td>
-&lt;td>Weekly&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/jupyter.png" alt="Jupyter (notebooks and kernels)" title="Jupyter (notebooks and kernals)">&lt;/td>
 &lt;td>Jupyter (notebooks and kernels)&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>5&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+6&lt;br/>(2015 - 2020)
+&lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/elastic-elasticsearch.png" alt="Elasticsearch" title="Elasticsearch">&lt;/td>
 &lt;td>Elasticsearch&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+4&lt;br/>(2020 - Present)
+&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/elastic-kibana.png" alt="Kibana" title="Kibana">&lt;/td>
 &lt;td>Kibana&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+4&lt;br/>(2020 - Present)
+&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/helm.png" alt="Helm" title="Helm">&lt;/td>
 &lt;td>Helm&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>2&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+3&lt;br/>(2020 - 2022)
+&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buildkite.svg" alt="Buildkite" title="Buildkite">&lt;/td>
 &lt;td>Buildkite&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>2&lt;/td>
-&lt;td>Daily&lt;/td>
+&lt;td>
+3&lt;br/>(2020 - 2022)
+&lt;/td>
 &lt;td>Professional&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/hugo.png" alt="Hugo" title="Hugo">&lt;/td>
-&lt;td>Hugo&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Monthly&lt;/td>
-&lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vuedotjs.svg" alt="Vue.js" title="Vue.js">&lt;/td>
 &lt;td>Vue.js&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>4&lt;/td>
-&lt;td>Rarely&lt;/td>
+&lt;td>
+3&lt;br/>(2017 - 2019)
+&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/django.svg" alt="Django" title="Django">&lt;/td>
 &lt;td>Django&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>4&lt;/td>
-&lt;td>Rarely&lt;/td>
+&lt;td>
+4&lt;br/>(2017 - 2020)
+&lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/aws.png" alt="AWS" title="AWS">&lt;/td>
 &lt;td>AWS&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>3&lt;/td>
-&lt;td>Rarely&lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td>
+4&lt;br/>(2016 - 2019)
+&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/go.png" alt="Go" title="Go">&lt;/td>
 &lt;td>Go&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+3&lt;br/>(2021 - Present)
+&lt;/td>
 &lt;td>Personal&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/ruby.svg" alt="Ruby" title="Ruby">&lt;/td>
+&lt;td>Ruby&lt;/td>
+&lt;td>Beginner&lt;/td>
+&lt;td>
+1&lt;br/>(2023 - Present)
+&lt;/td>
+&lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/clojure.png" alt="Clojure" title="Clojure">&lt;/td>
 &lt;td>Clojure&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+3&lt;br/>(2021 - Present)
+&lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/grafana.png" alt="Grafana" title="Grafana">&lt;/td>
 &lt;td>Grafana&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>Weekly&lt;/td>
+&lt;td>
+4&lt;br/>(2020 - Present)
+&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/clojurescript.png" alt="ClojureScript" title="ClojureScript">&lt;/td>
 &lt;td>ClojureScript&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>1&lt;/td>
-&lt;td>Monthly&lt;/td>
+&lt;td>
+3&lt;br/>(2021 - Present)
+&lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://hightower.space/img/skills/javascript.png" alt="JavaScript" title="JavaScript">&lt;/td>
 &lt;td>JavaScript&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>10&lt;/td>
-&lt;td>Monthly&lt;/td>
+&lt;td>
+13&lt;br/>(2011 - Present)
+&lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>~&lt;/td>
 &lt;td>Java&lt;/td>
 &lt;td>Intermediate&lt;/td>
-&lt;td>5&lt;/td>
-&lt;td>Rarely&lt;/td>
+&lt;td>
+6&lt;br/>(2011 - 2016)
+&lt;/td>
 &lt;td>Personal, Academic&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vault.svg" alt="Vault" title="Vault">&lt;/td>
 &lt;td>Vault&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>5&lt;/td>
-&lt;td>Monthly&lt;/td>
+&lt;td>
+7&lt;br/>(2017 - Present)
+&lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg" alt="Coffee, please!!!" title="Coffee, please!!!">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg" alt="Less sleep and more joy than I expected" title="Less sleep and more joy than I expected">&lt;/td>
 &lt;td>Fatherhood&lt;/td>
 &lt;td>Beginner&lt;/td>
-&lt;td>&amp;lt;1&lt;/td>
-&lt;td>Daily&lt;/td>
+&lt;td>
+2&lt;br/>(2022 - Present)
+&lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;/tbody>
