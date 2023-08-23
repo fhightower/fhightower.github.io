@@ -1,4 +1,397 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Floyd</title><link>https://hightower.space/posts/</link><description>Recent content in Posts on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 01 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Logging Scans from Vulnerability and Exploit Scanners (for Fun)</title><link>https://hightower.space/posts/k8s-scanner-collector/</link><pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/k8s-scanner-collector/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Floyd</title><link>https://hightower.space/posts/</link><description>Recent content in Posts on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 Reading List</title><link>https://hightower.space/posts/2023-reading-list/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2023-reading-list/</guid><description>&lt;section>
+Books read in 2023: 28
+&lt;ol>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>On Becoming Baby Wise&lt;/i> [1,000,000]&lt;/summary>
+Notes:
+&lt;ul>
+&lt;li>Extremely underwhelming - I heard great things about this book, but I found very little value from it as most of what they say I already knew from other sources.&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>7 Habits of Highly Effective People&lt;/i> [0]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Stephen Covey&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Cannot recommend this book highly enough&lt;/li>
+&lt;li>Cheesy title, but a truly life-changing book&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Combat Strength Training: A No-Nonsense Retrofit for your Combat Chassis&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Pat McNamara&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Get intro to strength training and fitness&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Lazy Genius: Embrace What Matters, Ditch What Doesn&amp;rsquo;t, and Get Stuff Done&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Kendra Adachi&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Good book w/ some good practical advice for busy people (e.g. parents)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Convict Conditioning&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Paul Wade&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Despite the overstated title, I think this book is actually really great!&lt;/li>
+&lt;li>Gives paths for progression through various body-weight exercises&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Fit to Fight: An Insanely Effective Strength and Conditioning Program for the Ultimate MMA Warrior&lt;/i> [1000]&lt;/summary>
+Notes:
+&lt;ul>
+&lt;li>Not bad - some good advice on diet and inspiration for workouts&lt;/li>
+&lt;li>Ridiculous cover image&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Preparing for the Army Combat Fitness Test&lt;/i> [10]&lt;/summary>
+Notes:
+&lt;ul>
+&lt;li>The army PT test serves as a good benchmark for a basic level of fitness&lt;/li>
+&lt;li>Helpful collection of exercises to improve various skills&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Better Than Before: What I Learned About Making and Breaking Habits&amp;ndash;to Sleep More, Quit Sugar, Procrastinate Less, and Generally Build a Happier Life&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Gretchen Rubin&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Interesting book which gives a helpful paradigm for understanding how different people build habits (and some helpful tips on doing so)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Tiny House: Live Small, Dream Big&lt;/i> [100]&lt;/summary>
+Notes:
+&lt;ul>
+&lt;li>Inspiring book to look through&lt;/li>
+&lt;li>Great pics, but they don&amp;rsquo;t do a good job of telling the story of each house&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>M Is for Mama: A Rebellion Against Mediocre Motherhood&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Abbie Halberstadt&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very encouraging and challenging book even for dads&lt;/li>
+&lt;li>A sort of &amp;lsquo;Extreme Ownership&amp;rsquo; for moms&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Magician&amp;rsquo;s Nephew&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>C. S. Lewis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fantastic book - absolutely gets better with age&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The End of the World Is Just the Beginning: Mapping the Collapse of Globalization&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Peter Zeihan&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fascinating book&lt;/li>
+&lt;li>Describes which countries are well-situated in the world he believes we are entering (US, most of N and S America as a whole, Argentina, France, Turkey, Australia/New Zealand)&lt;/li>
+&lt;li>One of his main theses is that geography and demographics matter - you can outrun population decline and can&amp;rsquo;t drive a truck across an ocean&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>A Gospel Primer for Christians: Learning to See the Glories of God&amp;rsquo;s Love&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Milton Vincent&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very worshipful book that I want to study through more thoroughly&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Mysterious Benedict Society&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Trenton Lee Stewart&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very fun read and highly recommended for kids (and even adults)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Artist&amp;rsquo;s Way&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Julia Cameron&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>A book I hope to read and re-read soon&lt;/li>
+&lt;li>As a Christian, I think I have an even more powerful impetus to practice what is in this book than those who believe only in a nebulous, impersonal presence or spirit&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>On Guard: Defending Your Faith with Reason and Precision&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>William Lane Craig&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Good read - introduces a lot of classical apologetic techniques for what they are worth&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Habits of the Household: Practicing the Story of God in Everyday Family Rhythms&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Justin Whitmel Earley&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Encouraging and practical read for parents&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Freedom of Self Forgetfulness: The Path to True Christian Joy&lt;/i> [0]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Timothy Keller&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>GREAT book - very insightful and challenging&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Way of the Warrior Kid 1: From wimpy to warrior the navy seal way&lt;/i> [100]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jocko Willink&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Good book for kids - helpful intro and application of Jocko&amp;rsquo;s principles&lt;/li>
+&lt;li>Chapter 7 contains various warrior codes which are worth reading in and of themselves&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Rest of God: Restoring Your Soul by Restoring Sabbath&lt;/i> [100]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Mark Buchanan&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Good theology and some helpful tips in this book&lt;/li>
+&lt;li>Author wasn&amp;rsquo;t very concise and, in my opinion, was trying too hard to illustrate his points&lt;/li>
+&lt;li>This is a good book - but I recommend just finding a good outline/summary of the book and calling that good&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Ruthless Elimination of Hurry: How to Stay Emotionally Healthy and Spiritually Alive in the Chaos of the Modern World&lt;/i> [1000]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>John Mark Comer&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Not recommended&lt;/li>
+&lt;li>Author is trying to be too &amp;lsquo;cute&amp;rsquo; and persuasive&lt;/li>
+&lt;li>Advice in this book is generally good, but not well-rooted in scripture. Author is playing fast and loose with scripture to try to root his words in the Bible instead of wisdom&lt;/li>
+&lt;li>Find a good outline and summary of this book and read that&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>You&amp;rsquo;re Only Human: How Your Limits Reflect God&amp;rsquo;s Design and Why That&amp;rsquo;s Good News&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Kelly M. Kapic&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fascinating and encouraging read&lt;/li>
+&lt;li>I appreciated the point that some of what we call sin is really part of what it means to be a creature&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>How to Talk to Strangers&lt;/i> [1000]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Amanda Myers&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Not very helpful&lt;/li>
+&lt;li>Basically: Talking to strangers can be exciting and open doors although we have a cultural bias against and fear of strangers. When talking with strangers: smile, listen well, ask questions to find common ground&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Marc&amp;rsquo;s Mission: Way of the Warrior Kid&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jocko Willink&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very good book (I think even better than the first one)&lt;/li>
+&lt;li>Love the realization of who Nathan is and what his background is&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Lonely Planet Epic Bike Rides of the World 1&lt;/i> [10]&lt;/summary>
+Notes:
+&lt;ul>
+&lt;li>Fun read&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Forest: A Journey Through Wild and Magnificent Landscapes&lt;/i> [1000]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Matt Collins&lt;/li>
+&lt;li>Roo Lewis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Focuses more on individual tree species than forests as a whole&lt;/li>
+&lt;li>Mildly interesting book with some great photographs&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Fields of Dreams: Travels in the Wildflower Meadows of America&lt;/i> [10]&lt;/summary>
+Notes:
+&lt;ul>
+&lt;li>Beautiful photographs - worth skimming for the photos alone&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Never Split the Difference: Negotiating As If Your Life Depended On It&lt;/i> [0]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Chris Voss&lt;/li>
+&lt;li>Tahl Raz&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Potentially life-changing book&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Logging Scans from Vulnerability and Exploit Scanners (for Fun)</title><link>https://hightower.space/posts/k8s-scanner-collector/</link><pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/k8s-scanner-collector/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>In this post, I explain a script (deployable to k8s) which will log incoming requests to collect requests from vulnerability and exploit scanners.&lt;/p>
 &lt;p>It&amp;rsquo;s very basic and is not meant for any production use-cases, but it just a fun project to learn more about GoLang, k8s, and vulnerability scanners.&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
@@ -3970,6 +4363,7 @@ only:
 &lt;li>The First Epistle of Clement to the Corinthians&lt;/li>
 &lt;li>Computing Machinery and Intelligence&lt;/li>
 &lt;li>The Death of Ivan Ilych (and other short stories by Leo Tolstoy)&lt;/li>
+&lt;li>Splendor of Grace&lt;/li>
 &lt;/ul>
 &lt;p>Many more&amp;hellip;&lt;/p>
 &lt;p>† Note on the &amp;ldquo;Redrawing the Line Between Hermeneutics and Application&amp;rdquo; article:&lt;/p>
@@ -4224,6 +4618,7 @@ Found solution in: [Display value:`createJson(200, 0, number).length - 1` /] ste
 &lt;li>Not a Sometimes Love (Keith Korstjens)&lt;/li>
 &lt;li>The Oxford Union Guide to Speaking in Public&lt;/li>
 &lt;li>The Vanishing Conscience (John MacArthur)&lt;/li>
+&lt;li>Love Your God with All Your Mind: The Role of Reason in the Life of the Soul (J.P. Moreland)&lt;/li>
 &lt;/ul>
 &lt;p>Many more&amp;hellip;&lt;/p></description></item><item><title>Defining Sports</title><link>https://hightower.space/posts/defining-sports/</link><pubDate>Fri, 24 Apr 2015 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/defining-sports/</guid><description>&lt;p>If you were to do some research on the etymology of the word &amp;ldquo;sport&amp;rdquo;, you would find that the word has its root in the idea of pleasurable, enjoyable activities, games, or flirtations that amuse and temporarily divert one&amp;rsquo;s attention&lt;sup>1&lt;/sup>. I am arguing, however, that this definition has changed with the advent of professional sports. With the rise of professional baseball and football in the first third of the 20th century, people began to view sports as an important part of culture. The explosion of technologies like radios and televisions continued the shift by transforming sports into a ubiquitous, multi-billion dollar industries. Sports are much more serious in our culture today than they were in the 19th and 18th centuries when a &amp;lsquo;sport&amp;rsquo; was simply an enjoyable pastime. Those playing a sport are not considered flirtatious men passing the time, but are elevated icons of society (for better or worse). Therefore, I believe it is high time we redefine the word &amp;lsquo;sport&amp;rsquo; and think about using some new words to describe the activities normally classified as &amp;lsquo;sports&amp;rsquo;. After all, the word &amp;lsquo;sport&amp;rsquo; is currently used to describe everything ranging from golf to rugby, tennis to skateboarding, and cheerleading&lt;sup>2&lt;/sup> to ice-hockey. My attempt in this blog post is to provide new definitions we can use to differentiate different types of activities.&lt;/p>
 &lt;aside class="marginnote">
