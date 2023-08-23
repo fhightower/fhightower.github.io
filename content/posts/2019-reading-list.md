@@ -38,6 +38,7 @@ categories = ["Reading List"]
 - The First Epistle of Clement to the Corinthians
 - Computing Machinery and Intelligence
 - The Death of Ivan Ilych (and other short stories by Leo Tolstoy)
+- Splendor of Grace
 
 Many more...
 

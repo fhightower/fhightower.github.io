@@ -36,5 +36,6 @@ categories = ["Reading List"]
 - Not a Sometimes Love (Keith Korstjens)
 - The Oxford Union Guide to Speaking in Public
 - The Vanishing Conscience (John MacArthur)
+- Love Your God with All Your Mind: The Role of Reason in the Life of the Soul (J.P. Moreland)
 
 Many more...
