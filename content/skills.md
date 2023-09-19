@@ -26,7 +26,7 @@ Here is a regularly updated list of skills I have:
 ![JavaScript](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg "JavaScript") | JavaScript | Intermediate | {{< duration 2011 >}} | Personal
 ![Stimulus](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/stimulus.svg "Stimulus") | Stimulus | Intermediate | {{< duration 2022 2023 >}} | Personal
 ~ | Java | Intermediate | {{< duration 2011 2016 >}} | Personal, Academic
-![Go](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/go.svg "Go") | Go | Beginner | {{< duration 2021 >}} | Personal, Professional
+![Go](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/go.svg "Go") | Go | Intermediate | {{< duration 2021 >}} | Personal, Professional
 ![Protocol Buffers](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buffer.svg "Protocol Buffers") | Protocol Buffers | Beginner | {{< duration 2022 2023 >}} | Personal
 ![Ruby](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/ruby.svg "Ruby") | Ruby | Beginner | {{< duration 2022 2023 >}} | Professional
 ![Ruby on Rails](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/rubyonrails.svg "Ruby on Rails") | Ruby on Rails | Beginner | {{< duration 2022 2023 >}} | Professional
