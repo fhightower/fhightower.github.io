@@ -175,4 +175,30 @@
     - "Tahl Raz"
   notes:
     - "Potentially life-changing book"
+- title: "Discipline Equals Freedom: Field Manual"
+  rating: 0
+  authors:
+    - "Jocko Willink"
+  notes:
+    - "Fantastic book - definitely worth internalizing"
+- title: "Loving the Little Years: Motherhood in the Trenches - Grace Based Christian Parenting"
+  rating: 1
+  authors:
+    - "Rachel Jankovic"
+  notes:
+    - "Great book - very encouraging and helpful"
+- title: "150 Best Mini Interior Ideas"
+  rating: 100
+  authors:
+    - "Francesc Zamora"
+  notes:
+    - "Ok - some good ideas and inspiration"
+    - "Does a decent job of telling full story of the home and its layout"
+  title: "The Design of Everyday Things (Revised and Expanded Edition)"
+  rating: 10
+  authors:
+    - "Don Norman"
+  notes:
+    - "Underwhelming relative to the hype around this book - but still a very helpful book"
+    - "For a book on design, I found the hierarchy of the book difficult to follow - it wasn't clear to me from the headings whether a section was a new section of a subheading of the previous section. More clarity in this area would have been helpful."
 
