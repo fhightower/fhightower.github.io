@@ -194,11 +194,32 @@
   notes:
     - "Ok - some good ideas and inspiration"
     - "Does a decent job of telling full story of the home and its layout"
-  title: "The Design of Everyday Things (Revised and Expanded Edition)"
+- title: "The Design of Everyday Things (Revised and Expanded Edition)"
   rating: 10
   authors:
     - "Don Norman"
   notes:
     - "Underwhelming relative to the hype around this book - but still a very helpful book"
     - "For a book on design, I found the hierarchy of the book difficult to follow - it wasn't clear to me from the headings whether a section was a new section of a subheading of the previous section. More clarity in this area would have been helpful."
-
+- title: "Don't Read this Book: Time Management for Creative People"
+  rating: 1
+  authors:
+    - "Donald Roos"
+  notes:
+    - "Very good book w/ a lot of helpful advice"
+- title: "On the Edge of the Dark Sea of Darkness"
+  rating: 0
+  authors:
+    - "Andrew Peterson"
+- title: "North! Or Be Eaten"
+  rating: 1
+  authors:
+    - "Andrew Peterson"
+- title: "The Monster in the Hollows"
+  rating: 0
+  authors:
+    - "Andrew Peterson"
+- title: "The Warden and the Wolf King"
+  rating: 0
+  authors:
+    - "Andrew Peterson"
