@@ -223,3 +223,9 @@
   rating: 0
   authors:
     - "Andrew Peterson"
+- title: "A Ranger's Guide to Glipwood Forest"
+  rating: 1000
+  notes:
+    - "Mildly interesting, but not worth reading in my estimation"
+  authors:
+    - "Andrew Peterson"
