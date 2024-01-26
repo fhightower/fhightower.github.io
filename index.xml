@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Floyd</title><link>https://hightower.space/</link><description>Recent content on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/index.xml" rel="self" type="application/rss+xml"/><item><title>2023 Reading List</title><link>https://hightower.space/posts/2023-reading-list/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2023-reading-list/</guid><description>&lt;section>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Floyd</title><link>https://hightower.space/</link><description>Recent content on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/index.xml" rel="self" type="application/rss+xml"/><item><title>2024 Reading List</title><link>https://hightower.space/posts/2024-reading-list/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2024-reading-list/</guid><description>&lt;section>
+Books read in 2024: 3
+&lt;ol>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Birth Partner&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Penny Simkin&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very helpful and practical book&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>When the Man Comes Around: A Commentary on the Book of Revelation&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Helpful explanation of Revelation from a partial preterist and post millennial view&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Reformed Basics&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;li>Toby Sumpter&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Helpful intro to reformed theology&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>2023 Reading List</title><link>https://hightower.space/posts/2023-reading-list/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2023-reading-list/</guid><description>&lt;section>
 Books read in 2023: 38
 &lt;ol>
 &lt;li>
@@ -4828,7 +4875,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Python&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-11&lt;br/>(2013 - Present)
+12&lt;br/>(2013 - Present)
 &lt;/td>
 &lt;td>Personal, Professional, Academic&lt;/td>
 &lt;/tr>
@@ -4837,7 +4884,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Github&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-11&lt;br/>(2013 - Present)
+12&lt;br/>(2013 - Present)
 &lt;/td>
 &lt;td>Academic, Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4846,7 +4893,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Flask&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-7&lt;br/>(2017 - Present)
+8&lt;br/>(2017 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4864,7 +4911,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>FastAPI&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-5&lt;br/>(2019 - Present)
+6&lt;br/>(2019 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4873,7 +4920,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Markdown&lt;/td>
 &lt;td>n/a (with Markdown, I think you either use it or you don&amp;rsquo;t)&lt;/td>
 &lt;td>
-9&lt;br/>(2015 - Present)
+10&lt;br/>(2015 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4882,7 +4929,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Pytest&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-7&lt;br/>(2017 - Present)
+8&lt;br/>(2017 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4891,7 +4938,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Hugo&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
-5&lt;br/>(2019 - Present)
+6&lt;br/>(2019 - Present)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
@@ -4900,7 +4947,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Docker&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-5&lt;br/>(2019 - Present)
+6&lt;br/>(2019 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4909,7 +4956,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Kubernetes&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-4&lt;br/>(2020 - Present)
+5&lt;br/>(2020 - Present)
 &lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
@@ -4918,7 +4965,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Neovim&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-2&lt;br/>(2022 - Present)
+3&lt;br/>(2022 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4927,7 +4974,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Google Cloud&lt;/td>
 &lt;td>Intermediate (I&amp;rsquo;m a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/td>
 &lt;td>
-4&lt;br/>(2020 - Present)
+5&lt;br/>(2020 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4965,7 +5012,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>
 3&lt;br/>(2017 - 2019)
 and
-1&lt;br/>(2023 - Present)
+2&lt;br/>(2023 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4976,7 +5023,7 @@ and
 &lt;td>
 4&lt;br/>(2017 - 2020)
 and
-1&lt;br/>(2023 - Present)
+2&lt;br/>(2023 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -4987,7 +5034,7 @@ and
 &lt;td>
 4&lt;br/>(2016 - 2019)
 and
-1&lt;br/>(2023 - Present)
+2&lt;br/>(2023 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -5007,7 +5054,7 @@ and
 &lt;td>JavaScript&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-13&lt;br/>(2011 - Present)
+14&lt;br/>(2011 - Present)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
@@ -5034,7 +5081,7 @@ and
 &lt;td>Go&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-3&lt;br/>(2021 - Present)
+4&lt;br/>(2021 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -5070,7 +5117,7 @@ and
 &lt;td>Clojure&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-3&lt;br/>(2021 - Present)
+4&lt;br/>(2021 - Present)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
@@ -5079,7 +5126,7 @@ and
 &lt;td>Grafana&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-4&lt;br/>(2020 - Present)
+5&lt;br/>(2020 - Present)
 &lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
@@ -5088,7 +5135,7 @@ and
 &lt;td>ClojureScript&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-3&lt;br/>(2021 - Present)
+4&lt;br/>(2021 - Present)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
@@ -5097,7 +5144,7 @@ and
 &lt;td>Vault&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-7&lt;br/>(2017 - Present)
+8&lt;br/>(2017 - Present)
 &lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
@@ -5124,7 +5171,7 @@ and
 &lt;td>Fatherhood&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-2&lt;br/>(2022 - Present)
+3&lt;br/>(2022 - Present)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
