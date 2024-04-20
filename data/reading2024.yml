@@ -57,3 +57,55 @@
   rating: 1000
   notes:
     - "A few interesting tips, but mostly felt like cheap tricks"
+- title: "7 Habits of Highly Effective People"
+  authors:
+    - "Stephen R. Covey"
+  rating: 1
+  notes:
+    - "This remains one of the most impactful books I have ever read. Well worth reading every day."
+- title: "Lambda Calculus from Ground Up"
+  authors:
+    - "David Beazley"
+  rating: 1
+  notes:
+    - "Mind-blowing [talk](https://www.youtube.com/watch?v=pkCLMl0e_0k)"
+- title: "Biblical Interpretation"
+  authors:
+    - "Vern Poythress"
+  rating: 10
+  notes:
+    - "A great lecture series by Vern on the subject of biblical interpreation."
+    - "Available in Canon+"
+- title: "The Intelligent Investor Rev Ed.: The Definitive Book on Value Investing"
+  authors:
+    - "Benjamin Graham"
+    - "Jason Zweig"
+    - "Warren E. Buffett"
+  rating: 10
+  notes:
+    - "Very insightful book on investing. Definitely one of the best I've ever found."
+- title: "Thoughts for Young Men"
+  authors:
+    - "J.C. Ryle"
+  rating: 10
+  notes:
+    - "Good book with some helpful admonitions"
+- title: "Leadership Strategy and Tactics: Field Manual"
+  authors:
+    - "Jocko Willink"
+  rating: 1
+  notes:
+    - "Very helpful practical guide to leading anything from a team to a family to an organization"
+- title: "Economics; Money & Hope"
+  authors:
+    - "R. J. Rushdoony"
+  rating: 100
+  notes:
+    - "Underwhelming... I think there are better voices out there on these subjects"
+- title: "Shelf Life: Reading, Thinking and Resisting the Tyranny of the Urgent"
+  authors:
+    - "George Grant"
+  rating: 0
+  notes:
+    - "Amazing lecture challenging the listeners to repent by reading"
+    - "Available in [Canon+](https://mycanonplus.com/tabs/listen/audiobooks/27544)"
