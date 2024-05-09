@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>System Design on Floyd</title><link>https://hightower.space/tags/system-design/</link><description>Recent content in System Design on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/system-design/index.xml" rel="self" type="application/rss+xml"/><item><title>Interface Driven Design</title><link>https://hightower.space/posts/interface-drive-design/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interface-drive-design/</guid><description>&lt;p>When designing a system with many components which must interact, the primary challenge is getting the components to interact effectively. Typically, each component has a clear set of responsibilities and building it is relatively easy. The difficulty comes when you need to talk to another component.&lt;/p>
+&lt;p>In this blog post, I advocate for a design approach I call &amp;ldquo;Interface Driven Design&amp;rdquo; and provide a framework for applying Interface Driven Design when designing (or trying to understand) a system.&lt;/p>
+&lt;h2 id="why-is-interface-driven-design-useful">Why is Interface Driven Design Useful?&lt;/h2>
+&lt;p>When designing complex systems made up of many components in communication, the most error-prone location is often in the system interfaces (at the component boundaries).
+Interface Driven Design helps designers focus on one of the most challenging areas of system design. It also makes it easy for teams building different components to collaborate effectively.&lt;/p>
+&lt;h3 id="when-is-interface-driven-design-useful">When is Interface Driven Design Useful?&lt;/h3>
+&lt;p>Generally, it is useful in systems with at least two of the following:&lt;/p>
+&lt;ul>
+&lt;li>With many components which communicate with each other&lt;/li>
+&lt;li>Being built by multiple teams&lt;/li>
+&lt;li>Microservices which are each relatively simple, but form a complex system with emergent behaviour&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-apply-interface-driven-design">How to Apply Interface Driven Design?&lt;/h2>
+&lt;p>Interface Driven Design can be applied at multiple levels.
+For the sake of this article, we&amp;rsquo;ll apply it at the level of each component of a mircoservice system.
+I like to use the following framework to think about each component:&lt;/p>
+&lt;ol>
+&lt;li>Triggers
+&lt;ul>
+&lt;li>This section should include which systems/event trigger the component as well as what data gets sent to the component&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Side-effects
+&lt;ul>
+&lt;li>This section includes any side-effects which are performed by the component (e.g. writing to a DB or triggering another component)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Errors/Failures
+&lt;ul>
+&lt;li>This section details the errors this component may raise/return (usually just the ones that the component will intentionally raise/return)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Response(s)
+&lt;ul>
+&lt;li>This section documents the response(s) the component gives to the various triggers&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
