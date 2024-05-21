@@ -109,3 +109,42 @@
   notes:
     - "Amazing lecture challenging the listeners to repent by reading"
     - "Available in [Canon+](https://mycanonplus.com/tabs/listen/audiobooks/27544)"
+- title: "How to Read a Book: Advice for Christian Readers "
+  authors:
+    - "Andrew David Naselli"
+  rating: 1
+  notes:
+    - "Good read with some great recommendations/lists of what to read"
+- title: "Read The Room: A Worldview Guide To Interior Design"
+  authors:
+    - "Rebekah Merkle"
+  rating: 1
+  notes:
+    - "Fascinating look at interior design and the language of art and design in general"
+    - "Available in [Canon+](https://canonplus.com/tabs/discover/videos/27902)"
+- title: "Till We Have Faces"
+  authors:
+    - "C. S. Lewis"
+  rating: 0
+  notes:
+    - "This remains one of the most powerful books I've ever read"
+- title: "Practical Object-Oriented Design: An Agile Primer Using Ruby"
+  authors:
+    - "Sandi Metz"
+  rating: 1
+  notes:
+    - "Very insightful read that does a great job of communicating the principles of good design"
+- title: "The Fourth Turning Is Here: What the Seasons of History Tell Us about How and When This Crisis Will End"
+  authors:
+    - "Neil Howe"
+  rating: 10
+  notes:
+    - "Fascinating read"
+    - "Generational cycles that repeat every four generations produce a cycle of about 80 years - and we are transitioning from one cycle to another now..."
+- title: "Interpreting the Bible"
+  authors:
+    - "A. Berkeley Mickelsen"
+  rating: 10
+  notes:
+    - "Does a good job of giving practical advice"
+    - "A helpful resource on various topics"
