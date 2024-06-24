@@ -39,6 +39,7 @@ categories = ["Reading List"]
 - Computing Machinery and Intelligence
 - The Death of Ivan Ilych (and other short stories by Leo Tolstoy)
 - Splendor of Grace
+- All That's Good: Recovering the Lost Art of Discernment
 
 Many more...
 

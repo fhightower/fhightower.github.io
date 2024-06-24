@@ -39,3 +39,4 @@ categories = ["Reading List"]
 - Love Your God with All Your Mind: The Role of Reason in the Life of the Soul (J.P. Moreland)
 
 Many more...
+
