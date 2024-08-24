@@ -5367,7 +5367,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Kubernetes&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
-5&lt;br/>(2020 - Present)
+4&lt;br/>(2020 - 2023)
 &lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
@@ -5385,7 +5385,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Google Cloud&lt;/td>
 &lt;td>Intermediate (I&amp;rsquo;m a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/td>
 &lt;td>
-5&lt;br/>(2020 - Present)
+5&lt;br/>(2020 - 2024)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
@@ -5437,6 +5437,37 @@ and
 2&lt;br/>(2023 - Present)
 &lt;/td>
 &lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/pydantic.svg" alt="Pydantic" title="Pydantic">&lt;/td>
+&lt;td>Pydantic&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>
+3&lt;br/>(2020 - 2022)
+and
+2&lt;br/>(2023 - Present)
+&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">&lt;/td>
+&lt;td>PostgreSQL&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>
+4&lt;br/>(2017 - 2020)
+and
+2&lt;br/>(2023 - Present)
+&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sqlalchemy.svg" alt="SQLAlchemy" title="SQLAlchemy">&lt;/td>
+&lt;td>SQLAlchemy&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>
+3&lt;br/>(2022 - Present)
+&lt;/td>
+&lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg" alt="AWS" title="AWS">&lt;/td>
@@ -5497,6 +5528,24 @@ and
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/amazondynamodb.svg" alt="DynamoDB" title="DynamoDB">&lt;/td>
+&lt;td>DynamoDB&lt;/td>
+&lt;td>Beginner&lt;/td>
+&lt;td>
+1&lt;br/>(2024 - Present)
+&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/twilio.svg" alt="Twilio" title="Twilio">&lt;/td>
+&lt;td>Twilio&lt;/td>
+&lt;td>Beginner&lt;/td>
+&lt;td>
+2&lt;br/>(2023 - Present)
+&lt;/td>
+&lt;td>Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buffer.svg" alt="Protocol Buffers" title="Protocol Buffers">&lt;/td>
 &lt;td>Protocol Buffers&lt;/td>
 &lt;td>Beginner&lt;/td>
@@ -5528,7 +5577,7 @@ and
 &lt;td>Clojure&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-4&lt;br/>(2021 - Present)
+3&lt;br/>(2021 - 2023)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
@@ -5546,7 +5595,7 @@ and
 &lt;td>ClojureScript&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-4&lt;br/>(2021 - Present)
+3&lt;br/>(2021 - 2023)
 &lt;/td>
 &lt;td>Personal&lt;/td>
 &lt;/tr>
@@ -5555,7 +5604,7 @@ and
 &lt;td>Vault&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
-8&lt;br/>(2017 - Present)
+7&lt;br/>(2017 - 2023)
 &lt;/td>
 &lt;td>Professional&lt;/td>
 &lt;/tr>
