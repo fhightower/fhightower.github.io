@@ -20,21 +20,21 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Size of Data:&lt;/th>
-&lt;th>Small&lt;/th>
-&lt;th>Large&lt;/th>
+&lt;th style="text-align: left">Size of Data:&lt;/th>
+&lt;th style="text-align: left">Small&lt;/th>
+&lt;th style="text-align: left">Large&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Relational&lt;/td>
-&lt;td>Cloud SQL&lt;/td>
-&lt;td>Spanner*&lt;/td>
+&lt;td style="text-align: left">Relational&lt;/td>
+&lt;td style="text-align: left">Cloud SQL&lt;/td>
+&lt;td style="text-align: left">Spanner*&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Non-Relational&lt;/td>
-&lt;td>Firestore**&lt;/td>
-&lt;td>Bigtable&lt;/td>
+&lt;td style="text-align: left">Non-Relational&lt;/td>
+&lt;td style="text-align: left">Firestore**&lt;/td>
+&lt;td style="text-align: left">Bigtable&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>

@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Floyd</title><link>https://hightower.space/</link><description>Recent content on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/index.xml" rel="self" type="application/rss+xml"/><item><title>Interface Driven Design</title><link>https://hightower.space/posts/interface-drive-design/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interface-drive-design/</guid><description>&lt;p>When designing a system with many components which must interact, the primary challenge is getting the components to interact effectively. Typically, each component has a clear set of responsibilities and building it is relatively easy. The difficulty comes when you need to talk to another component.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Floyd</title><link>https://hightower.space/</link><description>Recent content on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/index.xml" rel="self" type="application/rss+xml"/><item><title>The 4F Cycle</title><link>https://hightower.space/posts/4f-cycle/</link><pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/4f-cycle/</guid><description>&lt;p>The cycle is this:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>F&lt;/strong>ind - Identify everything that needs to be done&lt;/li>
+&lt;li>&lt;strong>F&lt;/strong>ocus - Prioritize the tasks, focussing on the most important&lt;/li>
+&lt;li>&lt;strong>F&lt;/strong>inish (or &lt;strong>F&lt;/strong>ix if it&amp;rsquo;s more appropriate) - Do the work to finish (or fix) the task&lt;/li>
+&lt;li>&lt;strong>F&lt;/strong>eedback - Get feedback about the work you did and learn from it&lt;/li>
+&lt;li>(Return either to step 1 or 2)&lt;/li>
+&lt;/ol>
+&lt;p>The cycle is iterative. From the last step, you can either go to step 1 and re-identify everything that needs to be done (useful in dynamic environments where the set of tasks is constantly changing) or go to step 2 and re-prioritize the tasks (useful if the set of tasks is unlikely to have changed substantially).&lt;/p>
+&lt;p>The &amp;lsquo;4F cycle&amp;rsquo; is helpful for planning and executing work. It is a simple way to ensure that you are doing the right work and that you are doing the work right.&lt;/p></description></item><item><title>Interface Driven Design</title><link>https://hightower.space/posts/interface-drive-design/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interface-drive-design/</guid><description>&lt;p>When designing a system with many components which must interact, the primary challenge is getting the components to interact effectively. Typically, each component has a clear set of responsibilities and building it is relatively easy. The difficulty comes when you need to talk to another component.&lt;/p>
 &lt;p>In this blog post, I advocate for a design approach I call &amp;ldquo;Interface Driven Design&amp;rdquo; and provide a framework for applying Interface Driven Design when designing (or trying to understand) a system.&lt;/p>
 &lt;h2 id="why-is-interface-driven-design-useful">Why is Interface Driven Design Useful?&lt;/h2>
 &lt;p>When designing complex systems made up of many components in communication, the most error-prone location is often in the system interfaces (at the component boundaries).
@@ -1295,21 +1304,21 @@ It is marketed as an &amp;rsquo;easy&amp;rsquo;, &amp;lsquo;simple&amp;rsquo; wa
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Size of Data:&lt;/th>
-&lt;th>Small&lt;/th>
-&lt;th>Large&lt;/th>
+&lt;th style="text-align: left">Size of Data:&lt;/th>
+&lt;th style="text-align: left">Small&lt;/th>
+&lt;th style="text-align: left">Large&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Relational&lt;/td>
-&lt;td>Cloud SQL&lt;/td>
-&lt;td>Spanner*&lt;/td>
+&lt;td style="text-align: left">Relational&lt;/td>
+&lt;td style="text-align: left">Cloud SQL&lt;/td>
+&lt;td style="text-align: left">Spanner*&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Non-Relational&lt;/td>
-&lt;td>Firestore**&lt;/td>
-&lt;td>Bigtable&lt;/td>
+&lt;td style="text-align: left">Non-Relational&lt;/td>
+&lt;td style="text-align: left">Firestore**&lt;/td>
+&lt;td style="text-align: left">Bigtable&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -1764,51 +1773,51 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>GCP Product&lt;/th>
-&lt;th>Open-Source System&lt;/th>
-&lt;th>Description&lt;/th>
+&lt;th style="text-align: left">GCP Product&lt;/th>
+&lt;th style="text-align: left">Open-Source System&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>BigTable&lt;/td>
-&lt;td>Hbase&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">BigTable&lt;/td>
+&lt;td style="text-align: left">Hbase&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CloudSQL&lt;/td>
-&lt;td>mysql/postgresql&lt;/td>
-&lt;td>CloudSQL provides managed instances of common databases&lt;/td>
+&lt;td style="text-align: left">CloudSQL&lt;/td>
+&lt;td style="text-align: left">mysql/postgresql&lt;/td>
+&lt;td style="text-align: left">CloudSQL provides managed instances of common databases&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Dataproc&lt;/td>
-&lt;td>Apache Hadoop/Spark&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Dataproc&lt;/td>
+&lt;td style="text-align: left">Apache Hadoop/Spark&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Storage&lt;/td>
-&lt;td>HDFS&lt;/td>
-&lt;td>A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
+&lt;td style="text-align: left">Cloud Storage&lt;/td>
+&lt;td style="text-align: left">HDFS&lt;/td>
+&lt;td style="text-align: left">A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Dataflow&lt;/td>
-&lt;td>Apache Beam&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Dataflow&lt;/td>
+&lt;td style="text-align: left">Apache Beam&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Composer&lt;/td>
-&lt;td>Apache Airflow&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Cloud Composer&lt;/td>
+&lt;td style="text-align: left">Apache Airflow&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Memorystore&lt;/td>
-&lt;td>Redis and Memcached&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Memorystore&lt;/td>
+&lt;td style="text-align: left">Redis and Memcached&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Firestore&lt;/td>
-&lt;td>MongoDB&lt;/td>
-&lt;td>Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
+&lt;td style="text-align: left">Firestore&lt;/td>
+&lt;td style="text-align: left">MongoDB&lt;/td>
+&lt;td style="text-align: left">Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>GCP Serverless Compute Options Overview</title><link>https://hightower.space/posts/gcp-serverless-compute-options/</link><pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-serverless-compute-options/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
@@ -1834,34 +1843,34 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Product&lt;/th>
-&lt;th>Docs&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;th>Cool Features&lt;/th>
-&lt;th>Use-Cases&lt;/th>
+&lt;th style="text-align: left">Product&lt;/th>
+&lt;th style="text-align: left">Docs&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;th style="text-align: left">Cool Features&lt;/th>
+&lt;th style="text-align: left">Use-Cases&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Cloud Run&lt;/td>
-&lt;td>&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
-&lt;td>Runs containerized apps&lt;/td>
-&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
-&lt;td>&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">Cloud Run&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Runs containerized apps&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>App Engine&lt;/td>
-&lt;td>&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
-&lt;td>Run http services&lt;/td>
-&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
-&lt;td>&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">App Engine&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Run http services&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Functions&lt;/td>
-&lt;td>&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
-&lt;td>Run event-driven functions&lt;/td>
-&lt;td>&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Cloud Functions&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Run event-driven functions&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Fake Apple App Download Sites</title><link>https://hightower.space/posts/fake-apple-app-download-sites/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/fake-apple-app-download-sites/</guid><description>&lt;p>&lt;strong>Note:&lt;/strong> All URLs/domains in this post are &lt;a href="https://ioc-fanger.hightower.space/#overview">defanged&lt;/a>. You can fang/defang them &lt;a href="https://ioc-fanger.hightower.space/#use-the-package-live">here&lt;/a>.&lt;/p>
@@ -5427,367 +5436,367 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>~&lt;/th>
-&lt;th>Skill&lt;/th>
-&lt;th>Fluency*&lt;/th>
-&lt;th>Years of Experience&lt;/th>
-&lt;th>Context&lt;/th>
+&lt;th style="text-align: left">~&lt;/th>
+&lt;th style="text-align: left">Skill&lt;/th>
+&lt;th style="text-align: left">Fluency*&lt;/th>
+&lt;th style="text-align: left">Years of Experience&lt;/th>
+&lt;th style="text-align: left">Context&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/python.png" alt="Python" title="Python">&lt;/td>
-&lt;td>Python&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://hightower.space/img/skills/python.png" alt="Python" title="Python">&lt;/td>
+&lt;td style="text-align: left">Python&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 12&lt;br/>(2013 - Present)
 &lt;/td>
-&lt;td>Personal, Professional, Academic&lt;/td>
+&lt;td style="text-align: left">Personal, Professional, Academic&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="Github" title="Github">&lt;/td>
-&lt;td>Github&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="Github" title="Github">&lt;/td>
+&lt;td style="text-align: left">Github&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 12&lt;br/>(2013 - Present)
 &lt;/td>
-&lt;td>Academic, Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Academic, Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg" alt="Flask" title="Flask">&lt;/td>
-&lt;td>Flask&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg" alt="Flask" title="Flask">&lt;/td>
+&lt;td style="text-align: left">Flask&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 8&lt;br/>(2017 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gitlab.svg" alt="Gitlab" title="Gitlab">&lt;/td>
-&lt;td>Gitlab&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gitlab.svg" alt="Gitlab" title="Gitlab">&lt;/td>
+&lt;td style="text-align: left">Gitlab&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2017 - 2020)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/fastapi.svg" alt="FastAPI" title="FastAPI">&lt;/td>
-&lt;td>FastAPI&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/fastapi.svg" alt="FastAPI" title="FastAPI">&lt;/td>
+&lt;td style="text-align: left">FastAPI&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 6&lt;br/>(2019 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/markdown.svg" alt="Markdown" title="Markdown">&lt;/td>
-&lt;td>Markdown&lt;/td>
-&lt;td>n/a (with Markdown, I think you either use it or you don&amp;rsquo;t)&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/markdown.svg" alt="Markdown" title="Markdown">&lt;/td>
+&lt;td style="text-align: left">Markdown&lt;/td>
+&lt;td style="text-align: left">n/a (with Markdown, I think you either use it or you don&amp;rsquo;t)&lt;/td>
+&lt;td style="text-align: left">
 10&lt;br/>(2015 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/pytest.svg" alt="Pytest" title="Pytest">&lt;/td>
-&lt;td>Pytest&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/pytest.svg" alt="Pytest" title="Pytest">&lt;/td>
+&lt;td style="text-align: left">Pytest&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 8&lt;br/>(2017 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/hugo.svg" alt="Hugo" title="Hugo">&lt;/td>
-&lt;td>Hugo&lt;/td>
-&lt;td>Expert&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/hugo.svg" alt="Hugo" title="Hugo">&lt;/td>
+&lt;td style="text-align: left">Hugo&lt;/td>
+&lt;td style="text-align: left">Expert&lt;/td>
+&lt;td style="text-align: left">
 6&lt;br/>(2019 - Present)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg" alt="Docker" title="Docker">&lt;/td>
-&lt;td>Docker&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/docker.svg" alt="Docker" title="Docker">&lt;/td>
+&lt;td style="text-align: left">Docker&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 6&lt;br/>(2019 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/kubernetes.svg" alt="Kubernetes" title="Kubernetes">&lt;/td>
-&lt;td>Kubernetes&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/kubernetes.svg" alt="Kubernetes" title="Kubernetes">&lt;/td>
+&lt;td style="text-align: left">Kubernetes&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2020 - 2023)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/neovim.svg" alt="Neovim" title="Neovim">&lt;/td>
-&lt;td>Neovim&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/neovim.svg" alt="Neovim" title="Neovim">&lt;/td>
+&lt;td style="text-align: left">Neovim&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2022 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/googlecloud.svg" alt="Google Cloud" title="Google Cloud">&lt;/td>
-&lt;td>Google Cloud&lt;/td>
-&lt;td>Intermediate (I&amp;rsquo;m a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/googlecloud.svg" alt="Google Cloud" title="Google Cloud">&lt;/td>
+&lt;td style="text-align: left">Google Cloud&lt;/td>
+&lt;td style="text-align: left">Intermediate (I&amp;rsquo;m a &lt;a href="https://cloud.google.com/certification/data-engineer">Google Certified Professional Data Engineer&lt;/a>)&lt;/td>
+&lt;td style="text-align: left">
 5&lt;br/>(2020 - 2024)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/jupyter.png" alt="Jupyter (notebooks and kernels)" title="Jupyter (notebooks and kernals)">&lt;/td>
-&lt;td>Jupyter (notebooks and kernels)&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://hightower.space/img/skills/jupyter.png" alt="Jupyter (notebooks and kernels)" title="Jupyter (notebooks and kernals)">&lt;/td>
+&lt;td style="text-align: left">Jupyter (notebooks and kernels)&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 6&lt;br/>(2015 - 2020)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/helm.svg" alt="Helm" title="Helm">&lt;/td>
-&lt;td>Helm&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/helm.svg" alt="Helm" title="Helm">&lt;/td>
+&lt;td style="text-align: left">Helm&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2020 - 2022)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buildkite.svg" alt="Buildkite" title="Buildkite">&lt;/td>
-&lt;td>Buildkite&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buildkite.svg" alt="Buildkite" title="Buildkite">&lt;/td>
+&lt;td style="text-align: left">Buildkite&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2020 - 2022)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vuedotjs.svg" alt="Vue.js" title="Vue.js">&lt;/td>
-&lt;td>Vue.js&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vuedotjs.svg" alt="Vue.js" title="Vue.js">&lt;/td>
+&lt;td style="text-align: left">Vue.js&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2017 - 2019)
 and
 2&lt;br/>(2023 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/django.svg" alt="Django" title="Django">&lt;/td>
-&lt;td>Django&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/django.svg" alt="Django" title="Django">&lt;/td>
+&lt;td style="text-align: left">Django&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2017 - 2020)
 and
 2&lt;br/>(2023 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/pydantic.svg" alt="Pydantic" title="Pydantic">&lt;/td>
-&lt;td>Pydantic&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/pydantic.svg" alt="Pydantic" title="Pydantic">&lt;/td>
+&lt;td style="text-align: left">Pydantic&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2020 - 2022)
 and
 2&lt;br/>(2023 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">&lt;/td>
-&lt;td>PostgreSQL&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">&lt;/td>
+&lt;td style="text-align: left">PostgreSQL&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2017 - 2020)
 and
 2&lt;br/>(2023 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sqlalchemy.svg" alt="SQLAlchemy" title="SQLAlchemy">&lt;/td>
-&lt;td>SQLAlchemy&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sqlalchemy.svg" alt="SQLAlchemy" title="SQLAlchemy">&lt;/td>
+&lt;td style="text-align: left">SQLAlchemy&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2022 - Present)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg" alt="AWS" title="AWS">&lt;/td>
-&lt;td>AWS&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg" alt="AWS" title="AWS">&lt;/td>
+&lt;td style="text-align: left">AWS&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2016 - 2019)
 and
 2&lt;br/>(2023 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/digitalocean.svg" alt="DigitalOcean" title="DigitalOcean">&lt;/td>
-&lt;td>DigitalOcean&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/digitalocean.svg" alt="DigitalOcean" title="DigitalOcean">&lt;/td>
+&lt;td style="text-align: left">DigitalOcean&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 5&lt;br/>(2015 - 2019)
 and
 2&lt;br/>(2022 - 2023)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg" alt="JavaScript" title="JavaScript">&lt;/td>
-&lt;td>JavaScript&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg" alt="JavaScript" title="JavaScript">&lt;/td>
+&lt;td style="text-align: left">JavaScript&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 14&lt;br/>(2011 - Present)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/stimulus.svg" alt="Stimulus" title="Stimulus">&lt;/td>
-&lt;td>Stimulus&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/stimulus.svg" alt="Stimulus" title="Stimulus">&lt;/td>
+&lt;td style="text-align: left">Stimulus&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 2&lt;br/>(2022 - 2023)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>~&lt;/td>
-&lt;td>Java&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">~&lt;/td>
+&lt;td style="text-align: left">Java&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 6&lt;br/>(2011 - 2016)
 &lt;/td>
-&lt;td>Personal, Academic&lt;/td>
+&lt;td style="text-align: left">Personal, Academic&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/go.svg" alt="Go" title="Go">&lt;/td>
-&lt;td>Go&lt;/td>
-&lt;td>Intermediate&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/go.svg" alt="Go" title="Go">&lt;/td>
+&lt;td style="text-align: left">Go&lt;/td>
+&lt;td style="text-align: left">Intermediate&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2021 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/amazondynamodb.svg" alt="DynamoDB" title="DynamoDB">&lt;/td>
-&lt;td>DynamoDB&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/amazondynamodb.svg" alt="DynamoDB" title="DynamoDB">&lt;/td>
+&lt;td style="text-align: left">DynamoDB&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 1&lt;br/>(2024 - Present)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/twilio.svg" alt="Twilio" title="Twilio">&lt;/td>
-&lt;td>Twilio&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/twilio.svg" alt="Twilio" title="Twilio">&lt;/td>
+&lt;td style="text-align: left">Twilio&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 2&lt;br/>(2023 - Present)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buffer.svg" alt="Protocol Buffers" title="Protocol Buffers">&lt;/td>
-&lt;td>Protocol Buffers&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buffer.svg" alt="Protocol Buffers" title="Protocol Buffers">&lt;/td>
+&lt;td style="text-align: left">Protocol Buffers&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 2&lt;br/>(2022 - 2023)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/ruby.svg" alt="Ruby" title="Ruby">&lt;/td>
-&lt;td>Ruby&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/ruby.svg" alt="Ruby" title="Ruby">&lt;/td>
+&lt;td style="text-align: left">Ruby&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 2&lt;br/>(2022 - 2023)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/rubyonrails.svg" alt="Ruby on Rails" title="Ruby on Rails">&lt;/td>
-&lt;td>Ruby on Rails&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/rubyonrails.svg" alt="Ruby on Rails" title="Ruby on Rails">&lt;/td>
+&lt;td style="text-align: left">Ruby on Rails&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 2&lt;br/>(2022 - 2023)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/clojure.svg" alt="Clojure" title="Clojure">&lt;/td>
-&lt;td>Clojure&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/clojure.svg" alt="Clojure" title="Clojure">&lt;/td>
+&lt;td style="text-align: left">Clojure&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2021 - 2023)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/grafana.png" alt="Grafana" title="Grafana">&lt;/td>
-&lt;td>Grafana&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://hightower.space/img/skills/grafana.png" alt="Grafana" title="Grafana">&lt;/td>
+&lt;td style="text-align: left">Grafana&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 5&lt;br/>(2020 - Present)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/clojurescript.png" alt="ClojureScript" title="ClojureScript">&lt;/td>
-&lt;td>ClojureScript&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://hightower.space/img/skills/clojurescript.png" alt="ClojureScript" title="ClojureScript">&lt;/td>
+&lt;td style="text-align: left">ClojureScript&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2021 - 2023)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vault.svg" alt="Vault" title="Vault">&lt;/td>
-&lt;td>Vault&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vault.svg" alt="Vault" title="Vault">&lt;/td>
+&lt;td style="text-align: left">Vault&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 7&lt;br/>(2017 - 2023)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/elastic-elasticsearch.png" alt="Elasticsearch" title="Elasticsearch">&lt;/td>
-&lt;td>Elasticsearch&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://hightower.space/img/skills/elastic-elasticsearch.png" alt="Elasticsearch" title="Elasticsearch">&lt;/td>
+&lt;td style="text-align: left">Elasticsearch&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2020 - 2023)
 &lt;/td>
-&lt;td>Personal, Professional&lt;/td>
+&lt;td style="text-align: left">Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/elastic-kibana.png" alt="Kibana" title="Kibana">&lt;/td>
-&lt;td>Kibana&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://hightower.space/img/skills/elastic-kibana.png" alt="Kibana" title="Kibana">&lt;/td>
+&lt;td style="text-align: left">Kibana&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 4&lt;br/>(2020 - 2023)
 &lt;/td>
-&lt;td>Professional&lt;/td>
+&lt;td style="text-align: left">Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg" alt="Less sleep and more joy than I expected" title="Less sleep and more joy than I expected">&lt;/td>
-&lt;td>Fatherhood&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
+&lt;td style="text-align: left">&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg" alt="Less sleep and more joy than I expected" title="Less sleep and more joy than I expected">&lt;/td>
+&lt;td style="text-align: left">Fatherhood&lt;/td>
+&lt;td style="text-align: left">Beginner&lt;/td>
+&lt;td style="text-align: left">
 3&lt;br/>(2022 - Present)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td style="text-align: left">Personal&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>

@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Floyd</title><link>https://hightower.space/posts/</link><description>Recent content in Posts on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Interface Driven Design</title><link>https://hightower.space/posts/interface-drive-design/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interface-drive-design/</guid><description>&lt;p>When designing a system with many components which must interact, the primary challenge is getting the components to interact effectively. Typically, each component has a clear set of responsibilities and building it is relatively easy. The difficulty comes when you need to talk to another component.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Floyd</title><link>https://hightower.space/posts/</link><description>Recent content in Posts on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>The 4F Cycle</title><link>https://hightower.space/posts/4f-cycle/</link><pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/4f-cycle/</guid><description>&lt;p>The cycle is this:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>F&lt;/strong>ind - Identify everything that needs to be done&lt;/li>
+&lt;li>&lt;strong>F&lt;/strong>ocus - Prioritize the tasks, focussing on the most important&lt;/li>
+&lt;li>&lt;strong>F&lt;/strong>inish (or &lt;strong>F&lt;/strong>ix if it&amp;rsquo;s more appropriate) - Do the work to finish (or fix) the task&lt;/li>
+&lt;li>&lt;strong>F&lt;/strong>eedback - Get feedback about the work you did and learn from it&lt;/li>
+&lt;li>(Return either to step 1 or 2)&lt;/li>
+&lt;/ol>
+&lt;p>The cycle is iterative. From the last step, you can either go to step 1 and re-identify everything that needs to be done (useful in dynamic environments where the set of tasks is constantly changing) or go to step 2 and re-prioritize the tasks (useful if the set of tasks is unlikely to have changed substantially).&lt;/p>
+&lt;p>The &amp;lsquo;4F cycle&amp;rsquo; is helpful for planning and executing work. It is a simple way to ensure that you are doing the right work and that you are doing the work right.&lt;/p></description></item><item><title>Interface Driven Design</title><link>https://hightower.space/posts/interface-drive-design/</link><pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/interface-drive-design/</guid><description>&lt;p>When designing a system with many components which must interact, the primary challenge is getting the components to interact effectively. Typically, each component has a clear set of responsibilities and building it is relatively easy. The difficulty comes when you need to talk to another component.&lt;/p>
 &lt;p>In this blog post, I advocate for a design approach I call &amp;ldquo;Interface Driven Design&amp;rdquo; and provide a framework for applying Interface Driven Design when designing (or trying to understand) a system.&lt;/p>
 &lt;h2 id="why-is-interface-driven-design-useful">Why is Interface Driven Design Useful?&lt;/h2>
 &lt;p>When designing complex systems made up of many components in communication, the most error-prone location is often in the system interfaces (at the component boundaries).
@@ -1295,21 +1304,21 @@ It is marketed as an &amp;rsquo;easy&amp;rsquo;, &amp;lsquo;simple&amp;rsquo; wa
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Size of Data:&lt;/th>
-&lt;th>Small&lt;/th>
-&lt;th>Large&lt;/th>
+&lt;th style="text-align: left">Size of Data:&lt;/th>
+&lt;th style="text-align: left">Small&lt;/th>
+&lt;th style="text-align: left">Large&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Relational&lt;/td>
-&lt;td>Cloud SQL&lt;/td>
-&lt;td>Spanner*&lt;/td>
+&lt;td style="text-align: left">Relational&lt;/td>
+&lt;td style="text-align: left">Cloud SQL&lt;/td>
+&lt;td style="text-align: left">Spanner*&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Non-Relational&lt;/td>
-&lt;td>Firestore**&lt;/td>
-&lt;td>Bigtable&lt;/td>
+&lt;td style="text-align: left">Non-Relational&lt;/td>
+&lt;td style="text-align: left">Firestore**&lt;/td>
+&lt;td style="text-align: left">Bigtable&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -1764,51 +1773,51 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>GCP Product&lt;/th>
-&lt;th>Open-Source System&lt;/th>
-&lt;th>Description&lt;/th>
+&lt;th style="text-align: left">GCP Product&lt;/th>
+&lt;th style="text-align: left">Open-Source System&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>BigTable&lt;/td>
-&lt;td>Hbase&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">BigTable&lt;/td>
+&lt;td style="text-align: left">Hbase&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CloudSQL&lt;/td>
-&lt;td>mysql/postgresql&lt;/td>
-&lt;td>CloudSQL provides managed instances of common databases&lt;/td>
+&lt;td style="text-align: left">CloudSQL&lt;/td>
+&lt;td style="text-align: left">mysql/postgresql&lt;/td>
+&lt;td style="text-align: left">CloudSQL provides managed instances of common databases&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Dataproc&lt;/td>
-&lt;td>Apache Hadoop/Spark&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Dataproc&lt;/td>
+&lt;td style="text-align: left">Apache Hadoop/Spark&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Storage&lt;/td>
-&lt;td>HDFS&lt;/td>
-&lt;td>A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
+&lt;td style="text-align: left">Cloud Storage&lt;/td>
+&lt;td style="text-align: left">HDFS&lt;/td>
+&lt;td style="text-align: left">A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Dataflow&lt;/td>
-&lt;td>Apache Beam&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Dataflow&lt;/td>
+&lt;td style="text-align: left">Apache Beam&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Composer&lt;/td>
-&lt;td>Apache Airflow&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Cloud Composer&lt;/td>
+&lt;td style="text-align: left">Apache Airflow&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Memorystore&lt;/td>
-&lt;td>Redis and Memcached&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Memorystore&lt;/td>
+&lt;td style="text-align: left">Redis and Memcached&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Firestore&lt;/td>
-&lt;td>MongoDB&lt;/td>
-&lt;td>Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
+&lt;td style="text-align: left">Firestore&lt;/td>
+&lt;td style="text-align: left">MongoDB&lt;/td>
+&lt;td style="text-align: left">Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>GCP Serverless Compute Options Overview</title><link>https://hightower.space/posts/gcp-serverless-compute-options/</link><pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-serverless-compute-options/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
@@ -1834,34 +1843,34 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Product&lt;/th>
-&lt;th>Docs&lt;/th>
-&lt;th>Description&lt;/th>
-&lt;th>Cool Features&lt;/th>
-&lt;th>Use-Cases&lt;/th>
+&lt;th style="text-align: left">Product&lt;/th>
+&lt;th style="text-align: left">Docs&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;th style="text-align: left">Cool Features&lt;/th>
+&lt;th style="text-align: left">Use-Cases&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Cloud Run&lt;/td>
-&lt;td>&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
-&lt;td>Runs containerized apps&lt;/td>
-&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
-&lt;td>&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">Cloud Run&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Runs containerized apps&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>App Engine&lt;/td>
-&lt;td>&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
-&lt;td>Run http services&lt;/td>
-&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
-&lt;td>&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">App Engine&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Run http services&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Functions&lt;/td>
-&lt;td>&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
-&lt;td>Run event-driven functions&lt;/td>
-&lt;td>&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Cloud Functions&lt;/td>
+&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
+&lt;td style="text-align: left">Run event-driven functions&lt;/td>
+&lt;td style="text-align: left">&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Fake Apple App Download Sites</title><link>https://hightower.space/posts/fake-apple-app-download-sites/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/fake-apple-app-download-sites/</guid><description>&lt;p>&lt;strong>Note:&lt;/strong> All URLs/domains in this post are &lt;a href="https://ioc-fanger.hightower.space/#overview">defanged&lt;/a>. You can fang/defang them &lt;a href="https://ioc-fanger.hightower.space/#use-the-package-live">here&lt;/a>.&lt;/p>

@@ -20,21 +20,21 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>Size of Data:&lt;/th>
-&lt;th>Small&lt;/th>
-&lt;th>Large&lt;/th>
+&lt;th style="text-align: left">Size of Data:&lt;/th>
+&lt;th style="text-align: left">Small&lt;/th>
+&lt;th style="text-align: left">Large&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>Relational&lt;/td>
-&lt;td>Cloud SQL&lt;/td>
-&lt;td>Spanner*&lt;/td>
+&lt;td style="text-align: left">Relational&lt;/td>
+&lt;td style="text-align: left">Cloud SQL&lt;/td>
+&lt;td style="text-align: left">Spanner*&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Non-Relational&lt;/td>
-&lt;td>Firestore**&lt;/td>
-&lt;td>Bigtable&lt;/td>
+&lt;td style="text-align: left">Non-Relational&lt;/td>
+&lt;td style="text-align: left">Firestore**&lt;/td>
+&lt;td style="text-align: left">Bigtable&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -489,51 +489,51 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th>GCP Product&lt;/th>
-&lt;th>Open-Source System&lt;/th>
-&lt;th>Description&lt;/th>
+&lt;th style="text-align: left">GCP Product&lt;/th>
+&lt;th style="text-align: left">Open-Source System&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>BigTable&lt;/td>
-&lt;td>Hbase&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">BigTable&lt;/td>
+&lt;td style="text-align: left">Hbase&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>CloudSQL&lt;/td>
-&lt;td>mysql/postgresql&lt;/td>
-&lt;td>CloudSQL provides managed instances of common databases&lt;/td>
+&lt;td style="text-align: left">CloudSQL&lt;/td>
+&lt;td style="text-align: left">mysql/postgresql&lt;/td>
+&lt;td style="text-align: left">CloudSQL provides managed instances of common databases&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Dataproc&lt;/td>
-&lt;td>Apache Hadoop/Spark&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Dataproc&lt;/td>
+&lt;td style="text-align: left">Apache Hadoop/Spark&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Storage&lt;/td>
-&lt;td>HDFS&lt;/td>
-&lt;td>A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
+&lt;td style="text-align: left">Cloud Storage&lt;/td>
+&lt;td style="text-align: left">HDFS&lt;/td>
+&lt;td style="text-align: left">A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Dataflow&lt;/td>
-&lt;td>Apache Beam&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Dataflow&lt;/td>
+&lt;td style="text-align: left">Apache Beam&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Cloud Composer&lt;/td>
-&lt;td>Apache Airflow&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Cloud Composer&lt;/td>
+&lt;td style="text-align: left">Apache Airflow&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Memorystore&lt;/td>
-&lt;td>Redis and Memcached&lt;/td>
-&lt;td>&lt;/td>
+&lt;td style="text-align: left">Memorystore&lt;/td>
+&lt;td style="text-align: left">Redis and Memcached&lt;/td>
+&lt;td style="text-align: left">&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>Firestore&lt;/td>
-&lt;td>MongoDB&lt;/td>
-&lt;td>Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
+&lt;td style="text-align: left">Firestore&lt;/td>
+&lt;td style="text-align: left">MongoDB&lt;/td>
+&lt;td style="text-align: left">Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item></channel></rss>
