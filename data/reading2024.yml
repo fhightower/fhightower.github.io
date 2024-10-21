@@ -243,3 +243,35 @@
   rating: 1
   notes:
     - "Very good book"
+- title: "Live Like a Narnian: Christian Discipleship in Lewis's Chronicles"
+  authors:
+    - "Joe Rigney"
+  rating: 10
+  notes:
+    - "Well worth reading"
+- title: "Slaying Leviathan: Limited Government and Resistance in the Christian Tradition"
+  authors:
+    - "Glenn Sunshine"
+  rating: 1
+  notes:
+    - "Fascinating read"
+    - "Interesting to note that Christianity is unique in that it developed independent of a government so it's relationship w/ the government is different than other religions"
+- title: "How to Exasperate Your Wife and Other Short Essays for Men"
+  authors:
+    - "Douglas Wilson"
+  rating: 10
+  notes:
+    - "Good read w/ some helpful advice"
+- title: "Killing Porn: How to Hate and Kill the Dragon"
+  authors:
+    - "Toby Sumpter"
+  rating: 10
+  notes:
+    - "Read this out of curiosity and was pleasantly surprised by how practical and helpful it was"
+    - "I appreciate Toby taking hte time to establish why Biblical marriage is so important"
+- title: "Fit to Burst: Abundance, Mayhem, and the Joys of Motherhood"
+  authors:
+    - "Rachel Jankovic"
+  rating: 100
+  notes:
+    - "Some good stuff, but not has helpful to me as some of her other books"
