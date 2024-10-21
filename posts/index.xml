@@ -45,7 +45,7 @@ I like to use the following framework to think about each component:&lt;/p>
 &lt;/ul>
 &lt;/li>
 &lt;/ol></description></item><item><title>2024 Reading List</title><link>https://hightower.space/posts/2024-reading-list/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2024-reading-list/</guid><description>&lt;section>
-Books read in 2024: 42
+Books read in 2024: 47
 &lt;ol>
 &lt;li>
 &lt;details>
@@ -613,6 +613,78 @@ Author(s):
 Notes:
 &lt;ul>
 &lt;li>Very good book&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Live Like a Narnian: Christian Discipleship in Lewis&amp;rsquo;s Chronicles&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Joe Rigney&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Well worth reading&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Slaying Leviathan: Limited Government and Resistance in the Christian Tradition&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Glenn Sunshine&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fascinating read&lt;/li>
+&lt;li>Interesting to note that Christianity is unique in that it developed independent of a government so it&amp;rsquo;s relationship w/ the government is different than other religions&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>How to Exasperate Your Wife and Other Short Essays for Men&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Douglas Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Good read w/ some helpful advice&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Killing Porn: How to Hate and Kill the Dragon&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Toby Sumpter&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Read this out of curiosity and was pleasantly surprised by how practical and helpful it was&lt;/li>
+&lt;li>I appreciate Toby taking hte time to establish why Biblical marriage is so important&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Fit to Burst: Abundance, Mayhem, and the Joys of Motherhood&lt;/i> [100]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Rachel Jankovic&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Some good stuff, but not has helpful to me as some of her other books&lt;/li>
 &lt;/ul>
 &lt;br>
 &lt;/details>
@@ -1304,21 +1376,21 @@ It is marketed as an &amp;rsquo;easy&amp;rsquo;, &amp;lsquo;simple&amp;rsquo; wa
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Size of Data:&lt;/th>
-&lt;th style="text-align: left">Small&lt;/th>
-&lt;th style="text-align: left">Large&lt;/th>
+&lt;th>Size of Data:&lt;/th>
+&lt;th>Small&lt;/th>
+&lt;th>Large&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Relational&lt;/td>
-&lt;td style="text-align: left">Cloud SQL&lt;/td>
-&lt;td style="text-align: left">Spanner*&lt;/td>
+&lt;td>Relational&lt;/td>
+&lt;td>Cloud SQL&lt;/td>
+&lt;td>Spanner*&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Non-Relational&lt;/td>
-&lt;td style="text-align: left">Firestore**&lt;/td>
-&lt;td style="text-align: left">Bigtable&lt;/td>
+&lt;td>Non-Relational&lt;/td>
+&lt;td>Firestore**&lt;/td>
+&lt;td>Bigtable&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -1773,51 +1845,51 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">GCP Product&lt;/th>
-&lt;th style="text-align: left">Open-Source System&lt;/th>
-&lt;th style="text-align: left">Description&lt;/th>
+&lt;th>GCP Product&lt;/th>
+&lt;th>Open-Source System&lt;/th>
+&lt;th>Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">BigTable&lt;/td>
-&lt;td style="text-align: left">Hbase&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>BigTable&lt;/td>
+&lt;td>Hbase&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">CloudSQL&lt;/td>
-&lt;td style="text-align: left">mysql/postgresql&lt;/td>
-&lt;td style="text-align: left">CloudSQL provides managed instances of common databases&lt;/td>
+&lt;td>CloudSQL&lt;/td>
+&lt;td>mysql/postgresql&lt;/td>
+&lt;td>CloudSQL provides managed instances of common databases&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Dataproc&lt;/td>
-&lt;td style="text-align: left">Apache Hadoop/Spark&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>Dataproc&lt;/td>
+&lt;td>Apache Hadoop/Spark&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Cloud Storage&lt;/td>
-&lt;td style="text-align: left">HDFS&lt;/td>
-&lt;td style="text-align: left">A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
+&lt;td>Cloud Storage&lt;/td>
+&lt;td>HDFS&lt;/td>
+&lt;td>A common use-case is to store HDFS (from DataProc or a Hadoop cluster running on a VM) in Cloud Storage&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Dataflow&lt;/td>
-&lt;td style="text-align: left">Apache Beam&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>Dataflow&lt;/td>
+&lt;td>Apache Beam&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Cloud Composer&lt;/td>
-&lt;td style="text-align: left">Apache Airflow&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>Cloud Composer&lt;/td>
+&lt;td>Apache Airflow&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Memorystore&lt;/td>
-&lt;td style="text-align: left">Redis and Memcached&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>Memorystore&lt;/td>
+&lt;td>Redis and Memcached&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Firestore&lt;/td>
-&lt;td style="text-align: left">MongoDB&lt;/td>
-&lt;td style="text-align: left">Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
+&lt;td>Firestore&lt;/td>
+&lt;td>MongoDB&lt;/td>
+&lt;td>Firestore is not API comptabile w/ MongoDB but is conceptually similar&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>GCP Serverless Compute Options Overview</title><link>https://hightower.space/posts/gcp-serverless-compute-options/</link><pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/gcp-serverless-compute-options/</guid><description>&lt;h2 id="intro">Intro&lt;/h2>
@@ -1843,34 +1915,34 @@ The methods below are listed from lesser to greater transformation required:&lt;
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Product&lt;/th>
-&lt;th style="text-align: left">Docs&lt;/th>
-&lt;th style="text-align: left">Description&lt;/th>
-&lt;th style="text-align: left">Cool Features&lt;/th>
-&lt;th style="text-align: left">Use-Cases&lt;/th>
+&lt;th>Product&lt;/th>
+&lt;th>Docs&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;th>Cool Features&lt;/th>
+&lt;th>Use-Cases&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Cloud Run&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
-&lt;td style="text-align: left">Runs containerized apps&lt;/td>
-&lt;td style="text-align: left">&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
-&lt;td style="text-align: left">&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>Cloud Run&lt;/td>
+&lt;td>&lt;a href="https://cloud.google.com/run/">docs&lt;/a>&lt;/td>
+&lt;td>Runs containerized apps&lt;/td>
+&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;li>Can be triggered by events&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>&lt;ul>&lt;li>Websites/APIs&lt;/li>&lt;li>Cronjobs&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">App Engine&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
-&lt;td style="text-align: left">Run http services&lt;/td>
-&lt;td style="text-align: left">&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
-&lt;td style="text-align: left">&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>App Engine&lt;/td>
+&lt;td>&lt;a href="https://cloud.google.com/appengine/">docs&lt;/a>&lt;/td>
+&lt;td>Run http services&lt;/td>
+&lt;td>&lt;ul>&lt;li>Split http traffic btw. diff versions of an app for A/B Tesing&lt;/li>&lt;li>Easy config. using &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/config/appref">&lt;code>app.yaml&lt;/code>&lt;/a>&lt;/li>&lt;li>Flexible &lt;a href="https://cloud.google.com/appengine/docs/standard/python3/an-overview-of-app-engine">structure&lt;/a> allowing services in different languages in the same app&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>&lt;ul>&lt;li>Server-rendered websites/APIs&lt;/li>&lt;/ul>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Cloud Functions&lt;/td>
-&lt;td style="text-align: left">&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
-&lt;td style="text-align: left">Run event-driven functions&lt;/td>
-&lt;td style="text-align: left">&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
-&lt;td style="text-align: left">&lt;/td>
+&lt;td>Cloud Functions&lt;/td>
+&lt;td>&lt;a href="https://cloud.google.com/functions/">docs&lt;/a>&lt;/td>
+&lt;td>Run event-driven functions&lt;/td>
+&lt;td>&lt;ul>&lt;li>Uses &lt;a href="https://knative.dev/docs/">knative&lt;/a>, allowing portability&lt;/li>&lt;/ul>&lt;/td>
+&lt;td>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item><item><title>Fake Apple App Download Sites</title><link>https://hightower.space/posts/fake-apple-app-download-sites/</link><pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/fake-apple-app-download-sites/</guid><description>&lt;p>&lt;strong>Note:&lt;/strong> All URLs/domains in this post are &lt;a href="https://ioc-fanger.hightower.space/#overview">defanged&lt;/a>. You can fang/defang them &lt;a href="https://ioc-fanger.hightower.space/#use-the-package-live">here&lt;/a>.&lt;/p>
