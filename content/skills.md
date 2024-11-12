@@ -4,7 +4,7 @@ Here is a regularly updated list of skills I have:
 
 ~ | Skill | Fluency\* | Years of Experience | Context
 --- | --- | --- | --- | ---
-![Python](/img/skills/python.png "Python") | Python | Expert | {{< duration 2013 >}} | Personal, Professional, Academic
+![Python](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/python.svg "Python") | Python | Expert | {{< duration 2013 >}} | Personal, Professional, Academic
 ![Github](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg "Github") | Github | Expert | {{< duration 2013 >}} | Academic, Personal, Professional
 ![Flask](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/flask.svg "Flask") | Flask | Expert | {{< duration 2017 >}} | Personal, Professional
 ![Gitlab](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gitlab.svg "Gitlab") | Gitlab | Expert | {{< duration 2017 2020 >}} | Personal, Professional
@@ -16,7 +16,7 @@ Here is a regularly updated list of skills I have:
 ![Kubernetes](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/kubernetes.svg "Kubernetes") | Kubernetes | Intermediate | {{< duration 2020 2023 >}} | Professional
 ![Neovim](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/neovim.svg "Neovim") | Neovim | Intermediate | {{< duration 2022 >}} | Personal, Professional
 ![Google Cloud](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/googlecloud.svg "Google Cloud") | Google Cloud | Intermediate (I'm a [Google Certified Professional Data Engineer](https://cloud.google.com/certification/data-engineer)) | {{< duration 2020 2024 >}} | Personal, Professional
-![Jupyter (notebooks and kernels)](/img/skills/jupyter.png "Jupyter (notebooks and kernals)") | Jupyter (notebooks and kernels) | Intermediate | {{< duration 2015 2020 >}} | Personal
+![Jupyter (notebooks and kernels)](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/jupyter.svg "Jupyter (notebooks and kernals)") | Jupyter (notebooks and kernels) | Intermediate | {{< duration 2015 2020 >}} | Personal
 ![Helm](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/helm.svg "Helm") | Helm | Intermediate | {{< duration 2020 2022 >}} | Professional
 ![Buildkite](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buildkite.svg "Buildkite") | Buildkite | Intermediate | {{< duration 2020 2022 >}} | Professional
 ![Vue.js](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vuedotjs.svg "Vue.js") | Vue.js | Intermediate | {{< duration 2017 2019 >}} and {{< duration 2023 >}} | Personal, Professional
@@ -26,7 +26,8 @@ Here is a regularly updated list of skills I have:
 ![SQLAlchemy](https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/sqlalchemy.svg "SQLAlchemy") | SQLAlchemy | Intermediate | {{< duration 2022 >}} | Professional
 ![AWS](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg "AWS") | AWS | Intermediate | {{< duration 2016 2019 >}} and {{< duration 2023 >}}| Personal, Professional
 ![DigitalOcean](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/digitalocean.svg "DigitalOcean") | DigitalOcean | Intermediate | {{< duration 2015 2019 >}} and {{< duration 2022 2023 >}}| Personal, Professional
-![JavaScript](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg "JavaScript") | JavaScript | Intermediate | {{< duration 2011 >}} | Personal
+![JavaScript](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg "JavaScript") | JavaScript | Intermediate | {{< duration 2011 >}} | Personal, Professional
+![TypeScript](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/typescript.svg "TypeScript") | TypeScript | Intermediate | {{< duration 2011 >}} | Personal, Professional
 ![Stimulus](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/stimulus.svg "Stimulus") | Stimulus | Intermediate | {{< duration 2022 2023 >}} | Personal
 ~ | Java | Intermediate | {{< duration 2011 2016 >}} | Personal, Academic
 ![Go](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/go.svg "Go") | Go | Intermediate | {{< duration 2021 >}} | Personal, Professional
@@ -36,11 +37,10 @@ Here is a regularly updated list of skills I have:
 ![Ruby](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/ruby.svg "Ruby") | Ruby | Beginner | {{< duration 2022 2023 >}} | Professional
 ![Ruby on Rails](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/rubyonrails.svg "Ruby on Rails") | Ruby on Rails | Beginner | {{< duration 2022 2023 >}} | Professional
 ![Clojure](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/clojure.svg "Clojure") | Clojure | Beginner | {{< duration 2021 2023 >}} | Personal
-![Grafana](/img/skills/grafana.png "Grafana") | Grafana | Beginner | {{< duration 2020 >}} | Professional
-![ClojureScript](/img/skills/clojurescript.png "ClojureScript") | ClojureScript | Beginner | {{< duration 2021 2023 >}} | Personal
+![Grafana](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/grafana.svg "Grafana") | Grafana | Beginner | {{< duration 2020 >}} | Professional
 ![Vault](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vault.svg "Vault") | Vault | Beginner | {{< duration 2017 2023 >}} | Professional
-![Elasticsearch](/img/skills/elastic-elasticsearch.png "Elasticsearch") | Elasticsearch | Beginner | {{< duration 2020 2023 >}} | Personal, Professional
-![Kibana](/img/skills/elastic-kibana.png "Kibana") | Kibana | Beginner | {{< duration 2020 2023 >}} | Professional
+![Elasticsearch](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/elasticsearch.svg "Elasticsearch") | Elasticsearch | Beginner | {{< duration 2020 2023 >}} | Personal, Professional
+![Kibana](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/kibana.svg "Kibana") | Kibana | Beginner | {{< duration 2020 2023 >}} | Professional
 ![Less sleep and more joy than I expected](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg "Less sleep and more joy than I expected") | Fatherhood | Beginner | {{< duration 2022 >}} | Personal
 
 \* - I'm categorizing fluency as either: Expert, Intermediate, or Beginner.
