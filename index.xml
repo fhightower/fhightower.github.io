@@ -5517,7 +5517,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/python.png" alt="Python" title="Python">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/python.svg" alt="Python" title="Python">&lt;/td>
 &lt;td>Python&lt;/td>
 &lt;td>Expert&lt;/td>
 &lt;td>
@@ -5625,7 +5625,7 @@ Floyd&lt;/p></description></item><item><title/><link>https://hightower.space/ski
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/jupyter.png" alt="Jupyter (notebooks and kernels)" title="Jupyter (notebooks and kernals)">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/jupyter.svg" alt="Jupyter (notebooks and kernels)" title="Jupyter (notebooks and kernals)">&lt;/td>
 &lt;td>Jupyter (notebooks and kernels)&lt;/td>
 &lt;td>Intermediate&lt;/td>
 &lt;td>
@@ -5733,7 +5733,16 @@ and
 &lt;td>
 14&lt;br/>(2011 - Present)
 &lt;/td>
-&lt;td>Personal&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/typescript.svg" alt="TypeScript" title="TypeScript">&lt;/td>
+&lt;td>TypeScript&lt;/td>
+&lt;td>Intermediate&lt;/td>
+&lt;td>
+14&lt;br/>(2011 - Present)
+&lt;/td>
+&lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/stimulus.svg" alt="Stimulus" title="Stimulus">&lt;/td>
@@ -5817,22 +5826,13 @@ and
 &lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/grafana.png" alt="Grafana" title="Grafana">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/grafana.svg" alt="Grafana" title="Grafana">&lt;/td>
 &lt;td>Grafana&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
 5&lt;br/>(2020 - Present)
 &lt;/td>
 &lt;td>Professional&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/clojurescript.png" alt="ClojureScript" title="ClojureScript">&lt;/td>
-&lt;td>ClojureScript&lt;/td>
-&lt;td>Beginner&lt;/td>
-&lt;td>
-3&lt;br/>(2021 - 2023)
-&lt;/td>
-&lt;td>Personal&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/vault.svg" alt="Vault" title="Vault">&lt;/td>
@@ -5844,7 +5844,7 @@ and
 &lt;td>Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/elastic-elasticsearch.png" alt="Elasticsearch" title="Elasticsearch">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/elasticsearch.svg" alt="Elasticsearch" title="Elasticsearch">&lt;/td>
 &lt;td>Elasticsearch&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
@@ -5853,7 +5853,7 @@ and
 &lt;td>Personal, Professional&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td>&lt;img src="https://hightower.space/img/skills/elastic-kibana.png" alt="Kibana" title="Kibana">&lt;/td>
+&lt;td>&lt;img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/kibana.svg" alt="Kibana" title="Kibana">&lt;/td>
 &lt;td>Kibana&lt;/td>
 &lt;td>Beginner&lt;/td>
 &lt;td>
