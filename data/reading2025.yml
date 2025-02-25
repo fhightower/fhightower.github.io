@@ -21,3 +21,27 @@
   notes:
     - "https://festivalofthespokennerd.com/product/domestic-science-series-1-and-2/"
     - "A lot of fun to read - great experiments you can do at home with kids"
+- title: "Cryptography: The Science of Secret Writing"
+  authors:
+    - "Laurence Dwight Smith"
+  rating: 10
+  notes:
+    - "Fun read"
+    - "Has some good insights and examples"
+    - "Fascinating to read a book on cryptography from 1943 - before the ubiquity of computers"
+- title: "Cryptography: An Introduction to Computer Security"
+  authors:
+    - "Jennifer Seberry"
+    - "Josef Pieprzyk"
+  rating: 10
+  notes:
+    - "Helpful read"
+    - "Very technical at points, but a helpful intro to the subject nonetheless"
+- title: "The Lion, the Witch and the Wardrobe"
+  authors:
+    - "C.S. Lewis"
+  rating: 10
+  notes:
+    - "Great read"
+    - "One thing that jumped out to me on this reading: the emphasis on the wisdom of not shutting a wardrobe door behind onself - he definitely knew that his book may provoke some kids to try to find Narnia and wanted to make sure they didn't get stuck in the wardrobe"
+    - "One thing that jumped out to me on this reading: after resurrection, Aslan first goes to the Witch's castle to free the prisoners"
