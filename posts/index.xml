@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Floyd</title><link>https://hightower.space/posts/</link><description>Recent content in Posts on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2025 Reading List</title><link>https://hightower.space/posts/2025-reading-list/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2025-reading-list/</guid><description>&lt;section>
-Books read in 2025: 3
+Books read in 2025: 6
 &lt;ol>
 &lt;li>
 &lt;details>
@@ -44,6 +44,54 @@ Notes:
 &lt;ul>
 &lt;li>&lt;a href="https://festivalofthespokennerd.com/product/domestic-science-series-1-and-2/">https://festivalofthespokennerd.com/product/domestic-science-series-1-and-2/&lt;/a>&lt;/li>
 &lt;li>A lot of fun to read - great experiments you can do at home with kids&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Cryptography: The Science of Secret Writing&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Laurence Dwight Smith&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fun read&lt;/li>
+&lt;li>Has some good insights and examples&lt;/li>
+&lt;li>Fascinating to read a book on cryptography from 1943 - before the ubiquity of computers&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Cryptography: An Introduction to Computer Security&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jennifer Seberry&lt;/li>
+&lt;li>Josef Pieprzyk&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Helpful read&lt;/li>
+&lt;li>Very technical at points, but a helpful intro to the subject nonetheless&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Lion, the Witch and the Wardrobe&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>C.S. Lewis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Great read&lt;/li>
+&lt;li>One thing that jumped out to me on this reading: the emphasis on the wisdom of not shutting a wardrobe door behind onself - he definitely knew that his book may provoke some kids to try to find Narnia and wanted to make sure they didn&amp;rsquo;t get stuck in the wardrobe&lt;/li>
+&lt;li>One thing that jumped out to me on this reading: after resurrection, Aslan first goes to the Witch&amp;rsquo;s castle to free the prisoners&lt;/li>
 &lt;/ul>
 &lt;br>
 &lt;/details>
@@ -3054,8 +3102,7 @@ I call it &amp;ldquo;Simplex&amp;rdquo;. The game is trivially simple, but can b
 &lt;li>How these approaches change when the game changes&lt;/li>
 &lt;/ul></description></item><item><title>Conjecture on n-sided Numbers and Their Sums</title><link>https://hightower.space/posts/conjecture-on-n-sided-numbers/</link><pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/conjecture-on-n-sided-numbers/</guid><description>&lt;p>While reading &lt;em>The Most Beautiful Mathematical Formulas: An Entertaining Look at the Most Insightful, Useful, and Quirky Theorems of All Time&lt;/em>, I came across Lagrange&amp;rsquo;s four-square theorem:&lt;/p>
 &lt;blockquote>
-&lt;p>We can represent every natural number as the sum of, at most, four squares.&lt;/p>
-&lt;/blockquote>
+&lt;p>We can represent every natural number as the sum of, at most, four squares.&lt;/p>&lt;/blockquote>
 &lt;p>For example, we can represent 27 as:&lt;/p>
 &lt;pre tabindex="0">&lt;code>16 + 9 + 1 + 1
 &lt;/code>&lt;/pre>&lt;p>or&lt;/p>
@@ -3063,8 +3110,7 @@ I call it &amp;ldquo;Simplex&amp;rdquo;. The game is trivially simple, but can b
 &lt;/code>&lt;/pre>&lt;p>As I was reading about this, I came up with the following conjecture. This conjecture may already exist (I haven&amp;rsquo;t looked into the subject yet) or it may be false. From a cursory analysis, it seems to hold true.&lt;/p>
 &lt;p>My conjecture is:&lt;/p>
 &lt;blockquote>
-&lt;p>We can represent every natural number as the sum of, at most, n n-sided numbers.&lt;/p>
-&lt;/blockquote>
+&lt;p>We can represent every natural number as the sum of, at most, n n-sided numbers.&lt;/p>&lt;/blockquote>
 &lt;p>I need to formalize what I mean by &amp;ldquo;n-sided number&amp;rdquo;, but intuitively, I mean that, when n=3, n-sided numbers are triangular numbers; when n=4, we are dealing with square numbers; n=5 means pentagonal numbers; etc&amp;hellip;&lt;/p>
 &lt;p>I plan to do some research in the future to see if this already exists and, if not, how I might go about proving it.&lt;/p></description></item><item><title>Informed, Random Walk</title><link>https://hightower.space/posts/informed-random-walk/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/informed-random-walk/</guid><description>&lt;h2 id="background">Background&lt;/h2>
 &lt;p>&lt;a href="https://press.stripe.com/">Stripe Press&lt;/a> published a beautiful copy of &amp;ldquo;&lt;em>The Art of Doing Science and Engineering&lt;/em>&amp;rdquo; by Richard Hamming:&lt;/p>
@@ -4927,8 +4973,7 @@ Author(s):
 &lt;/ul>
 &lt;p>If you have never used ZeroMQ, give it a try! It is fun to use and opens some exciting doors.&lt;/p></description></item><item><title>Domain Squatting Math</title><link>https://hightower.space/posts/math-behind-domain-squatting/</link><pubDate>Sat, 23 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/math-behind-domain-squatting/</guid><description>&lt;blockquote>
 &lt;p>&amp;ldquo;Compound interest is the eighth wonder of the world. He who understands it, earns it &amp;hellip; he who doesn&amp;rsquo;t &amp;hellip; pays it.&amp;rdquo;&lt;/p>
-&lt;p>― Albert Einstein&lt;/p>
-&lt;/blockquote>
+&lt;p>― Albert Einstein&lt;/p>&lt;/blockquote>
 &lt;h2 id="what-is-domain-squatting">What is domain squatting?&lt;/h2>
 &lt;p>Domain squatting is when someone registers a domain name which looks like another domain name. Usually, the term &amp;ldquo;domain squatting&amp;rdquo; is used in a context where malicious intent is implied. For example, someone trying to steal passwords may register the domain name &lt;code>gooogle.com&lt;/code> (with an extra &lt;code>o&lt;/code> in it). This way, he/she could send emails to potential victims with links to &lt;code>gooogle.com&lt;/code> and the potential victims would be more likely to mistake this domain for the real thing and click the links.&lt;/p>
 &lt;h2 id="the-math-of-domain-squatting">The math of domain squatting&lt;/h2>
@@ -4974,32 +5019,27 @@ selector: '.language-klipse'
 {:domain-length domain-length :squats squats})
 &lt;/code>&lt;/pre>
 &lt;script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js">&lt;/script></description></item><item><title>Conjecture on Resource Utilization</title><link>https://hightower.space/posts/resource-utilization/</link><pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/resource-utilization/</guid><description>&lt;blockquote>
-&lt;p>We fifty-four were the masters of England! Twenty-five thousand men lay dead around us. But how treacherous is fortune! In a little while - say an hour - happened a thing, by my own fault, which - but I have no heart to write that. Let the record end here.&lt;sup>1&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>We fifty-four were the masters of England! Twenty-five thousand men lay dead around us. But how treacherous is fortune! In a little while - say an hour - happened a thing, by my own fault, which - but I have no heart to write that. Let the record end here.&lt;sup>1&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">1&lt;/span> - Written by "The Boss" (from &lt;i>A Connecticut Yankee in King Arthur's Court&lt;/i>)
 &lt;/aside>
 &lt;blockquote>
-&lt;p>We were in a trap, you see - a trap of our own making&amp;hellip; we had conquered; in turn we were conquered.&lt;sup>2&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>We were in a trap, you see - a trap of our own making&amp;hellip; we had conquered; in turn we were conquered.&lt;sup>2&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">2&lt;/span> - Postscript from Clarence (from &lt;i>A Connecticut Yankee in King Arthur's Court&lt;/i>)
 &lt;/aside>
 &lt;blockquote>
-&lt;p>Power tends to corrupt and absolute power corrupts absolutely. Great men are almost always bad men, even when they exercise influence and not authority: still more when you superadd the tendency or the certainty of corruption by authority. There is no worse heresy than that the office sanctifies the holder of it.&lt;sup>3&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>Power tends to corrupt and absolute power corrupts absolutely. Great men are almost always bad men, even when they exercise influence and not authority: still more when you superadd the tendency or the certainty of corruption by authority. There is no worse heresy than that the office sanctifies the holder of it.&lt;sup>3&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">3&lt;/span> - Lord Acton (in his &lt;a href="https://history.hanover.edu/courses/excerpts/165acton.html" target="_blank">letter&lt;/a> to Archbishop Mandell Creighton)
 &lt;/aside>
 &lt;blockquote>
-&lt;p>When the woman saw that the tree was good for food, and that it was a delight to the eyes, and that it was desirable to make wise, she took from its fruit and ate; and she gave also to her husband with her, and he ate.&lt;sup>4&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>When the woman saw that the tree was good for food, and that it was a delight to the eyes, and that it was desirable to make wise, she took from its fruit and ate; and she gave also to her husband with her, and he ate.&lt;sup>4&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">4&lt;/span> - Genesis 3:6
 &lt;/aside>
 &lt;blockquote>
-&lt;p>Awake, arise or be for ever fall’n.&lt;sup>5&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>Awake, arise or be for ever fall’n.&lt;sup>5&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">5&lt;/span> - Spoken by Satan in &lt;i>Paradise Lost&lt;/i>
 &lt;/aside>
@@ -5009,8 +5049,7 @@ selector: '.language-klipse'
 &lt;p>My thesis is this:&lt;/p>
 &lt;blockquote>
 &lt;p>Regarding resources which can be used for evil and for good:&lt;/p>
-&lt;p>As the difficulty of procuring and using a resource increases, the probability of that resource being used for evil increases disproportionately to the probability of it being used for good.&lt;/p>
-&lt;/blockquote>
+&lt;p>As the difficulty of procuring and using a resource increases, the probability of that resource being used for evil increases disproportionately to the probability of it being used for good.&lt;/p>&lt;/blockquote>
 &lt;p>Before explaining this further, I must address the elephant in the room: morality. My conjecture on resource utilization uses the terms &amp;ldquo;evil&amp;rdquo; and &amp;ldquo;good&amp;rdquo; and, thus, assumes some moral standard by which &amp;ldquo;evil&amp;rdquo; and &amp;ldquo;good&amp;rdquo; can be judged. As a Christian, I believe that God Himself is the standard of goodness and evil is that which is against His character and outside of His design. That being said, a morality rooted in the nature of the Christian God is not necessary to defend and understand my conjecture; one simply has to have some objective morality by which actions and uses of resources can be judged.&lt;/p>
 &lt;p>For the scope of this essay, let us assume a generally agreed-upon moral position like: &amp;ldquo;the intentional killing of innocent human beings is evil&amp;rdquo; and &amp;ldquo;protecting innocent human beings from being killed is good&amp;rdquo;. Now that we have that settled&lt;sup>6&lt;/sup>, what about my thesis?&lt;/p>
 &lt;aside class="marginnote">
@@ -5020,8 +5059,7 @@ selector: '.language-klipse'
 &lt;p>My thesis also includes an assumption that some resources are more difficult to get and/or use. This is pretty self-explanatory (especially to anyone who has worked in IT, software development, or computer security), so I won&amp;rsquo;t belabor the point. Just keep in mind that the procurement and use of all resources are not equal.&lt;/p>
 &lt;p>With these assumptions in mind, my thesis is the result of the question:&lt;/p>
 &lt;blockquote>
-&lt;p>Is there a way to determine whether or not a resource/technology is more likely to be used for good vs. evil?&lt;/p>
-&lt;/blockquote>
+&lt;p>Is there a way to determine whether or not a resource/technology is more likely to be used for good vs. evil?&lt;/p>&lt;/blockquote>
 &lt;p>At first blush, the answer is no, there is no clear way to determine whether a resource will be used for good vs. evil. We&amp;rsquo;ve assumed that we are only discussing resources which have no innate inclination toward good or evil, so there is nothing in the resource itself to give us a clue as to its potential use. The only entity that would make the use of a resource more or less likely to be used for good would be the users. For resources that are easy to procure and use, I posit that it is unlikely that we would be able to determine how a resource will likely be used. But what happens when the resource gets more difficult to procure and/or use? I propose that such resources are more likely and increasingly more likely to be used for evil. In other words, the more difficult a resource is to procure and/or use, it is more probable that the resource will be used for evil rather than for good. I believe this occurs for a number of reasons which vary based on the context and the nature of the resource, but I&amp;rsquo;ve identified a few, possible causes below focusing on the realm of software.&lt;/p>
 &lt;h3 id="causes">Causes&lt;/h3>
 &lt;p>&lt;i>What, in my estimation, causes my conjecture to be true?&lt;/i>&lt;/p>
@@ -5315,31 +5353,25 @@ only:
 &lt;p>Many more&amp;hellip;&lt;/p>
 &lt;p>† Note on the &amp;ldquo;Redrawing the Line Between Hermeneutics and Application&amp;rdquo; article:&lt;/p>
 &lt;blockquote>
-&lt;p>I could certainly be wrong, but this article&amp;rsquo;s lament that the New Hermeneutic has &amp;ldquo;[incorporated] the step of application into the hermeneutical process&amp;rdquo;&lt;sup>1&lt;/sup> seems to contradict Article IX of the &lt;a href="https://library.dts.edu/Pages/TL/Special/ICBI_2.pdf">Chicago Statement on Biblical Hermeneutics&lt;/a> which says:&lt;/p>
-&lt;/blockquote>
+&lt;p>I could certainly be wrong, but this article&amp;rsquo;s lament that the New Hermeneutic has &amp;ldquo;[incorporated] the step of application into the hermeneutical process&amp;rdquo;&lt;sup>1&lt;/sup> seems to contradict Article IX of the &lt;a href="https://library.dts.edu/Pages/TL/Special/ICBI_2.pdf">Chicago Statement on Biblical Hermeneutics&lt;/a> which says:&lt;/p>&lt;/blockquote>
 &lt;blockquote>
 &lt;blockquote>
-&lt;p>&amp;ldquo;We affirm that the term hermeneutics, which historically signified the rules of exegesis, may properly be extended to cover all that is involved in the process of perceiving what the biblical revelation means and how it bears on our lives.&amp;rdquo;&lt;/p>
-&lt;/blockquote>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;We affirm that the term hermeneutics, which historically signified the rules of exegesis, may properly be extended to cover all that is involved in the process of perceiving what the biblical revelation means and how it bears on our lives.&amp;rdquo;&lt;/p>&lt;/blockquote>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">1&lt;/span> - Pg. 1 in the Abstract here: &lt;a href="https://www.tms.edu/m/tmsj8e.pdf" target="_blank">https://www.tms.edu/m/tmsj8e.pdf&lt;/a>
 &lt;/aside></description></item><item><title>A Question on Pragmaticism</title><link>https://hightower.space/posts/pragmaticism-question/</link><pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/pragmaticism-question/</guid><description>&lt;p>I was recently reading about &lt;a href="https://en.wikipedia.org/wiki/Pragmaticism">Pragmaticism&lt;/a> (for an article I wrote here: &lt;a href="https://bible.hightower.space/posts/pragmaticism/">Why Christians Must be Wary of Pragmaticism&lt;/a>), and found the following definition in the Century Dictionary from 1909:&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>pragmaticism&lt;/strong> (prag-mat′ i-sizm), n. [pragmatic + ism.] A special and limited form of pragmatism, in which the pragmatism is restricted to the determining of the meaning of concepts (particularly of philosophic concepts) by consideration of the experimental differences in the conduct of life which would conceivably result from the affirmation or denial of the meaning in question.&lt;sup>1&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;strong>pragmaticism&lt;/strong> (prag-mat′ i-sizm), n. [pragmatic + ism.] A special and limited form of pragmatism, in which the pragmatism is restricted to the determining of the meaning of concepts (particularly of philosophic concepts) by consideration of the experimental differences in the conduct of life which would conceivably result from the affirmation or denial of the meaning in question.&lt;sup>1&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">1&lt;/span> - &lt;a target="_blank" href="https://archive.org/stream/centurydictionar12whituoft#page/1050/mode/2up">https://archive.org/stream/centurydictionar12whituoft#page/1050/mode/2up&lt;/a> I first found this on the Wikipedia page for &lt;a target="_blank" href="https://en.wikipedia.org/wiki/Pragmaticism">Pragmaticism&lt;/a>
 &lt;/aside>
 &lt;p>What I find interesting about this definition is the two uses of the word &amp;ldquo;meaning&amp;rdquo;. Take a look again at the definition again and focus on the use of the word &amp;ldquo;meaning&amp;rdquo;:&lt;/p>
 &lt;blockquote>
-&lt;p>pragmaticism (prag-mat′ i-sizm), n. [pragmatic + ism.] A special and limited form of pragmatism, in which the pragmatism is restricted to the determining of the &lt;em>&lt;strong>meaning&lt;/strong>&lt;/em> of concepts (particularly of philosophic concepts) by consideration of the experimental differences in the conduct of life which would conceivably result from the affirmation or denial of the &lt;em>&lt;strong>meaning&lt;/strong>&lt;/em> in question.&lt;/p>
-&lt;/blockquote>
+&lt;p>pragmaticism (prag-mat′ i-sizm), n. [pragmatic + ism.] A special and limited form of pragmatism, in which the pragmatism is restricted to the determining of the &lt;em>&lt;strong>meaning&lt;/strong>&lt;/em> of concepts (particularly of philosophic concepts) by consideration of the experimental differences in the conduct of life which would conceivably result from the affirmation or denial of the &lt;em>&lt;strong>meaning&lt;/strong>&lt;/em> in question.&lt;/p>&lt;/blockquote>
 &lt;p>This definition seems to presuppose that there are two, distinct meanings for every concept. The first time the word &amp;ldquo;meaning&amp;rdquo; is used in the definition above, it describes a meaning which is determined using pragmatism. The second use of the word &amp;ldquo;meaning&amp;rdquo; appears to be referring to a meaning essential to the concept which, by affirmation or denial, will produce &amp;ldquo;experimental differences&amp;rdquo; from which the first meaning can be derived.&lt;/p>
 &lt;p>I find this confusing. In my reading about Pragmaticism, I never (or at least don&amp;rsquo;t recall having) ran into this concept of two, distinct meanings. In fact, this concept seems to fly in the face of what C. S. Peirce said in &lt;em>Illustrations of the Logic of Science&lt;/em>:&lt;/p>
 &lt;blockquote>
-&lt;p>&amp;ldquo;Our idea of anything is our idea of its sensible effects; and if we fancy that we have any other we deceive ourselves, and mistake a mere sensation accompanying the thought for a part of the thought itself.&amp;quot;&lt;sup>2&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>&amp;ldquo;Our idea of anything is our idea of its sensible effects; and if we fancy that we have any other we deceive ourselves, and mistake a mere sensation accompanying the thought for a part of the thought itself.&amp;quot;&lt;sup>2&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">2&lt;/span> - &lt;a target="_blank" href="https://en.wikisource.org/wiki/Page%3APopular_Science_Monthly_Volume_12.djvu/307">Illustrations of the Logic of Science, 289&lt;/a>
 &lt;/aside>

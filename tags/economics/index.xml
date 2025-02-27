@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Economics on Floyd</title><link>https://hightower.space/tags/economics/</link><description>Recent content in Economics on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/economics/index.xml" rel="self" type="application/rss+xml"/><item><title>Conjecture on Resource Utilization</title><link>https://hightower.space/posts/resource-utilization/</link><pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/resource-utilization/</guid><description>&lt;blockquote>
-&lt;p>We fifty-four were the masters of England! Twenty-five thousand men lay dead around us. But how treacherous is fortune! In a little while - say an hour - happened a thing, by my own fault, which - but I have no heart to write that. Let the record end here.&lt;sup>1&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>We fifty-four were the masters of England! Twenty-five thousand men lay dead around us. But how treacherous is fortune! In a little while - say an hour - happened a thing, by my own fault, which - but I have no heart to write that. Let the record end here.&lt;sup>1&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">1&lt;/span> - Written by "The Boss" (from &lt;i>A Connecticut Yankee in King Arthur's Court&lt;/i>)
 &lt;/aside>
 &lt;blockquote>
-&lt;p>We were in a trap, you see - a trap of our own making&amp;hellip; we had conquered; in turn we were conquered.&lt;sup>2&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>We were in a trap, you see - a trap of our own making&amp;hellip; we had conquered; in turn we were conquered.&lt;sup>2&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">2&lt;/span> - Postscript from Clarence (from &lt;i>A Connecticut Yankee in King Arthur's Court&lt;/i>)
 &lt;/aside>
 &lt;blockquote>
-&lt;p>Power tends to corrupt and absolute power corrupts absolutely. Great men are almost always bad men, even when they exercise influence and not authority: still more when you superadd the tendency or the certainty of corruption by authority. There is no worse heresy than that the office sanctifies the holder of it.&lt;sup>3&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>Power tends to corrupt and absolute power corrupts absolutely. Great men are almost always bad men, even when they exercise influence and not authority: still more when you superadd the tendency or the certainty of corruption by authority. There is no worse heresy than that the office sanctifies the holder of it.&lt;sup>3&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">3&lt;/span> - Lord Acton (in his &lt;a href="https://history.hanover.edu/courses/excerpts/165acton.html" target="_blank">letter&lt;/a> to Archbishop Mandell Creighton)
 &lt;/aside>
 &lt;blockquote>
-&lt;p>When the woman saw that the tree was good for food, and that it was a delight to the eyes, and that it was desirable to make wise, she took from its fruit and ate; and she gave also to her husband with her, and he ate.&lt;sup>4&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>When the woman saw that the tree was good for food, and that it was a delight to the eyes, and that it was desirable to make wise, she took from its fruit and ate; and she gave also to her husband with her, and he ate.&lt;sup>4&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">4&lt;/span> - Genesis 3:6
 &lt;/aside>
 &lt;blockquote>
-&lt;p>Awake, arise or be for ever fall’n.&lt;sup>5&lt;/sup>&lt;/p>
-&lt;/blockquote>
+&lt;p>Awake, arise or be for ever fall’n.&lt;sup>5&lt;/sup>&lt;/p>&lt;/blockquote>
 &lt;aside class="marginnote">
 &lt;span class="noteNumber">5&lt;/span> - Spoken by Satan in &lt;i>Paradise Lost&lt;/i>
 &lt;/aside>
@@ -34,8 +29,7 @@
 &lt;p>My thesis is this:&lt;/p>
 &lt;blockquote>
 &lt;p>Regarding resources which can be used for evil and for good:&lt;/p>
-&lt;p>As the difficulty of procuring and using a resource increases, the probability of that resource being used for evil increases disproportionately to the probability of it being used for good.&lt;/p>
-&lt;/blockquote>
+&lt;p>As the difficulty of procuring and using a resource increases, the probability of that resource being used for evil increases disproportionately to the probability of it being used for good.&lt;/p>&lt;/blockquote>
 &lt;p>Before explaining this further, I must address the elephant in the room: morality. My conjecture on resource utilization uses the terms &amp;ldquo;evil&amp;rdquo; and &amp;ldquo;good&amp;rdquo; and, thus, assumes some moral standard by which &amp;ldquo;evil&amp;rdquo; and &amp;ldquo;good&amp;rdquo; can be judged. As a Christian, I believe that God Himself is the standard of goodness and evil is that which is against His character and outside of His design. That being said, a morality rooted in the nature of the Christian God is not necessary to defend and understand my conjecture; one simply has to have some objective morality by which actions and uses of resources can be judged.&lt;/p>
 &lt;p>For the scope of this essay, let us assume a generally agreed-upon moral position like: &amp;ldquo;the intentional killing of innocent human beings is evil&amp;rdquo; and &amp;ldquo;protecting innocent human beings from being killed is good&amp;rdquo;. Now that we have that settled&lt;sup>6&lt;/sup>, what about my thesis?&lt;/p>
 &lt;aside class="marginnote">
@@ -45,8 +39,7 @@
 &lt;p>My thesis also includes an assumption that some resources are more difficult to get and/or use. This is pretty self-explanatory (especially to anyone who has worked in IT, software development, or computer security), so I won&amp;rsquo;t belabor the point. Just keep in mind that the procurement and use of all resources are not equal.&lt;/p>
 &lt;p>With these assumptions in mind, my thesis is the result of the question:&lt;/p>
 &lt;blockquote>
-&lt;p>Is there a way to determine whether or not a resource/technology is more likely to be used for good vs. evil?&lt;/p>
-&lt;/blockquote>
+&lt;p>Is there a way to determine whether or not a resource/technology is more likely to be used for good vs. evil?&lt;/p>&lt;/blockquote>
 &lt;p>At first blush, the answer is no, there is no clear way to determine whether a resource will be used for good vs. evil. We&amp;rsquo;ve assumed that we are only discussing resources which have no innate inclination toward good or evil, so there is nothing in the resource itself to give us a clue as to its potential use. The only entity that would make the use of a resource more or less likely to be used for good would be the users. For resources that are easy to procure and use, I posit that it is unlikely that we would be able to determine how a resource will likely be used. But what happens when the resource gets more difficult to procure and/or use? I propose that such resources are more likely and increasingly more likely to be used for evil. In other words, the more difficult a resource is to procure and/or use, it is more probable that the resource will be used for evil rather than for good. I believe this occurs for a number of reasons which vary based on the context and the nature of the resource, but I&amp;rsquo;ve identified a few, possible causes below focusing on the realm of software.&lt;/p>
 &lt;h3 id="causes">Causes&lt;/h3>
 &lt;p>&lt;i>What, in my estimation, causes my conjecture to be true?&lt;/i>&lt;/p>

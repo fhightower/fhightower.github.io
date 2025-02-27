@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Number Theory on Floyd</title><link>https://hightower.space/tags/number-theory/</link><description>Recent content in Number Theory on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/tags/number-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Conjecture on n-sided Numbers and Their Sums</title><link>https://hightower.space/posts/conjecture-on-n-sided-numbers/</link><pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/conjecture-on-n-sided-numbers/</guid><description>&lt;p>While reading &lt;em>The Most Beautiful Mathematical Formulas: An Entertaining Look at the Most Insightful, Useful, and Quirky Theorems of All Time&lt;/em>, I came across Lagrange&amp;rsquo;s four-square theorem:&lt;/p>
 &lt;blockquote>
-&lt;p>We can represent every natural number as the sum of, at most, four squares.&lt;/p>
-&lt;/blockquote>
+&lt;p>We can represent every natural number as the sum of, at most, four squares.&lt;/p>&lt;/blockquote>
 &lt;p>For example, we can represent 27 as:&lt;/p>
 &lt;pre tabindex="0">&lt;code>16 + 9 + 1 + 1
 &lt;/code>&lt;/pre>&lt;p>or&lt;/p>
@@ -9,7 +8,6 @@
 &lt;/code>&lt;/pre>&lt;p>As I was reading about this, I came up with the following conjecture. This conjecture may already exist (I haven&amp;rsquo;t looked into the subject yet) or it may be false. From a cursory analysis, it seems to hold true.&lt;/p>
 &lt;p>My conjecture is:&lt;/p>
 &lt;blockquote>
-&lt;p>We can represent every natural number as the sum of, at most, n n-sided numbers.&lt;/p>
-&lt;/blockquote>
+&lt;p>We can represent every natural number as the sum of, at most, n n-sided numbers.&lt;/p>&lt;/blockquote>
 &lt;p>I need to formalize what I mean by &amp;ldquo;n-sided number&amp;rdquo;, but intuitively, I mean that, when n=3, n-sided numbers are triangular numbers; when n=4, we are dealing with square numbers; n=5 means pentagonal numbers; etc&amp;hellip;&lt;/p>
 &lt;p>I plan to do some research in the future to see if this already exists and, if not, how I might go about proving it.&lt;/p></description></item></channel></rss>
