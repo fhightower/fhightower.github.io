@@ -2,7 +2,9 @@ baseurl = "https://hightower.space/"
 title = "Floyd"
 theme = "hugo-theme-texify"
 languageCode = "en"
-paginate = 7
+
+[pagination]
+pagerSize = 7
 
 [[menu.main]]
 name = "Home"
