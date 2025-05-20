@@ -46,6 +46,7 @@ Here is a regularly updated list of skills I have:
 ![Elasticsearch](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/elasticsearch.svg "Elasticsearch") | Elasticsearch | Beginner | {{< duration 2020 2023 >}} | Personal, Professional
 ![Kibana](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/kibana.svg "Kibana") | Kibana | Beginner | {{< duration 2020 2023 >}} | Professional
 ![Azure](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/microsoft.svg "Azure") | Azure | Beginner | {{< duration 2024 >}} | Professional
+![Fastify](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/fastify.svg "Fastify") | Fastify | Beginner | {{< duration 2024 >}} | Professional
 ![Less sleep and more joy than I expected](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg "Less sleep and more joy than I expected") | Fatherhood | Beginner | {{< duration 2022 >}} | Personal
 
 \* - I'm categorizing fluency as either: Expert, Intermediate, or Beginner.
