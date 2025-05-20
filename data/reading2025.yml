@@ -69,3 +69,21 @@
   rating: 10
   notes:
     - "Practical and helpful book on parenting"
+- title: "Why Machines Learn: The Elegant Math Behind Modern AI"
+  authors:
+    - "Anil Ananthaswamy"
+  rating: 10
+  notes:
+    - "Fascinating book"
+    - "One of the most Fascinating aspects was why modern neural nets don't overfit the training data"
+- title: "Structure and Interpretation of Computer Programs"
+  authors:
+    - "Harold Abelson"
+    - "Gerald Jay Sussman"
+    - "Julie Sussman"
+  rating: 100
+  notes:
+    - "Good read - loved the examples that teach you about programming and mathematical/computer science topics"
+    - "Sometimes the examples get pretty far afield"
+    - "Fun to build a metacircular interpreter from the ground up :)"
+
