@@ -86,4 +86,143 @@
     - "Good read - loved the examples that teach you about programming and mathematical/computer science topics"
     - "Sometimes the examples get pretty far afield"
     - "Fun to build a metacircular interpreter from the ground up :)"
-
+- title: "Basic Laws of Human Stupidity"
+  authors:
+    - "Carlo M. Cipolla"
+  rating: 1
+  notes:
+    - "Very interesting and funny read"
+    - "Honestly, surprisingly powerful explanatory power"
+- title: "Information: A History, a Theory, a Flood"
+  authors:
+    - "James Gleick"
+  rating: 10
+  notes:
+    - "Intriguing history of information/computation theory"
+- title: "Opt-Out Family: The Case for Independence in an Interdependent World"
+  authors:
+    - "Kerry McDonald"
+  rating: 100
+  notes:
+    - "Unimpressed by this book... some helpful practical advice, but a lot of fear-mongering based on extreme examples"
+- title: "Everything Bad is Good for You: How Today's Popular Culture is Actually Making Us Smarter"
+  authors:
+    - "Steven Johnson"
+  rating: 10
+  notes:
+    - "Fascinating theory that there's a 'sleeper curve' of increasing complexity in popular culture is making us smarter"
+    - "Basically, there's a market for culture today to be re-watchable, re-playable, and re-read-able, which means it has to have more complexity and depth to it"
+    - "Aligns w/ my sentiment that video/computer games are underrated (esp. relative to reading)"
+- title: "Prince Caspian"
+  authors:
+    - "C.S. Lewis"
+  rating: 10
+  notes:
+    - "Not one of the better Narnia books, IMO, but still good"
+- title: "Fidelity: How to be a One-Woman Man"
+  authors:
+    - "Doug Wilson"
+  rating: 1
+  notes:
+    - "Great book dealing with various aspects of Biblical sexuality w/ a lot of solid, practical advice"
+- title: "Reforming Marriage: Gospel Living for Couples"
+  authors:
+    - "Doug Wilson"
+  rating: 0
+  notes:
+    - "Fantastic book! Practical, insightful, and rooted firmly in God's word"
+- title: "Standing on the Promises: A Handbook of Biblical Childrearing"
+  authors:
+    - "Doug Wilson"
+  rating: 10
+  notes:
+    - "A good book w/ some helpful advice. Not as good as some other resources ('future men'), but still good"
+- title: "Biblical Finances"
+  authors:
+    - "Doug Wilson"
+  rating: 10
+  notes:
+    - "Helpful overview w/ some practical insights"
+- title: "Federal Husband"
+  authors:
+    - "Doug Wilson"
+  rating: 1
+  notes:
+    - "Really good book"
+    - "Practical and theologically rich"
+- title: "Future Men"
+  authors:
+    - "Doug Wilson"
+  rating: 1
+  notes:
+    - "Fantastic book on raising boys (future men)"
+- title: "Modern Martyr"
+  authors:
+    - "G. K. Chesterton"
+  rating: 1
+  notes:
+    - "Very short, but insightful book contrasting modern 'martyrs' w/ the martyrs of old"
+- title: "Public School Rehab"
+  authors:
+    - "Doug Wilson"
+  rating: -1
+  notes:
+    - "Not great, there's better resources elsewhere"
+- title: "God the Best Portion of the Christian"
+  authors:
+    - "Jonathan Edwards"
+  rating: 10
+  notes:
+    - "Excellent sermon by Edwards on the blessing and delight of knowing God Himself"
+- title: "How George Müller Started His Days"
+  authors:
+    - "George Müller"
+  rating: 10
+  notes:
+    - "Interesting read in which George Müller describes his need to be satisfied in God more than anything else (e.g. more than reading content to help prepare a sermon or to help address needs he was facing)"
+- title: "Beyond Personality: The Christian Idea of God"
+  authors:
+    - "C. S. Lewis"
+  rating: 1
+  notes:
+    - "Very good read w/ a number of fantastic points and quotes"
+    - "He does cover the nature of God a bit, but not as much or in the ways I had hoped"
+- title: "An Infinite Journey: Growing Toward Christlikeness"
+  authors:
+    - "Andrew M. Davis"
+  rating: 100
+  notes:
+    - "Very practical and biblically rooted work on sanctification"
+    - "Some helpful points"
+- title: "Love Among the Chickens"
+  authors:
+    - "P.G. Wodehouse"
+  rating: 1000
+  notes:
+    - "Mildly humorous, but not something I'd recommend"
+- title: "Disciplines of Grace"
+  authors:
+    - "Jerry Bridges"
+  rating: -1
+  notes:
+    - "Very disappointed w/ this book and wouldn't recommend it"
+    - "Two main issues were (1) that he doesn't mention the resurrection in his presentation of the gospel which we are supposed to preach to ourselves and (2) he fundamentally misunderstands the relationship between believers' works and God's blessing - he argues there's no connection, but Scripture is clear that there is"
+- title: "Spiritual Disciplines for the Christian Life"
+  authors:
+    - "Donald S. Whitney"
+  rating: 1
+  notes:
+    - "Fantastic book on spiritual disciplines"
+    - "Practical and well-founded in Scripture"
+- title: "Till We Have Faces"
+  authors:
+    - "C. S. Lewis"
+  rating: 0
+  notes:
+    - "AMAZING book that gets better w/ each reading"
+- title: "The Spirit and The Church: Priorities from 1 Corinthians 12-14"
+  authors:
+    - "Jeff Purswell"
+  rating: 10
+  notes:
+    - "Helpful book noting Paul's priorities in 1 Corinthians 12-14 especially around spiritual gifts"
