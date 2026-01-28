@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Floyd</title><link>https://hightower.space/posts/</link><description>Recent content in Posts on Floyd</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hightower.space/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2025 Reading List</title><link>https://hightower.space/posts/2025-reading-list/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://hightower.space/posts/2025-reading-list/</guid><description>&lt;section>
-Books read in 2025: 6
+Books read in 2025: 34
 &lt;ol>
 &lt;li>
 &lt;details>
@@ -92,6 +92,411 @@ Notes:
 &lt;li>Great read&lt;/li>
 &lt;li>One thing that jumped out to me on this reading: the emphasis on the wisdom of not shutting a wardrobe door behind onself - he definitely knew that his book may provoke some kids to try to find Narnia and wanted to make sure they didn&amp;rsquo;t get stuck in the wardrobe&lt;/li>
 &lt;li>One thing that jumped out to me on this reading: after resurrection, Aslan first goes to the Witch&amp;rsquo;s castle to free the prisoners&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>How to Be a Responsible Man&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jim Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Great read that is short and practical on a valuable subject&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Below the Edge of Darkness: A Memoir of Exploring Light and Life in the Deep Sea&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Dr. Edith Widder&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fascinating read on a subject that was largely new to me&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Life on Svalbard: Finding Home on a Remote Island Near the North Pole&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Cecilia Blomdahl&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fun read, beautiful pictures and a fascinating place&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Keep Your Kids: How to Raise Strong Kids in an Age of Therapeutic Sentimentalism&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Practical and helpful book on parenting&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Why Machines Learn: The Elegant Math Behind Modern AI&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Anil Ananthaswamy&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fascinating book&lt;/li>
+&lt;li>One of the most Fascinating aspects was why modern neural nets don&amp;rsquo;t overfit the training data&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Structure and Interpretation of Computer Programs&lt;/i> [100]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Harold Abelson&lt;/li>
+&lt;li>Gerald Jay Sussman&lt;/li>
+&lt;li>Julie Sussman&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Good read - loved the examples that teach you about programming and mathematical/computer science topics&lt;/li>
+&lt;li>Sometimes the examples get pretty far afield&lt;/li>
+&lt;li>Fun to build a metacircular interpreter from the ground up :)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Basic Laws of Human Stupidity&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Carlo M. Cipolla&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very interesting and funny read&lt;/li>
+&lt;li>Honestly, surprisingly powerful explanatory power&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Information: A History, a Theory, a Flood&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>James Gleick&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Intriguing history of information/computation theory&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Opt-Out Family: The Case for Independence in an Interdependent World&lt;/i> [100]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Kerry McDonald&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Unimpressed by this book&amp;hellip; some helpful practical advice, but a lot of fear-mongering based on extreme examples&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Everything Bad is Good for You: How Today&amp;rsquo;s Popular Culture is Actually Making Us Smarter&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Steven Johnson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fascinating theory that there&amp;rsquo;s a &amp;lsquo;sleeper curve&amp;rsquo; of increasing complexity in popular culture is making us smarter&lt;/li>
+&lt;li>Basically, there&amp;rsquo;s a market for culture today to be re-watchable, re-playable, and re-read-able, which means it has to have more complexity and depth to it&lt;/li>
+&lt;li>Aligns w/ my sentiment that video/computer games are underrated (esp. relative to reading)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Prince Caspian&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>C.S. Lewis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Not one of the better Narnia books, IMO, but still good&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Fidelity: How to be a One-Woman Man&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Great book dealing with various aspects of Biblical sexuality w/ a lot of solid, practical advice&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Reforming Marriage: Gospel Living for Couples&lt;/i> [0]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fantastic book! Practical, insightful, and rooted firmly in God&amp;rsquo;s word&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Standing on the Promises: A Handbook of Biblical Childrearing&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>A good book w/ some helpful advice. Not as good as some other resources (&amp;lsquo;future men&amp;rsquo;), but still good&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Biblical Finances&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Helpful overview w/ some practical insights&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Federal Husband&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Really good book&lt;/li>
+&lt;li>Practical and theologically rich&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Future Men&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fantastic book on raising boys (future men)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Modern Martyr&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>G. K. Chesterton&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very short, but insightful book contrasting modern &amp;lsquo;martyrs&amp;rsquo; w/ the martyrs of old&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Public School Rehab&lt;/i> [-1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Doug Wilson&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Not great, there&amp;rsquo;s better resources elsewhere&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>God the Best Portion of the Christian&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jonathan Edwards&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Excellent sermon by Edwards on the blessing and delight of knowing God Himself&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>How George Müller Started His Days&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>George Müller&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Interesting read in which George Müller describes his need to be satisfied in God more than anything else (e.g. more than reading content to help prepare a sermon or to help address needs he was facing)&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Beyond Personality: The Christian Idea of God&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>C. S. Lewis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very good read w/ a number of fantastic points and quotes&lt;/li>
+&lt;li>He does cover the nature of God a bit, but not as much or in the ways I had hoped&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>An Infinite Journey: Growing Toward Christlikeness&lt;/i> [100]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Andrew M. Davis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very practical and biblically rooted work on sanctification&lt;/li>
+&lt;li>Some helpful points&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Love Among the Chickens&lt;/i> [1000]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>P.G. Wodehouse&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Mildly humorous, but not something I&amp;rsquo;d recommend&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Disciplines of Grace&lt;/i> [-1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jerry Bridges&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Very disappointed w/ this book and wouldn&amp;rsquo;t recommend it&lt;/li>
+&lt;li>Two main issues were (1) that he doesn&amp;rsquo;t mention the resurrection in his presentation of the gospel which we are supposed to preach to ourselves and (2) he fundamentally misunderstands the relationship between believers&amp;rsquo; works and God&amp;rsquo;s blessing - he argues there&amp;rsquo;s no connection, but Scripture is clear that there is&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Spiritual Disciplines for the Christian Life&lt;/i> [1]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Donald S. Whitney&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Fantastic book on spiritual disciplines&lt;/li>
+&lt;li>Practical and well-founded in Scripture&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>Till We Have Faces&lt;/i> [0]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>C. S. Lewis&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>AMAZING book that gets better w/ each reading&lt;/li>
+&lt;/ul>
+&lt;br>
+&lt;/details>
+&lt;/li>
+&lt;li>
+&lt;details>
+&lt;summary>&lt;i>The Spirit and The Church: Priorities from 1 Corinthians 12-14&lt;/i> [10]&lt;/summary>
+Author(s):
+&lt;ul>
+&lt;li>Jeff Purswell&lt;/li>
+&lt;/ul>
+Notes:
+&lt;ul>
+&lt;li>Helpful book noting Paul&amp;rsquo;s priorities in 1 Corinthians 12-14 especially around spiritual gifts&lt;/li>
 &lt;/ul>
 &lt;br>
 &lt;/details>
