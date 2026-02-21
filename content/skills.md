@@ -32,6 +32,8 @@ Here is a regularly updated list of skills I have:
 ![Sentry](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/sentry.svg "Sentry") | Sentry | Intermediate | {{< duration 2023 >}} | Professional
 ![JavaScript](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/javascript.svg "JavaScript") | JavaScript | Intermediate | {{< duration 2011 >}} | Personal, Professional
 ![TypeScript](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/typescript.svg "TypeScript") | TypeScript | Intermediate | {{< duration 2011 >}} | Personal, Professional
+![Claude](https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/claude.svg "Claude") | Claude | Intermediate | {{< duration 2025 >}} | Personal, Professional
+![Codex](https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/openai.svg "Codex") | Codex | Intermediate | {{< duration 2025 >}} | Personal, Professional
 ![Stimulus](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/stimulus.svg "Stimulus") | Stimulus | Intermediate | {{< duration 2022 2023 >}} | Personal
 ![Java](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/buymeacoffee.svg "Java")  | Java | Intermediate | {{< duration 2011 2016 >}} | Personal, Academic
 ![Go](https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/go.svg "Go") | Go | Intermediate | {{< duration 2021 >}} | Personal, Professional
