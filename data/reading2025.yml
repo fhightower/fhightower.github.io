@@ -226,3 +226,11 @@
   rating: 10
   notes:
     - "Helpful book noting Paul's priorities in 1 Corinthians 12-14 especially around spiritual gifts"
+- title: "The Hobbit, or There and Back Again"
+  authors:
+    - "J. R. R. Tolkien"
+  rating: 1
+- title: "The Story of the Other Wise Man"
+  authors:
+    - "Henry van Dyke"
+  rating: 10

@@ -1,0 +1,49 @@
+- title: "Silver Chair"
+  authors:
+    - "C. S. Lewis"
+  rating: 1
+- title: "Made for Friendship: The Relationship That Halves Our Sorrows and Doubles Our Joys"
+  authors:
+    - "Drew Hunter"
+  rating: 10
+  notes:
+    - "Good book w/ practical advice"
+- title: "How to Lead your Family: A Guide for Men Wanting to Be More"
+  authors:
+    - "Joel Beeke"
+  rating: 10
+  notes:
+    - "Practical and to the point"
+- title: "Indescribable: Encountering the Glory of God in the Beauty of the Universe"
+  authors:
+    - "Louie Giglio"
+    - "Matt Redman"
+  rating: 1
+  notes:
+    - "Fascinating read"
+    - "Mind blowing"
+- title: "Everything is Predictable: How Bayesian Statistics Explain Our World"
+  authors:
+    - "Tom Chivers"
+  rating: 1
+  notes:
+    - "Fascinating"
+    - "Almost paradigm shifting"
+- title: "How Can I Cultivate Private Prayer?"
+  authors:
+    - "Joel Beeke"
+  rating: 10
+  notes:
+    - "Decent - practical"
+- title: "The Good Samaritan Strikes Again"
+  authors:
+    - "Patrick McManus"
+  rating: 1
+  notes:
+    - "Hilarious as usual"
+- title: "Never Cry 'Arp!' and Other Great Adventures"
+  authors:
+    - "Patrick McManus"
+  rating: 1
+  notes:
+    - "A riot"
