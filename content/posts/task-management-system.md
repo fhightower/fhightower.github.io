@@ -7,6 +7,8 @@ tags = ["Tasks", "Task Management"]
 
 If you want to do more each day that you possibly can, here's a tasks management system that may be helpful. It's made up of three categories that each have a single rule.
 
+I need a better name for it, but I currently call it the "YMN" ("y-men"?, "yeah-man"?) task management system.
+
 Categories and their rules:
 
 1. Yes: There can only be up to three tasks in this category at a given time. To move more into this category, you have to finish one (or demote it back to "Maybe").
